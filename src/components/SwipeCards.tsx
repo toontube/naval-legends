@@ -8,6 +8,14 @@ import {
 } from 'motion/react';
 import { Card, type CardData } from './Card';
 
+declare global {
+  interface Window { gtag?: (...args: unknown[]) => void; }
+}
+
+function track(event: string, params?: Record<string, unknown>) {
+  window.gtag?.('event', event, params);
+}
+
 interface SwipeCardsProps {
   cards: CardData[];
 }
@@ -26,8 +34,17 @@ export default function SwipeCards({ cards }: SwipeCardsProps) {
 
   const goNext = useCallback(() => {
     markInteracted();
-    setIndex((i) => Math.min(i + 1, cards.length));
-  }, [cards.length, markInteracted]);
+    setIndex((prev) => {
+      const next = Math.min(prev + 1, cards.length);
+      const card = cards[next];
+      if (card) {
+        track('card_view', { card_ship: card.ship, card_index: next + 1, card_year: card.year });
+      } else {
+        track('cards_completed', { total_cards: cards.length });
+      }
+      return next;
+    });
+  }, [cards, markInteracted]);
 
   const goPrev = useCallback(() => {
     markInteracted();
@@ -64,12 +81,12 @@ export default function SwipeCards({ cards }: SwipeCardsProps) {
             a detail too absurd to be fiction.
           </p>
           <div className="swipe-end-actions">
-            <a href="/submit" className="swipe-end-btn">Submit a story &rarr;</a>
-            <a href="/stories" className="swipe-end-link">Browse all stories</a>
+            <a href="/submit" className="swipe-end-btn" onClick={() => track('click_submit_cta', { location: 'end_screen' })}>Submit a story &rarr;</a>
+            <a href="/stories" className="swipe-end-link" onClick={() => track('click_browse_stories', { location: 'end_screen' })}>Browse all stories</a>
           </div>
           <button
             className="swipe-end-restart"
-            onClick={() => setIndex(0)}
+            onClick={() => { track('click_start_over'); setIndex(0); }}
           >
             &larr; Start over
           </button>

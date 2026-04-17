@@ -237,7 +237,7 @@ const dateStr = story.data.date.toLocaleDateString('en-US', {
 </style>
 
 <script>
-  // Pretext CLS prevention — measure article text after fonts load
+  // Pretext CLS prevention
   async function measureArticle() {
     try {
       const { prepare, layout } = await import('@chenglou/pretext');
@@ -249,8 +249,51 @@ const dateStr = story.data.date.toLocaleDateString('en-US', {
       const { height } = layout(prepared, el.offsetWidth, 31.5);
       el.style.minHeight = `${height}px`;
     } catch {
-      // Pretext is optional — degrade gracefully
+      // Pretext is optional
     }
   }
   measureArticle();
+
+  // Track article scroll depth
+  const slug = window.location.pathname.split('/').filter(Boolean).pop();
+  const milestones = new Set<number>();
+
+  function checkScroll() {
+    const scrolled = window.scrollY;
+    const total = document.body.scrollHeight - window.innerHeight;
+    if (total <= 0) return;
+    const pct = Math.round((scrolled / total) * 100);
+
+    for (const m of [25, 50, 75, 100]) {
+      if (pct >= m && !milestones.has(m)) {
+        milestones.add(m);
+        (window as any).gtag?.('event', 'article_scroll', {
+          article_slug: slug,
+          scroll_depth: m,
+        });
+      }
+    }
+  }
+  window.addEventListener('scroll', checkScroll, { passive: true });
+
+  // Track source link clicks
+  document.querySelectorAll('.prose a[href^="http"]').forEach((link) => {
+    link.addEventListener('click', () => {
+      (window as any).gtag?.('event', 'click_source_link', {
+        article_slug: slug,
+        link_url: (link as HTMLAnchorElement).href,
+        link_text: link.textContent?.trim(),
+      });
+    });
+  });
+
+  // Track "Read next" clicks
+  document.querySelectorAll('.read-next-card').forEach((card) => {
+    card.addEventListener('click', () => {
+      (window as any).gtag?.('event', 'click_read_next', {
+        from_slug: slug,
+        to_slug: (card as HTMLAnchorElement).href.split('/').filter(Boolean).pop(),
+      });
+    });
+  });
 </script>

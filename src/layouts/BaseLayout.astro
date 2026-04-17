@@ -23,6 +23,15 @@ const { class: className } = Astro.props;
     rel="stylesheet"
   />
 
+  <!-- Google Analytics -->
+  <script is:inline async src="https://www.googletagmanager.com/gtag/js?id=G-8ZH2G98XBT"></script>
+  <script is:inline>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-8ZH2G98XBT');
+  </script>
+
   <slot name="head" />
 </head>
 <body class={className}>

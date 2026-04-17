@@ -52,7 +52,14 @@ export function Card({ card, style }: CardProps) {
             <a
               href={storyUrl}
               className="card-btn"
-              onClick={(e) => e.stopPropagation()}
+              onClick={(e) => {
+                e.stopPropagation();
+                (window as any).gtag?.('event', 'read_full_story', {
+                  card_ship: card.ship,
+                  card_year: card.year,
+                  story_slug: card.linkedStory,
+                });
+              }}
             >
               Read full story &rarr;
             </a>

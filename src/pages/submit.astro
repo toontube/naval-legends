@@ -190,6 +190,8 @@ import SEOHead from '../components/SEOHead.astro';
     status.className = 'submit-status';
 
     const data = Object.fromEntries(new FormData(form));
+    const gtag = window.gtag || function(){};
+    gtag('event', 'submit_story_attempt', { subject: data.subject });
 
     try {
       const res = await fetch('/api/submit', {
@@ -199,6 +201,7 @@ import SEOHead from '../components/SEOHead.astro';
       });
 
       if (res.ok) {
+        gtag('event', 'submit_story_success', { subject: data.subject });
         status.textContent = 'Thanks! We got your story. If it becomes an article, we\'ll credit you.';
         status.className = 'submit-status success';
         form.reset();
@@ -206,6 +209,7 @@ import SEOHead from '../components/SEOHead.astro';
         throw new Error('Server error');
       }
     } catch {
+      gtag('event', 'submit_story_mailto_fallback', { subject: data.subject });
       // Fallback: open mailto with the form data
       const subject = encodeURIComponent(`Bravo Zulu Submission: ${data.subject}`);
       const body = encodeURIComponent(

@@ -31,6 +31,7 @@ const { active = 'daily', showThemeToggle = false } = Astro.props;
       const next = current === 'light' ? 'dark' : 'light';
       document.documentElement.setAttribute('data-theme', next);
       localStorage.setItem('nl-theme', next);
+      window.gtag?.('event', 'toggle_theme', { theme: next });
     });
   </script>
 )}
