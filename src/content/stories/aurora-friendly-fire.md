@@ -38,6 +38,6 @@ One ship. Friendly fire, Tsushima, a revolution, and a permanent address.
 
 - Pleshakov, Constantine. *The Tsar's Last Armada: The Epic Journey to the Battle of Tsushima.* Basic Books, 2002.
 - Hough, Richard. *The Fleet That Had to Die.* Birlinn, 2003 (revised edition).
-- [Central Naval Museum, St. Petersburg](https://navalmuseum.ru/) — operates Aurora as a branch museum.
+- [Wikipedia: Russian cruiser Aurora](https://en.wikipedia.org/wiki/Russian_cruiser_Aurora) — operates Aurora as a branch museum.
 - Scott, James Brown. *The Hague Court Reports.* Carnegie Endowment for International Peace, 1916 — documents the Dogger Bank Commission ruling.
-- [Naval History and Heritage Command: Battle of Tsushima](https://www.history.navy.mil/browse-by-topic/wars-conflicts-and-operations/russo-japanese-war.html)
+- [Wikipedia: Dogger Bank incident](https://en.wikipedia.org/wiki/Dogger_Bank_incident)

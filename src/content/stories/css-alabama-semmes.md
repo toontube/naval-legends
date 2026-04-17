@@ -30,8 +30,8 @@ One more thing. Edouard Manet, the painter, wasn't at the battle. But he read th
 
 **Sources**
 
-- Semmes, Raphael. *Memoirs of Service Afloat During the War Between the States.* Baltimore: Kelly, Piet & Co., 1869. [Internet Archive](https://archive.org/details/memoirsofservice00semm)
+- Semmes, Raphael. *Memoirs of Service Afloat During the War Between the States.* Baltimore: Kelly, Piet & Co., 1869.
 - Marvel, William. *The Alabama and the Kearsarge: The Sailor's Civil War.* University of North Carolina Press, 1996.
-- [Naval History and Heritage Command: CSS Alabama](https://www.history.navy.mil/research/histories/ship-histories/danfs/a/alabama-ii.html)
+- [Wikipedia: CSS Alabama](https://en.wikipedia.org/wiki/CSS_Alabama)
+- [Wikipedia: Battle of Cherbourg (1864)](https://en.wikipedia.org/wiki/Battle_of_Cherbourg_(1864))
 - [Philadelphia Museum of Art: Manet, *The Battle of the Kearsarge and the Alabama*](https://philamuseum.org/collection/object/102806)
-- [National Park Service: The Battle of Cherbourg](https://www.nps.gov/articles/the-battle-of-cherbourg.htm)

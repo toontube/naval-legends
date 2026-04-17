@@ -32,8 +32,7 @@ Olympia still exists. She's a museum ship at the Independence Seaport Museum in 
 
 **Sources**
 
-- [Naval History and Heritage Command: USS Olympia (Cruiser No. 6)](https://www.history.navy.mil/research/histories/ship-histories/danfs/o/olympia-i.html)
-- [Independence Seaport Museum: Cruiser Olympia](https://www.phillyseaport.org/olympia)
+- [Wikipedia: USS Olympia (C-6)](https://en.wikipedia.org/wiki/USS_Olympia_(C-6))
 - [Arlington National Cemetery: The Unknown Soldier](https://www.arlingtoncemetery.mil/Explore/Tomb-of-the-Unknown-Soldier)
 - Poole, Robert M. *On Hallowed Ground: The Story of Arlington National Cemetery.* Bloomsbury, 2009.
-- [Smithsonian Magazine: The Voyage of the Unknown Soldier](https://www.smithsonianmag.com/history/the-unknown-soldier-from-world-war-i-finally-gets-a-voice-180978826/)
+- [Wikipedia: Tomb of the Unknown Soldier](https://en.wikipedia.org/wiki/Tomb_of_the_Unknown_Soldier_(Arlington))

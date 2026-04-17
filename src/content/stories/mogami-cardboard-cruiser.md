@@ -43,8 +43,8 @@ Three names. Two collisions. Two rebuilds. One ship.
 **Sources**
 
 - [Mogami-class cruiser — Wikipedia](https://en.wikipedia.org/wiki/Mogami-class_cruiser) — includes the British DNC "cardboard" quote sourced from naval intelligence records.
-- [Japanese cruiser Mogami (1934) — Wikipedia](https://en.wikipedia.org/wiki/Japanese_cruiser_Mogami_(1934))
+- [Japanese cruiser Mogami (1934) — Wikipedia](https://en.wikipedia.org/wiki/Japanese_cruiser_Mogami)
 - [Naval Encyclopedia: Mogami-class cruisers](https://naval-encyclopedia.com/ww2/japan/mogami-class-cruisers.php)
 - Lacroix, Eric, and Linton Wells II. *Japanese Cruisers of the Pacific War.* Naval Institute Press, 1997.
 - [World War II Database: Heavy Cruiser Mogami](https://ww2db.com/ship_spec.php?ship_id=38)
-- [NHHC: Battle of Surigao Strait](https://www.history.navy.mil/content/history/museums/nmusn/explore/photography/wwii/wwii-pacific/leyte/surigao-strait.html)
+- [Wikipedia: Battle of Surigao Strait](https://en.wikipedia.org/wiki/Battle_of_Surigao_Strait)

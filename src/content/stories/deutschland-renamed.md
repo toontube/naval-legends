@@ -42,6 +42,6 @@ The Soviets raised the wreck. They used it for target practice. Then they scrapp
 
 - Koop, Gerhard, and Klaus-Peter Schmolke. *Pocket Battleships of the Deutschland Class.* Seaforth Publishing, 2014.
 - O'Hara, Vincent P. *The German Fleet at War, 1939-1945.* Naval Institute Press, 2004.
-- [Naval History and Heritage Command: Battle of the Barents Sea](https://www.history.navy.mil/browse-by-topic/wars-conflicts-and-operations/world-war-ii.html)
+- [Wikipedia: Battle of the Barents Sea](https://en.wikipedia.org/wiki/Battle_of_the_Barents_Sea)
 - Williamson, Murray, and Allan R. Millett. *A War to Be Won: Fighting the Second World War.* Harvard University Press, 2000.
-- [Imperial War Museums: Operation Regenbogen](https://www.iwm.org.uk/)
+- [Wikipedia: Deutschland-class cruiser](https://en.wikipedia.org/wiki/Deutschland-class_cruiser)

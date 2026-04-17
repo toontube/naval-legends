@@ -28,8 +28,7 @@ Her stern still sticks out of the water at Kwajalein. You can see it on Google M
 
 **Sources**
 
-- [Naval History and Heritage Command: Prinz Eugen](https://www.history.navy.mil/research/histories/ship-histories/danfs/p/prinz-eugen.html)
-- [Atomic Heritage Foundation: Operation Crossroads](https://ahf.nuclearmuseum.org/ahf/history/operation-crossroads/)
+- [Wikipedia: Prinz Eugen](https://en.wikipedia.org/wiki/German_cruiser_Prinz_Eugen)
+- [Wikipedia: Operation Crossroads](https://en.wikipedia.org/wiki/Operation_Crossroads)
 - Delgado, James P. *Nuclear Dawn: The Atomic Bomb from the Manhattan Project to the Cold War.* Osprey, 2009.
-- [Google Maps: Prinz Eugen wreck, Kwajalein Atoll](https://maps.app.goo.gl/prinz-eugen-kwajalein)
 - Garzke, William H., and Robert O. Dulin. *Battleships: Axis and Neutral Battleships in World War II.* Naval Institute Press, 1985.

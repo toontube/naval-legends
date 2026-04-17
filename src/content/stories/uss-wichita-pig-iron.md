@@ -38,7 +38,7 @@ No museum. No memorial. Just the fourteen Baltimore-class cruisers she made poss
 
 **Sources**
 
-- [Naval History and Heritage Command: Wichita I (CA-45)](https://www.history.navy.mil/research/histories/ship-histories/danfs/w/wichita-i.html)
+- [Wikipedia: USS Wichita (CA-45)](https://en.wikipedia.org/wiki/USS_Wichita_(CA-45))
 - [USS Wichita (CA-45) — Wikipedia](https://en.wikipedia.org/wiki/USS_Wichita_(CA-45))
 - Friedman, Norman. *U.S. Cruisers: An Illustrated Design History.* Naval Institute Press, 1984.
 - [Naval Encyclopedia: USS Wichita (1936)](https://naval-encyclopedia.com/ww2/us/wichita.php)

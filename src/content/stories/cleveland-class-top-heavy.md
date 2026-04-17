@@ -43,7 +43,7 @@ Only one survives. USS Little Rock sits in Buffalo, New York, at the Buffalo and
 **Sources**
 
 - Friedman, Norman. *U.S. Cruisers: An Illustrated Design History.* Naval Institute Press, 1984.
-- [Naval History and Heritage Command: Dictionary of American Naval Fighting Ships](https://www.history.navy.mil/research/histories/ship-histories/danfs.html)
+- [Wikipedia: Cleveland-class cruiser](https://en.wikipedia.org/wiki/Cleveland-class_cruiser)
 - Morison, Samuel Eliot. *History of United States Naval Operations in World War II.* Vol. 6 (Solomons) and Vol. 12 (Leyte Gulf). Little, Brown and Company, 1950-1962.
 - [NavSource Online: Light Cruiser Photo Archive](http://www.navsource.org/archives/04/04idx.htm)
 - [Buffalo and Erie County Naval & Military Park: USS Little Rock](https://buffalonavalpark.org/explore/uss-little-rock/)
