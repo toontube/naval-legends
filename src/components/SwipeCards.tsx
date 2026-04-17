@@ -74,11 +74,10 @@ export default function SwipeCards({ cards }: SwipeCardsProps) {
     return (
       <div className="swipe-container">
         <div className="swipe-end">
-          <p className="swipe-end-label">You've seen all today's stories</p>
-          <h2 className="swipe-end-heading">Know a story we should tell?</h2>
+          <p className="swipe-end-label">That's today's batch</p>
+          <h2 className="swipe-end-heading">Got a good one?</h2>
           <p className="swipe-end-text">
-            A ship with a wild backstory, a battle nobody talks about,
-            a detail too absurd to be fiction.
+            If you know a ship story that belongs here, send it over.
           </p>
           <div className="swipe-end-actions">
             <a href="/submit" className="swipe-end-btn" onClick={() => track('click_submit_cta', { location: 'end_screen' })}>Submit a story &rarr;</a>
