@@ -1,0 +1,57 @@
+---
+const year = new Date().getFullYear();
+---
+
+<footer class="footer">
+  <div class="footer-inner">
+    <p class="footer-tagline">Daily naval history stories and research.</p>
+    <div class="footer-links">
+      <a href="https://reddit.com/r/navallegends" target="_blank" rel="noopener">Reddit</a>
+      <a href="https://x.com/navallegends" target="_blank" rel="noopener">X</a>
+      <a href="https://instagram.com/navallegends" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://bsky.app/profile/navallegends.co" target="_blank" rel="noopener">Bluesky</a>
+    </div>
+    <p class="footer-copy">&copy; {year} Naval Legends</p>
+  </div>
+</footer>
+
+<style>
+  .footer {
+    border-top: 1px solid var(--border);
+    padding: 2rem 1.25rem;
+    text-align: center;
+  }
+
+  .footer-inner {
+    max-width: 720px;
+    margin: 0 auto;
+  }
+
+  .footer-tagline {
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+    margin-bottom: 1rem;
+  }
+
+  .footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .footer-links a {
+    font-size: 0.8125rem;
+    color: var(--text-muted);
+    transition: color 0.2s;
+  }
+
+  .footer-links a:hover {
+    color: var(--text-primary);
+  }
+
+  .footer-copy {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+  }
+</style>

@@ -1,0 +1,137 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Navigation from '../../components/Navigation.astro';
+import Footer from '../../components/Footer.astro';
+import SEOHead from '../../components/SEOHead.astro';
+import { getCollection } from 'astro:content';
+
+const stories = await getCollection('stories');
+const sorted = stories.sort(
+  (a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime()
+);
+---
+
+<BaseLayout>
+  <SEOHead
+    slot="head"
+    title="Stories | Naval Legends"
+    description="In-depth articles on naval history. Commerce raiders, nuclear tests, unknown soldiers, and the warships that shaped the world."
+  />
+
+  <Navigation active="stories" showThemeToggle />
+
+  <main class="stories-page">
+    <h1 class="stories-title">Stories</h1>
+
+    <div class="stories-grid">
+      {sorted.map((story) => (
+        <a href={`/stories/${story.data.slug}`} class="story-card">
+          <div class="story-card-inner">
+            <div class="story-meta">
+              <time datetime={story.data.date.toISOString().split('T')[0]}>
+                {story.data.date.toLocaleDateString('en-US', {
+                  year: 'numeric',
+                  month: 'long',
+                  day: 'numeric',
+                })}
+              </time>
+              <span class="story-reading-time">{story.data.readingTime} min read</span>
+            </div>
+            <h2 class="story-card-title">{story.data.title}</h2>
+            <p class="story-card-summary">{story.data.summary}</p>
+            <div class="story-tags">
+              {story.data.tags.map((tag: string) => (
+                <span class="story-tag">{tag}</span>
+              ))}
+            </div>
+          </div>
+        </a>
+      ))}
+    </div>
+  </main>
+
+  <Footer />
+</BaseLayout>
+
+<style>
+  .stories-page {
+    padding-top: calc(var(--nav-height) + 2rem);
+    padding-bottom: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
+  .stories-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .stories-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  @media (min-width: 640px) {
+    .stories-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  .story-card {
+    display: block;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 1.5rem;
+    transition: border-color 0.2s, transform 0.2s;
+  }
+
+  .story-card:hover {
+    border-color: var(--text-muted);
+    transform: translateY(-2px);
+  }
+
+  .story-meta {
+    display: flex;
+    gap: 1rem;
+    font-size: 0.8125rem;
+    color: var(--text-muted);
+    margin-bottom: 0.75rem;
+  }
+
+  .story-reading-time::before {
+    content: '·';
+    margin-right: 1rem;
+  }
+
+  .story-card-title {
+    font-size: 1.25rem;
+    line-height: 1.3;
+    margin-bottom: 0.5rem;
+  }
+
+  .story-card-summary {
+    font-size: 0.9375rem;
+    color: var(--text-secondary);
+    line-height: 1.5;
+    margin-bottom: 1rem;
+  }
+
+  .story-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .story-tag {
+    font-size: 0.6875rem;
+    color: var(--text-muted);
+    background: var(--bg-surface);
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+    text-transform: lowercase;
+  }
+</style>

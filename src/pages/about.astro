@@ -1,0 +1,90 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Navigation from '../components/Navigation.astro';
+import Footer from '../components/Footer.astro';
+import SEOHead from '../components/SEOHead.astro';
+---
+
+<BaseLayout>
+  <SEOHead
+    slot="head"
+    title="About | Naval Legends"
+    description="Naval Legends is a research project dedicated to the history of the world's warships."
+  />
+
+  <Navigation showThemeToggle />
+
+  <main class="about-page">
+    <h1>About Naval Legends</h1>
+    <p>
+      Naval Legends is a research project dedicated to the history of the world's warships.
+      We publish daily stories and in-depth articles covering everything from Civil War
+      commerce raiders to Cold War nuclear tests.
+    </p>
+    <p>
+      Each story starts with a hook — a single surprising fact that makes you want to know more.
+      Swipe through them on the <a href="/">Daily feed</a>, then dive into the full articles
+      when one grabs you.
+    </p>
+    <p>
+      Join us on <a href="https://reddit.com/r/navallegends" target="_blank" rel="noopener">Reddit at r/navallegends</a>.
+    </p>
+    <div class="about-social">
+      <a href="https://reddit.com/r/navallegends" target="_blank" rel="noopener">Reddit</a>
+      <a href="https://x.com/navallegends" target="_blank" rel="noopener">X / Twitter</a>
+      <a href="https://instagram.com/navallegends" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://bsky.app/profile/navallegends.co" target="_blank" rel="noopener">Bluesky</a>
+    </div>
+  </main>
+
+  <Footer />
+</BaseLayout>
+
+<style>
+  .about-page {
+    padding-top: calc(var(--nav-height) + 3rem);
+    padding-bottom: 3rem;
+    max-width: 600px;
+    margin: 0 auto;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
+  .about-page h1 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .about-page p {
+    font-family: var(--font-body);
+    font-size: 1.0625rem;
+    line-height: 1.7;
+    color: var(--text-secondary);
+    margin-bottom: 1.25rem;
+  }
+
+  .about-page a {
+    color: var(--accent);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+
+  .about-social {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border);
+  }
+
+  .about-social a {
+    font-size: 0.9375rem;
+    text-decoration: none;
+    color: var(--text-muted);
+    transition: color 0.2s;
+  }
+
+  .about-social a:hover {
+    color: var(--text-primary);
+  }
+</style>

@@ -1,0 +1,222 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Navigation from '../components/Navigation.astro';
+import Footer from '../components/Footer.astro';
+import SEOHead from '../components/SEOHead.astro';
+---
+
+<BaseLayout>
+  <SEOHead
+    slot="head"
+    title="Submit a Story | Naval Legends"
+    description="Know an incredible naval history story? Share it with us. The best submissions become full articles on Naval Legends."
+  />
+
+  <Navigation showThemeToggle />
+
+  <main class="submit-page">
+    <h1>Submit a Story</h1>
+    <p class="submit-intro">
+      Know an incredible piece of naval history? A ship with a wild backstory, a battle nobody talks about,
+      a detail too absurd to be fiction? Send it our way. The best submissions become full articles.
+    </p>
+
+    <form class="submit-form" id="submit-form">
+      <div class="form-group">
+        <label for="name">Your name <span class="optional">(optional)</span></label>
+        <input type="text" id="name" name="name" placeholder="How you'd like to be credited" />
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email <span class="optional">(optional)</span></label>
+        <input type="email" id="email" name="email" placeholder="So we can follow up if we have questions" />
+      </div>
+
+      <div class="form-group">
+        <label for="subject">What's the story about? <span class="required">*</span></label>
+        <input type="text" id="subject" name="subject" placeholder="e.g. HMS Campbeltown, the destroyer turned bomb" required />
+      </div>
+
+      <div class="form-group">
+        <label for="hook">The hook — one line that makes someone stop scrolling <span class="required">*</span></label>
+        <input type="text" id="hook" name="hook" placeholder="e.g. The British disguised a destroyer as a German ship, packed it with explosives, and rammed it into a dock." required />
+      </div>
+
+      <div class="form-group">
+        <label for="story">Tell us the story <span class="required">*</span></label>
+        <textarea id="story" name="story" rows="8" placeholder="As much or as little as you know. Bullet points are fine. Links to sources are great." required></textarea>
+      </div>
+
+      <div class="form-group">
+        <label for="sources">Sources or links <span class="optional">(optional)</span></label>
+        <textarea id="sources" name="sources" rows="3" placeholder="Wikipedia pages, books, museum links, Reddit threads — anything that backs up the story."></textarea>
+      </div>
+
+      <button type="submit" class="submit-btn" id="submit-btn">
+        Submit story
+      </button>
+
+      <div class="submit-status" id="submit-status"></div>
+    </form>
+  </main>
+
+  <Footer />
+</BaseLayout>
+
+<style>
+  .submit-page {
+    padding-top: calc(var(--nav-height) + 2rem);
+    padding-bottom: 3rem;
+    max-width: 600px;
+    margin: 0 auto;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
+  .submit-page h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .submit-intro {
+    font-family: var(--font-body);
+    font-size: 1.0625rem;
+    line-height: 1.7;
+    color: var(--text-secondary);
+    margin-bottom: 2.5rem;
+  }
+
+  .submit-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.375rem;
+  }
+
+  .form-group label {
+    font-family: var(--font-ui);
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: var(--text-primary);
+  }
+
+  .optional {
+    color: var(--text-muted);
+    font-weight: 400;
+  }
+
+  .required {
+    color: #ef4444;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    font-family: var(--font-ui);
+    font-size: 0.9375rem;
+    color: var(--text-primary);
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 0.75rem 1rem;
+    transition: border-color 0.2s;
+    resize: vertical;
+  }
+
+  .form-group input::placeholder,
+  .form-group textarea::placeholder {
+    color: var(--text-muted);
+    font-size: 0.875rem;
+  }
+
+  .form-group input:focus,
+  .form-group textarea:focus {
+    outline: none;
+    border-color: var(--accent);
+  }
+
+  .submit-btn {
+    font-family: var(--font-ui);
+    font-size: 0.9375rem;
+    font-weight: 500;
+    color: #fff;
+    background: var(--accent);
+    border: none;
+    border-radius: 8px;
+    padding: 0.875rem 1.5rem;
+    transition: opacity 0.2s;
+    margin-top: 0.5rem;
+  }
+
+  .submit-btn:hover {
+    opacity: 0.9;
+  }
+
+  .submit-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+
+  .submit-status {
+    font-family: var(--font-ui);
+    font-size: 0.875rem;
+    text-align: center;
+    min-height: 1.5rem;
+  }
+
+  .submit-status.success {
+    color: #22c55e;
+  }
+
+  .submit-status.error {
+    color: #ef4444;
+  }
+</style>
+
+<script is:inline>
+  const form = document.getElementById('submit-form');
+  const btn = document.getElementById('submit-btn');
+  const status = document.getElementById('submit-status');
+
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    btn.disabled = true;
+    btn.textContent = 'Sending...';
+    status.textContent = '';
+    status.className = 'submit-status';
+
+    const data = Object.fromEntries(new FormData(form));
+
+    try {
+      const res = await fetch('/api/submit', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data),
+      });
+
+      if (res.ok) {
+        status.textContent = 'Thanks! We got your story. If it becomes an article, we\'ll credit you.';
+        status.className = 'submit-status success';
+        form.reset();
+      } else {
+        throw new Error('Server error');
+      }
+    } catch {
+      // Fallback: open mailto with the form data
+      const subject = encodeURIComponent(`Naval Legends Submission: ${data.subject}`);
+      const body = encodeURIComponent(
+        `From: ${data.name || 'Anonymous'}\nEmail: ${data.email || 'N/A'}\n\nHook: ${data.hook}\n\nStory:\n${data.story}\n\nSources:\n${data.sources || 'None provided'}`
+      );
+      window.location.href = `mailto:stories@navallegends.co?subject=${subject}&body=${body}`;
+      status.textContent = 'Opening your email client as fallback. Paste and send!';
+      status.className = 'submit-status success';
+    }
+
+    btn.disabled = false;
+    btn.textContent = 'Submit story';
+  });
+</script>
