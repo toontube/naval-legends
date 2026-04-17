@@ -1,8 +1,9 @@
-import { useState, useEffect, useCallback } from 'react';
+import { useState, useEffect, useCallback, useRef } from 'react';
 import {
   motion,
   useMotionValue,
   useTransform,
+  useAnimate,
   AnimatePresence,
 } from 'motion/react';
 import { Card, type CardData } from './Card';
@@ -14,17 +15,24 @@ interface SwipeCardsProps {
 export default function SwipeCards({ cards }: SwipeCardsProps) {
   const [index, setIndex] = useState(0);
   const [exitX, setExitX] = useState(0);
+  const [hasInteracted, setHasInteracted] = useState(false);
 
   const current = cards[index];
   const next = cards[index + 1];
 
+  const markInteracted = useCallback(() => {
+    if (!hasInteracted) setHasInteracted(true);
+  }, [hasInteracted]);
+
   const goNext = useCallback(() => {
+    markInteracted();
     setIndex((i) => Math.min(i + 1, cards.length));
-  }, [cards.length]);
+  }, [cards.length, markInteracted]);
 
   const goPrev = useCallback(() => {
+    markInteracted();
     setIndex((i) => Math.max(i - 1, 0));
-  }, []);
+  }, [markInteracted]);
 
   // Keyboard navigation
   useEffect(() => {
@@ -49,18 +57,21 @@ export default function SwipeCards({ cards }: SwipeCardsProps) {
     return (
       <div className="swipe-container">
         <div className="swipe-end">
-          <p className="swipe-end-label">That's all for today</p>
+          <p className="swipe-end-label">You've seen all today's stories</p>
           <h2 className="swipe-end-heading">Know a story we should tell?</h2>
           <p className="swipe-end-text">
             A ship with a wild backstory, a battle nobody talks about,
             a detail too absurd to be fiction.
           </p>
-          <a href="/submit" className="swipe-end-btn">Submit a story &rarr;</a>
+          <div className="swipe-end-actions">
+            <a href="/submit" className="swipe-end-btn">Submit a story &rarr;</a>
+            <a href="/stories" className="swipe-end-link">Browse all stories</a>
+          </div>
           <button
             className="swipe-end-restart"
             onClick={() => setIndex(0)}
           >
-            or start over
+            &larr; Start over
           </button>
         </div>
       </div>
@@ -71,6 +82,11 @@ export default function SwipeCards({ cards }: SwipeCardsProps) {
 
   return (
     <div className="swipe-container">
+      {/* "Today's Story" badge — only on first card */}
+      {isFirst && !hasInteracted && (
+        <div className="swipe-badge">Today's Stories</div>
+      )}
+
       {/* Next card (behind) */}
       {next && (
         <div className="swipe-card swipe-card--behind">
@@ -83,14 +99,30 @@ export default function SwipeCards({ cards }: SwipeCardsProps) {
         <DraggableCard
           key={current.order}
           card={current}
+          isFirst={isFirst && !hasInteracted}
           onSwipe={(direction) => {
             setExitX(direction === 'right' ? 300 : -300);
             if (direction === 'right') goNext();
             else goPrev();
           }}
+          onDragStart={markInteracted}
           exitX={exitX}
         />
       </AnimatePresence>
+
+      {/* Swipe hint — fades after first interaction */}
+      {!hasInteracted && (
+        <motion.div
+          className="swipe-hint"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 1.5, duration: 0.5 }}
+        >
+          <span className="swipe-hint-arrow">&larr;</span>
+          <span>Swipe to explore</span>
+          <span className="swipe-hint-arrow">&rarr;</span>
+        </motion.div>
+      )}
 
       {/* Arrow buttons (desktop) */}
       <button
@@ -112,9 +144,14 @@ export default function SwipeCards({ cards }: SwipeCardsProps) {
         &#8250;
       </button>
 
-      {/* Card counter */}
-      <div className="swipe-counter">
-        {index + 1} / {cards.length}
+      {/* Progress dots */}
+      <div className="swipe-dots">
+        {cards.map((_, i) => (
+          <span
+            key={i}
+            className={`swipe-dot ${i === index ? 'swipe-dot--active' : ''} ${i < index ? 'swipe-dot--seen' : ''}`}
+          />
+        ))}
       </div>
     </div>
   );
@@ -122,24 +159,48 @@ export default function SwipeCards({ cards }: SwipeCardsProps) {
 
 function DraggableCard({
   card,
+  isFirst,
   onSwipe,
+  onDragStart,
   exitX,
 }: {
   card: CardData;
+  isFirst: boolean;
   onSwipe: (direction: 'left' | 'right') => void;
+  onDragStart: () => void;
   exitX: number;
 }) {
   const x = useMotionValue(0);
   const rotate = useTransform(x, [-200, 0, 200], [-12, 0, 12]);
   const opacity = useTransform(x, [-200, -100, 0, 100, 200], [0.5, 1, 1, 1, 0.5]);
+  const [scope, animate] = useAnimate();
+  const hintPlayed = useRef(false);
+
+  // Nudge animation on first card to hint at swiping
+  useEffect(() => {
+    if (isFirst && !hintPlayed.current) {
+      hintPlayed.current = true;
+      const timer = setTimeout(async () => {
+        try {
+          await animate(scope.current, { x: -40 }, { duration: 0.4, ease: 'easeOut' });
+          await animate(scope.current, { x: 0 }, { type: 'spring', stiffness: 400, damping: 15 });
+        } catch {
+          // component unmounted
+        }
+      }, 2000);
+      return () => clearTimeout(timer);
+    }
+  }, [isFirst, animate, scope]);
 
   return (
     <motion.div
+      ref={scope}
       className="swipe-card"
       style={{ x, rotate, opacity }}
       drag="x"
       dragConstraints={{ left: 0, right: 0 }}
       dragElastic={0.7}
+      onDragStart={onDragStart}
       onDragEnd={(_, info) => {
         const threshold = 100;
         const velocityThreshold = 500;
