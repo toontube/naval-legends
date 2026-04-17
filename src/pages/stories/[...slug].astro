@@ -67,6 +67,22 @@ const dateStr = story.data.date.toLocaleDateString('en-US', {
       ))}
     </div>
 
+    <div class="article-subscribe" id="article-subscribe">
+      <p class="article-subscribe-text">Liked this one? Get new stories in your inbox.</p>
+      <form class="article-subscribe-form" id="article-subscribe-form">
+        <input
+          type="email"
+          name="email"
+          placeholder="your@email.com"
+          required
+          class="article-subscribe-input"
+          id="article-subscribe-email"
+        />
+        <button type="submit" class="article-subscribe-btn" id="article-subscribe-btn">Subscribe</button>
+      </form>
+      <p class="article-subscribe-status" id="article-subscribe-status"></p>
+    </div>
+
     {otherStories.length > 0 && (
       <section class="read-next">
         <h2 class="read-next-title">Read next</h2>
@@ -172,8 +188,76 @@ const dateStr = story.data.date.toLocaleDateString('en-US', {
     text-transform: lowercase;
   }
 
+  .article-subscribe {
+    margin-top: 2.5rem;
+    padding: 1.5rem;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    text-align: center;
+  }
+
+  .article-subscribe-text {
+    font-family: var(--font-body);
+    font-size: 0.9375rem;
+    color: var(--text-secondary);
+    margin-bottom: 0.75rem;
+  }
+
+  .article-subscribe-form {
+    display: flex;
+    gap: 0.5rem;
+    max-width: 340px;
+    margin: 0 auto;
+  }
+
+  .article-subscribe-input {
+    flex: 1;
+    font-family: var(--font-ui);
+    font-size: 0.875rem;
+    color: var(--text-primary);
+    background: var(--bg-surface);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 0.625rem 0.875rem;
+    min-width: 0;
+  }
+
+  .article-subscribe-input::placeholder {
+    color: var(--text-muted);
+  }
+
+  .article-subscribe-input:focus {
+    outline: none;
+    border-color: var(--accent);
+  }
+
+  .article-subscribe-btn {
+    font-family: var(--font-ui);
+    font-size: 0.8125rem;
+    font-weight: 500;
+    color: #fff;
+    background: var(--accent);
+    border: none;
+    border-radius: 6px;
+    padding: 0.625rem 1rem;
+    white-space: nowrap;
+    transition: opacity 0.2s;
+  }
+
+  .article-subscribe-btn:hover {
+    opacity: 0.9;
+  }
+
+  .article-subscribe-status {
+    font-family: var(--font-ui);
+    font-size: 0.8125rem;
+    margin-top: 0.5rem;
+    min-height: 1.25rem;
+  }
+
   .read-next {
-    margin-top: 3rem;
+    margin-top: 2rem;
     padding-top: 2rem;
     border-top: 1px solid var(--border);
   }
@@ -296,4 +380,27 @@ const dateStr = story.data.date.toLocaleDateString('en-US', {
       });
     });
   });
+
+  // Article subscribe form
+  const artSubForm = document.getElementById('article-subscribe-form') as HTMLFormElement;
+  const artSubStatus = document.getElementById('article-subscribe-status')!;
+  const artSubBlock = document.getElementById('article-subscribe')!;
+
+  if (localStorage.getItem('bz-subscribed')) {
+    artSubBlock.innerHTML = '<p class="article-subscribe-text" style="color:var(--text-muted);margin:0">You\'re subscribed.</p>';
+  } else {
+    artSubForm?.addEventListener('submit', (e) => {
+      e.preventDefault();
+      const email = (document.getElementById('article-subscribe-email') as HTMLInputElement).value;
+      (window as any).gtag?.('event', 'subscribe', { email_domain: email.split('@')[1], location: 'article' });
+      localStorage.setItem('bz-subscribed', email);
+
+      window.location.href = 'mailto:max@mozuma.co?subject=' +
+        encodeURIComponent('BZ Subscribe: ' + email) +
+        '&body=' + encodeURIComponent('New subscriber: ' + email + '\nFrom article: ' + window.location.href);
+
+      artSubStatus.textContent = 'Opening email to confirm.';
+      artSubStatus.style.color = '#22c55e';
+    });
+  }
 </script>
