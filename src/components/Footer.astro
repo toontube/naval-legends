@@ -4,15 +4,75 @@ const year = new Date().getFullYear();
 
 <footer class="footer">
   <div class="footer-inner">
-    <p class="footer-tagline">Daily naval history stories and research.</p>
+    <div class="footer-subscribe">
+      <p class="footer-subscribe-text">Get new stories in your inbox.</p>
+      <form class="footer-subscribe-form" id="subscribe-form">
+        <input
+          type="email"
+          name="email"
+          placeholder="your@email.com"
+          required
+          class="footer-subscribe-input"
+          id="subscribe-email"
+        />
+        <button type="submit" class="footer-subscribe-btn" id="subscribe-btn">Subscribe</button>
+      </form>
+      <p class="footer-subscribe-status" id="subscribe-status"></p>
+    </div>
     <p class="footer-copy">&copy; {year} Bravo Zulu</p>
   </div>
 </footer>
 
+<script is:inline>
+  var subForm = document.getElementById('subscribe-form');
+  var subBtn = document.getElementById('subscribe-btn');
+  var subStatus = document.getElementById('subscribe-status');
+  var subEmail = document.getElementById('subscribe-email');
+
+  subForm.addEventListener('submit', function(e) {
+    e.preventDefault();
+    var email = subEmail.value;
+    subBtn.disabled = true;
+    subBtn.textContent = '...';
+
+    var gtag = window.gtag || function(){};
+    gtag('event', 'subscribe', { email_domain: email.split('@')[1] });
+
+    // Store in localStorage to avoid showing form again
+    localStorage.setItem('bz-subscribed', email);
+
+    // Send to Google Sheet via Apps Script
+    var sheetUrl = 'https://script.google.com/macros/s/AKfycbyPlaceholder/exec';
+    fetch(sheetUrl, {
+      method: 'POST',
+      mode: 'no-cors',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ email: email, source: window.location.pathname, date: new Date().toISOString() })
+    }).catch(function(){});
+
+    // Also send via mailto as backup
+    window.location.href = 'mailto:max@mozuma.co?subject=' +
+      encodeURIComponent('BZ Subscribe: ' + email) +
+      '&body=' + encodeURIComponent('New subscriber: ' + email + '\nPage: ' + window.location.href);
+
+    subStatus.textContent = 'Opening email to confirm. We\'ll add you.';
+    subStatus.style.color = '#22c55e';
+    subBtn.disabled = false;
+    subBtn.textContent = 'Subscribe';
+  });
+
+  // If already subscribed, show thank you
+  if (localStorage.getItem('bz-subscribed')) {
+    subForm.style.display = 'none';
+    subStatus.textContent = 'You\'re subscribed.';
+    subStatus.style.color = 'var(--text-muted)';
+  }
+</script>
+
 <style>
   .footer {
     border-top: 1px solid var(--border);
-    padding: 2rem 1.25rem;
+    padding: 2.5rem 1.25rem 2rem;
     text-align: center;
   }
 
@@ -21,27 +81,71 @@ const year = new Date().getFullYear();
     margin: 0 auto;
   }
 
-  .footer-tagline {
-    font-size: 0.875rem;
+  .footer-subscribe {
+    margin-bottom: 1.5rem;
+  }
+
+  .footer-subscribe-text {
+    font-family: var(--font-body);
+    font-size: 0.9375rem;
     color: var(--text-secondary);
-    margin-bottom: 1rem;
+    margin-bottom: 0.75rem;
   }
 
-  .footer-links {
+  .footer-subscribe-form {
     display: flex;
-    justify-content: center;
-    gap: 1.5rem;
-    margin-bottom: 1rem;
+    gap: 0.5rem;
+    max-width: 360px;
+    margin: 0 auto;
   }
 
-  .footer-links a {
-    font-size: 0.8125rem;
-    color: var(--text-muted);
-    transition: color 0.2s;
-  }
-
-  .footer-links a:hover {
+  .footer-subscribe-input {
+    flex: 1;
+    font-family: var(--font-ui);
+    font-size: 0.875rem;
     color: var(--text-primary);
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 0.625rem 0.875rem;
+    min-width: 0;
+  }
+
+  .footer-subscribe-input::placeholder {
+    color: var(--text-muted);
+  }
+
+  .footer-subscribe-input:focus {
+    outline: none;
+    border-color: var(--accent);
+  }
+
+  .footer-subscribe-btn {
+    font-family: var(--font-ui);
+    font-size: 0.8125rem;
+    font-weight: 500;
+    color: #fff;
+    background: var(--accent);
+    border: none;
+    border-radius: 6px;
+    padding: 0.625rem 1rem;
+    white-space: nowrap;
+    transition: opacity 0.2s;
+  }
+
+  .footer-subscribe-btn:hover {
+    opacity: 0.9;
+  }
+
+  .footer-subscribe-btn:disabled {
+    opacity: 0.5;
+  }
+
+  .footer-subscribe-status {
+    font-family: var(--font-ui);
+    font-size: 0.8125rem;
+    margin-top: 0.5rem;
+    min-height: 1.25rem;
   }
 
   .footer-copy {
