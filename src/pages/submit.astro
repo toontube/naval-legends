@@ -8,8 +8,8 @@ import SEOHead from '../components/SEOHead.astro';
 <BaseLayout>
   <SEOHead
     slot="head"
-    title="Submit a Story | Naval Legends"
-    description="Know an incredible naval history story? Share it with us. The best submissions become full articles on Naval Legends."
+    title="Submit a Story | Bravo Zulu"
+    description="Know an incredible naval history story? Share it with us. The best submissions become full articles on Bravo Zulu."
   />
 
   <Navigation showThemeToggle />
@@ -207,11 +207,11 @@ import SEOHead from '../components/SEOHead.astro';
       }
     } catch {
       // Fallback: open mailto with the form data
-      const subject = encodeURIComponent(`Naval Legends Submission: ${data.subject}`);
+      const subject = encodeURIComponent(`Bravo Zulu Submission: ${data.subject}`);
       const body = encodeURIComponent(
         `From: ${data.name || 'Anonymous'}\nEmail: ${data.email || 'N/A'}\n\nHook: ${data.hook}\n\nStory:\n${data.story}\n\nSources:\n${data.sources || 'None provided'}`
       );
-      window.location.href = `mailto:stories@navallegends.co?subject=${subject}&body=${body}`;
+      window.location.href = `mailto:stories@bravozulu.co?subject=${subject}&body=${body}`;
       status.textContent = 'Opening your email client as fallback. Paste and send!';
       status.className = 'submit-status success';
     }

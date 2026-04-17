@@ -1,8 +1,8 @@
-# Naval Legends
+# Bravo Zulu
 
 Naval history content site with swipeable daily story cards and long-form articles. Built with Astro, React, and Motion.
 
-**Domain:** navallegends.co
+**Name origin:** "Bravo Zulu" is the NATO signal flag code for "BZ" — meaning "well done."
 
 ## Setup
 
