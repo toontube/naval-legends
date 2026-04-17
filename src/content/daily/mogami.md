@@ -3,6 +3,6 @@ hook: "British intelligence looked at Japan's new cruisers and said: 'They must 
 year: 1935
 ship: Mogami
 image: /images/mogami.jpg
-linkedStory: placeholder
+linkedStory: mogami-cardboard-cruiser
 order: 6
 ---

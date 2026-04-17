@@ -3,6 +3,6 @@ hook: "This cruiser was so top-heavy the Navy pulled off her catapults, restrict
 year: 1943
 ship: Cleveland-class
 image: /images/cleveland-class.jpg
-linkedStory: placeholder
+linkedStory: cleveland-class-top-heavy
 order: 8
 ---

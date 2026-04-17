@@ -3,6 +3,6 @@ hook: "Hitler renamed this ship because he was afraid of the headline 'Germany s
 year: 1940
 ship: Deutschland
 image: /images/deutschland-lutzow.jpg
-linkedStory: placeholder
+linkedStory: deutschland-renamed
 order: 4
 ---

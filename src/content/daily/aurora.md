@@ -3,6 +3,6 @@ hook: "Russia's own fleet accidentally opened fire on their own cruiser. Then co
 year: 1904
 ship: Aurora
 image: /images/aurora.jpg
-linkedStory: placeholder
+linkedStory: aurora-friendly-fire
 order: 7
 ---
