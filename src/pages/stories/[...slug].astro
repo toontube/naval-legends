@@ -37,6 +37,17 @@ const dateStr = story.data.date.toLocaleDateString('en-US', {
     image={story.data.image}
     type="article"
   />
+  <script slot="head" type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": story.data.title,
+    "description": story.data.summary,
+    "image": story.data.image ? `https://brvzulu.com${story.data.image}` : undefined,
+    "datePublished": story.data.date.toISOString(),
+    "author": { "@type": "Organization", "name": "Bravo Zulu" },
+    "publisher": { "@type": "Organization", "name": "Bravo Zulu", "url": "https://brvzulu.com" },
+    "mainEntityOfPage": `https://brvzulu.com/stories/${story.data.slug}`,
+  })} />
 
   <Navigation active="stories" showThemeToggle />
 
