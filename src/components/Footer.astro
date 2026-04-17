@@ -36,29 +36,27 @@ const year = new Date().getFullYear();
     subBtn.textContent = '...';
 
     var gtag = window.gtag || function(){};
-    gtag('event', 'subscribe', { email_domain: email.split('@')[1] });
+    gtag('event', 'subscribe', { email_domain: email.split('@')[1], location: 'footer' });
 
-    // Store in localStorage to avoid showing form again
-    localStorage.setItem('bz-subscribed', email);
-
-    // Send to Google Sheet via Apps Script
-    var sheetUrl = 'https://script.google.com/macros/s/AKfycbyPlaceholder/exec';
-    fetch(sheetUrl, {
+    fetch('/api/subscribe', {
       method: 'POST',
-      mode: 'no-cors',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ email: email, source: window.location.pathname, date: new Date().toISOString() })
-    }).catch(function(){});
-
-    // Also send via mailto as backup
-    window.location.href = 'mailto:max@mozuma.co?subject=' +
-      encodeURIComponent('BZ Subscribe: ' + email) +
-      '&body=' + encodeURIComponent('New subscriber: ' + email + '\nPage: ' + window.location.href);
-
-    subStatus.textContent = 'Opening email to confirm. We\'ll add you.';
-    subStatus.style.color = '#22c55e';
-    subBtn.disabled = false;
-    subBtn.textContent = 'Subscribe';
+      body: JSON.stringify({ email: email, source: 'footer' })
+    }).then(function(r) {
+      if (r.ok) {
+        localStorage.setItem('bz-subscribed', email);
+        subForm.style.display = 'none';
+        subStatus.textContent = 'You\'re in. We\'ll send you new stories.';
+        subStatus.style.color = '#22c55e';
+      } else {
+        throw new Error();
+      }
+    }).catch(function() {
+      subStatus.textContent = 'Something went wrong. Try again.';
+      subStatus.style.color = '#ef4444';
+      subBtn.disabled = false;
+      subBtn.textContent = 'Subscribe';
+    });
   });
 
   // If already subscribed, show thank you

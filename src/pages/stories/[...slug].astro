@@ -392,15 +392,27 @@ const dateStr = story.data.date.toLocaleDateString('en-US', {
     artSubForm?.addEventListener('submit', (e) => {
       e.preventDefault();
       const email = (document.getElementById('article-subscribe-email') as HTMLInputElement).value;
+      const btn = document.getElementById('article-subscribe-btn') as HTMLButtonElement;
+      btn.disabled = true;
+      btn.textContent = '...';
+
       (window as any).gtag?.('event', 'subscribe', { email_domain: email.split('@')[1], location: 'article' });
-      localStorage.setItem('bz-subscribed', email);
 
-      window.location.href = 'mailto:max@mozuma.co?subject=' +
-        encodeURIComponent('BZ Subscribe: ' + email) +
-        '&body=' + encodeURIComponent('New subscriber: ' + email + '\nFrom article: ' + window.location.href);
-
-      artSubStatus.textContent = 'Opening email to confirm.';
-      artSubStatus.style.color = '#22c55e';
+      fetch('/api/subscribe', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email, source: 'article:' + slug })
+      }).then((r) => {
+        if (r.ok) {
+          localStorage.setItem('bz-subscribed', email);
+          artSubBlock.innerHTML = '<p class="article-subscribe-text" style="color:#22c55e;margin:0">You\'re in. We\'ll send you new stories.</p>';
+        } else { throw new Error(); }
+      }).catch(() => {
+        artSubStatus.textContent = 'Something went wrong. Try again.';
+        artSubStatus.style.color = '#ef4444';
+        btn.disabled = false;
+        btn.textContent = 'Subscribe';
+      });
     });
   }
 </script>
