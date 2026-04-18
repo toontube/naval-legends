@@ -6,6 +6,13 @@ const daily = defineCollection({
   schema: z.object({
     hook: z.string(),
     reveal: z.string(),
+    specs: z.object({
+      type: z.string(),
+      displacement: z.string(),
+      armament: z.string(),
+      speed: z.string(),
+      built: z.string(),
+    }).optional(),
     year: z.number(),
     ship: z.string(),
     image: z.string().optional(),

@@ -24,6 +24,7 @@ export default function SwipeCards({ cards }: SwipeCardsProps) {
   const [index, setIndex] = useState(0);
   const [exitX, setExitX] = useState(0);
   const [hasInteracted, setHasInteracted] = useState(false);
+  const [factsLearned, setFactsLearned] = useState(0);
 
   const current = cards[index];
   const next = cards[index + 1];
@@ -74,7 +75,9 @@ export default function SwipeCards({ cards }: SwipeCardsProps) {
     return (
       <div className="swipe-container">
         <div className="swipe-end">
-          <p className="swipe-end-label">That's today's batch</p>
+          {factsLearned > 0 && (
+            <p className="swipe-end-count">{factsLearned} {factsLearned === 1 ? 'fact' : 'facts'} learned today</p>
+          )}
           <h2 className="swipe-end-heading">Got a good one?</h2>
           <p className="swipe-end-text">
             If you know a ship story that belongs here, send it over.
@@ -98,10 +101,14 @@ export default function SwipeCards({ cards }: SwipeCardsProps) {
 
   return (
     <div className="swipe-container">
-      {/* "Today's Story" badge — only on first card */}
-      {isFirst && !hasInteracted && (
+      {/* Facts counter or Today's badge */}
+      {factsLearned > 0 ? (
+        <div className="swipe-facts-counter">
+          {factsLearned} {factsLearned === 1 ? 'fact' : 'facts'} learned
+        </div>
+      ) : isFirst && !hasInteracted ? (
         <div className="swipe-badge">Today's Stories</div>
-      )}
+      ) : null}
 
       {/* Next card (behind) */}
       {next && (
@@ -122,6 +129,7 @@ export default function SwipeCards({ cards }: SwipeCardsProps) {
             else goPrev();
           }}
           onDragStart={markInteracted}
+          onReveal={() => setFactsLearned((n) => n + 1)}
           exitX={exitX}
         />
       </AnimatePresence>
@@ -178,12 +186,14 @@ function DraggableCard({
   isFirst,
   onSwipe,
   onDragStart,
+  onReveal,
   exitX,
 }: {
   card: CardData;
   isFirst: boolean;
   onSwipe: (direction: 'left' | 'right') => void;
   onDragStart: () => void;
+  onReveal: () => void;
   exitX: number;
 }) {
   const x = useMotionValue(0);
@@ -237,7 +247,7 @@ function DraggableCard({
       exit={{ x: exitX, opacity: 0, transition: { duration: 0.3 } }}
       transition={{ type: 'spring', stiffness: 300, damping: 25 }}
     >
-      <Card card={card} />
+      <Card card={card} onReveal={onReveal} />
     </motion.div>
   );
 }

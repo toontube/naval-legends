@@ -1,9 +1,18 @@
 import { useState, type CSSProperties } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 
+export interface CardSpecs {
+  type: string;
+  displacement: string;
+  armament: string;
+  speed: string;
+  built: string;
+}
+
 export interface CardData {
   hook: string;
   reveal: string;
+  specs?: CardSpecs;
   year: number;
   ship: string;
   image?: string;
@@ -26,19 +35,20 @@ const gradients: string[] = [
 interface CardProps {
   card: CardData;
   style?: CSSProperties;
+  onReveal?: () => void;
 }
 
-export function Card({ card, style }: CardProps) {
+export function Card({ card, style, onReveal }: CardProps) {
   const [revealed, setRevealed] = useState(false);
   const gradient = gradients[(card.order - 1) % gradients.length];
   const hasArticle = card.linkedStory !== 'placeholder';
   const storyUrl = hasArticle ? `/stories/${card.linkedStory}` : undefined;
 
   const handleTap = (e: React.MouseEvent | React.TouchEvent) => {
-    // Don't reveal if tapping a link/button
     if ((e.target as HTMLElement).closest('a, button')) return;
     if (!revealed) {
       setRevealed(true);
+      onReveal?.();
       (window as any).gtag?.('event', 'card_reveal', {
         card_ship: card.ship,
         card_year: card.year,
@@ -48,7 +58,10 @@ export function Card({ card, style }: CardProps) {
 
   const handleShare = (e: React.MouseEvent) => {
     e.stopPropagation();
-    const text = `"${card.hook}"\n\n${card.reveal}`;
+    const specsLine = card.specs
+      ? `\n${card.specs.type} · ${card.specs.displacement} · ${card.specs.armament} · ${card.specs.speed}`
+      : '';
+    const text = `"${card.hook}"\n\n${card.reveal}${specsLine}`;
     const url = hasArticle
       ? `https://brvzulu.com/stories/${card.linkedStory}`
       : 'https://brvzulu.com';
@@ -76,7 +89,7 @@ export function Card({ card, style }: CardProps) {
           className="card-bg"
           style={{
             backgroundImage: `url(${card.image})`,
-            opacity: revealed ? 0.15 : 0.3,
+            opacity: revealed ? 0.12 : 0.3,
           }}
         />
       )}
@@ -98,7 +111,28 @@ export function Card({ card, style }: CardProps) {
               transition={{ duration: 0.3, ease: 'easeOut' }}
             >
               <p className="card-reveal-text">{card.reveal}</p>
-              <p className="card-reveal-ship">{card.ship}, {card.year}</p>
+
+              {card.specs && (
+                <div className="card-specs">
+                  <span className="card-spec">
+                    <span className="card-spec-label">Type</span>
+                    <span className="card-spec-value">{card.specs.type}</span>
+                  </span>
+                  <span className="card-spec">
+                    <span className="card-spec-label">Disp.</span>
+                    <span className="card-spec-value">{card.specs.displacement}</span>
+                  </span>
+                  <span className="card-spec">
+                    <span className="card-spec-label">Guns</span>
+                    <span className="card-spec-value">{card.specs.armament}</span>
+                  </span>
+                  <span className="card-spec">
+                    <span className="card-spec-label">Speed</span>
+                    <span className="card-spec-value">{card.specs.speed}</span>
+                  </span>
+                </div>
+              )}
+
               <div className="card-reveal-actions">
                 {hasArticle && (
                   <a
