@@ -10,6 +10,8 @@ interface Props {
 const { title, description, image = '/images/og-default.jpg', url, type = 'website' } = Astro.props;
 const canonicalURL = url || Astro.url.href;
 const siteName = 'Bravo Zulu';
+const siteOrigin = 'https://brvzulu.com';
+const absoluteImage = image?.startsWith('http') ? image : `${siteOrigin}${image}`;
 ---
 
 <title>{title}</title>
@@ -20,7 +22,7 @@ const siteName = 'Bravo Zulu';
 <meta property="og:type" content={type} />
 <meta property="og:title" content={title} />
 <meta property="og:description" content={description} />
-<meta property="og:image" content={image} />
+<meta property="og:image" content={absoluteImage} />
 <meta property="og:url" content={canonicalURL} />
 <meta property="og:site_name" content={siteName} />
 
@@ -28,4 +30,4 @@ const siteName = 'Bravo Zulu';
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content={title} />
 <meta name="twitter:description" content={description} />
-<meta name="twitter:image" content={image} />
+<meta name="twitter:image" content={absoluteImage} />

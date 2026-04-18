@@ -112,27 +112,6 @@ export function Card({ card, style, onReveal }: CardProps) {
             >
               <p className="card-reveal-text">{card.reveal}</p>
 
-              {card.specs && (
-                <div className="card-specs">
-                  <span className="card-spec">
-                    <span className="card-spec-label">Type</span>
-                    <span className="card-spec-value">{card.specs.type}</span>
-                  </span>
-                  <span className="card-spec">
-                    <span className="card-spec-label">Disp.</span>
-                    <span className="card-spec-value">{card.specs.displacement}</span>
-                  </span>
-                  <span className="card-spec">
-                    <span className="card-spec-label">Guns</span>
-                    <span className="card-spec-value">{card.specs.armament}</span>
-                  </span>
-                  <span className="card-spec">
-                    <span className="card-spec-label">Speed</span>
-                    <span className="card-spec-value">{card.specs.speed}</span>
-                  </span>
-                </div>
-              )}
-
               <div className="card-reveal-actions">
                 {hasArticle && (
                   <a
