@@ -5,6 +5,7 @@ const daily = defineCollection({
   loader: glob({ pattern: '**/*.md', base: './src/content/daily' }),
   schema: z.object({
     hook: z.string(),
+    reveal: z.string(),
     year: z.number(),
     ship: z.string(),
     image: z.string().optional(),
