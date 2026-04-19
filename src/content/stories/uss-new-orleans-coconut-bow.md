@@ -12,6 +12,11 @@ At 23:27 on November 30, 1942, a Japanese Type 93 torpedo hit USS New Orleans fo
 
 The torpedo detonated the forward magazines. The explosion ripped off 150 feet of hull. That's roughly a third of the ship. Turret No. 1, the forward fire room, crew quarters, storage compartments, the chain locker — gone. One hundred and eighty-two men died in the blast.
 
+<figure>
+  <img src="/images/new-orleans-tulagi.jpg" alt="USS New Orleans arriving at Tulagi with her bow blown off, December 1, 1942" />
+  <figcaption>USS New Orleans arriving at Tulagi, December 1, 1942. The entire bow forward of turret No. 2 is gone. U.S. Navy photograph, National Archives.</figcaption>
+</figure>
+
 The severed bow didn't sink immediately. It swung alongside the ship, punching holes in the port side as the New Orleans kept moving. The crew had to back engines to separate from their own wreckage. The bow scraped down the hull and disappeared into Iron Bottom Sound.
 
 The ship that remained was open to the sea. Seawater flooded compartments. The forward bulkhead was the only thing keeping the Pacific Ocean out of the rest of the hull. If it failed, the ship would go down with it.
@@ -21,6 +26,11 @@ It held.
 ## Tulagi
 
 New Orleans limped across the sound to Tulagi harbor, arriving on December 1. She was drawing 36 feet forward — 10 feet deeper than normal — and listing to port. The crew anchored her in a concealed cove to hide from Japanese aircraft.
+
+<figure>
+  <img src="/images/new-orleans-camouflaged.jpg" alt="USS New Orleans camouflaged with vegetation at Tulagi, December 1942" />
+  <figcaption>New Orleans camouflaged with netting and cut vegetation at Tulagi to hide from Japanese aircraft during repairs. U.S. Navy photograph, National Archives (80-G-211215).</figcaption>
+</figure>
 
 For 11 days, the crew worked to make the ship seaworthy. They had no drydock. No shipyard. No steel. What they had were coconut trees.
 
@@ -37,6 +47,16 @@ She couldn't sail bow-forward. The coconut log bulkhead would take the full forc
 Think about that. A 9,950-ton heavy cruiser, 588 feet long, designed to make 32 knots, crawling backwards across the Coral Sea at 5 knots. The helmsman steering by looking over his shoulder. For weeks.
 
 She arrived in Sydney on December 24. Christmas Eve. The Australians in the harbor stared at the ship that was sailing the wrong way with a flat wooden wall where her bow should have been.
+
+<figure>
+  <img src="/images/new-orleans-bow-damage.jpg" alt="Close-up of the damage to USS New Orleans showing turret No. 2 and where 150 feet of bow was torn away" />
+  <figcaption>Close-up of the damage. Turret No. 2 is now the forward edge of the ship. Everything before it — 150 feet — is gone. U.S. Navy photograph, National Archives.</figcaption>
+</figure>
+
+<figure>
+  <img src="/images/new-orleans-false-bow.jpg" alt="The temporary steel stub bow being fitted to USS New Orleans in Sydney, Australia" />
+  <figcaption>The temporary steel stub bow being fitted in Sydney, January 1943. This replaced the coconut log plug for the voyage to Puget Sound. Australian War Memorial photograph (305924).</figcaption>
+</figure>
 
 In Sydney, workers installed a temporary steel stub bow — enough to get her across the Pacific to a real shipyard. She sailed to Puget Sound Navy Yard in Bremerton, Washington, where a proper bow was finally built and fitted. New Orleans returned to service in October 1943 and fought in every major Pacific campaign from the Gilbert Islands to Okinawa.
 
