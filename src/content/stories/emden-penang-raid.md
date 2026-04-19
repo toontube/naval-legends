@@ -42,9 +42,9 @@ Eighty-two dead. A hundred and forty-three wounded. Malay fishermen pulled survi
 
 On the way out, the Emden sank the French destroyer Mousquet too, then stopped to pick up 36 French survivors before leaving. The whole raid took less than an hour.
 
-## The court-martial
+> Cherkassov survived from the comfort of the E&O Hotel, watching through windows that faced the same water where his crew was drowning.
 
-Cherkassov survived from the comfort of the E&O Hotel, watching through windows that faced the water where his crew was drowning.
+## The court-martial
 
 The Russian Navy charged him with gross negligence. No lookouts, magazine keys ashore, one boiler working, most of the crew on leave, Jerram's warnings ignored. He got three and a half years in prison, stripped of rank, expelled from the Navy. His deputy got eighteen months.
 

@@ -86,8 +86,59 @@ h1, h2, h3, h4 {
   margin: 0 auto;
 }
 
+/* Drop cap — first letter of first paragraph */
+.prose > p:first-of-type::first-letter {
+  font-family: var(--font-display);
+  font-size: 3.5em;
+  float: left;
+  line-height: 0.8;
+  padding-right: 0.08em;
+  margin-top: 0.05em;
+  color: var(--text-primary);
+}
+
 .prose p {
   margin-bottom: 1.5em;
+}
+
+/* Scroll reveal animation */
+.prose > p,
+.prose > h2,
+.prose > h3,
+.prose > figure,
+.prose > blockquote {
+  opacity: 0;
+  transform: translateY(12px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.prose > .revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Pull quote — use blockquote with a specific class or just style blockquotes bigger */
+.prose > blockquote {
+  border-left: none;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  padding: 1.25em 0;
+  margin: 2em 0;
+  text-align: center;
+  font-family: var(--font-display);
+  font-size: 1.375rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.35;
+  color: var(--text-primary);
+}
+
+@media (min-width: 640px) {
+  .prose > blockquote {
+    font-size: 1.5rem;
+    margin: 2.5em -1em;
+    padding: 1.5em 1em;
+  }
 }
 
 .prose h2 {

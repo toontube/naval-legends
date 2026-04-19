@@ -342,6 +342,27 @@ const dateStr = story.data.date.toLocaleDateString('en-US', {
 </style>
 
 <script>
+  // Scroll reveal — fade in paragraphs as they enter viewport
+  const revealElements = document.querySelectorAll('.prose > p, .prose > h2, .prose > h3, .prose > figure, .prose > blockquote');
+
+  // Reveal first 3 elements immediately (above fold)
+  revealElements.forEach((el, i) => {
+    if (i < 3) el.classList.add('revealed');
+  });
+
+  const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('revealed');
+        revealObserver.unobserve(entry.target);
+      }
+    });
+  }, { rootMargin: '0px 0px -60px 0px', threshold: 0.1 });
+
+  revealElements.forEach((el, i) => {
+    if (i >= 3) revealObserver.observe(el);
+  });
+
   // Pretext CLS prevention
   async function measureArticle() {
     try {

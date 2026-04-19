@@ -55,6 +55,8 @@ But the families of the dead never stopped blaming him. He received hate mail fo
 
 On November 6, 1968, Captain McVay shot himself on his front porch. He was found holding a small toy sailor.
 
+> It took a twelve-year-old with a tape recorder to get the Navy to admit it was wrong.
+
 ## A twelve-year-old and a resolution
 
 In 1996, a twelve-year-old student in Pensacola, Florida, named Hunter Scott chose the USS Indianapolis for a school history project. He interviewed 150 survivors and compiled evidence that McVay had been made a scapegoat.

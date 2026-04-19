@@ -38,6 +38,8 @@ Sailors went ashore with axes and followed locals into the jungle. They felled c
 
 They welded steel plates where they could, shored up the bulkhead with timbers, and sealed everything they could reach. It was ugly. It needed to hold for 1,800 miles.
 
+> A 9,950-ton heavy cruiser, 588 feet long, designed to make 32 knots, crawling backwards across the Coral Sea at 5 knots. The helmsman steering by looking over his shoulder. For weeks.
+
 ## Backwards to Sydney
 
 On December 12, New Orleans left Tulagi, stern first.
