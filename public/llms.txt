@@ -1,0 +1,19 @@
+# Bravo Zulu
+
+> Bravo Zulu is a naval history research site publishing daily stories and in-depth articles about the world's warships. The name comes from the NATO signal flag code "BZ" meaning "well done." Each story starts with a surprising fact and goes deep into primary sources.
+
+## Articles
+
+- [The Captain Who Watched His Ship Sink From a Hotel Room](https://brvzulu.com/stories/emden-penang-raid): SMS Emden faked a British funnel, entered Penang harbor, and torpedoed the Russian cruiser Zhemchug. The Russian captain was at the Eastern & Oriental Hotel with a woman. 82 crew died. He got 3.5 years.
+- [The Cruiser That Sailed Backwards With a Bow Made of Coconut Logs](https://brvzulu.com/stories/uss-new-orleans-coconut-bow): A torpedo blew off 150 feet of USS New Orleans at Tassafaronga in 1942. The crew built a coconut log bow at Tulagi and sailed backwards 1,800 miles to Sydney. The severed bow was found at 675 meters in 2025.
+- [The Confederate Raider Who Captured 65 Ships and Sank in Front of French Tourists](https://brvzulu.com/stories/css-alabama-semmes): CSS Alabama spent 22 months capturing Union merchant ships. Her final battle off Cherbourg became a spectator event. Manet painted it 26 days later.
+- [The Ship That Almost Lost the Unknown Soldier to the Atlantic](https://brvzulu.com/stories/uss-olympia-unknown-soldier): In 1921, the casket wouldn't fit below deck. They lashed it to the bow. USS Olympia hit a Category 4 hurricane and rolled 39 degrees.
+- [The German Warship That Survived Two Nuclear Bombs and Sank From a Leak](https://brvzulu.com/stories/prinz-eugen-bikini): Prinz Eugen survived two atomic tests at Bikini Atoll but became too radioactive to repair. She sank from a small leak five months later. Her stern still sticks out at Kwajalein.
+
+## Topics Covered
+
+Naval history, warship battles, WWII Pacific theater, WWI naval warfare, commerce raiders, naval engineering failures, ship design flaws, nuclear testing on warships, Cold War naval history, Battle of Tassafaronga, Battle of Penang 1914, Battle of Cherbourg 1864, Operation Crossroads Bikini Atoll, Iron Bottom Sound, treaty cruisers, pocket battleships.
+
+## Contact
+
+stories@bravozulu.co

@@ -5,9 +5,10 @@ interface Props {
   image?: string;
   url?: string;
   type?: string;
+  keywords?: string;
 }
 
-const { title, description, image = '/images/og-default.jpg', url, type = 'website' } = Astro.props;
+const { title, description, image = '/images/og-default.jpg', url, type = 'website', keywords } = Astro.props;
 const canonicalURL = url || Astro.url.href;
 const siteName = 'Bravo Zulu';
 const siteOrigin = 'https://brvzulu.com';
@@ -17,6 +18,8 @@ const absoluteImage = image?.startsWith('http') ? image : `${siteOrigin}${image}
 <title>{title}</title>
 <meta name="description" content={description} />
 <link rel="canonical" href={canonicalURL} />
+<meta name="author" content="Bravo Zulu" />
+{keywords && <meta name="keywords" content={keywords} />}
 
 <!-- Open Graph -->
 <meta property="og:type" content={type} />

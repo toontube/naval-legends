@@ -17,6 +17,44 @@ const sorted = dailyCards
     title="Bravo Zulu | Daily Naval History Stories"
     description="Swipe through daily naval history stories. Short hooks, deep articles. The world's warships, one story at a time."
   />
+  <script slot="head" type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Bravo Zulu",
+    "url": "https://brvzulu.com",
+    "description": "Daily naval history stories and in-depth articles about the world's warships. Each story starts with a surprising fact.",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Bravo Zulu",
+      "url": "https://brvzulu.com"
+    }
+  })} />
+  <script slot="head" type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What happened to USS New Orleans in 1942?",
+        "acceptedAnswer": { "@type": "Answer", "text": "USS New Orleans was hit by a torpedo at the Battle of Tassafaronga, blowing off 150 feet of bow and killing 182 sailors. The crew built a temporary bow from coconut logs at Tulagi and sailed backwards 1,800 miles to Sydney. The severed bow was found at 675 meters in 2025." }
+      },
+      {
+        "@type": "Question",
+        "name": "What was the Battle of Penang 1914?",
+        "acceptedAnswer": { "@type": "Answer", "text": "SMS Emden entered Penang harbor with a fake fourth funnel, torpedoed the Russian cruiser Zhemchug, and killed 82 crew. The Russian captain was at the Eastern & Oriental Hotel. He was sentenced to 3.5 years." }
+      },
+      {
+        "@type": "Question",
+        "name": "Did Prinz Eugen survive nuclear bombs?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Yes. Prinz Eugen survived both atomic tests at Bikini Atoll in 1946 but became too radioactive to repair. She capsized from a small leak at Kwajalein. Her stern still sticks out of the water." }
+      },
+      {
+        "@type": "Question",
+        "name": "What does Bravo Zulu mean in the Navy?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Bravo Zulu (BZ) is the NATO signal flag code meaning 'well done.' It is the highest compliment one warship can signal to another." }
+      }
+    ]
+  })} />
 
   <Navigation active="daily" />
 

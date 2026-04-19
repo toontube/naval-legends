@@ -36,6 +36,7 @@ const dateStr = story.data.date.toLocaleDateString('en-US', {
     description={story.data.summary}
     image={story.data.image}
     type="article"
+    keywords={story.data.tags.join(', ') + ', naval history, warships, bravo zulu'}
   />
   <script slot="head" type="application/ld+json" set:html={JSON.stringify({
     "@context": "https://schema.org",
@@ -62,6 +63,7 @@ const dateStr = story.data.date.toLocaleDateString('en-US', {
 
     <header class="article-header">
       <h1 class="article-title">{story.data.title}</h1>
+      <p class="article-summary">{story.data.summary}</p>
       <div class="article-meta">
         <time datetime={story.data.date.toISOString().split('T')[0]}>{dateStr}</time>
         <span>{story.data.readingTime} min read</span>
@@ -166,7 +168,15 @@ const dateStr = story.data.date.toLocaleDateString('en-US', {
   .article-title {
     font-size: clamp(1.75rem, 5vw, 2.5rem);
     line-height: 1.2;
-    margin-bottom: 1rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .article-summary {
+    font-family: var(--font-body);
+    font-size: 1.0625rem;
+    line-height: 1.5;
+    color: var(--text-secondary);
+    margin-bottom: 0.75rem;
   }
 
   .article-meta {
