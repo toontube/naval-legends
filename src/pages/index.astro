@@ -2,7 +2,7 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 import Navigation from '../components/Navigation.astro';
 import SEOHead from '../components/SEOHead.astro';
-import SwipeCards from '../components/SwipeCards';
+import DailyCard from '../components/DailyCard';
 import { getCollection } from 'astro:content';
 
 const dailyCards = await getCollection('daily');
@@ -14,8 +14,8 @@ const sorted = dailyCards
 <BaseLayout class="home">
   <SEOHead
     slot="head"
-    title="Bravo Zulu | Daily Naval History Stories"
-    description="Swipe through daily naval history stories. Short hooks, deep articles. The world's warships, one story at a time."
+    title="Bravo Zulu | Daily Naval History"
+    description="One naval history fact per day. Tap to learn. Share to brag. Come back tomorrow for the next one."
   />
   <script slot="head" type="application/ld+json" set:html={JSON.stringify({
     "@context": "https://schema.org",
@@ -59,74 +59,87 @@ const sorted = dailyCards
   <Navigation active="daily" />
 
   <main class="home-main">
-    <SwipeCards client:idle cards={sorted} />
+    <DailyCard client:idle cards={sorted} />
   </main>
 </BaseLayout>
 
-<style>
-  .home-main {
-    position: fixed;
-    top: var(--nav-height);
-    left: 0;
-    right: 0;
-    bottom: 0;
-    overflow: hidden;
-  }
-</style>
-
 <style is:global>
   body.home {
-    overflow: hidden;
+    overflow-y: auto;
   }
 
-  .swipe-container {
-    position: relative;
-    width: 100%;
-    height: 100%;
+  .home-main {
+    padding-top: var(--nav-height);
+    min-height: 100dvh;
+  }
+
+
+  /* Daily card container */
+  .daily-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 1.5rem 1.25rem 3rem;
+  }
+
+  .daily-header {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    justify-content: center;
-    overflow: hidden;
+    margin-bottom: 1.25rem;
   }
 
-  .swipe-card {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    touch-action: none;
+  .daily-day {
+    font-family: var(--font-ui);
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--text-primary);
+  }
+
+  .daily-streak {
+    font-family: var(--font-ui);
+    font-size: 0.75rem;
+    color: var(--accent);
+    background: rgba(59, 130, 246, 0.1);
+    padding: 0.2rem 0.625rem;
+    border-radius: 100px;
+  }
+
+  /* Today's card */
+  .daily-card-wrap {
+    cursor: pointer;
     user-select: none;
     -webkit-user-select: none;
   }
 
-  .swipe-card--behind {
-    transform: scale(0.95);
-    filter: brightness(0.7);
-  }
-
-  .card {
+  .daily-card {
     position: relative;
-    width: 100%;
-    height: 100%;
+    border-radius: 12px;
+    overflow: hidden;
+    min-height: 380px;
     display: flex;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
+    background: linear-gradient(135deg, #0c1929 0%, #1a1a2e 50%, #16213e 100%);
   }
 
-  .card-bg {
+  @media (min-width: 640px) {
+    .daily-card {
+      min-height: 440px;
+    }
+  }
+
+  .daily-card-bg {
     position: absolute;
     inset: 0;
     background-size: cover;
     background-position: center;
-    opacity: 0.3;
   }
 
-  .card-content {
+  .daily-card-content {
     position: relative;
     z-index: 1;
     text-align: center;
-    padding: 1.5rem 1.25rem 4rem;
-    max-width: 600px;
+    padding: 2rem 1.5rem;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -134,429 +147,176 @@ const sorted = dailyCards
     gap: 0.75rem;
   }
 
-  @media (min-width: 640px) {
-    .card-content {
-      padding: 2rem 2rem 4rem;
-      gap: 1rem;
-    }
-  }
-
-  .card-year {
+  .daily-year {
     font-family: var(--font-ui);
     font-size: 0.75rem;
     font-weight: 500;
     letter-spacing: 0.1em;
     text-transform: uppercase;
-    color: var(--text-muted);
+    color: rgba(255, 255, 255, 0.45);
     background: rgba(255, 255, 255, 0.08);
     padding: 0.2rem 0.625rem;
     border-radius: 100px;
   }
 
-  @media (min-width: 640px) {
-    .card-year {
-      font-size: 0.8125rem;
-      padding: 0.25rem 0.75rem;
-    }
-  }
-
-  .card-hook {
+  .daily-hook {
     font-family: var(--font-display);
-    font-size: clamp(1.25rem, 4vw, 2.25rem);
+    font-size: clamp(1.25rem, 4vw, 1.75rem);
     font-weight: 700;
-    line-height: 1.25;
+    line-height: 1.3;
     color: #fff;
-    max-width: 90%;
+    max-width: 95%;
   }
 
-  @media (max-width: 380px) {
-    .card-hook {
-      font-size: 1.125rem;
-      line-height: 1.3;
-    }
-  }
-
-  .card-ship {
+  .daily-ship {
     font-family: var(--font-ui);
     font-size: 0.8125rem;
-    color: var(--text-secondary);
+    color: rgba(255, 255, 255, 0.5);
     font-weight: 500;
   }
 
-  @media (min-width: 640px) {
-    .card-ship {
-      font-size: 0.9375rem;
-    }
-  }
-
-  /* Tap hint */
-  .card-tap-hint {
+  .daily-tap {
     font-family: var(--font-ui);
     font-size: 0.75rem;
     color: rgba(255, 255, 255, 0.3);
-    margin-top: 1rem;
-    animation: tap-pulse 2s ease-in-out infinite;
+    margin-top: 0.5rem;
+    animation: daily-pulse 2s ease-in-out infinite;
   }
 
-  @keyframes tap-pulse {
+  @keyframes daily-pulse {
     0%, 100% { opacity: 0.3; }
     50% { opacity: 0.6; }
   }
 
   /* Revealed state */
-  .card-revealed {
+  .daily-revealed {
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 0.875rem;
-    max-width: 520px;
+    gap: 1rem;
   }
 
-  .card-reveal-text {
+  .daily-reveal-text {
     font-family: var(--font-body);
-    font-size: 0.875rem;
+    font-size: 0.9375rem;
     line-height: 1.6;
     color: rgba(255, 255, 255, 0.9);
   }
 
-  @media (min-width: 640px) {
-    .card-reveal-text {
-      font-size: 1rem;
-      line-height: 1.65;
-    }
-  }
-
-  /* Spec strip */
-  .card-specs {
+  .daily-actions {
     display: flex;
-    gap: 1px;
-    background: rgba(255, 255, 255, 0.08);
-    border-radius: 6px;
-    overflow: hidden;
-    width: 100%;
-    max-width: 420px;
-  }
-
-  .card-spec {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    padding: 0.375rem 0.25rem;
-    background: rgba(255, 255, 255, 0.04);
-    min-width: 0;
-  }
-
-  .card-spec-label {
-    font-family: var(--font-ui);
-    font-size: 0.5625rem;
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
-    color: rgba(255, 255, 255, 0.35);
-  }
-
-  .card-spec-value {
-    font-family: var(--font-ui);
-    font-size: 0.6875rem;
-    font-weight: 500;
-    color: rgba(255, 255, 255, 0.75);
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-  }
-
-  @media (min-width: 640px) {
-    .card-spec {
-      padding: 0.5rem 0.375rem;
-    }
-    .card-spec-label {
-      font-size: 0.625rem;
-    }
-    .card-spec-value {
-      font-size: 0.75rem;
-    }
-  }
-
-  /* Facts counter */
-  .swipe-facts-counter {
-    position: absolute;
-    top: 0.875rem;
-    left: 50%;
-    transform: translateX(-50%);
-    font-family: var(--font-ui);
-    font-size: 0.6875rem;
-    font-weight: 500;
-    color: rgba(255, 255, 255, 0.6);
-    background: rgba(59, 130, 246, 0.15);
-    border: 1px solid rgba(59, 130, 246, 0.2);
-    padding: 0.25rem 0.75rem;
-    border-radius: 100px;
-    z-index: 20;
-  }
-
-  .swipe-end-count {
-    font-family: var(--font-ui);
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: var(--accent);
-    margin-bottom: 0.25rem;
-  }
-
-  .card-reveal-ship {
-    font-family: var(--font-ui);
-    font-size: 0.75rem;
-    color: var(--text-muted);
-    font-weight: 500;
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
-  }
-
-  .card-reveal-actions {
-    display: flex;
-    gap: 0.625rem;
-    margin-top: 0.25rem;
-  }
-
-  .card-btn {
-    display: inline-block;
-    font-family: var(--font-ui);
-    font-size: 0.8125rem;
-    font-weight: 500;
-    color: #fff;
-    border: 1px solid rgba(255, 255, 255, 0.25);
-    padding: 0.5rem 1.25rem;
-    border-radius: 100px;
-    transition: all 0.2s;
-    text-decoration: none;
-  }
-
-  .card-btn:hover {
-    background: rgba(255, 255, 255, 0.1);
-    border-color: rgba(255, 255, 255, 0.4);
-  }
-
-  .card-share-btn {
-    font-family: var(--font-ui);
-    font-size: 0.8125rem;
-    font-weight: 500;
-    color: rgba(255, 255, 255, 0.6);
-    border: 1px solid rgba(255, 255, 255, 0.12);
-    padding: 0.5rem 1.25rem;
-    border-radius: 100px;
-    transition: all 0.2s;
-    background: none;
-    cursor: pointer;
-  }
-
-  .card-share-btn:hover {
-    color: #fff;
-    border-color: rgba(255, 255, 255, 0.3);
-  }
-
-  .swipe-arrow {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 2.5rem;
-    color: rgba(255, 255, 255, 0.4);
-    z-index: 10;
-    padding: 0.5rem;
-    transition: color 0.2s;
-    line-height: 1;
-  }
-
-  .swipe-arrow:hover:not(:disabled) {
-    color: rgba(255, 255, 255, 0.8);
-  }
-
-  .swipe-arrow--left {
-    left: 0.75rem;
-  }
-
-  .swipe-arrow--right {
-    right: 0.75rem;
-  }
-
-  /* Hide arrows on mobile */
-  @media (max-width: 768px) {
-    .swipe-arrow {
-      display: none;
-    }
-  }
-
-  /* "Today's Stories" badge */
-  .swipe-badge {
-    position: absolute;
-    top: 1rem;
-    left: 50%;
-    transform: translateX(-50%);
-    font-family: var(--font-ui);
-    font-size: 0.6875rem;
-    font-weight: 500;
-    text-transform: uppercase;
-    letter-spacing: 0.12em;
-    color: rgba(255, 255, 255, 0.5);
-    background: rgba(255, 255, 255, 0.08);
-    padding: 0.3rem 0.875rem;
-    border-radius: 100px;
-    z-index: 20;
-  }
-
-  /* Swipe hint */
-  .swipe-hint {
-    position: absolute;
-    bottom: 2.5rem;
-    left: 50%;
-    transform: translateX(-50%);
-    font-family: var(--font-ui);
-    font-size: 0.75rem;
-    color: rgba(255, 255, 255, 0.4);
-    z-index: 20;
-    display: flex;
-    align-items: center;
     gap: 0.5rem;
-    animation: swipe-hint-pulse 2s ease-in-out infinite;
   }
 
-  .swipe-hint-arrow {
-    font-size: 0.875rem;
-    animation: swipe-hint-slide 1.5s ease-in-out infinite;
-  }
-
-  .swipe-hint-arrow:first-child {
-    animation-name: swipe-hint-slide-left;
-  }
-
-  @keyframes swipe-hint-pulse {
-    0%, 100% { opacity: 0.4; }
-    50% { opacity: 0.8; }
-  }
-
-  @keyframes swipe-hint-slide {
-    0%, 100% { transform: translateX(0); }
-    50% { transform: translateX(4px); }
-  }
-
-  @keyframes swipe-hint-slide-left {
-    0%, 100% { transform: translateX(0); }
-    50% { transform: translateX(-4px); }
-  }
-
-  /* Progress dots */
-  .swipe-dots {
-    position: absolute;
-    bottom: 0.75rem;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    gap: 6px;
-    z-index: 20;
-  }
-
-  @media (min-width: 640px) {
-    .swipe-dots {
-      bottom: 1.25rem;
-      gap: 8px;
-    }
-  }
-
-  .swipe-dot {
-    width: 6px;
-    height: 6px;
-    border-radius: 50%;
-    background: rgba(255, 255, 255, 0.2);
-    transition: all 0.3s;
-  }
-
-  .swipe-dot--active {
-    background: #fff;
-    transform: scale(1.3);
-  }
-
-  .swipe-dot--seen {
-    background: rgba(255, 255, 255, 0.45);
-  }
-
-  /* End screen */
-  .swipe-end {
-    text-align: center;
-    padding: 2rem 1.5rem;
-    max-width: 440px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.75rem;
-  }
-
-  .swipe-end-label {
+  .daily-btn {
     font-family: var(--font-ui);
     font-size: 0.8125rem;
-    color: var(--text-muted);
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-  }
-
-  .swipe-end-heading {
-    font-family: var(--font-display);
-    font-size: clamp(1.375rem, 4vw, 1.75rem);
-    color: #fff;
-    line-height: 1.25;
-  }
-
-  .swipe-end-text {
-    font-family: var(--font-body);
-    font-size: 0.9375rem;
-    color: var(--text-secondary);
-    line-height: 1.5;
-  }
-
-  .swipe-end-actions {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.75rem;
-    margin-top: 0.5rem;
-  }
-
-  .swipe-end-btn {
-    display: inline-block;
-    font-family: var(--font-ui);
-    font-size: 0.9375rem;
     font-weight: 500;
-    color: #fff;
-    background: var(--accent);
-    padding: 0.75rem 1.75rem;
+    padding: 0.5rem 1.25rem;
     border-radius: 100px;
+    border: none;
+    cursor: pointer;
     text-decoration: none;
     transition: opacity 0.2s;
   }
 
-  .swipe-end-btn:hover {
-    opacity: 0.9;
+  .daily-btn:hover { opacity: 0.85; }
+
+  .daily-btn--primary {
+    color: #fff;
+    background: var(--accent);
   }
 
-  .swipe-end-link {
+  .daily-btn--share {
+    color: rgba(255, 255, 255, 0.6);
+    background: none;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+  }
+
+  .daily-btn--share:hover {
+    color: #fff;
+    border-color: rgba(255, 255, 255, 0.3);
+  }
+
+  /* Stats */
+  .daily-stats {
+    display: flex;
+    justify-content: space-between;
     font-family: var(--font-ui);
-    font-size: 0.875rem;
-    color: var(--text-secondary);
-    text-decoration: underline;
-    text-underline-offset: 2px;
-    transition: color 0.2s;
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    margin-top: 1rem;
+    padding: 0 0.25rem;
   }
 
-  .swipe-end-link:hover {
-    color: var(--text-primary);
+  /* Archive */
+  .daily-archive {
+    margin-top: 2.5rem;
   }
 
-  .swipe-end-restart {
+  .daily-archive-title {
     font-family: var(--font-ui);
     font-size: 0.8125rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
     color: var(--text-muted);
-    margin-top: 0.75rem;
-    transition: color 0.2s;
+    margin-bottom: 1rem;
   }
 
-  .swipe-end-restart:hover {
-    color: var(--text-secondary);
+  .daily-archive-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .daily-archive-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 1rem 1.25rem;
+    cursor: pointer;
+    transition: border-color 0.2s;
+  }
+
+  .daily-archive-card:hover {
+    border-color: var(--text-muted);
+  }
+
+  .daily-archive-year {
+    font-family: var(--font-ui);
+    font-size: 0.6875rem;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+  }
+
+  .daily-archive-hook {
+    font-family: var(--font-display);
+    font-size: 0.9375rem;
+    line-height: 1.3;
+    color: var(--text-primary);
+    margin: 0.375rem 0;
+  }
+
+  .daily-archive-ship {
+    font-family: var(--font-ui);
+    font-size: 0.75rem;
+    color: var(--text-muted);
+  }
+
+  .daily-browse-all {
+    display: block;
+    text-align: center;
+    font-family: var(--font-ui);
+    font-size: 0.8125rem;
+    color: var(--accent);
+    margin-top: 1.25rem;
+    text-decoration: none;
+  }
+
+  .daily-browse-all:hover {
+    text-decoration: underline;
   }
 </style>
