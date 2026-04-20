@@ -100,9 +100,13 @@ const dateStr = story.data.date.toLocaleDateString('en-US', {
       <section class="read-next">
         <h2 class="read-next-title">Read next</h2>
         <div class="read-next-grid">
-          <a href="https://www.kickstarter.com/projects/mozuma/naval-legends-cruisers?ref=ben9ea" target="_blank" rel="noopener" class="read-next-card">
-            <h3>Every cruiser was a compromise. Most of them almost didn't work.</h3>
-            <p>Too many guns on too little hull. 170 years of navies trying to cheat physics, cheat treaties, and build ships that wouldn't tip over.</p>
+          <a href="https://www.kickstarter.com/projects/mozuma/naval-legends-cruisers?ref=ben9ea" target="_blank" rel="noopener" class="read-next-card read-next-book">
+            <img src="/images/cruisers-book.png" alt="Naval Legends: Cruisers" class="read-next-book-img" />
+            <div>
+              <span class="read-next-book-label">The book</span>
+              <h3>Every cruiser was a compromise. Most of them almost didn't work.</h3>
+              <p>Too many guns on too little hull. 170 years of navies trying to cheat physics, cheat treaties, and build ships that wouldn't tip over.</p>
+            </div>
           </a>
           {otherStories.map((s) => (
             <a href={`/stories/${s.data.slug}`} class="read-next-card">
@@ -320,6 +324,37 @@ const dateStr = story.data.date.toLocaleDateString('en-US', {
     font-size: 0.875rem;
     color: var(--text-secondary);
     line-height: 1.4;
+  }
+
+  .read-next-book {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+  }
+
+  .read-next-book-img {
+    width: 100px;
+    height: auto;
+    border-radius: 4px;
+    flex-shrink: 0;
+    object-fit: cover;
+  }
+
+  .read-next-book-label {
+    display: inline-block;
+    font-family: var(--font-ui);
+    font-size: 0.6875rem;
+    font-weight: 500;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 0.25rem;
+  }
+
+  @media (max-width: 480px) {
+    .read-next-book-img {
+      width: 80px;
+    }
   }
 
   .article-cta {
