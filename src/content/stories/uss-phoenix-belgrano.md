@@ -12,6 +12,11 @@ On the morning of December 7, 1941, USS Phoenix was moored northeast of Ford Isl
 
 Phoenix got underway.
 
+<figure>
+  <img src="/images/uss-phoenix-channel.jpg" alt="USS Phoenix steaming down the channel at Pearl Harbor on December 7, 1941" />
+  <figcaption>USS Phoenix steaming down the Pearl Harbor channel, December 7, 1941. U.S. Navy photograph, National Archives (NH 50766).</figcaption>
+</figure>
+
 She cleared the harbor while bombs were still falling, joined cruisers St. Louis and Detroit outside the channel, and spent the next four years fighting across the Pacific. Corregidor. Hollandia. Leyte Gulf. Lingayen. Mindoro. Borneo. Nine battle stars.
 
 At the Battle of Surigao Strait on October 25, 1944, she fired on the Japanese battleship Yamashiro during the last battleship action in history. Phoenix opened with spotting salvoes and then cut loose with all fifteen of her 6-inch guns.
