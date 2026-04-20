@@ -3,6 +3,7 @@ title: "The Ship That Survived Pearl Harbor and Was Sunk Forty Years Later by a 
 slug: uss-phoenix-belgrano
 date: 2026-04-20
 summary: "USS Phoenix escaped Pearl Harbor untouched, fought the entire Pacific war, was sold to Argentina, renamed twice, and sunk in 1982 by a British submarine using torpedoes designed thirteen years before the ship was launched. 323 dead. The captain said the British were right."
+image: /images/uss-phoenix.jpg
 tags: [wwii, falklands-war, uss-phoenix, general-belgrano, pearl-harbor]
 readingTime: 5
 ---
