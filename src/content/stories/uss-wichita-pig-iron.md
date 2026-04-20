@@ -2,7 +2,7 @@
 title: "The US Navy Dumped 200 Tons of Pig Iron Into This Cruiser Just to Stop Her From Tipping Over"
 slug: uss-wichita-pig-iron
 date: 2026-04-20
-summary: "USS Wichita was a one-of-a-kind prototype — too top-heavy to sail without 200 tons of pig iron in her belly. She fought in two oceans, earned 13 battle stars, and became the blueprint for every American heavy cruiser that followed."
+summary: "USS Wichita was a one-of-a-kind prototype — too top-heavy to sail without 200 tons of pig iron in her belly. She fought in two oceans, earned 13 battle stars, and her hull became the basis for the Baltimore class."
 image: /images/uss-wichita.png
 tags: [wwii, us-navy, uss-wichita, treaty-cruiser, design-history]
 readingTime: 4
@@ -10,13 +10,13 @@ readingTime: 4
 
 In 1935, the US Navy laid down a heavy cruiser at the Philadelphia Naval Shipyard. She would be the last American cruiser designed to meet the limits of the London Naval Treaty, which capped displacement at 10,000 tons.
 
-They named her Wichita. She was a transitional design — New Orleans-class armament on a hull derived from the Brooklyn-class light cruisers, with more armor. The idea was to take the best of both worlds.
+They named her Wichita. She was a transitional design: New Orleans-class armament on a hull derived from the Brooklyn-class light cruisers, with more armor. The idea was straightforward: heavy cruiser guns, light cruiser hull, more armor.
 
 The problem showed up when they installed all eight 5-inch guns. Wichita was top-heavy. Not a little. A lot.
 
 The Navy's solution was 200.4 long tons of pig iron, bolted to the bottom of the hull as ballast. Two hundred tons of dead weight, serving no purpose except to keep the ship from rolling over.
 
-Only one Wichita was ever built. She was a prototype, and the Navy knew it. But her hull form, armor scheme, and general arrangement became the direct basis for the Baltimore class — fourteen heavy cruisers that formed the backbone of the US Navy's cruiser force for the rest of the war and beyond. The Baltimores fixed Wichita's stability problem by adding two feet of beam.
+Only one Wichita was ever built. She was a prototype, and the Navy knew it. But her hull form, armor scheme, and general arrangement became the direct basis for the Baltimore class — fourteen heavy cruisers that fought through the rest of the war and into Korea. The Baltimores fixed Wichita's stability problem by adding two feet of beam.
 
 Wichita herself went to war carrying her pig iron.
 

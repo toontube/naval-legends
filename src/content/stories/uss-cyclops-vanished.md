@@ -55,7 +55,7 @@ Mutiny was proposed. The ship carried some Navy prisoners among her passengers. 
 
 ## The sister ships
 
-Here is the part that makes the Cyclops disappearance harder to set aside.
+It gets worse.
 
 USS Proteus and USS Nereus were Cyclops' sister ships — same class, same design, same builder. In November and December of 1941, both ships disappeared while carrying metal ore on routes through the same stretch of the western Atlantic.
 

@@ -10,7 +10,7 @@ readingTime: 5
 
 Twenty-seven Cleveland-class light cruisers were completed between 1942 and 1945. No cruiser class in any navy, in any era, has ever been larger. The US Navy ordered fifty-two hulls total.
 
-They were good ships. Twelve 6-inch guns, twelve 5-inch guns, and — as the war went on — a growing forest of 40mm Bofors and 20mm Oerlikon antiaircraft guns bolted onto every available surface. Plus radar. Plus fire control directors. Plus ready-service ammunition lockers on the upper decks.
+They were good ships. Twelve 6-inch guns, twelve 5-inch guns, and, as the war went on, a growing forest of 40mm Bofors and 20mm Oerlikon antiaircraft guns bolted onto every available surface. Plus radar. Plus fire control directors. Plus ready-service ammunition lockers on the upper decks.
 
 That was the problem. Every new piece of equipment went on top. The center of gravity kept climbing.
 

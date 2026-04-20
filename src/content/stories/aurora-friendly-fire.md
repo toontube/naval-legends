@@ -26,7 +26,7 @@ Aurora went home.
 
 Thirteen years later, on the evening of October 25, 1917 (Old Style calendar), Aurora was moored on the Neva River in St. Petersburg. Her crew had sided with the Bolsheviks. At 9:40 PM, she fired a single blank round from her bow gun.
 
-That was the signal. Red Guards and soldiers began the assault on the Winter Palace. The Provisional Government fell. Soviet historians turned that one blank shot into the founding myth of the revolution. The reality was less dramatic — the "storming" was more of a gradual walk-in — but the shot became iconic.
+That was the signal. Red Guards and soldiers began the assault on the Winter Palace. The Provisional Government fell. Soviet historians turned that one blank shot into the founding myth of the revolution. The reality was less dramatic. The "storming" was more of a gradual walk-in. But the shot became iconic.
 
 Aurora never left Russia again. She's been a museum ship since 1957, permanently moored on the Bolshaya Nevka in St. Petersburg, near the Nakhimov Naval Academy. She underwent a full restoration from 2014 to 2016. She still flies the Russian naval ensign.
 

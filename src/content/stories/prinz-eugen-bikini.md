@@ -16,7 +16,7 @@ Test Able. July 1, 1946. Air-dropped. 23 kilotons. Ships sank. Ships burned. Pri
 
 Test Baker. July 25. Underwater detonation this time. A column of water 2,000 feet high. Prinz Eugen? Still floating.
 
-Here's the problem. The ship was now so contaminated that boarding parties couldn't stay long enough to patch a small leak in the hull. Minutes at a time, then they had to leave.
+The ship was now so contaminated that boarding parties couldn't stay long enough to patch a small leak in the hull. Minutes at a time, then they had to leave.
 
 The Navy towed her to Kwajalein Atoll. The leak got worse.
 

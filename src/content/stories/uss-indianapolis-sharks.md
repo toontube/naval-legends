@@ -33,7 +33,7 @@ For nearly four days, nobody in the United States Navy knew that a heavy cruiser
 
 The men floated in the Philippine Sea in life jackets and small groups clinging to debris. They had almost no food, no fresh water, and very little in the way of life rafts. Temperatures dropped at night. The sun blistered exposed skin during the day.
 
-The oceanic whitetip sharks arrived within hours. These are open-water predators — bold, persistent, and drawn to commotion. They circled the groups of survivors constantly. Attacks came most often at the edges of groups, picking off men who drifted away or thrashed in the water. Men who died of exposure, dehydration, or salt-water ingestion attracted more sharks.
+The oceanic whitetip sharks arrived within hours. These are open-water predators that follow noise and movement. They circled the groups of survivors constantly. Attacks came most often at the edges of groups, picking off men who drifted away or thrashed in the water. Men who died of exposure, dehydration, or salt-water ingestion attracted more sharks.
 
 Some survivors went mad from drinking seawater and hallucinated islands, fresh water, even ships. Groups fractured. Men swam away from the group toward nothing and did not come back.
 

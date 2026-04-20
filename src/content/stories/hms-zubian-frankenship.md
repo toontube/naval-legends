@@ -43,7 +43,7 @@ She wasn't a curiosity kept in reserve. She was sent straight back to the war.
 
 On February 17, 1918, HMS Zubian and other Dover Patrol vessels detected and attacked the German submarine UC-50 in the English Channel. UC-50 was a Type UC II minelaying submarine operating out of Flanders. Zubian depth-charged the submarine and was credited with the kill. UC-50 went down with her entire crew of 36.
 
-A ship built from two wrecks, with a mismatched hull, had done what destroyers were designed to do.
+A ship welded together from two wrecks had just killed a submarine.
 
 ## Ostend and after
 

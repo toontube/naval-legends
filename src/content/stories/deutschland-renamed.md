@@ -8,7 +8,7 @@ tags: [wwii, kriegsmarine, pocket-battleship, deutschland, barents-sea]
 readingTime: 5
 ---
 
-In 1939, Germany had three pocket battleships. They were called "pocket battleships" because they packed six 283mm guns — battleship-caliber weapons — onto a hull that weighed around 12,000 tons. Fast enough to outrun anything they couldn't outfight.
+In 1939, Germany had three pocket battleships. They were called "pocket battleships" because they packed six 283mm guns, battleship-caliber weapons, onto a hull that weighed around 12,000 tons. Fast enough to outrun anything they couldn't outfight.
 
 The lead ship was named Deutschland. As in "Germany."
 

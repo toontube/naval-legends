@@ -46,8 +46,6 @@ On December 12, New Orleans left Tulagi, stern first.
 
 She couldn't sail bow-forward. The coconut log bulkhead would take the full force of the Pacific at the front of a moving ship. Water pressure at cruising speed would have torn it apart. So the crew drove the ship in reverse.
 
-Think about that. A 9,950-ton heavy cruiser, 588 feet long, designed to make 32 knots, crawling backwards across the Coral Sea at 5 knots. The helmsman steering by looking over his shoulder. For weeks.
-
 She arrived in Sydney on December 24. Christmas Eve. The Australians in the harbor stared at the ship that was sailing the wrong way with a flat wooden wall where her bow should have been.
 
 <figure>

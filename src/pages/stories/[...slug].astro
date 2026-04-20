@@ -20,7 +20,7 @@ const { Content } = await render(story);
 const allStories = await getCollection('stories');
 const otherStories = allStories
   .filter((s) => s.data.slug !== story.data.slug)
-  .slice(0, 3);
+  .slice(0, 2);
 
 const dateStr = story.data.date.toLocaleDateString('en-US', {
   year: 'numeric',
@@ -100,6 +100,10 @@ const dateStr = story.data.date.toLocaleDateString('en-US', {
       <section class="read-next">
         <h2 class="read-next-title">Read next</h2>
         <div class="read-next-grid">
+          <a href="https://www.kickstarter.com/projects/mozuma/naval-legends-cruisers?ref=ben9ea" target="_blank" rel="noopener" class="read-next-card">
+            <h3>Every cruiser was a compromise. Most of them almost didn't work.</h3>
+            <p>Too many guns on too little hull. 170 years of navies trying to cheat physics, cheat treaties, and build ships that wouldn't tip over.</p>
+          </a>
           {otherStories.map((s) => (
             <a href={`/stories/${s.data.slug}`} class="read-next-card">
               <h3>{s.data.title}</h3>
@@ -413,8 +417,16 @@ const dateStr = story.data.date.toLocaleDateString('en-US', {
     });
   });
 
+  // Track Kickstarter click
+  const kickstarterCard = document.querySelector('.read-next-card[href*="kickstarter.com"]');
+  kickstarterCard?.addEventListener('click', () => {
+    (window as any).gtag?.('event', 'click_kickstarter', {
+      from_slug: slug,
+    });
+  });
+
   // Track "Read next" clicks
-  document.querySelectorAll('.read-next-card').forEach((card) => {
+  document.querySelectorAll('.read-next-card:not([href*="kickstarter.com"])').forEach((card) => {
     card.addEventListener('click', () => {
       (window as any).gtag?.('event', 'click_read_next', {
         from_slug: slug,
