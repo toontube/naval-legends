@@ -52,6 +52,11 @@ After Belgrano sank, the Argentine surface fleet returned to port and stayed the
 
 ## "GOTCHA"
 
+<figure>
+  <img src="/images/uss-phoenix-pearl-harbor.png" alt="The Sun front page, May 4 1982: GOTCHA — Our lads sink gunboat and hole cruiser" />
+  <figcaption>The Sun, May 4, 1982. First edition. Editor Kelvin MacKenzie pulled the headline after casualty numbers came in.</figcaption>
+</figure>
+
 On May 4, The Sun ran a front-page headline: "GOTCHA." The subheadline read "Our lads sink gunboat and hole cruiser." Editor Kelvin MacKenzie pulled it after the first edition when casualty numbers came in.
 
 The sinking was controversial for years. Belgrano had been outside the exclusion zone. She had been heading west, away from the Falklands, when the torpedoes hit. Critics accused Margaret Thatcher of ordering the attack to sabotage peace negotiations that were making progress.
