@@ -20,9 +20,7 @@ In 1996, General Ji Shengde, head of Chinese military intelligence, had a proble
 
 He picked Xu Zengping. Xu was a former PLA basketball player who had left the military and become a businessman in Hong Kong, organizing international sporting events. He had no experience in shipbuilding, naval architecture, or casinos.
 
-Ji asked him to buy the carrier as a private citizen. The cover story: a floating casino and hotel, to be moored in Macau.
-
-There was one problem with this plan. Macau's harbor was too shallow to dock an aircraft carrier. The casino was physically impossible.
+Ji asked him to buy the carrier as a private citizen. The cover story: a floating casino and hotel, to be moored in Macau. Macau authorities had already warned Chong Lot that its harbor was too shallow to berth an aircraft carrier. The casino was physically impossible before the deal was even signed.
 
 ## Fifty bottles of baijiu
 
@@ -61,17 +59,17 @@ Tugs eventually reattached and pulled Varyag to Piraeus. Then Egypt refused to l
 
 ## Around Africa
 
-The only route left was around the continent.
+The only route left was around the entire continent of Africa.
 
-Varyag was towed through the Strait of Gibraltar, down the Atlantic, past Las Palmas in the Canaries, around the Cape of Good Hope, up through the Mozambique Channel with a fuel stop in Maputo, across the Indian Ocean, through the Strait of Malacca, and into the South China Sea.
+Strait of Gibraltar. Down the Atlantic. Las Palmas for fuel. Around the Cape of Good Hope. Up the Mozambique Channel with a stop in Maputo. Across the Indian Ocean. Through the Strait of Malacca. Into the South China Sea.
 
-15,200 nautical miles. Six knots average. $8,500 a day in towing costs.
+15,200 nautical miles at six knots. $8,500 a day in towing costs. Sixteen months on the water.
 
-On March 3, 2002, Varyag arrived at Dalian in northeastern China. The casino story was over. Nobody mentioned it again.
+On March 3, 2002, Varyag arrived at Dalian in northeastern China. Nobody mentioned the casino again.
 
 ## Nine years
 
-Dalian Shipbuilding Industry Company spent nine years rebuilding the hull into a working carrier. New electronics, new weapons systems, a rebuilt flight deck, aircraft arrestor gear, a ski-jump bow for launching J-15 fighters.
+Dalian Shipbuilding Industry Company spent nine years rebuilding the hull into a working carrier. New engines, new electronics, new weapons systems, a rebuilt flight deck, aircraft arrestor gear, and a ski-jump bow for launching J-15 fighters. The 40 tonnes of blueprints Xu had trucked out of Kyiv made this possible. Without them, China would have been reverse-engineering a stripped hull with no documentation.
 
 Sea trials began in August 2011. On September 25, 2012, the ship was commissioned into the People's Liberation Army Navy as Liaoning, hull number 16. China's first aircraft carrier.
 
