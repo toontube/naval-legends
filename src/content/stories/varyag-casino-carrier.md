@@ -53,7 +53,7 @@ On November 1, 2001, Varyag passed through the Bosphorus. Warning sirens cleared
 
 ## Force 10
 
-Two days later, near the Greek island of Skyros, a force 10 gale hit. The tow lines snapped. A 55,000-ton aircraft carrier was drifting free toward the island of Euboea with no engines and no steering.
+Two days later, near the Greek island of Skyros, a force 10 gale hit. The tow lines snapped. An aircraft carrier hull was drifting free toward the island of Euboea with no engines and no steering.
 
 Greek coast guard vessels scrambled. They recovered the tow crew. One Dutch sailor fell while trying to reattach the lines. He drowned.
 
