@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="robots" content="noindex, nofollow, noarchive, nosnippet">
+<title>Naval Legends: Cruisers — Audience Map</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    background: #0f1419;
+    color: #e8e6e3;
+    line-height: 1.5;
+    padding: 40px 20px;
+  }
+  .container { max-width: 1200px; margin: 0 auto; }
+  h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #f4a261;
+    margin-bottom: 6px;
+    letter-spacing: -0.5px;
+  }
+  .subtitle { color: #8b949e; font-size: 1rem; margin-bottom: 32px; }
+  .legend {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin-bottom: 28px;
+    font-size: 0.85rem;
+  }
+  .legend-item { display: flex; align-items: center; gap: 6px; }
+  .dot { width: 12px; height: 12px; border-radius: 50%; }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    gap: 16px;
+    margin-bottom: 40px;
+  }
+  .card {
+    background: #1c2128;
+    border-left: 4px solid #30363d;
+    border-radius: 6px;
+    padding: 20px;
+    transition: transform 0.15s, border-color 0.15s;
+  }
+  .card:hover { transform: translateY(-2px); }
+  .card.tier-s { border-left-color: #f4a261; }
+  .card.tier-a { border-left-color: #90be6d; }
+  .card.tier-b { border-left-color: #3a86ff; }
+  .card.tier-c { border-left-color: #7d7d7d; }
+  .card-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+  .card h2 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #e8e6e3;
+  }
+  .tier-badge {
+    font-size: 0.7rem;
+    font-weight: 700;
+    padding: 2px 8px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  .tier-s .tier-badge { background: #f4a261; color: #0f1419; }
+  .tier-a .tier-badge { background: #90be6d; color: #0f1419; }
+  .tier-b .tier-badge { background: #3a86ff; color: #fff; }
+  .tier-c .tier-badge { background: #7d7d7d; color: #0f1419; }
+  .card-row {
+    display: flex;
+    margin-bottom: 8px;
+    font-size: 0.88rem;
+  }
+  .card-row .label {
+    width: 85px;
+    flex-shrink: 0;
+    color: #8b949e;
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  .card-row .value { color: #c9d1d9; }
+  .matrix {
+    background: #1c2128;
+    border-radius: 6px;
+    padding: 24px;
+    margin-bottom: 32px;
+  }
+  .matrix h3 {
+    color: #f4a261;
+    font-size: 1.1rem;
+    margin-bottom: 16px;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.9rem;
+  }
+  th, td {
+    padding: 10px 12px;
+    text-align: left;
+    border-bottom: 1px solid #30363d;
+  }
+  th { color: #8b949e; font-weight: 500; text-transform: uppercase; font-size: 0.75rem; letter-spacing: 0.5px; }
+  td.high { background: rgba(244, 162, 97, 0.08); font-weight: 600; }
+  td.medium { background: rgba(144, 190, 109, 0.08); }
+  td.low { background: rgba(125, 125, 125, 0.04); color: #8b949e; }
+  .budget-row {
+    display: grid;
+    grid-template-columns: 1fr 100px 2fr;
+    gap: 12px;
+    padding: 10px 0;
+    border-bottom: 1px solid #30363d;
+    font-size: 0.9rem;
+    align-items: center;
+  }
+  .budget-row:last-child { border-bottom: none; }
+  .budget-amount { font-weight: 600; color: #f4a261; font-family: "SF Mono", Consolas, monospace; }
+  .overlap-diagram {
+    background: #1c2128;
+    border-radius: 6px;
+    padding: 28px;
+    margin-bottom: 32px;
+    text-align: center;
+  }
+  .overlap-diagram pre {
+    font-family: "SF Mono", Consolas, "Courier New", monospace;
+    color: #c9d1d9;
+    font-size: 0.85rem;
+    line-height: 1.4;
+    display: inline-block;
+    text-align: left;
+    white-space: pre;
+  }
+  .takeaway {
+    background: linear-gradient(135deg, #1c2128 0%, #252b35 100%);
+    border-radius: 6px;
+    padding: 24px 28px;
+    border-left: 4px solid #f4a261;
+  }
+  .takeaway h3 { color: #f4a261; margin-bottom: 10px; font-size: 1.05rem; }
+  .takeaway p { color: #c9d1d9; font-size: 0.95rem; margin-bottom: 8px; }
+  .footer {
+    margin-top: 40px;
+    color: #586069;
+    font-size: 0.8rem;
+    text-align: center;
+  }
+  h3.section { color: #f4a261; font-size: 1.15rem; margin: 32px 0 16px 0; font-weight: 600; }
+</style>
+</head>
+<body>
+<div class="container">
+
+<h1>Naval Legends: Cruisers — Audience Map</h1>
+<p class="subtitle">Who we're targeting, how big each group is, and where they live. Compiled April 21, 2026.</p>
+
+<div class="legend">
+  <div class="legend-item"><span class="dot" style="background:#f4a261"></span> S — Primary audience, most effort</div>
+  <div class="legend-item"><span class="dot" style="background:#90be6d"></span> A — Proven buyer, reachable</div>
+  <div class="legend-item"><span class="dot" style="background:#3a86ff"></span> B — Secondary, high-ROI niche</div>
+  <div class="legend-item"><span class="dot" style="background:#7d7d7d"></span> C — Bonus, don't over-invest</div>
+</div>
+
+<div class="grid">
+
+  <div class="card tier-s">
+    <div class="card-head">
+      <h2>1. Naval / Military History Buffs</h2>
+      <span class="tier-badge">Tier S</span>
+    </div>
+    <div class="card-row"><span class="label">Size</span><span class="value">~1M+ English-speaking</span></div>
+    <div class="card-row"><span class="label">Profile</span><span class="value">40-70, readers, Drach fans, book buyers</span></div>
+    <div class="card-row"><span class="label">Lives at</span><span class="value">YouTube (Drach 550k, Felton 2.4M), r/WarCollege, r/NavalHistory, r/WarshipPorn, USNI magazines, naval forums</span></div>
+    <div class="card-row"><span class="label">Wallet</span><span class="value">$50-300/book, 3-10 books/year</span></div>
+    <div class="card-row"><span class="label">Reach</span><span class="value">YouTube sponsorship, USNI Naval History review, Reddit organic</span></div>
+  </div>
+
+  <div class="card tier-s">
+    <div class="card-head">
+      <h2>2. World of Warships Players</h2>
+      <span class="tier-badge">Tier S</span>
+    </div>
+    <div class="card-row"><span class="label">Size</span><span class="value">~10M total, 500k-1M engaged</span></div>
+    <div class="card-row"><span class="label">Profile</span><span class="value">25-55, global (big RU/EU/NA), game-play-to-history pipeline</span></div>
+    <div class="card-row"><span class="label">Lives at</span><span class="value">r/WorldOfWarships (61.6k), WoWS Discord, WoWS Facebook groups (NA, EU, DE, HU, Legends, Blitz), WoWS TikTok (73.9k)</span></div>
+    <div class="card-row"><span class="label">Wallet</span><span class="value">Proven: 1,300 copies Russian + 2 sold-out EN editions</span></div>
+    <div class="card-row"><span class="label">Reach</span><span class="value">WoWS subreddit/Discord/FB groups, WoWS official TikTok partnerships</span></div>
+  </div>
+
+  <div class="card tier-a">
+    <div class="card-head">
+      <h2>3. Scale Modelers &amp; Naval Wargamers</h2>
+      <span class="tier-badge">Tier A</span>
+    </div>
+    <div class="card-row"><span class="label">Size</span><span class="value">~100k naval modelers, ~500k total</span></div>
+    <div class="card-row"><span class="label">Profile</span><span class="value">40-75, retired/semi-retired, buy books as reference</span></div>
+    <div class="card-row"><span class="label">Lives at</span><span class="value">Model Ship World forum, r/modelmakers (260k), FB "Warship Models Underway," IPMS/USA, Scale Model World Telford (30k visitors)</span></div>
+    <div class="card-row"><span class="label">Wallet</span><span class="value">$50-200 per reference book, $500+/year on hobby</span></div>
+    <div class="card-row"><span class="label">Reach</span><span class="value">Model Ship World, IPMS conventions, Hobbylinc/Squadron newsletters</span></div>
+  </div>
+
+  <div class="card tier-a">
+    <div class="card-head">
+      <h2>4. Russian-Speaking Naval Audience</h2>
+      <span class="tier-badge">Tier A</span>
+    </div>
+    <div class="card-row"><span class="label">Size</span><span class="value">100-300k engaged</span></div>
+    <div class="card-row"><span class="label">Profile</span><span class="value">Post-Soviet naval fans, WoWS RU players, bought last edition</span></div>
+    <div class="card-row"><span class="label">Lives at</span><span class="value">VK.com naval groups, wunderwaffe.narod.ru, Russian Telegram naval channels, WoWS RU forum</span></div>
+    <div class="card-row"><span class="label">Wallet</span><span class="value">Proven: 1,300 units of prior edition</span></div>
+    <div class="card-row"><span class="label">Reach</span><span class="value">Russian-language outreach (weekend translation project); 100-300 unit potential</span></div>
+  </div>
+
+  <div class="card tier-b">
+    <div class="card-head">
+      <h2>5. Veterans &amp; Naval Officers</h2>
+      <span class="tier-badge">Tier B</span>
+    </div>
+    <div class="card-row"><span class="label">Size</span><span class="value">200-500k (USN + RN + associations)</span></div>
+    <div class="card-row"><span class="label">Profile</span><span class="value">Active + retired naval personnel, NROTC, academy grads</span></div>
+    <div class="card-row"><span class="label">Lives at</span><span class="value">Tin Can Sailors (12k), USSVI (12k), USNI (~50k), HMS Hood Assoc. (400), NROTC units (60+), Proceedings</span></div>
+    <div class="card-row"><span class="label">Wallet</span><span class="value">$100-300, bulk wardroom buys 10-20 units</span></div>
+    <div class="card-row"><span class="label">Reach</span><span class="value">USNI magazines, Tin Can Sailors magazine ad, academy bookstores</span></div>
+  </div>
+
+  <div class="card tier-b">
+    <div class="card-head">
+      <h2>6. Habitual Kickstarter Backers</h2>
+      <span class="tier-badge">Tier B</span>
+    </div>
+    <div class="card-row"><span class="label">Size</span><span class="value">~50-100k art-book backers</span></div>
+    <div class="card-row"><span class="label">Profile</span><span class="value">25-55, trust crowdfunding, patronage mindset</span></div>
+    <div class="card-row"><span class="label">Lives at</span><span class="value">r/kickstarter (87k), BackerTracker, Kicktraq, BackerKit community, KS creator Discords</span></div>
+    <div class="card-row"><span class="label">Wallet</span><span class="value">$50-500/pledge, 5-20 campaigns/year</span></div>
+    <div class="card-row"><span class="label">Reach</span><span class="value">KS page SEO, pre-launch email list, r/kickstarter launch announcement</span></div>
+  </div>
+
+  <div class="card tier-c">
+    <div class="card-head">
+      <h2>7. Art-Book / Illustrated Collectors</h2>
+      <span class="tier-badge">Tier C</span>
+    </div>
+    <div class="card-row"><span class="label">Size</span><span class="value">~50-150k worldwide</span></div>
+    <div class="card-row"><span class="label">Profile</span><span class="value">35-65, Taschen/Folio Society/Cook &amp; Becker buyers</span></div>
+    <div class="card-row"><span class="label">Lives at</span><span class="value">LibraryThing "Folio Society Devotees," bookstagram, Pinterest naval-art boards, specialty bookstores</span></div>
+    <div class="card-row"><span class="label">Wallet</span><span class="value">$100-500/book, $1000+/year</span></div>
+    <div class="card-row"><span class="label">Reach</span><span class="value">LibraryThing posts, Pinterest ads, premium KS page positioning</span></div>
+  </div>
+
+</div>
+
+<h3 class="section">How the audiences overlap</h3>
+<div class="overlap-diagram">
+<pre>
+                    ┌─────────────────────────┐
+                    │  NAVAL HISTORY BUFFS    │  ★ Core
+                    │       ~1M+              │
+                    └────────────┬────────────┘
+                                 │
+         ┌───────────────────────┼───────────────────────┐
+         │ 40% overlap           │ 50% overlap           │ 20% overlap
+         ▼                       ▼                       ▼
+   ┌───────────┐          ┌────────────┐          ┌──────────────┐
+   │WoWS PLAYERS│          │SCALE MODEL.│          │ART COLLECTORS│
+   │    ~10M    │          │   ~100k+   │          │   50-150k    │
+   └─────┬──────┘          └──────┬─────┘          └──────────────┘
+         │                        │
+         │ 70% crossover          │
+         ▼                        ▼
+   ┌───────────┐           ┌───────────┐
+   │  RUSSIAN  │           │ VETERANS  │  (70% overlap w/ history buffs)
+   │ 100-300k  │           │ 200-500k  │
+   └───────────┘           └───────────┘
+
+   KICKSTARTER BACKERS cross-cut all seven groups (~20% each)
+</pre>
+</div>
+
+<h3 class="section">Priority × Reachability</h3>
+<div class="matrix">
+<table>
+<thead>
+<tr><th></th><th>High fit</th><th>Medium fit</th><th>Low fit</th></tr>
+</thead>
+<tbody>
+<tr>
+  <th>Easy to reach</th>
+  <td class="high">WoWS players · Naval history buffs</td>
+  <td class="medium">KS backers</td>
+  <td class="low">—</td>
+</tr>
+<tr>
+  <th>Medium effort</th>
+  <td class="high">Scale modelers · Russian audience</td>
+  <td class="medium">Veterans</td>
+  <td class="low">Art-book collectors</td>
+</tr>
+<tr>
+  <th>Hard to reach</th>
+  <td class="medium">—</td>
+  <td class="medium">—</td>
+  <td class="low">Mass influencer tier</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+<h3 class="section">Effort allocation (total = 100%)</h3>
+<div class="matrix">
+  <div class="budget-row">
+    <div>Naval history buffs + WoWS players</div>
+    <div class="budget-amount">70-80%</div>
+    <div>YouTube creator sponsorships, Reddit, FB WoWS groups, WoWS Discord</div>
+  </div>
+  <div class="budget-row">
+    <div>Scale modelers + Russian re-push</div>
+    <div class="budget-amount">15-20%</div>
+    <div>Model Ship World, r/modelmakers, VK, Telegram, wunderwaffe outreach</div>
+  </div>
+  <div class="budget-row">
+    <div>Veterans + KS backers + art collectors</div>
+    <div class="budget-amount">5-10%</div>
+    <div>USNI pitch, Tin Can Sailors ad, LibraryThing, r/kickstarter</div>
+  </div>
+</div>
+
+<div class="takeaway">
+<h3>Bottom line</h3>
+<p>Two sold-out English editions + 1,300 Russian copies prove the <strong>Naval History × WoWS × Russian</strong> triangle is where the real buyer lives. Previous editions leaned on game codes to reach them. This edition reaches them via creator partnerships (Drachinifel first), Reddit, WoWS Facebook/Discord, and Russian-language re-push.</p>
+<p>Scale modelers and veterans are the best-ROI secondary pushes. Art-book collectors are a bonus channel that converts at high price-point but has the smallest pool.</p>
+</div>
+
+<p class="footer">Naval Legends: Cruisers — audience mapping research, April 2026</p>
+
+</div>
+</body>
+</html>
