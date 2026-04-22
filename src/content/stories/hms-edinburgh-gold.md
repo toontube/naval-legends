@@ -2,17 +2,17 @@
 title: "The Cruiser That Sank With Five Tons of Soviet Gold and Then Somebody Went and Got It"
 slug: hms-edinburgh-gold
 date: 2026-04-22
-summary: "The light cruiser HMS Edinburgh was torpedoed three times in the Arctic while carrying 465 gold bars from the Soviet Union. The cruiser fought back, sank a German destroyer, and went down with the gold. Thirty-nine years later, divers cut into the wreck and pulled out 431 bars."
+summary: "The light cruiser HMS Edinburgh was torpedoed three times in the Arctic while carrying 465 gold bars from the Soviet Union. The cruiser fought back, crippled a German destroyer, and went down with the gold. Thirty-nine years later, divers cut into the wreck and pulled out 431 bars."
 image: /images/hms-edinburgh.jpg
 tags: [wwii, arctic-convoys, gold, salvage, royal-navy, cruiser]
 readingTime: 5
 ---
 
-On April 28, 1942, HMS Edinburgh left Murmansk as the flagship escort for Convoy QP 11 — a homebound run from the Soviet Union back to Iceland. Captain Hugh Faulkner had 850 men aboard a Town-class light cruiser displacing 10,000 tons.
+On April 28, 1942, HMS Edinburgh left Murmansk as the flagship escort for Convoy QP 11 — a homebound run from the Soviet Union back to Iceland. Captain Hugh Faulkner had 850 men aboard a Town-class light cruiser displacing 10,550 tons.
 
 He also had 465 gold bars locked in the bomb room.
 
-The gold — roughly 5.5 tons of it — was Stalin's payment to the United States for Lend-Lease war materiel. Tanks, trucks, aircraft parts. The Soviets paid in bullion because nobody trusted Soviet currency, and a cruiser escorting an Arctic convoy was the safest way to move it. The gold was worth £1.5 million in 1942 money.
+The gold — roughly 4.5 tons of it — was Stalin's payment to the United States for Lend-Lease war materiel. Tanks, trucks, aircraft parts. The Soviets paid in bullion because nobody trusted Soviet currency, and a cruiser escorting an Arctic convoy was the safest way to move it. The gold was worth £1.5 million in 1942 money.
 
 ## Two torpedoes from U-456
 
@@ -20,7 +20,7 @@ Two days out of Murmansk, on April 30, Kapitänleutnant Max-Martin Teichert in U
 
 The second torpedo hit the stern. It destroyed the rudder and two of the four propellers. Edinburgh could still make way, but she could not steer.
 
-Captain Faulkner was now commanding a 10,000-ton cruiser that could only travel in wide, looping circles.
+Faulkner was now commanding a cruiser that could only travel in wide, looping circles.
 
 <figure>
 <img src="/images/hms-edinburgh-damage.jpg" alt="HMS Edinburgh stern torpedo damage, May 1942" />
@@ -37,9 +37,9 @@ Then, on May 2, three German destroyers appeared — Z7 Hermann Schoemann, Z24, 
 
 ## A crippled ship fights back
 
-What happened next was not what the German captains expected. The cruiser could not steer, but her guns still worked. Her crew trained the 6-inch turrets manually and opened fire.
+The cruiser could not steer. But her 6-inch guns still worked. Edinburgh's crew trained the turrets manually and opened fire.
 
-Edinburgh's second salvo hit Hermann Schoemann square. The shells wrecked her engine room and started fires that could not be controlled. Hermann Schoemann went dead in the water. Her crew abandoned ship, and she sank. A German destroyer sent to kill a crippled cruiser was itself sunk by the crippled cruiser.
+Edinburgh's second salvo hit Hermann Schoemann square. The shells wrecked her engine room and started fires that could not be controlled. Hermann Schoemann went dead in the water. Z24 and Z25 pulled alongside to take off her 223 survivors, then her crew scuttled her. A German destroyer sent to kill a crippled cruiser had been crippled by the crippled cruiser.
 
 But Z24 and Z25 were still maneuvering. During the fight, one of them put a third torpedo into Edinburgh's port side. The hit was opposite the first torpedo wound. The ship's back was broken.
 
@@ -47,7 +47,7 @@ But Z24 and Z25 were still maneuvering. During the fight, one of them put a thir
 
 Captain Faulkner gave the order to abandon ship. The minesweepers HMS Gossamer and HMS Harrier came alongside and took off roughly 800 men. Two officers and 56 ratings did not make it. The total dead from all three torpedo hits: 58.
 
-Once the crew was clear, HMS Foresight fired a torpedo into the cruiser's hull to scuttle her. Edinburgh sank in 800 feet of water, approximately 170 nautical miles north of Murmansk.
+Once the crew was clear, HMS Foresight fired a torpedo into the cruiser's hull to scuttle her. Edinburgh sank in 800 feet of water, approximately 250 miles north of Murmansk.
 
 The gold went with her.
 
@@ -55,7 +55,7 @@ The gold went with her.
 
 For 39 years, the wreck sat undisturbed on the Barents Sea floor. The British government designated it a war grave. The Soviets still wanted their gold. The insurers wanted their money. Nobody could agree on who owned what, and nobody had the technology to work at 800 feet in Arctic conditions anyway.
 
-Then Keith Jessop, a Yorkshire salvage diver with more ambition than funding, convinced the British and Soviet governments to let him try. His company, Jessop Marine, partnered with Wharton Williams Ltd and the Norwegian company OSA. The contract gave the salvage team 45%, with the remaining 55% split between the UK and Soviet governments — two-thirds to the Soviets, one-third to Britain. The Americans got nothing. Their insurers had already paid out decades earlier.
+Then Keith Jessop, a Yorkshire salvage diver with more ambition than funding, convinced the British and Soviet governments to let him try. His company, Jessop Marine, partnered with Wharton Williams Ltd and the German shipping company OSA. The contract gave the salvage team 45%, with the remaining 55% split between the UK and Soviet governments — two-thirds to the Soviets, one-third to Britain. The Americans got nothing. Their insurers had already paid out decades earlier.
 
 In September 1981, Jessop's divers descended to the wreck. They cut through the cruiser's hull with underwater torches, working in near-zero visibility at extreme depth. The bomb room was partially collapsed. The divers worked by feel.
 
@@ -83,5 +83,5 @@ The five missing bars have never been accounted for. They are either buried unde
 - [HMS Edinburgh (16) — Wikipedia](https://en.wikipedia.org/wiki/HMS_Edinburgh_(16))
 - [Salvage of the Century, HMS Edinburgh and Her Cargo of Gold — LBMA Alchemist](https://www.lbma.org.uk/alchemist/issue-74/salvage-of-the-century-hms-edinburgh-and-her-cargo-of-gold)
 - [Light Cruiser Edinburgh (16) — World War II Database](https://ww2db.com/ship_spec.php?ship_id=770)
-- [HMS Edinburgh — Secret Scotland](https://www.secretscotland.org.uk/index.php/Secrets/HMSEdinburgh)
+- [HMS Edinburgh — uboat.net](https://uboat.net/allies/warships/ship/1237.html)
 - [German destroyer Z7 Hermann Schoemann — Wikipedia](https://en.wikipedia.org/wiki/German_destroyer_Hermann_Schoemann_(Z7))
