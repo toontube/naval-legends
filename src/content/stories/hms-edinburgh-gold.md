@@ -3,6 +3,7 @@ title: "The Cruiser That Sank With Five Tons of Soviet Gold and Then Somebody We
 slug: hms-edinburgh-gold
 date: 2026-04-22
 summary: "The light cruiser HMS Edinburgh was torpedoed three times in the Arctic while carrying 465 gold bars from the Soviet Union. The cruiser fought back, sank a German destroyer, and went down with the gold. Thirty-nine years later, divers cut into the wreck and pulled out 431 bars."
+image: /images/hms-edinburgh.jpg
 tags: [wwii, arctic-convoys, gold, salvage, royal-navy, cruiser]
 readingTime: 5
 ---
@@ -20,6 +21,11 @@ Two days out of Murmansk, on April 30, Kapitänleutnant Max-Martin Teichert in U
 The second torpedo hit the stern. It destroyed the rudder and two of the four propellers. Edinburgh could still make way, but she could not steer.
 
 Captain Faulkner was now commanding a 10,000-ton cruiser that could only travel in wide, looping circles.
+
+<figure>
+<img src="/images/hms-edinburgh-damage.jpg" alt="HMS Edinburgh stern torpedo damage, May 1942" />
+<figcaption>The cruiser's wrecked stern after U-456's torpedo destroyed the rudder and two propellers. Photo: Imperial War Museums (MH 23866), public domain.</figcaption>
+</figure>
 
 ## The tow
 
@@ -66,6 +72,11 @@ The 460 recovered gold bars were melted down and redistributed. No museum has on
 The five missing bars have never been accounted for. They are either buried under collapsed steel inside the wreck or were never loaded in Murmansk in the first place. Nobody knows which.
 
 ---
+
+**Photo credits**
+
+- Hero image: HMS Edinburgh on sea trials, July 1939. Imperial War Museums (FL 4169). Public domain, UK Government work.
+- Torpedo damage: HMS Edinburgh stern damage, May 1942. Imperial War Museums (MH 23866). Public domain, UK Government work.
 
 **Sources**
 
