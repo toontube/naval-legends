@@ -61,6 +61,11 @@ In September 1981, Jessop's divers descended to the wreck. They cut through the 
 
 They found the first gold bar on September 15. Over the following weeks, they pulled out 431 of the 465 bars. When Arctic storms forced them to stop in early October, the recovered gold was worth £45 million.
 
+<figure>
+<img src="/images/edinburgh-salvage-crew.jpg" alt="Keith Jessop's salvage crew with gold bars recovered from HMS Edinburgh, 1981" />
+<figcaption>Jessop's crew with some of the 431 gold bars pulled from Edinburgh's wreck, 800 feet down in the Barents Sea. Photo: The Times.</figcaption>
+</figure>
+
 A second expedition in 1986 recovered 29 more bars. That left five bars still inside the wreck — roughly £5 million at today's prices. They remain there, 800 feet down, inside a designated war grave that is now illegal to dive on without government permission.
 
 ## What's still down there
@@ -77,6 +82,7 @@ The five missing bars have never been accounted for. They are either buried unde
 
 - Hero image: HMS Edinburgh on sea trials, July 1939. Imperial War Museums (FL 4169). Public domain, UK Government work.
 - Torpedo damage: HMS Edinburgh stern damage, May 1942. Imperial War Museums (MH 23866). Public domain, UK Government work.
+- Salvage crew: Keith Jessop's team with recovered gold bars, 1981. The Times.
 
 **Sources**
 
