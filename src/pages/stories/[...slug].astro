@@ -16,17 +16,33 @@ export async function getStaticPaths() {
 const { story } = Astro.props;
 const { Content } = await render(story);
 
-// Get other stories for "Read next"
+// Tag-based story recommendations
 const allStories = await getCollection('stories');
+const currentTags = new Set(story.data.tags);
 const otherStories = allStories
   .filter((s) => s.data.slug !== story.data.slug)
-  .slice(0, 2);
+  .map((s) => ({
+    ...s,
+    tagOverlap: s.data.tags.filter((t: string) => currentTags.has(t)).length,
+  }))
+  .sort((a, b) => {
+    // Prefer tag overlap, then stories with images, then random
+    if (b.tagOverlap !== a.tagOverlap) return b.tagOverlap - a.tagOverlap;
+    const aImg = a.data.image ? 1 : 0;
+    const bImg = b.data.image ? 1 : 0;
+    if (bImg !== aImg) return bImg - aImg;
+    return Math.random() - 0.5;
+  })
+  .slice(0, 3);
 
 const dateStr = story.data.date.toLocaleDateString('en-US', {
   year: 'numeric',
   month: 'long',
   day: 'numeric',
 });
+
+const ksUrl = 'https://www.kickstarter.com/projects/mozuma/naval-legends-cruisers?ref=bz-article';
+const ksStickyUrl = 'https://www.kickstarter.com/projects/mozuma/naval-legends-cruisers?ref=bz-sticky';
 ---
 
 <BaseLayout>
@@ -34,7 +50,7 @@ const dateStr = story.data.date.toLocaleDateString('en-US', {
     slot="head"
     title={`${story.data.title} | Bravo Zulu`}
     description={story.data.summary}
-    image={story.data.image}
+    image={`/og/${story.data.slug}.png`}
     type="article"
     keywords={story.data.tags.join(', ') + ', naval history, warships, bravo zulu'}
   />
@@ -74,14 +90,59 @@ const dateStr = story.data.date.toLocaleDateString('en-US', {
       <Content />
     </article>
 
+    <!-- 50% scroll nudge -->
+    <div class="scroll-nudge" id="scroll-nudge">
+      <p>Enjoying this? <a href="#article-subscribe" class="scroll-nudge-link" id="scroll-nudge-link">Get a free foil card &rarr;</a></p>
+    </div>
+
     <div class="article-tags">
       {story.data.tags.map((tag: string) => (
         <span class="article-tag">{tag}</span>
       ))}
     </div>
 
+    <!-- KS inline card -->
+    <a href={ksUrl} target="_blank" rel="noopener" class="article-ks-inline" id="article-ks-inline">
+      <img src="/images/cruisers-book.png" alt="Naval Legends: Cruisers" class="article-ks-img" />
+      <div class="article-ks-body">
+        <span class="article-ks-label">On Kickstarter now</span>
+        <h3 class="article-ks-title">Naval Legends: Cruisers</h3>
+        <p class="article-ks-desc">170 years of navies trying to cheat physics. The book behind Bravo Zulu.</p>
+      </div>
+    </a>
+
+    <!-- Read next — tag-matched stories with images -->
+    {otherStories.length > 0 && (
+      <section class="read-next">
+        <h2 class="read-next-title">Read next</h2>
+        <div class="read-next-grid">
+          {otherStories.map((s) => (
+            <a href={`/stories/${s.data.slug}`} class="read-next-card" data-tags={s.tagOverlap}>
+              {s.data.image && (
+                <img src={s.data.image} alt={s.data.title} class="read-next-img" loading="lazy" />
+              )}
+              <div class="read-next-card-body">
+                <h3>{s.data.title}</h3>
+                <p>{s.data.summary}</p>
+                {s.tagOverlap > 0 && (
+                  <div class="read-next-tags">
+                    {s.data.tags.filter((t: string) => currentTags.has(t)).map((t: string) => (
+                      <span class="read-next-tag-match">{t}</span>
+                    ))}
+                  </div>
+                )}
+              </div>
+            </a>
+          ))}
+        </div>
+      </section>
+    )}
+
+    <!-- Subscribe with foil card incentive -->
     <div class="article-subscribe" id="article-subscribe">
-      <p class="article-subscribe-text">Liked this one? Get new stories in your inbox.</p>
+      <span class="subscribe-badge">FREE</span>
+      <h3 class="subscribe-headline">Get a free foil card</h3>
+      <p class="subscribe-text">Subscribe and we'll send you a free foil collector card from the Naval Legends: Cruisers series. Plus new stories when they drop.</p>
       <form class="article-subscribe-form" id="article-subscribe-form">
         <input
           type="email"
@@ -91,44 +152,27 @@ const dateStr = story.data.date.toLocaleDateString('en-US', {
           class="article-subscribe-input"
           id="article-subscribe-email"
         />
-        <button type="submit" class="article-subscribe-btn" id="article-subscribe-btn">Subscribe</button>
+        <button type="submit" class="article-subscribe-btn" id="article-subscribe-btn">Claim my card</button>
       </form>
       <p class="article-subscribe-status" id="article-subscribe-status"></p>
-    </div>
-
-    {otherStories.length > 0 && (
-      <section class="read-next">
-        <h2 class="read-next-title">Read next</h2>
-        <div class="read-next-grid">
-          <a href="https://www.kickstarter.com/projects/mozuma/naval-legends-cruisers?ref=ben9ea" target="_blank" rel="noopener" class="read-next-card read-next-book">
-            <img src="/images/cruisers-book.png" alt="Naval Legends: Cruisers" class="read-next-book-img" />
-            <div>
-              <span class="read-next-book-label">The book</span>
-              <h3>Every cruiser was a compromise. Most of them almost didn't work.</h3>
-              <p>Too many guns on too little hull. 170 years of navies trying to cheat physics, cheat treaties, and build ships that wouldn't tip over.</p>
-            </div>
-          </a>
-          {otherStories.map((s) => (
-            <a href={`/stories/${s.data.slug}`} class="read-next-card">
-              <h3>{s.data.title}</h3>
-              <p>{s.data.summary}</p>
-            </a>
-          ))}
-        </div>
-      </section>
-    )}
-
-    <div class="article-cta">
-      <a href="/" class="card-btn">&larr; Back to Daily</a>
+      <p class="subscribe-fine">No spam. Unsubscribe anytime.</p>
     </div>
   </main>
+
+  <!-- Sticky mobile CTA -->
+  <div class="sticky-cta" id="sticky-cta" aria-hidden="true">
+    <a href={ksStickyUrl} target="_blank" rel="noopener" class="sticky-cta-btn" id="sticky-cta-btn">
+      Back the Book on Kickstarter
+    </a>
+    <button class="sticky-cta-close" id="sticky-cta-close" aria-label="Dismiss">&times;</button>
+  </div>
 
   <Footer />
 </BaseLayout>
 
 <style>
   .article-page {
-    padding-top: calc(var(--nav-height) + 2rem);
+    padding-top: calc(var(--nav-height) + var(--banner-offset) + 2rem);
     padding-bottom: 3rem;
     max-width: 720px;
     margin: 0 auto;
@@ -199,11 +243,39 @@ const dateStr = story.data.date.toLocaleDateString('en-US', {
     margin-right: 1rem;
   }
 
+  /* Scroll nudge — hidden until 50% scroll */
+  .scroll-nudge {
+    display: none;
+    text-align: center;
+    padding: 0.75rem 0;
+    margin-top: 1rem;
+  }
+
+  .scroll-nudge.visible {
+    display: block;
+  }
+
+  .scroll-nudge p {
+    font-family: var(--font-ui);
+    font-size: 0.8125rem;
+    color: var(--text-muted);
+  }
+
+  .scroll-nudge-link {
+    color: #22c55e;
+    font-weight: 500;
+    text-decoration: none;
+  }
+
+  .scroll-nudge-link:hover {
+    text-decoration: underline;
+  }
+
   .article-tags {
     display: flex;
     flex-wrap: wrap;
     gap: 0.5rem;
-    margin-top: 3rem;
+    margin-top: 2rem;
     padding-top: 2rem;
     border-top: 1px solid var(--border);
   }
@@ -217,26 +289,187 @@ const dateStr = story.data.date.toLocaleDateString('en-US', {
     text-transform: lowercase;
   }
 
-  .article-subscribe {
-    margin-top: 2.5rem;
-    padding: 1.5rem;
+  /* KS inline card */
+  .article-ks-inline {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+    margin-top: 2rem;
+    padding: 1.25rem;
     background: var(--bg-card);
     border: 1px solid var(--border);
+    border-radius: 8px;
+    transition: border-color 0.2s;
+    text-decoration: none;
+  }
+
+  .article-ks-inline:hover {
+    border-color: var(--accent);
+  }
+
+  .article-ks-img {
+    width: 80px;
+    height: auto;
+    border-radius: 4px;
+    flex-shrink: 0;
+    object-fit: cover;
+  }
+
+  .article-ks-label {
+    display: inline-block;
+    font-family: var(--font-ui);
+    font-size: 0.6875rem;
+    font-weight: 600;
+    color: #22c55e;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 0.25rem;
+  }
+
+  .article-ks-title {
+    font-size: 1rem;
+    line-height: 1.3;
+    margin-bottom: 0.25rem;
+    color: var(--text-primary);
+  }
+
+  .article-ks-desc {
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+    line-height: 1.4;
+  }
+
+  @media (max-width: 480px) {
+    .article-ks-img {
+      width: 64px;
+    }
+  }
+
+  /* Read next */
+  .read-next {
+    margin-top: 2rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--border);
+  }
+
+  .read-next-title {
+    font-size: 1.25rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .read-next-grid {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr;
+  }
+
+  @media (min-width: 640px) {
+    .read-next-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  .read-next-card {
+    display: block;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: border-color 0.2s;
+  }
+
+  .read-next-card:hover {
+    border-color: var(--text-muted);
+  }
+
+  .read-next-img {
+    width: 100%;
+    height: 140px;
+    object-fit: cover;
+  }
+
+  .read-next-card-body {
+    padding: 1rem 1.25rem 1.25rem;
+  }
+
+  .read-next-card-body h3 {
+    font-size: 0.9375rem;
+    margin-bottom: 0.375rem;
+    line-height: 1.3;
+  }
+
+  .read-next-card-body p {
+    font-size: 0.8125rem;
+    color: var(--text-secondary);
+    line-height: 1.4;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .read-next-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.375rem;
+    margin-top: 0.5rem;
+  }
+
+  .read-next-tag-match {
+    font-family: var(--font-ui);
+    font-size: 0.6875rem;
+    color: var(--accent);
+    background: var(--accent-dim);
+    padding: 0.125rem 0.5rem;
+    border-radius: 100px;
+  }
+
+  /* Subscribe — foil card incentive */
+  .article-subscribe {
+    margin-top: 2.5rem;
+    padding: 1.75rem;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-left: 3px solid #22c55e;
     border-radius: 8px;
     text-align: center;
   }
 
-  .article-subscribe-text {
+  .subscribe-badge {
+    display: inline-block;
+    font-family: var(--font-ui);
+    font-size: 0.6875rem;
+    font-weight: 700;
+    color: #fff;
+    background: #22c55e;
+    padding: 0.15rem 0.5rem;
+    border-radius: 100px;
+    letter-spacing: 0.03em;
+    margin-bottom: 0.5rem;
+  }
+
+  .subscribe-headline {
+    font-family: var(--font-display);
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+  }
+
+  .subscribe-text {
     font-family: var(--font-body);
     font-size: 0.9375rem;
     color: var(--text-secondary);
-    margin-bottom: 0.75rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+    max-width: 440px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .article-subscribe-form {
     display: flex;
     gap: 0.5rem;
-    max-width: 340px;
+    max-width: 360px;
     margin: 0 auto;
   }
 
@@ -258,7 +491,7 @@ const dateStr = story.data.date.toLocaleDateString('en-US', {
 
   .article-subscribe-input:focus {
     outline: none;
-    border-color: var(--accent);
+    border-color: #22c55e;
   }
 
   .article-subscribe-btn {
@@ -266,7 +499,7 @@ const dateStr = story.data.date.toLocaleDateString('en-US', {
     font-size: 0.8125rem;
     font-weight: 500;
     color: #fff;
-    background: var(--accent);
+    background: #22c55e;
     border: none;
     border-radius: 6px;
     padding: 0.625rem 1rem;
@@ -285,98 +518,76 @@ const dateStr = story.data.date.toLocaleDateString('en-US', {
     min-height: 1.25rem;
   }
 
-  .read-next {
-    margin-top: 2rem;
-    padding-top: 2rem;
-    border-top: 1px solid var(--border);
-  }
-
-  .read-next-title {
-    font-size: 1.25rem;
-    margin-bottom: 1.25rem;
-  }
-
-  .read-next-grid {
-    display: grid;
-    gap: 1rem;
-  }
-
-  .read-next-card {
-    display: block;
-    background: var(--bg-card);
-    border: 1px solid var(--border);
-    border-radius: 8px;
-    padding: 1.25rem;
-    transition: border-color 0.2s;
-  }
-
-  .read-next-card:hover {
-    border-color: var(--text-muted);
-  }
-
-  .read-next-card h3 {
-    font-size: 1rem;
-    margin-bottom: 0.375rem;
-    line-height: 1.3;
-  }
-
-  .read-next-card p {
-    font-size: 0.875rem;
-    color: var(--text-secondary);
-    line-height: 1.4;
-  }
-
-  .read-next-book {
-    display: flex;
-    gap: 1rem;
-    align-items: flex-start;
-  }
-
-  .read-next-book-img {
-    width: 100px;
-    height: auto;
-    border-radius: 4px;
-    flex-shrink: 0;
-    object-fit: cover;
-  }
-
-  .read-next-book-label {
-    display: inline-block;
+  .subscribe-fine {
     font-family: var(--font-ui);
     font-size: 0.6875rem;
-    font-weight: 500;
     color: var(--text-muted);
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    margin-bottom: 0.25rem;
+    margin-top: 0.5rem;
   }
 
-  @media (max-width: 480px) {
-    .read-next-book-img {
-      width: 80px;
+  /* Sticky mobile CTA */
+  .sticky-cta {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    padding: 0.75rem 1.25rem;
+    padding-bottom: max(0.75rem, env(safe-area-inset-bottom));
+    background: var(--bg-card);
+    border-top: 1px solid var(--border);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    transform: translateY(100%);
+    opacity: 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    display: none;
+  }
+
+  .sticky-cta.visible {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  @media (max-width: 640px) {
+    .sticky-cta {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
     }
   }
 
-  .article-cta {
-    margin-top: 2rem;
+  .sticky-cta-btn {
+    display: block;
+    flex: 1;
     text-align: center;
-  }
-
-  .article-cta .card-btn {
-    display: inline-block;
     font-family: var(--font-ui);
     font-size: 0.875rem;
     font-weight: 500;
-    color: var(--text-primary);
-    border: 1px solid var(--border);
-    padding: 0.625rem 1.5rem;
-    border-radius: 100px;
-    transition: all 0.2s;
+    color: #fff;
+    background: var(--accent);
+    padding: 0.75rem;
+    border-radius: 8px;
     text-decoration: none;
+    transition: opacity 0.2s;
   }
 
-  .article-cta .card-btn:hover {
-    border-color: var(--text-muted);
+  .sticky-cta-btn:hover {
+    opacity: 0.85;
+  }
+
+  .sticky-cta-close {
+    font-size: 1.25rem;
+    color: var(--text-muted);
+    background: none;
+    border: none;
+    padding: 0.25rem 0.5rem;
+    line-height: 1;
+    flex-shrink: 0;
+  }
+
+  .sticky-cta-close:hover {
+    color: var(--text-primary);
   }
 </style>
 
@@ -419,9 +630,12 @@ const dateStr = story.data.date.toLocaleDateString('en-US', {
   }
   measureArticle();
 
-  // Track article scroll depth
+  // Track article scroll depth + trigger nudge + sticky CTA
   const slug = window.location.pathname.split('/').filter(Boolean).pop();
   const milestones = new Set<number>();
+  const scrollNudge = document.getElementById('scroll-nudge');
+  const stickyCTA = document.getElementById('sticky-cta');
+  let stickyDismissed = sessionStorage.getItem('bz-sticky-dismissed') === '1';
 
   function checkScroll() {
     const scrolled = window.scrollY;
@@ -436,10 +650,57 @@ const dateStr = story.data.date.toLocaleDateString('en-US', {
           article_slug: slug,
           scroll_depth: m,
         });
+
+        // Show nudge at 50%
+        if (m === 50 && scrollNudge && !localStorage.getItem('bz-subscribed')) {
+          scrollNudge.classList.add('visible');
+          (window as any).gtag?.('event', 'subscribe_nudge_visible', { article_slug: slug });
+        }
       }
+    }
+
+    // Sticky CTA: show after 25%, hide near KS inline or subscribe
+    if (milestones.has(25) && stickyCTA && !stickyDismissed) {
+      stickyCTA.classList.add('visible');
     }
   }
   window.addEventListener('scroll', checkScroll, { passive: true });
+
+  // Hide sticky CTA when KS inline or subscribe section is in viewport
+  const ksInline = document.getElementById('article-ks-inline');
+  const subBlock = document.getElementById('article-subscribe');
+
+  if (stickyCTA && (ksInline || subBlock)) {
+    const hideObserver = new IntersectionObserver((entries) => {
+      entries.forEach((e) => {
+        if (e.isIntersecting) {
+          stickyCTA.classList.remove('visible');
+        } else if (milestones.has(25) && !stickyDismissed) {
+          stickyCTA.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    if (ksInline) hideObserver.observe(ksInline);
+    if (subBlock) hideObserver.observe(subBlock);
+  }
+
+  // Dismiss sticky CTA
+  document.getElementById('sticky-cta-close')?.addEventListener('click', () => {
+    stickyCTA?.classList.remove('visible');
+    stickyDismissed = true;
+    sessionStorage.setItem('bz-sticky-dismissed', '1');
+  });
+
+  // Track sticky CTA click
+  document.getElementById('sticky-cta-btn')?.addEventListener('click', () => {
+    (window as any).gtag?.('event', 'click_ks_sticky', { from_slug: slug });
+  });
+
+  // Track nudge link click
+  document.getElementById('scroll-nudge-link')?.addEventListener('click', () => {
+    (window as any).gtag?.('event', 'subscribe_nudge_click', { article_slug: slug });
+  });
 
   // Track source link clicks
   document.querySelectorAll('.prose a[href^="http"]').forEach((link) => {
@@ -452,31 +713,29 @@ const dateStr = story.data.date.toLocaleDateString('en-US', {
     });
   });
 
-  // Track Kickstarter click
-  const kickstarterCard = document.querySelector('.read-next-card[href*="kickstarter.com"]');
-  kickstarterCard?.addEventListener('click', () => {
-    (window as any).gtag?.('event', 'click_kickstarter', {
-      from_slug: slug,
-    });
+  // Track KS inline card click
+  document.getElementById('article-ks-inline')?.addEventListener('click', () => {
+    (window as any).gtag?.('event', 'click_ks_inline', { from_slug: slug });
   });
 
   // Track "Read next" clicks
-  document.querySelectorAll('.read-next-card:not([href*="kickstarter.com"])').forEach((card) => {
+  document.querySelectorAll('.read-next-card').forEach((card) => {
     card.addEventListener('click', () => {
       (window as any).gtag?.('event', 'click_read_next', {
         from_slug: slug,
         to_slug: (card as HTMLAnchorElement).href.split('/').filter(Boolean).pop(),
+        shared_tags: parseInt(card.getAttribute('data-tags') || '0'),
       });
     });
   });
 
-  // Article subscribe form
+  // Article subscribe form — foil card incentive
   const artSubForm = document.getElementById('article-subscribe-form') as HTMLFormElement;
   const artSubStatus = document.getElementById('article-subscribe-status')!;
   const artSubBlock = document.getElementById('article-subscribe')!;
 
   if (localStorage.getItem('bz-subscribed')) {
-    artSubBlock.innerHTML = '<p class="article-subscribe-text" style="color:var(--text-muted);margin:0">You\'re subscribed.</p>';
+    artSubBlock.innerHTML = '<p style="font-family:var(--font-body);font-size:0.9375rem;color:#22c55e;margin:0;text-align:center">You\'re in! Your foil card is on the way.</p>';
   } else {
     artSubForm?.addEventListener('submit', (e) => {
       e.preventDefault();
@@ -485,22 +744,26 @@ const dateStr = story.data.date.toLocaleDateString('en-US', {
       btn.disabled = true;
       btn.textContent = '...';
 
-      (window as any).gtag?.('event', 'subscribe', { email_domain: email.split('@')[1], location: 'article' });
+      (window as any).gtag?.('event', 'subscribe', {
+        email_domain: email.split('@')[1],
+        location: 'article',
+        incentive: 'foil-card',
+      });
 
       fetch('/api/subscribe', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ email, source: 'article:' + slug })
+        body: JSON.stringify({ email, source: 'article:' + slug, incentive: 'foil-card' })
       }).then((r) => {
         if (r.ok) {
           localStorage.setItem('bz-subscribed', email);
-          artSubBlock.innerHTML = '<p class="article-subscribe-text" style="color:#22c55e;margin:0">You\'re in. We\'ll send you new stories.</p>';
+          artSubBlock.innerHTML = '<p style="font-family:var(--font-body);font-size:0.9375rem;color:#22c55e;margin:0;text-align:center">You\'re in! Your foil card is on the way.</p>';
         } else { throw new Error(); }
       }).catch(() => {
         artSubStatus.textContent = 'Something went wrong. Try again.';
         artSubStatus.style.color = '#ef4444';
         btn.disabled = false;
-        btn.textContent = 'Subscribe';
+        btn.textContent = 'Claim my card';
       });
     });
   }

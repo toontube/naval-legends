@@ -1,5 +1,6 @@
 ---
 import '../styles/global.css';
+import KSBanner from '../components/KSBanner.astro';
 
 interface Props {
   class?: string;
@@ -54,6 +55,7 @@ const { class: className } = Astro.props;
   <slot name="head" />
 </head>
 <body class={className}>
+  <KSBanner />
   <slot />
 
   <script is:inline>

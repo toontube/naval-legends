@@ -15,12 +15,17 @@
     "@astrojs/react": "^5.0.3",
     "@astrojs/sitemap": "^3.7.2",
     "@chenglou/pretext": "^0.0.5",
+    "@fontsource/inter": "^5.2.8",
+    "@fontsource/lora": "^5.2.8",
+    "@fontsource/playfair-display": "^5.2.8",
+    "@resvg/resvg-js": "^2.6.2",
     "@supabase/supabase-js": "^2.103.3",
     "@types/react": "^19.2.14",
     "@types/react-dom": "^19.2.3",
     "astro": "^6.1.7",
     "motion": "^12.38.0",
     "react": "^19.2.5",
-    "react-dom": "^19.2.5"
+    "react-dom": "^19.2.5",
+    "satori": "^0.26.0"
   }
 }

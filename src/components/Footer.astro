@@ -5,7 +5,7 @@ const year = new Date().getFullYear();
 <footer class="footer">
   <div class="footer-inner">
     <div class="footer-subscribe">
-      <p class="footer-subscribe-text">Get new stories in your inbox.</p>
+      <p class="footer-subscribe-text">Subscribe for a free foil card + new stories.</p>
       <form class="footer-subscribe-form" id="subscribe-form">
         <input
           type="email"
@@ -41,12 +41,12 @@ const year = new Date().getFullYear();
     fetch('/api/subscribe', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ email: email, source: 'footer' })
+      body: JSON.stringify({ email: email, source: 'footer', incentive: 'foil-card' })
     }).then(function(r) {
       if (r.ok) {
         localStorage.setItem('bz-subscribed', email);
         subForm.style.display = 'none';
-        subStatus.textContent = 'You\'re in. We\'ll send you new stories.';
+        subStatus.textContent = 'You\'re in! Your foil card is on the way.';
         subStatus.style.color = '#22c55e';
       } else {
         throw new Error();
@@ -62,7 +62,7 @@ const year = new Date().getFullYear();
   // If already subscribed, show thank you
   if (localStorage.getItem('bz-subscribed')) {
     subForm.style.display = 'none';
-    subStatus.textContent = 'You\'re subscribed.';
+    subStatus.textContent = 'You\'re subscribed! Foil card on the way.';
     subStatus.style.color = 'var(--text-muted)';
   }
 </script>
