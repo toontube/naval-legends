@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Naval Legends — Traffic Sources Map</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-serif;background:#0a0a0f;color:#e0e0e8;min-height:100vh}
+.header{background:#111118;border-bottom:1px solid #1e1e2e;padding:24px 32px 0}
+.header h1{font-size:22px;font-weight:700;margin-bottom:2px}
+.header h1 span{color:#a29bfe}
+.header p{font-size:13px;color:#555;margin-bottom:20px}
+.tabs{display:flex;gap:0;overflow-x:auto;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+.tabs::-webkit-scrollbar{display:none}
+.tab{padding:10px 16px;font-size:13px;font-weight:500;color:#666;cursor:pointer;border-bottom:2px solid transparent;white-space:nowrap;transition:all .15s;display:flex;align-items:center;gap:5px;user-select:none}
+.tab:hover{color:#ccc}
+.tab.active{color:#e0e0e8;border-bottom-color:#a29bfe}
+.tab .cnt{font-size:11px;background:#1e1e2e;color:#666;padding:1px 7px;border-radius:10px}
+.tab.active .cnt{background:#a29bfe;color:#fff}
+.content{padding:24px 32px 60px;max-width:1400px}
+.stats{display:flex;gap:12px;margin-bottom:20px;flex-wrap:wrap}
+.stat{background:#111118;border:1px solid #1e1e2e;border-radius:10px;padding:12px 16px;min-width:90px}
+.stat-val{font-size:20px;font-weight:700}
+.stat-label{font-size:11px;color:#555}
+.search-row{display:flex;gap:12px;margin-bottom:16px;align-items:center;flex-wrap:wrap}
+.search-input{background:#111118;border:1px solid #1e1e2e;border-radius:8px;padding:8px 14px;color:#e0e0e8;font-size:13px;width:260px;outline:none}
+.search-input:focus{border-color:#a29bfe}
+.search-input::placeholder{color:#444}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:10px}
+.card{background:#111118;border:1px solid #1e1e2e;border-radius:10px;padding:14px 16px;transition:all .15s}
+.card:hover{border-color:#333;transform:translateY(-1px)}
+.card.partner{border-color:#00b89440;background:linear-gradient(135deg,#00b89408,#111118)}
+.card.contacted{border-color:#fdcb6e25}
+.card-top{display:flex;align-items:center;gap:8px;margin-bottom:4px}
+.card-name{font-size:14px;font-weight:600;flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.card.partner .card-name{color:#00b894}
+.card-reach{font-size:12px;color:#a29bfe;font-weight:600;white-space:nowrap}
+.card-tier{font-size:10px;font-weight:700;width:22px;height:22px;border-radius:6px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.tier-S{background:#fef3c720;color:#fbbf24;border:1px solid #fbbf2440}
+.tier-A{background:#a78bfa20;color:#a78bfa;border:1px solid #a78bfa40}
+.tier-B{background:#60a5fa20;color:#60a5fa;border:1px solid #60a5fa40}
+.tier-C{background:#ffffff10;color:#666;border:1px solid #ffffff15}
+.badge{font-size:10px;padding:2px 8px;border-radius:6px;font-weight:500;white-space:nowrap}
+.b-partner{background:#00b89420;color:#00b894}
+.b-contacted{background:#fdcb6e20;color:#fdcb6e}
+.b-responded{background:#a29bfe20;color:#a29bfe}
+.b-new{background:#74b9ff20;color:#74b9ff}
+.b-hold{background:#e1705520;color:#e17055}
+.b-dead{background:#ff767620;color:#ff7676}
+.b-tier{background:#ffffff08;color:#555}
+.card-note{font-size:12px;color:#555;margin-top:4px;line-height:1.3;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.section-head{font-size:13px;font-weight:600;color:#666;margin:28px 0 10px;padding-bottom:8px;border-bottom:1px solid #1e1e2e;display:flex;align-items:center;gap:8px}
+.section-head:first-of-type{margin-top:0}
+.section-head .dot{width:8px;height:8px;border-radius:50%;flex-shrink:0}
+.dot-gold{background:#fbbf24;box-shadow:0 0 6px #fbbf24}
+.dot-purple{background:#a78bfa}
+.dot-blue{background:#60a5fa}
+.dot-gray{background:#444}
+.dot-green{background:#00b894;box-shadow:0 0 6px #00b894}
+.db-section{margin-top:32px;padding-top:20px;border-top:2px solid #1e1e2e}
+.db-title{font-size:15px;font-weight:700;color:#a29bfe;margin-bottom:4px;display:flex;align-items:center;gap:8px}
+.db-subtitle{font-size:12px;color:#555;margin-bottom:16px}
+.empty{text-align:center;padding:40px 20px;color:#444;font-size:14px}
+@media(max-width:640px){
+  .header,.content{padding-left:16px;padding-right:16px}
+  .cards{grid-template-columns:1fr}
+  .search-input{width:100%}
+}
+</style>
+</head>
+<body>
+<div class="header">
+  <h1>Naval Legends: Cruisers <span>Traffic Sources Map</span></h1>
+  <p>683 targets across 25 channels &bull; 158 in our DB &bull; 525 outreach targets &bull; Green = working with us</p>
+  <div class="tabs" id="tabs"></div>
+</div>
+<div class="content" id="content"></div>
+<script>
+// ═══════════════════════════════════════════════
+// DB INFLUENCERS (from Supabase — 317 total)
+// ═══════════════════════════════════════════════
+const DB = [
+  // YouTube creators (have YT handle)
+  {name:'Real Engineering',subs:'5,000,000',status:'NEW',seg:'',yt:'RealEngineering',note:'Brian McManus covers military tech.'},
+  {name:'Jared Owen',subs:'4,300,000',status:'CONTACTED',seg:'',yt:'JaredOwen',note:'3D Titanic cross-section. PERFECT match.'},
+  {name:'My Mechanics',subs:'3,600,000',status:'CONTACTED',seg:'',yt:'myMechanics',note:'Meticulous restoration, premium products.'},
+  {name:'Forgotten Weapons',subs:'3,200,000',status:'CONTACTED',seg:'',yt:'ForgottenWeapons',note:'Deep-research military history.'},
+  {name:'Tasting History',subs:'2,800,000',status:'CONTACTED',seg:'',yt:'TastingHistory',note:'History through food, book-buying audience.'},
+  {name:'Branch Education',subs:'2,600,000',status:'CONTACTED',seg:'',yt:'BranchEducation',note:'3D cutaway animations. Same visual language as book.'},
+  {name:'The Armchair Historian',subs:'2,500,000',status:'CONTACTED',seg:'',yt:'TheArmchairHistorian',note:'Animated military history.'},
+  {name:'Mark Felton Productions',subs:'2,370,000',status:'CONTACTED',seg:'',yt:'MarkFeltonProductions',note:'British historian, massive WWII/naval.'},
+  {name:'Baumgartner Restoration',subs:'1,900,000',status:'CONTACTED',seg:'',yt:'BaumgartnerRestoration',note:'Craftsmanship audience.'},
+  {name:'Townsends',subs:'1,800,000',status:'CONTACTED',seg:'',yt:'Townsends',note:'Historical craftsmanship. Gift audience.'},
+  {name:'HistoryMarche',subs:'1,300,000',status:'CONTACTED',seg:'',yt:'HistoryMarche',note:'Animated battle map films.'},
+  {name:'PhlyDaily',subs:'1,300,000',status:'CONTACTED',seg:'',yt:'PhlyDaily',note:'War Thunder, naval battles. 1.3M subs.'},
+  {name:'Luke Towan',subs:'1,200,000',status:'NEW',seg:'',yt:'LukeTowan',note:'Diorama/miniature audience.'},
+  {name:'World War Two',subs:'1,200,000',status:'CONTACTED',seg:'',yt:'WorldWarTwo',note:'Week-by-week WWII, naval campaigns.'},
+  {name:'Hazegrayart',subs:'1,100,000',status:'CONTACTED',seg:'',yt:'Hazegrayart',note:'Warship size comparisons, naval 3D.'},
+  {name:'Fall of Civilizations',subs:'1,000,000',status:'NEW',seg:'Podcasts',yt:'FallofCivilizations',note:'100M+ podcast downloads.'},
+  {name:'Grand Illusions',subs:'900,000',status:'CONTACTED',seg:'',yt:'GrandIllusions',note:'Curious adults who buy unique gifts.'},
+  {name:'PLASMO',subs:'762,000',status:'CONTACTED',seg:'',yt:'idaemonplasmo',note:'Top scale modeling channel.'},
+  {name:'Squire',subs:'761,000',status:'CONTACTED',seg:'',yt:'SquireComedy',note:'UK War Thunder creator, cinematic naval.'},
+  {name:'The History Underground',subs:'756,000',status:'CONTACTED',seg:'',yt:'TheHistoryUnderground',note:'History through artifacts.'},
+  {name:'Squidmar Miniatures',subs:'706,000',status:'CONTACTED',seg:'',yt:'SquidmarMiniatures',note:'Art book features, KS campaigns.'},
+  {name:'The Mighty Jingles',subs:'651,000',status:'NEW',seg:'',yt:'TheMightyJingles',note:'WoWS, WoT, War Thunder. 651K.'},
+  {name:'Montemayor',subs:'600,000',status:'CONTACTED',seg:'',yt:'Montemayor',note:'Animated naval battles. PERFECT fit.'},
+  {name:'Casual Navigation',subs:'500,000',status:'CONTACTED',seg:'',yt:'CasualNavigation',note:'Ex-harbour pilot, ship handling.'},
+  {name:'Sampson Boat Co',subs:'500,000',status:'CONTACTED',seg:'',yt:'SampsonBoatCo',note:'Rebuilding 1910 yacht.'},
+  {name:'Potential History',subs:'500,000',status:'CONTACTED',seg:'',yt:'PotentialHistory',note:'WWII, audience buys reference books.'},
+  {name:'TIK History',subs:'500,000',status:'NEW',seg:'',yt:'TIKhistory',note:'Deep WWII operational analysis.'},
+  {name:'The Tank Museum',subs:'500,000',status:'CONTACTED',seg:'',yt:'TheTankMuseum',note:'100M+ views. Most-watched museum.'},
+  {name:'Midwinter Minis',subs:'462,000',status:'NEW',seg:'',yt:'MidwinterMinis',note:'KS products, wargaming buyers.'},
+  {name:'Military Aviation History',subs:'459,000',status:'NEW',seg:'',yt:'MilitaryAviationHistory',note:'Strong WWII focus.'},
+  {name:'Watch It Played',subs:'413,000',status:'RESPONDED',seg:'',yt:'WatchItPlayed',note:'KS-savvy board game audience.'},
+  {name:'Chief MAKOi',subs:'386,000',status:'CONTACTED',seg:'',yt:'ChiefMAKOi',note:'Marine engineering and life at sea.'},
+  {name:'The Dice Tower',subs:'356,000',status:'CONTACTED',seg:'',yt:'TheDiceTower',note:'Largest board game channel.'},
+  {name:'STEEL_GURU',subs:'335,000',status:'CONTACTED',seg:'',yt:'STEEL_GURU',note:'Gaijin-verified WT creator.'},
+  {name:'Night Shift',subs:'325,000',status:'NEW',seg:'',yt:'NightShiftChannel',note:'Slovak military modeler.'},
+  {name:'OddBawZ',subs:'318,000',status:'CONTACTED',seg:'',yt:'OddBawZ',note:'Daily War Thunder including naval.'},
+  {name:'The Chieftain',subs:'312,000',status:'CONTACTED',seg:'',yt:'TheChieftainsHatch',note:'Vehicle history deep-dives.'},
+  {name:'Militar und Geschichte',subs:'307,000',status:'CONTACTED',seg:'',yt:'MilitarGeschichte',note:'German military history.'},
+  {name:'The Cold War',subs:'300,000',status:'NEW',seg:'',yt:'TheColdWar',note:'Cold War naval and submarine.'},
+  {name:'Tabletop Minions',subs:'258,000',status:'CONTACTED',seg:'',yt:'TabletopMinions',note:'Miniature wargaming.'},
+  {name:"Rex's Hangar",subs:'249,000',status:'CONTACTED',seg:'',yt:'RexsHangar',note:'WWII aircraft history.'},
+  {name:'The Iron Armenian',subs:'223,000',status:'CONTACTED',seg:'',yt:'TheIronArmenian',note:'War Thunder veteran since 2008.'},
+  {name:"Andy's Hobby Headquarters",subs:'200,000',status:'CONTACTED',seg:'',yt:'AndysHobbyHQ',note:'Military model builds.'},
+  {name:'Pacific War',subs:'200,000',status:'NEW',seg:'',yt:'ThePacificWar',note:'Heavy naval focus.'},
+  {name:'Hypohystericalhistory',subs:'180,000',status:'NEW',seg:'',yt:'Hypohystericalhistory',note:'Military history animations.'},
+  {name:'DEFYN',subs:'175,000',status:'CONTACTED',seg:'',yt:'DEFYN',note:'WT creator.'},
+  {name:"Greg's Airplanes",subs:'175,000',status:'NEW',seg:'',yt:'GregsAirplanesAndAutomobiles',note:'Technical WWII aircraft.'},
+  {name:'Yuro',subs:'170,000',status:'NEW',seg:'',yt:'yaborevenge',note:'WoWS comedy/guide series. 76M+ views.'},
+  {name:'Bismarck',subs:'150,000',status:'NEW',seg:'',yt:'Bismarck',note:'Warship history, battle recreations.'},
+  {name:'Flamu',subs:'116,000',status:'FOLLOW_UP_3',seg:'World of Warship',yt:'flamuu',note:'WoWS meta reviews.'},
+  {name:'OnTableTop',subs:'111,000',status:'CONTACTED',seg:'',yt:'OnTableTop',note:'Naval wargames.'},
+  {name:'Rahdo Runs Through',subs:'111,000',status:'RESPONDED',seg:'',yt:'Rahdo',note:'Engaged KS backer community.'},
+  {name:'Little Wars TV',subs:'105,000',status:'CONTACTED',seg:'',yt:'LittleWarsTV',note:'Historical miniature wargaming.'},
+  {name:'Flory Models',subs:'100,000',status:'CONTACTED',seg:'',yt:'FloryModels',note:'Daily military modeling show.'},
+  {name:'Caliban Rising',subs:'100,000',status:'CONTACTED',seg:'',yt:'CalibanRising',note:'Warship deep dives.'},
+  {name:'theScottishKoala',subs:'93,000',status:'CONTACTED',seg:'',yt:'theScottishKoala',note:'87% War Thunder content.'},
+  {name:'National WWII Museum',subs:'90,000',status:'CONTACTED',seg:'',yt:'NationalWWIIMuseum',note:'Premier US WWII museum.'},
+  {name:'Panzerknacker',subs:'89,000',status:'NEW',seg:'',yt:'PanzerknackerWoWS',note:'WoWS replays, 81M+ views.'},
+  {name:'MikeGoesBoom',subs:'77,000',status:'CONTACTED',seg:'',yt:'MikeGoesBoom',note:'Portuguese WT creator.'},
+  {name:'Daniel Rusev',subs:'75,000',status:'NEW',seg:'',yt:'DanielRusev',note:'WoWS/WT funny compilations.'},
+  {name:'Potato Quality',subs:'67,000',status:'NEW',seg:'',yt:'PotatoQuality',note:'WoWS competitive tips. Official CC.'},
+  {name:'AlexModeling',subs:'67,000',status:'CONTACTED',seg:'',yt:'AlexModeling',note:'Naval model builds.'},
+  {name:'Sea Lord Mountbatten',subs:'66,000',status:'NEW',seg:'World of Warship',yt:'SeaLordMountbatten',note:'Connected Apr 14, 2026.'},
+  {name:'Notser',subs:'65,000',status:'FOLLOW_UP_3',seg:'WoWS Community',yt:'Notser',note:'WoWS reviews.'},
+  {name:'warship_cam',subs:'60,000',status:'DEAL_AGREED',seg:'Naval History',yt:'',note:''},
+  {name:'Olha Batchvarov',subs:'52,000',status:'CONTACTED',seg:'',yt:'ShipModelersLab',note:'THE ship modeling channel.'},
+  {name:'Panzermeister36',subs:'50,000',status:'CONTACTED',seg:'',yt:'Panzermeister36',note:'WWII armor/naval models.'},
+  {name:'The History of WWII Podcast',subs:'50,000',status:'RESPONDED',seg:'Podcasts',yt:'HistoryOfWWII',note:'Deep-dive WWII podcast.'},
+  {name:'Militargeschichte',subs:'50,000',status:'NEW',seg:'',yt:'Militargeschichte',note:'German MHV sister channel.'},
+  {name:'Armoured Archives',subs:'50,000',status:'CONTACTED',seg:'',yt:'ArmouredArchives',note:'British armour research.'},
+  {name:'Quick Kits',subs:'50,000',status:'CONTACTED',seg:'',yt:'QuickKits',note:'Model kit builds.'},
+  {name:'WoWS Best Replays',subs:'46,000',status:'NEW',seg:'',yt:'BestWorldofWarshipsReplays',note:'Daily best replays.'},
+  {name:'MecaWOWS Gameplays',subs:'45,000',status:'CONTACTED',seg:'',yt:'MecaWOWS',note:'German WoWs replays.'},
+  {name:'Quackalope',subs:'43,000',status:'CONTACTED',seg:'',yt:'Quackalope',note:'Crowdfunding campaigns.'},
+  {name:'TT WoWS',subs:'42,000',status:'NEW',seg:'',yt:'TT_WoWS',note:'Daily WoWS content.'},
+  {name:'The Sailing Robin',subs:'41,000',status:'NEW',seg:'',yt:'TheSailingRobin',note:'Battle replays, educational.'},
+  {name:'Spartan Elite43',subs:'40,000',status:'CONTACTED',seg:'',yt:'SpartanElite43',note:'WoWs Legends CC.'},
+  {name:'Napalmratte',subs:'34,000',status:'CONTACTED',seg:'',yt:'Napalmratte',note:'WT creator.'},
+  {name:'Aerroon',subs:'32,000',status:'NEW',seg:'',yt:'Aerroon',note:'EU server CC. Gameplay analysis.'},
+  {name:'Mike Guardia',subs:'30,000',status:'NEW',seg:'',yt:'MikeGuardia',note:'Military book reviews.'},
+  {name:'Man vs Meeple',subs:'30,000',status:'CONTACTED',seg:'',yt:'ManVsMeeple',note:'Board game KS reviews.'},
+  {name:'Chilhada Models',subs:'30,000',status:'NEW',seg:'',yt:'ChilhadaModels',note:'Ship model specialist 1/700.'},
+  {name:'NoZoupForYou',subs:'29,000',status:'NEW',seg:'Podcasts',yt:'NoZoupForYou',note:'Co-host of The Warships Podcast.'},
+  {name:'MagzTV',subs:'26,000',status:'CONTACTED',seg:'',yt:'MagzGTV',note:'Australian WT creator.'},
+  {name:'Tantrum House',subs:'25,000',status:'CONTACTED',seg:'',yt:'TantrumHouse',note:'Board game KS reviews.'},
+  {name:'PointyHairedJedi',subs:'23,000',status:'NEW',seg:'Podcasts',yt:'PointyHairedJedi',note:'WoWS podcast host.'},
+  {name:'iChaseGaming',subs:'20,000',status:'NEW',seg:'',yt:'iChaseGaming',note:'"How to Get Good at WoWS." OG CC.'},
+  {name:'MalteseKnight',subs:'18,000',status:'NEW',seg:'',yt:'MalteseKnight',note:'7+ years WoWS. Official CC.'},
+  {name:'Before You Back',subs:'15,000',status:'NEW',seg:'',yt:'BeforeYouBack',note:'KS preview/review.'},
+  {name:'Lesser of Two Weevils',subs:'12,200',status:'FOLLOW_UP_3',seg:'Podcast',yt:'',note:'Podcast.'},
+  {name:'CarbineCarlito',subs:'12,000',status:'NEW',seg:'',yt:'CarbineCarlito',note:'Official CC. 500+ WoWS videos.'},
+  {name:'StuntMan9630',subs:'12,000',status:'NEW',seg:'',yt:'StuntMan9630',note:'WoWs CC, ship reviews.'},
+  {name:'Mejash',subs:'12,000',status:'NEW',seg:'',yt:'Mejash',note:'WoWs streamer/CC.'},
+  {name:'TacticAngel',subs:'12,000',status:'NEW',seg:'',yt:'TacticAngel',note:'WoWs Legends CC, naval history.'},
+  {name:'Xarkun',subs:'10,000',status:'NEW',seg:'',yt:'Xarkun',note:'WoWs Legends CC.'},
+  {name:'Tbull',subs:'7,000',status:'NEW',seg:'',yt:'Tbull',note:'WoWs Legends CC, rock star.'},
+  {name:'Chiligamez17',subs:'7,000',status:'NEW',seg:'',yt:'Chiligamez17',note:'WoWs Legends CC, cruiser specialist.'},
+  {name:'StatsBloke',subs:'7,000',status:'NEW',seg:'',yt:'StatsBloke',note:'Data/stats analysis CC.'},
+  {name:'ChaosMachineGR',subs:'7,000',status:'NEW',seg:'',yt:'ChaosMachineGR',note:'37K Twitch. Top 5 WoWS streamer.'},
+  {name:'OverLordBou',subs:'7,000',status:'NEW',seg:'',yt:'OverLordBou',note:'Top 5 WoWS Twitch streamer.'},
+  {name:'Father Mundy',subs:'6,000',status:'CONTACTED',seg:'',yt:'FatherMundy',note:'WoWS Builds website creator.'},
+  {name:'Denarmo',subs:'6,000',status:'NEW',seg:'',yt:'Denarmo',note:'King of WoWS memes.'},
+  {name:'Lord_Zath',subs:'5,000',status:'DEAL_AGREED',seg:'Both',yt:'LordZath',note:'Call scheduled Feb 6, 2026.'},
+  {name:'ReimuBakarei',subs:'4,000',status:'NEW',seg:'',yt:'ReimuBakarei',note:'CV specialist CC.'},
+  {name:'Ahskance',subs:'3,000',status:'NEW',seg:'',yt:'Ahskance',note:'CV instruction library.'},
+  // No-YT-handle but key people
+  {name:'Drachinifel',subs:'550,000',status:'DEAL_AGREED',seg:'WoWS Community',yt:'',note:'Already in Collaboration.'},
+  {name:'Invicta',subs:'',status:'DEAL_AGREED',seg:'Naval History',yt:'',note:'Follow up sent after call.'},
+  {name:'AnchoredPast',subs:'',status:'DEAL_AGREED',seg:'Naval History',yt:'',note:'Exploring Maritime History.'},
+  {name:'Navy Lookout',subs:'',status:'DEAL_AGREED',seg:'Naval History',yt:'',note:'RN news. Call Feb 11.'},
+  {name:'Navy General Board',subs:'',status:'DEAL_AGREED',seg:'Naval History',yt:'',note:''},
+  {name:'navy_history_with_chris',subs:'',status:'DEAL_AGREED',seg:'Naval History',yt:'',note:''},
+  {name:'Clyde',subs:'',status:'DEAL_AGREED',seg:'WoWS Community',yt:'',note:'American tabletop + WoWS gamer.'},
+  {name:'Zelda',subs:'',status:'DEAL_AGREED',seg:'WoWS Community',yt:'',note:'Variety streamer from Canada.'},
+  {name:'Wookie',subs:'',status:'DEAL_AGREED',seg:'WoWS Community',yt:'',note:'Variety streamer, Canada. WoWS focus.'},
+  {name:'Jazzy',subs:'',status:'DEAL_AGREED',seg:'WoWS Community',yt:'',note:'Polish WoWS monogamer.'},
+  {name:'Andi',subs:'',status:'DEAL_AGREED',seg:'WoWS Community',yt:'',note:'WoWS streamer. Scheduled call Feb 20.'},
+  {name:'Rykzet',subs:'',status:'DEAL_AGREED',seg:'Both',yt:'',note:'Turkish naval enthusiast.'},
+  {name:'SeaRaptor',subs:'',status:'DEAL_AGREED',seg:'WoWS Community',yt:'',note:'American WoWS streamer.'},
+  {name:'Andy',subs:'',status:'DEAL_AGREED',seg:'WoWS Community',yt:'',note:'Active creator from the UK.'},
+  {name:'Xairen',subs:'',status:'DEAL_AGREED',seg:'WoWS Community',yt:'',note:'German WoWS streamer. Via agency.'},
+  {name:'Sebastosfig',subs:'',status:'DEAL_AGREED',seg:'Both',yt:'',note:'Follow up sent Feb 24.'},
+  {name:'Patricia Schlemmer',subs:'',status:'DEAL_AGREED',seg:'WoWS Community',yt:'',note:'German community streamer.'},
+  {name:'WOW - Team',subs:'',status:'COMPLETED',seg:'',yt:'',note:'Completed.'},
+  {name:'WW2 - The Last Battalion',subs:'',status:'DEAL_AGREED',seg:'',yt:'',note:''},
+  {name:'livinghistoryuk',subs:'',status:'DEAL_AGREED',seg:'',yt:'',note:'Contacted via Instagram.'},
+  {name:'history_of_worldwars',subs:'',status:'DEAL_AGREED',seg:'',yt:'',note:''},
+  {name:'ww2dailyhistory',subs:'',status:'DEAL_AGREED',seg:'',yt:'',note:''},
+  {name:'worldwarii_daily',subs:'',status:'DEAL_AGREED',seg:'',yt:'',note:''},
+  {name:'Standoff',subs:'',status:'DEAL_AGREED',seg:'',yt:'',note:''},
+  {name:'warship_cam',subs:'60,000',status:'DEAL_AGREED',seg:'Naval History',yt:'',note:''},
+  // Podcasts
+  {name:'Triggernometry',subs:'',status:'FOLLOW_UP_3',seg:'Podcasts',yt:'',note:''},
+  {name:"Dan Snow's History Hit",subs:'',status:'FOLLOW_UP_3',seg:'Podcasts',yt:'',note:''},
+  {name:'WW2 Pod: We Have Ways',subs:'',status:'FOLLOW_UP_3',seg:'Podcasts',yt:'',note:'Holland / Murray.'},
+  {name:'Beginning To Now',subs:'',status:'FOLLOW_UP_3',seg:'Podcasts',yt:'',note:''},
+  {name:'Bearing Straight',subs:'',status:'FOLLOW_UP_3',seg:'Podcasts',yt:'',note:''},
+  {name:'Hidden History Happy Hour',subs:'',status:'FOLLOW_UP_3',seg:'Podcasts',yt:'',note:''},
+  {name:"Mariner's Mirror Podcast",subs:'',status:'FOLLOW_UP_3',seg:'Podcasts',yt:'',note:''},
+  {name:'History of Everything Podcast',subs:'',status:'PRICING_HOLD',seg:'Podcasts',yt:'',note:'60-90s integration = $2000.'},
+  {name:'The Rest Is History',subs:'',status:'PRICING_HOLD',seg:'Podcasts',yt:'',note:''},
+  {name:'The Warships Podcast',subs:'',status:'FOLLOW_UP_3',seg:'Podcasts',yt:'',note:''},
+  {name:'Unauthorized Hx Pacific War',subs:'',status:'FOLLOW_UP_3',seg:'Podcasts',yt:'',note:''},
+  {name:'The Maritime History Podcast',subs:'',status:'FOLLOW_UP_3',seg:'Podcasts',yt:'',note:'Dr. Sam Willis.'},
+  {name:'WW2: Both Sides Of The Wire',subs:'',status:'FOLLOW_UP_3',seg:'Podcasts',yt:'',note:''},
+  {name:'Karanvir Singh Nayyar',subs:'',status:'FOLLOW_UP_3',seg:'Podcasts',yt:'',note:''},
+  // Other notable DB entries
+  {name:'Military History Visualized',subs:'',status:'FOLLOW_UP_3',seg:'Naval History',yt:'',note:'900K subs on YT.'},
+  {name:'Kings and Generals',subs:'',status:'FOLLOW_UP_3',seg:'Naval History',yt:'',note:'3.5M subs on YT.'},
+  {name:'The Operations Room',subs:'',status:'FOLLOW_UP_3',seg:'Naval History',yt:'',note:'1.34M subs on YT.'},
+  {name:'Battleship New Jersey',subs:'',status:'FOLLOW_UP_3',seg:'Naval History',yt:'',note:'230K subs on YT.'},
+  {name:'Lindybeige',subs:'',status:'FOLLOW_UP_3',seg:'Naval History',yt:'',note:'900K subs on YT.'},
+  {name:'Extra History',subs:'',status:'FOLLOW_UP_3',seg:'Naval History',yt:'',note:'1.3M subs on YT.'},
+  {name:'The Great War',subs:'',status:'FOLLOW_UP_3',seg:'Naval History',yt:'',note:'1.5M subs on YT.'},
+  {name:'Epic History',subs:'',status:'PRICING_HOLD',seg:'Naval History',yt:'',note:'600K subs on YT.'},
+  {name:'The Fat Electrician',subs:'',status:'NEW',seg:'Naval History',yt:'',note:'500K subs on YT.'},
+  {name:'Sub Brief',subs:'',status:'PRICING_HOLD',seg:'Naval History',yt:'',note:'Follow up sent Feb 26.'},
+  {name:'Duty & Valor',subs:'',status:'NEGOTIATING',seg:'Naval History',yt:'',note:'True Stories of Courage.'},
+  {name:'Painezor',subs:'',status:'NEGOTIATING',seg:'WoWS Community',yt:'',note:'UK creator.'},
+  {name:'Tcfreer',subs:'',status:'NEGOTIATING',seg:'WoWS Community',yt:'',note:'British war sim streamer.'},
+  {name:'Majorpar',subs:'',status:'PRICING_HOLD',seg:'WoWS Community',yt:'',note:'Active WoWS player.'},
+  {name:'Megaprojects',subs:'',status:'PRICING_HOLD',seg:'Naval History',yt:'',note:'Price details sent.'},
+  {name:'House of History',subs:'',status:'PRICING_HOLD',seg:'Naval History',yt:'',note:'Price details sent.'},
+  {name:'Deconstructed',subs:'',status:'PRICING_HOLD',seg:'Naval History',yt:'',note:'Flat rate response.'},
+  {name:'SandRhoman History',subs:'',status:'PRICING_HOLD',seg:'Naval History',yt:'',note:''},
+  {name:'Not What You Think',subs:'',status:'PRICING_HOLD',seg:'Naval History',yt:'',note:''},
+];
+
+// ═══════════════════════════════════════════════
+// OUTREACH TARGETS (from research docs)
+// ═══════════════════════════════════════════════
+const TARGETS = [
+  {id:'reddit',label:'Reddit',icon:'💬',count:'45+',sources:[
+    {name:'r/WorldOfWarships',tier:'S',reach:'61.6k',note:'Core audience'},
+    {name:'r/WarshipPorn',tier:'S',reach:'100k+',note:'Proven wins'},
+    {name:'r/todayilearned',tier:'S',reach:'35M+',note:'Proven wins'},
+    {name:'r/damnthatsinteresting',tier:'S',reach:'10M+',note:'Proven wins'},
+    {name:'r/interestingasfuck',tier:'S',reach:'12M+',note:'Proven wins'},
+    {name:'r/modelmakers',tier:'S',reach:'200k+'},
+    {name:'r/NavalHistory',tier:'A',reach:'80k'},{name:'r/WarCollege',tier:'A',reach:'113k'},{name:'r/MilitaryHistory',tier:'A',reach:'380k'},
+    {name:'r/Warships',tier:'A'},{name:'r/Battleships',tier:'A'},{name:'r/USNavy',tier:'A',reach:'65k'},{name:'r/RoyalNavy',tier:'A',reach:'40k'},
+    {name:'r/submarines',tier:'A',reach:'55k'},{name:'r/pics',tier:'A'},{name:'r/mapporn',tier:'A'},{name:'r/bookporn',tier:'A'},
+    {name:'r/engineeringporn',tier:'A'},{name:'r/ArtBooks',tier:'A'},
+    {name:'r/ScaleModel',tier:'B'},{name:'r/PlasticModels',tier:'B'},{name:'r/ShipModels',tier:'B'},{name:'r/Illustration',tier:'B'},
+    {name:'r/ConceptArt',tier:'B'},{name:'r/ImaginaryWarships',tier:'B'},{name:'r/ww2',tier:'B'},{name:'r/ww1',tier:'B'},
+    {name:'r/coldwar',tier:'B'},{name:'r/ColdWarShips',tier:'B'},{name:'r/MilitaryPorn',tier:'B'},{name:'r/TankPorn',tier:'B'},
+    {name:'r/CombatFootage',tier:'B'},{name:'r/AzureLane',tier:'B',reach:'310k'},{name:'r/kancolle',tier:'B'},
+    {name:'r/WoWs_Legends',tier:'B'},{name:'r/worldofwarshipsBlitz',tier:'B'},{name:'r/DreadnoughtGame',tier:'B'},
+    {name:'r/kickstarter',tier:'C',reach:'87k'},{name:'r/gamingkickstarters',tier:'C'},{name:'r/boardgames',tier:'C'},
+    {name:'r/navy',tier:'C'},{name:'r/Military',tier:'C'},{name:'r/MilitaryHistoryMemes',tier:'C'},
+    {name:'r/KriegsMarine',tier:'C'},{name:'r/ImperialJapaneseNavy',tier:'C'},{name:'r/RegiaMarina',tier:'C'},{name:'r/SovietNavy',tier:'C'},
+  ]},
+  {id:'youtube',label:'YouTube',icon:'▶',count:'58+',sources:[
+    {name:'Drachinifel',tier:'S',reach:'550k',note:'Attached — in collab'},{name:'Mark Felton',tier:'S',reach:'2.4M'},
+    {name:'The Operations Room',tier:'S',reach:'1.34M'},{name:'Montemayor',tier:'S',reach:'600k'},
+    {name:'Mustard',tier:'S',reach:'~1.1M'},{name:'Curious Droid',tier:'S',reach:'~900k'},
+    {name:'Military History Visualized',tier:'A',reach:'900k'},{name:'Chieftain',tier:'A',reach:'470k'},
+    {name:'Battleship New Jersey',tier:'A',reach:'230k'},{name:'Dark Seas',tier:'A',reach:'~1M'},
+    {name:'Dark Docs',tier:'A',reach:'~1.5M'},{name:'Dark5',tier:'A',reach:'~2M'},
+    {name:'Kings and Generals',tier:'A',reach:'3.5M'},{name:'The Great War',tier:'A',reach:'1.5M'},
+    {name:'World War Two',tier:'A',reach:'1.6M'},{name:'Simple History',tier:'A',reach:'4M'},
+    {name:'Lindybeige',tier:'A',reach:'900k'},{name:'Fat Electrician',tier:'A',reach:'500k'},
+    {name:'Real Engineering',tier:'A',reach:'5M'},{name:'Extra History',tier:'A',reach:'1.3M'},
+    {name:'Invicta',tier:'A',note:'Deal agreed'},{name:'Jared Owen',tier:'A',reach:'4.3M'},
+    {name:'PhlyDaily',tier:'A',reach:'1.3M'},{name:'Hazegrayart',tier:'A',reach:'1.1M'},
+    {name:'HistoryMarche',tier:'A',reach:'1.3M'},{name:'Casual Navigation',tier:'A',reach:'500k'},
+    {name:"Andy's HobbyHQ",tier:'B',reach:'200k'},{name:'PLASMO',tier:'B',reach:'762k'},
+    {name:'Night Shift',tier:'B',reach:'325k'},{name:'Flory Models',tier:'B',reach:'100k'},
+    {name:'Flamu',tier:'B',reach:'116k'},{name:'Flambass',tier:'B',reach:'350k'},
+    {name:'iChase',tier:'B',reach:'20k'},{name:'Notser',tier:'B',reach:'65k'},
+    {name:'SeaRaptor',tier:'B',reach:'30k',note:'Deal agreed'},{name:'Aerroon',tier:'B',reach:'32k'},
+    {name:'WoWS Official',tier:'B',reach:'600k'},{name:'Lord_Zath',tier:'B',reach:'5k',note:'Deal agreed'},
+    {name:'Squidmar Miniatures',tier:'B',reach:'706k'},
+    {name:'Naval History with Dr Alex',tier:'A',note:'🇬🇧 UK — Dr Alex Clarke, naval historian. Twitch+Discord'},
+    {name:'The History Chap',tier:'A',reach:'~200k',note:'🇬🇧 UK — British military & naval history stories'},
+    {name:'BFBS Forces News',tier:'A',reach:'~350k',note:'🇬🇧 UK — British Forces Broadcasting Service'},
+    {name:'Important Naval History',tier:'B',note:'🇺🇸 US — Dedicated naval history + TikTok'},
+    {name:'10+ museum channels',tier:'C'},
+  ]},
+  {id:'newsletters',label:'Newsletters',icon:'📰',count:'49',sources:[
+    {name:'Ships in Scale',tier:'S',note:'Relaunching Q1 2026'},{name:'Naval History Magazine (USNI)',tier:'S',note:'$75/review'},
+    {name:'Proceedings (USNI)',tier:'S'},{name:'USNI News',tier:'S'},{name:'Warships IFR',tier:'S',note:'Iain Ballantyne'},
+    {name:'Navy Lookout (UK)',tier:'S',note:'Deal agreed'},{name:'Parka Blogs',tier:'S',note:'KS art-book reviews'},
+    {name:'CDR Salamander',tier:'A',reach:'10k+'},{name:"Naval's Archive",tier:'A'},{name:'The Military Reading Room',tier:'A'},
+    {name:'The History Reader',tier:'A'},{name:'DOD Reads',tier:'A'},{name:'MOAA Recommended Reads',tier:'A'},
+    {name:'FineScale Modeler',tier:'A'},{name:'Warfare History Network',tier:'A'},{name:'War History Online',tier:'A'},
+    {name:'Sea Control (CIMSEC)',tier:'A'},
+    {name:'The Drive — War Zone',tier:'B'},{name:'19FortyFive',tier:'B'},{name:'National Interest',tier:'B'},
+    {name:'Task & Purpose',tier:'B'},{name:'KS Arts newsletter',tier:'B'},{name:'KS Reads newsletter',tier:'B'},
+    {name:'Kicktraq',tier:'B'},{name:'BackerKit blog',tier:'B'},
+    {name:'David Winkler',tier:'B',note:'Reviewer'},{name:"Vincent P. O'Hara",tier:'B',note:'Reviewer'},
+    {name:'Jon Parshall',tier:'B',note:'Reviewer'},
+    {name:'Navy News (navynews.co.uk)',tier:'A',note:'🇬🇧 Official RN newspaper. 30K monthly print. Book reviews'},
+    {name:'Warship World magazine',tier:'A',note:'🇬🇧 Bi-monthly via NavyBooks. Historical + modern warships'},
+    {name:'Warship annual (Osprey)',tier:'A',note:'🇬🇧 Conway successor. Academic warship journal'},
+  ]},
+  {id:'forums',label:'Forums',icon:'🌐',count:'21',sources:[
+    {name:'NavWeaps',tier:'S'},{name:'kbismarck.com',tier:'S'},{name:'Model Ship World',tier:'S'},
+    {name:'Combined Fleet (IJN)',tier:'S'},{name:'Dreadnought Project',tier:'S'},
+    {name:'Haze Gray & Underway',tier:'A'},{name:'NavSource',tier:'A'},{name:'Naval Encyclopedia',tier:'A'},
+    {name:'Battleships-Cruisers.co.uk',tier:'A'},{name:'HMS Hood Association',tier:'A'},
+    {name:'alternatehistory.com',tier:'A'},{name:'Shipbucket',tier:'A'},
+    {name:'Ships of Scale',tier:'A'},{name:'Scalemates',tier:'A'},{name:'FineScaleModeler forum',tier:'A'},
+    {name:'WoWS Official Forum',tier:'A'},{name:'SubSim Radio Room',tier:'A'},
+    {name:'HMS Hood.com',tier:'C'},{name:'Tapatalk naval boards',tier:'C'},
+    {name:'Navy Net (Rum Ration)',tier:'A',note:'🇬🇧 Unofficial RN community forum. Serving + veterans'},
+    {name:'Royal Navy Research Archive Forums',tier:'A',note:'🇬🇧 Research: carriers, subs, Fleet Air Arm'},
+    {name:'Ships Nostalgia',tier:'B',note:'🇬🇧 Ship/boat enthusiasts, RN discussion section'},
+    {name:'UK Defence Forum',tier:'B',note:'🇬🇧 Dedicated Royal Navy section'},
+  ]},
+  {id:'veterans',label:'Veterans',icon:'🎖',count:'19',sources:[
+    {name:'USNI',tier:'S',reach:'~50k'},{name:'Tin Can Sailors',tier:'S',reach:'12k'},{name:'USSVI',tier:'S',reach:'12k'},
+    {name:'Society for Nautical Research',tier:'A'},{name:'Navy Records Society (UK)',tier:'A'},
+    {name:'HMS Hood Association',tier:'A',reach:'400'},{name:'HMS Belfast Association',tier:'A'},
+    {name:'Royal Naval Association',tier:'A',reach:'9k+'},{name:'Nautical Research Guild',tier:'A'},
+    {name:'IPMS/USA',tier:'A',reach:'5k+'},{name:'IPMS UK',tier:'A'},{name:'IPMS Canada',tier:'A'},{name:'IPMS Australia',tier:'A'},
+    {name:'NASOH',tier:'B'},{name:'Naval History & Heritage Command',tier:'B'},{name:'Naval War College Foundation',tier:'B'},
+    {name:'USS Salem / Quincy veterans',tier:'C'},{name:'USS Belknap Association',tier:'C'},
+    {name:'World Ship Society',tier:'A',note:'🇬🇧 Thousands of members, 20+ UK branches. Warship Supplement quarterly'},
+    {name:'British Commission for Maritime History',tier:'A',note:'🇬🇧 Academic umbrella for UK maritime history'},
+    {name:'Naval Dockyards Society',tier:'A',note:'🇬🇧 Annual conference at NMM Greenwich'},
+    {name:'Maritime Heritage Trust',tier:'B',note:'🇬🇧 Vessel preservation since 1969'},
+    {name:'Maritime Archaeology Trust',tier:'B',note:'🇬🇧 Shipwreck research, runs museum'},
+    {name:'Society of Model Shipwrights',tier:'B',note:'🇬🇧 Museum-standard ship models'},
+  ]},
+  {id:'facebook',label:'Facebook',icon:'f',count:'30+',sources:[
+    {name:'Naval History & Heritage Command',tier:'A',reach:'478k'},{name:'Pacific Battleship Center',tier:'A',reach:'425k'},
+    {name:'Battleship North Carolina',tier:'A',reach:'90k'},{name:'WoWS International',tier:'A'},
+    {name:'WORLD OF WARSHIPS WORLD',tier:'A'},{name:'WoWs Deutschsprachige',tier:'A'},
+    {name:'Battleships & Battlecruisers WWII',tier:'B'},{name:'IJN History & Facts',tier:'B'},
+    {name:'Warship Models Underway',tier:'B',note:'High promo tolerance'},{name:"World's Naval Modelers",tier:'B'},
+    {name:'Ship Models Group',tier:'B'},{name:'Washington Ship Model Society',tier:'B'},
+    {name:'Historic Naval Ships Association',tier:'B'},{name:'WoWS Legends',tier:'B'},{name:'WoWS Blitz',tier:'B'},
+    {name:'Battle Warship: Naval Empire',tier:'C',reach:'373k'},{name:'Museum pages',tier:'C'},
+  ]},
+  {id:'instagram',label:'Instagram',icon:'📷',count:'20',sources:[
+    {name:'@usnavy',tier:'S',reach:'3M'},{name:'@royalnavy',tier:'S',reach:'676k'},{name:'@worldofwarships',tier:'S',reach:'113k'},
+    {name:'@americasnavy',tier:'A',reach:'471k'},{name:'@usnavalacademy',tier:'A',reach:'293k'},
+    {name:'@imperialwarmuseums',tier:'A',reach:'128k'},{name:'@usnavalairforces',tier:'A',reach:'106k'},
+    {name:'@usnavycno',tier:'A',reach:'90k'},{name:'@royalmuseumsgreenwich',tier:'A',reach:'81k'},
+    {name:'@wows_legends',tier:'A',reach:'64k'},
+    {name:'@thegoodshipillustration',tier:'B',reach:'50k'},{name:'@warships_blitz',tier:'B',reach:'35k'},
+    {name:'@sea.museum',tier:'B',reach:'32k'},{name:'@royalnavyphotographers',tier:'B',reach:'10k'},
+    {name:'@natmuseumrn',tier:'B',reach:'4.8k'},{name:'@nmusn',tier:'B',reach:'4.6k'},
+    {name:'@shipsofthesea',tier:'B',reach:'3.7k'},{name:'@modelship_builder',tier:'B'},
+  ]},
+  {id:'tiktok',label:'TikTok',icon:'♪',count:'7+',sources:[
+    {name:'@worldofwarships',tier:'A',reach:'73.9k'},{name:'@that_warship_guy',tier:'A'},
+    {name:'@thecraigmiles',tier:'B',reach:'531.6k',note:'Navy veteran'},
+    {name:'@hasardlee',tier:'B',reach:'363.2k'},{name:'@bull52772',tier:'B',reach:'364.8k'},
+    {name:'@yushathomas',tier:'B',reach:'187.5k'},{name:'@realshawnwalsh_',tier:'B',reach:'177.9k'},
+  ]},
+  {id:'telegram',label:'Telegram',icon:'✈',count:'22',sources:[
+    {name:'@worldofwarships',tier:'S',note:'Via partnership'},{name:'@wows_legends',tier:'S'},
+    {name:'@korabli',tier:'S',note:'Russian WoWS'},
+    {name:'@CovertShores',tier:'A',note:'H I Sutton — submarine & naval OSINT. Writes for USNI News & Naval News'},
+    {name:'@ourwarstoday',tier:'A',reach:'50.5k',note:'War news, history, OSINT — covers naval ops'},
+    {name:'@warfareanalysis',tier:'A',reach:'34.1k',note:'24/7 military analysis, covers naval operations'},
+    {name:'@AdmiralsWarCollege',tier:'A',note:'Naval strategy & history'},
+    {name:'@OSINTdefender',tier:'A',reach:'5.1k',note:'Breaking OSINT, covers maritime intel & autonomous vessels'},
+    {name:'@MilitaryStrategist',tier:'A',reach:'4.4k',note:'Global conflict updates, naval strategy'},
+    {name:'STL Military Scale Modeling',tier:'A',reach:'9.8k'},
+    {name:'@vehicles_stl',tier:'B',reach:'12.4k',note:'3D printable military ships/vehicles — hobbyist overlap'},
+    {name:'@militarywave',tier:'B',reach:'41.8k',note:'War chronicle & military developments'},
+    {name:'@militarysummary',tier:'B',reach:'75k+',note:'Military situation analysis'},
+    {name:'@The_Military_Channel',tier:'B',reach:'774',note:'Military news, history, documentaries'},
+    {name:'@USNavyTelegram',tier:'B',reach:'345',note:'US Navy news, NATO naval forces'},
+    {name:'@themaritimetelegraph',tier:'B',reach:'837',note:'Leading maritime newspaper, Eastern Europe'},
+    {name:'@WW2_Truth',tier:'B',note:'WWII history with audio, video, witnesses'},
+    {name:'@warmonitors',tier:'C',note:'Breaking news and geopolitics'},
+    {name:'@r_combatfootage',tier:'C'},
+  ]},
+  {id:'discord',label:'Discord',icon:'🎧',count:'12',sources:[
+    {name:'The Drydock (Drachinifel)',tier:'S',reach:'9.3k',note:'Attached'},
+    {name:'World of Warships Official',tier:'S',reach:'207.5k'},
+    {name:'Modern Warships Official',tier:'A',reach:'264k'},{name:'Naval Experience',tier:'A'},
+    {name:'Model Shipwrights',tier:'A'},
+    {name:'The Relic Registry',tier:'B'},{name:'MICOLCO',tier:'B'},{name:'World War History',tier:'B'},
+    {name:'Scale Modelers',tier:'B'},{name:'Model Building & Projects',tier:'C'},{name:'GMCC',tier:'C'},
+  ]},
+  {id:'podcasts',label:'Podcasts',icon:'🎙',count:'24',sources:[
+    {name:'The Drydock (Drachinifel)',tier:'S',note:'In play'},{name:'Sea Control (CIMSEC)',tier:'S',note:'In play'},
+    {name:"Mariner's Mirror",tier:'S',note:'In play'},{name:'Proceedings Podcast',tier:'S',note:'In play'},
+    {name:'We Have Ways',tier:'A',note:'In play'},{name:'History of WWII Podcast',tier:'A'},
+    {name:'The Maritime History Podcast',tier:'A'},{name:'Warships Pod',tier:'A'},
+    {name:'Unauthorized Hx Pacific War',tier:'A'},{name:'New Books in Military History',tier:'A',note:'Book-launch fit'},
+    {name:'War Books',tier:'A',note:'Book-launch fit'},
+    {name:'The WW2 Podcast',tier:'B'},{name:'WW2 On Topic',tier:'B'},{name:'Little Wars FM',tier:'B'},
+    {name:'The Art of Wargaming',tier:'B'},{name:'Tides of History',tier:'B'},{name:'Fall of Civilizations',tier:'B'},
+    {name:'History Hit',tier:'B'},{name:'History Matters',tier:'B'},
+    {name:'ShipWrekt',tier:'A',note:'🇬🇧 UK — RN veteran hosts, naval battle deep-dives (Falklands, Sheffield, Coventry)'},
+  ]},
+  {id:'museums',label:'Museums',icon:'🏛',count:'25',sources:[
+    // Ships featured in the book — direct tie-in
+    {name:'HMS Belfast (IWM London)',tier:'S',note:'Featured in book Ch.5 — cruiser Belfast illustrated review'},
+    {name:'USS Salem / US Naval Shipbuilding Museum',tier:'S',note:'Featured in book Ch.7 — cruiser Salem. Quincy, MA'},
+    {name:'Cruiser Aurora Museum (St. Petersburg)',tier:'S',note:'Featured in book Ch.1 — Diana-class cruisers'},
+    {name:'USS Olympia (Independence Seaport Museum)',tier:'S',note:'Featured in book Ch.1 — illustrated review. Philadelphia'},
+    {name:'USS Indianapolis Memorial (Indianapolis)',tier:'S',note:'Featured in book Ch.5 — heavy cruiser Indianapolis'},
+    // Major naval museums — gift shop / review copy / consignment
+    {name:'Battleship New Jersey Museum',tier:'S',reach:'230k YT',note:'Ryan Szimanski. Gift shop consignment opportunity'},
+    {name:'USS Iowa Museum (Pacific Battleship Center)',tier:'S',reach:'425k FB',note:'LA. Gift shop + social media partnership'},
+    {name:'National WWII Museum (New Orleans)',tier:'S',reach:'90k YT',note:'Premier US WWII museum. Review copy + retail'},
+    {name:'USS Midway Museum (San Diego)',tier:'A',note:'Most-visited naval museum in US. Gift shop'},
+    {name:'Imperial War Museums (IWM)',tier:'A',reach:'128k IG',note:'London. HMS Belfast is part of IWM'},
+    {name:'National Maritime Museum (Greenwich)',tier:'A',reach:'81k IG',note:'Royal Museums Greenwich'},
+    {name:'National Museum of the Royal Navy',tier:'A',reach:'4.8k IG',note:'Portsmouth Historic Dockyard'},
+    {name:'National Museum of the US Navy',tier:'A',reach:'4.6k IG',note:'Washington Navy Yard'},
+    {name:'Battleship North Carolina',tier:'A',reach:'90k FB',note:'Wilmington, NC. Gift shop'},
+    {name:'Battleship Cove (Fall River, MA)',tier:'A',note:'USS Massachusetts, PT boats'},
+    {name:'USS Hornet Museum (Alameda, CA)',tier:'A',note:'Aircraft carrier museum'},
+    {name:'Intrepid Sea, Air & Space Museum',tier:'A',note:'NYC. Massive foot traffic'},
+    {name:'Historic Naval Ships Association',tier:'A',note:'Umbrella org for all museum ships'},
+    {name:'USS Alabama Battleship Memorial Park',tier:'B',note:'Mobile, AL'},
+    {name:'Submarine Force Museum (Groton, CT)',tier:'B',note:'USS Nautilus. Submarine history'},
+    {name:'National Maritime Museum (Sydney)',tier:'B',reach:'32k IG',note:'Australian maritime museum'},
+    {name:'Ships of the Sea Museum (Savannah)',tier:'B',reach:'3.7k IG'},
+    {name:'Canadian War Museum (Ottawa)',tier:'B',note:'Naval history exhibits'},
+    {name:'Deutsches Marinemuseum (Wilhelmshaven)',tier:'B',note:'German naval museum'},
+    {name:'Yamato Museum (Kure, Japan)',tier:'B',note:'1/10 scale Yamato model. Japanese naval history'},
+    // UK museum ships — direct relevance to the book
+    {name:'HMS Caroline (Belfast)',tier:'S',note:'🇬🇧 Last WWI light CRUISER — sole Jutland survivor. Directly relevant to book'},
+    {name:'HMS Warrior (Portsmouth)',tier:'A',note:'🇬🇧 First iron-hulled warship. Portsmouth Historic Dockyard'},
+    {name:'HMS Cavalier (Chatham)',tier:'A',note:'🇬🇧 Last surviving WWII RN destroyer. National memorial'},
+    {name:'HMS Alliance (Gosport)',tier:'A',note:'🇬🇧 Cold War submarine, £7M restoration. Royal Navy Submarine Museum'},
+    {name:'HMS Trincomalee (Hartlepool)',tier:'A',note:'🇬🇧 Last surviving RN ship built in India (1817). Part of NMRN'},
+    {name:'HMS M.33 (Portsmouth)',tier:'B',note:'🇬🇧 Rare WWI monitor ship. Part of NMRN'},
+    {name:'SS Great Britain (Bristol)',tier:'A',note:'🇬🇧 Brunel\'s iron-hulled steamship. Major visitor attraction'},
+    {name:'Cutty Sark (Greenwich)',tier:'A',note:'🇬🇧 Last surviving tea clipper. Major tourist attraction'},
+    {name:'Fleet Air Arm Museum (Yeovilton)',tier:'A',note:'🇬🇧 Europe\'s largest naval aviation museum. 22K+ FB likes'},
+    {name:'Historic Dockyard Chatham',tier:'A',reach:'10K IG',note:'🇬🇧 HMS Cavalier + broader naval heritage'},
+  ]},
+  {id:'kickstarter',label:'Kickstarter',icon:'🚀',count:'5',sources:[
+    {name:'KS Arts Newsletter',tier:'S',note:'Huge discovery lever'},{name:'KS Reads Newsletter',tier:'S'},
+    {name:'Kicktraq',tier:'A'},{name:'BackerKit Blog',tier:'A'},
+    {name:'r/kickstarter + r/gamingkickstarters',tier:'B'},
+  ]},
+  {id:'wows',label:'WoWS Creators',icon:'🎮',count:'97',sources:[
+    // Tier S — Great relevance
+    {name:'Joby',tier:'S',note:'🇬🇧 UK — Fan website creator (wows-gamer-blog), highly relevant'},
+    {name:'Pasch',tier:'S',note:'🇩🇪 Germany — Active streamer (Panzerknacker)'},
+    {name:'Rykzet',tier:'S',note:'🇹🇷 Turkey — Naval enthusiast. Deal agreed'},
+    {name:'Rita Sobral',tier:'S',note:'🇬🇧 UK — WoWS/WoT + naval enthusiast'},
+    {name:'Jose M.',tier:'S',note:'🇪🇸 Spain — Highly relevant Spanish-speaking streamer (jmcapitan)'},
+    {name:'Sone',tier:'S',note:'🇺🇸 US — Highly consistent, engaged American streamer'},
+    {name:'Wookie',tier:'S',note:'🇨🇦 Canada — Variety streamer, WoWS focused. Clan leader. Deal agreed'},
+    {name:'KidneyCowboy',tier:'S',note:'🇺🇸 US — Military enthusiast from Texas'},
+    {name:'Potato Quality',tier:'S',note:'🇨🇦 Canada — Great channel size, engaged audience'},
+    {name:'Christian (CL4P DADDY)',tier:'S',note:'🇺🇸 US — USAF veteran from Texas. Military enthusiast'},
+    // Tier A — Good relevance
+    {name:'DavyJ90',tier:'A',note:'🇮🇹 Italy — War Thunder + WoWS'},
+    {name:'Aerroon',tier:'A',note:'🇪🇪 Estonia — Popular Estonian streamer'},
+    {name:'Hurz',tier:'A',note:'🇩🇪 Germany — Top relevance'},
+    {name:'Krado',tier:'A',note:'🇩🇪 Germany — YouTuber team'},
+    {name:'PS',tier:'A',note:'🇪🇸 Spain — Active Spanish streamer'},
+    {name:'Szparagus',tier:'A',note:'🇵🇱 Poland — Large Polish creator'},
+    {name:'Jordi Toda',tier:'A',note:'🇪🇸 Spain — WoT and WoWS enthusiast'},
+    {name:'Stats (StatsBloke)',tier:'A',note:'🇬🇧 UK — WoWS / War Thunder streamer'},
+    {name:'Daniel (Daniel_Russev)',tier:'A',note:'🇧🇬 Bulgaria — EN-speaking, gameplay compilations'},
+    {name:'Andi (Maracher)',tier:'A',note:'🇩🇪 Germany — Pure WoWS streamer. Via agency. Deal agreed'},
+    {name:'David (CarbineCarlito)',tier:'A',note:'🇮🇪 Ireland — WoWS + variety, highly active'},
+    {name:'Painezor',tier:'A',note:'🇬🇧 UK — Decent creator'},
+    {name:'Andy (AndyTheCupid)',tier:'A',note:'🇬🇧 UK — Good and active. Deal agreed'},
+    {name:'Tiger (TigersDen)',tier:'A',note:'🇳🇴 Norway — Variety, primarily WoWS + D&D'},
+    {name:'Tcfreer',tier:'A',note:'🇬🇧 UK — British war sim streamer, decent community'},
+    {name:'Jazzy (JazzyJones)',tier:'A',note:'🇵🇱 Poland — WoWS monogamer. Deal agreed'},
+    {name:'GrumblesTheDwarf',tier:'A',note:'🇩🇪 Germany — WT, WoWS, military games'},
+    {name:'SriverFX',tier:'A',note:'🇩🇪 Germany — Multilingual, streams in Turkish'},
+    {name:'Heki (PanzerHeki)',tier:'A',note:'🇭🇺 Hungary — Medium-size WoWS streamer'},
+    {name:'Giannis (ChaosMachineGR)',tier:'A',note:'🇬🇷 Greece — Consistent, active. Recommended'},
+    {name:'Majorpar',tier:'A',note:'WoWS + competitive shooters'},
+    {name:'SeaRaptor',tier:'A',note:'🇺🇸 US — American WoWS streamer, naval enthusiast. Deal agreed'},
+    {name:'Lord_Zath',tier:'A',note:'🇺🇸 US — WoWS + naval enthusiast. Deal agreed'},
+    {name:'Reporte de Batalla',tier:'A',note:'🇲🇽 Mexico — Fan community, WoWS + naval warfare'},
+    {name:'GameProdigy',tier:'A',note:'🇺🇸 US — Active WoWS Twitch streamer'},
+    {name:'HapaFodder',tier:'A',note:'🇺🇸 US — USN CPO veteran, naval history nerd'},
+    {name:'MiniHannibal65',tier:'A',note:'🇺🇸 US — Teacher, focused on WoWS'},
+    {name:'CaptainOverPen',tier:'A',note:'🇨🇦 Canada — WoWS streamer from Vancouver'},
+    {name:'Clyde (ClydePlays)',tier:'A',note:'🇺🇸 US — Tabletop + WoWS. Small but high-quality. Deal agreed'},
+    {name:'John (John_The_Ruthless)',tier:'A',note:'🇺🇸 US — WoWS community veteran'},
+    {name:'Zelda (zeldasauce)',tier:'A',note:'🇨🇦 Canada — Female variety streamer. Deal agreed'},
+    // Tier B — Medium relevance
+    {name:'NeuNeu (PotarTV)',tier:'B',note:'🇫🇷 France — Semi-active'},
+    {name:'Helrig',tier:'B',note:'🇩🇪 Germany — Active German streamer'},
+    {name:'Andre_Prime',tier:'B',note:'🇩🇪 Germany — Active German streamer'},
+    {name:'Patricia Schlemmer',tier:'B',note:'🇩🇪 Germany — Female streamer. Deal agreed'},
+    {name:'CrossWax',tier:'B',note:'🇫🇷 France — Small but dedicated French creator'},
+    {name:'Jam (JamDear)',tier:'B',note:'🇬🇧 UK — Variety girl streamer'},
+    {name:'Xairen',tier:'B',note:'🇩🇪 Germany — Via agency (rahft.com). Deal agreed'},
+    {name:'Neisch',tier:'B',note:'🇩🇪 Germany — Medium-sized German streamer'},
+    {name:'Roman (romohoma)',tier:'B',note:'🇺🇦 Ukraine — RU-speaking WoWS streamer'},
+    {name:'Matteo (Just_Blizzard)',tier:'B',note:'🇮🇹 Italy — Quit WoWS, more IRL content now'},
+    {name:'Sebastosfig',tier:'B',note:'🇫🇷 France — Paradox + WoWS. Deal agreed'},
+    {name:'Philstifty',tier:'B',note:'🇩🇪 Germany — Small German WoWS streamer'},
+    {name:'Doobiecool',tier:'B',note:'🇧🇪 Belgium — French-speaking WoWS creator'},
+    {name:'Marchingegnere',tier:'B',note:'🇮🇹 Italy — Airspace engineer, gamer'},
+    {name:'Bistikaze',tier:'B',note:'WoWS + CS2 female streamer'},
+    {name:'Hyf1re',tier:'B',note:'🇺🇸 US — Portland, Oregon. No direct contacts'},
+    {name:'Notser',tier:'B',note:'🇺🇸 US — Great channel, but inactive for a year'},
+    {name:'Diurach',tier:'B',note:'🏴 Scotland — Former soldier. WoWS + WT'},
+    {name:'keviseeb',tier:'B',note:'🇺🇸 US — Stable WoWS + sim content creator'},
+    {name:'foamingjetty',tier:'B',note:'🇺🇸 US — Grand strategy + WoWS. Clan leader'},
+    {name:'3 Smidge Energy',tier:'B',note:'🇺🇸 US — Military game enthusiast'},
+    // NEW — from Twitch/YouTube research (Apr 2026)
+    {name:'g4nng',tier:'A',note:'🇺🇸 US — #3 most-watched WoWS on Twitch, ~341 avg viewers'},
+    {name:'Trenlass',tier:'A',note:'Twitch+YT — CC for WoWS and War Thunder, ~273 avg viewers'},
+    {name:'AeroSpaceNews',tier:'A',note:'🇺🇸 US — Twitch Partner, closed beta tester on NA'},
+    {name:'Admiral_Revan',tier:'A',note:'🇦🇺 Australia — Twitch Partner, also plays SWTOR'},
+    {name:'LittleWhiteMouse',tier:'A',note:'Famous detailed ship reviews. Left CC program 2021 but still produces content'},
+    {name:'bfk_fer1yfe',tier:'B',note:'Twitch — ~132 avg viewers'},
+    {name:'Killerbin',tier:'B',note:'Twitch — ~120 avg viewers'},
+    {name:'ThePeaceWizard',tier:'B',note:'Twitch — ~96 avg viewers'},
+    {name:'Laorie',tier:'B',note:'🇫🇷 France — ~94 avg viewers, French-language'},
+    {name:'Premiere_Raccoon',tier:'B',note:'🇯🇵 Japan — ~90 avg viewers, Japanese-language'},
+    {name:'Stargatesg68',tier:'B',note:'🇫🇷 France — ~82 avg viewers, French WoWS'},
+    {name:'Therbak47',tier:'B',note:'Twitch — ~81 avg viewers'},
+    {name:'seadonkeygaming',tier:'B',note:'Twitch — ~81 avg viewers'},
+    {name:'OhMyDoge',tier:'B',note:'🇫🇷 France — ~79 avg viewers, French WoWS'},
+    {name:'Druvik_',tier:'B',note:'🇵🇱 Poland — ~76 avg viewers, Polish-language'},
+    {name:'Jimbo_The_Grey',tier:'B',note:'Twitch — ~76 avg viewers'},
+    {name:'Lunae',tier:'B',note:'🇫🇷 France — ~70 avg viewers, French WoWS'},
+    {name:'Captn_Honour',tier:'B',note:'Twitch — ~66 avg viewers'},
+    {name:'TheRuzzO',tier:'B',note:'🇪🇸 Spain — ~66 avg viewers, Spanish-language'},
+    {name:'Meduzkoo',tier:'B',note:'🇺🇦 Ukraine — ~190 avg viewers, RU-language'},
+    // Legends-only (console)
+    {name:'Blaymeister',tier:'B',note:'🇬🇧 UK — Legends CC, weekday evening streams'},
+    {name:'pgrapidz',tier:'B',note:'Legends CC — commentary and meme content'},
+    {name:'The_Monk52',tier:'B',note:'Legends CC — detailed ship guides'},
+    {name:'the-jaguar',tier:'B',note:'Legends CC — game economics, patch notes'},
+    {name:'Adlerwache',tier:'B',note:'🇩🇪 Germany — Legends CC, historical ship backgrounds'},
+    {name:'ALEXANDROID',tier:'B',note:'🇪🇸 Spain — Legends CC, first mobile-focused CC'},
+    // Tier C — Low relevance
+    {name:'MrMacavity',tier:'C',note:'🇸🇪 Sweden — Not super active or valuable'},
+    {name:'uocat',tier:'C',note:'🇸🇬 Singapore — Chinese-speaking streamer'},
+    {name:'PlastikV',tier:'C',note:'🇸🇬 Singapore — Chinese-speaking streamer'},
+    {name:'TheWhiteJack',tier:'C',note:'🇮🇹 Italy — Currently inactive'},
+    {name:'Biisonn',tier:'C',note:'🇬🇧 UK — Barely active'},
+    {name:'Bryn (Citerella)',tier:'C',note:'🇩🇪 Germany — Inactive WoWS/WT streamer'},
+    {name:'Haruna',tier:'C',note:'🇵🇭 Philippines — Small, semi-active'},
+    {name:'Iolaire',tier:'C',note:'🇺🇸 US — Inactive for 1 year'},
+  ]},
+  {id:'twitter',label:'X / Twitter',icon:'𝕏',count:'9',sources:[
+    {name:'@NavalInstitute',tier:'S',reach:'324k',note:'Archive Photo of the Week — pre-schedule retweets'},
+    {name:'@ShipComrade',tier:'S',note:'#ShipOfTheDay curator'},
+    {name:'@DOTMARAD',tier:'S',note:'US Maritime Administration — large-ship content'},
+    {name:'@marinmuseum',tier:'S',note:'Swedish naval museum'},
+    {name:'@NtlMuseumUSNavy',tier:'A',reach:'4.6k',note:'National Museum US Navy'},
+    {name:'@worldofwarships',tier:'A',note:'Official WoWS account'},
+    {name:'@galvnavalmuseum',tier:'B',reach:'392',note:'Galveston Naval Museum'},
+    {name:'@MMaritimeMuseum',tier:'B',note:'Michigan Maritime Museum'},
+    {name:'@ns_mma',tier:'B',note:'Nova Scotia Maritime Museum'},
+    {name:'@UKDefJournal',tier:'A',reach:'110k',note:'🇬🇧 UK Defence Journal, strong naval coverage'},
+    {name:'@geoallison',tier:'A',reach:'30.6k',note:'🇬🇧 UKDJ founder, naval + cyber security specialist'},
+    {name:'@IBallantyn',tier:'A',note:'🇬🇧 Iain Ballantyne, Editor Warships IFR'},
+  ]},
+  {id:'bookclubs',label:'Book Clubs',icon:'📚',count:'10',sources:[
+    {name:'History Book Club (Goodreads)',tier:'S',reach:'26,080',note:'Active Naval History folder — AMA + giveaway'},
+    {name:'Folio Society Devotees (LibraryThing)',tier:'S',reach:'2,550',note:'Premium book collectors'},
+    {name:'Maritime History (Goodreads)',tier:'A',note:'Naval, shipbuilding, exploration'},
+    {name:'Naval History folder threads (Goodreads)',tier:'A',note:'Dedicated warship & battle threads'},
+    {name:'Naval Order Book Club shelf',tier:'B',note:'Curated shelf for discoverability'},
+    {name:'Military History tag groups (Goodreads)',tier:'B',note:'Broad military history crossover'},
+    {name:'NWC / USNA reading groups',tier:'A',note:'War college reading lists — cohort 10-200'},
+    {name:'Maritime museum book clubs',tier:'A',note:'Museum-hosted public events'},
+    {name:'LibraryThing naval history threads',tier:'B',note:'Age of Sail, submarines, sea battles'},
+    {name:'Chris Sams — Naval History Substack',tier:'S',note:'Naval/WWII history + podcast'},
+  ]},
+  {id:'defense',label:'Defense Outlets',icon:'🛡',count:'14',sources:[
+    {name:'War on the Rocks',tier:'S',note:'Book reviews + battle studies. Pitch to editor@warontherocks.com'},
+    {name:'CIMSEC',tier:'S',note:'Maritime security, book reviews. Books@cimsec.org'},
+    {name:'Naval News',tier:'S',reach:'~800k/mo',note:'Naval equipment, history features'},
+    {name:'Defense One',tier:'S',note:'Op-eds welcome. submissions@defenseone.com'},
+    {name:'Breaking Defense',tier:'S',reach:'~1M/mo',note:'Naval reporter Diana Stancy'},
+    {name:'The Maritime Executive',tier:'S',note:'Maritime affairs, long-form features'},
+    {name:"Jane's (Janes.com)",tier:'A',note:'Authoritative defense/ship coverage'},
+    {name:'Defense News',tier:'A',note:'Navy beat, opinion section'},
+    {name:'The War Zone (The Drive)',tier:'A',note:'Investigative defense, maritime'},
+    {name:'RealClearDefense',tier:'A',note:'Editor: David Craig'},
+    {name:'The Diplomat',tier:'B',note:'Asia-Pacific naval policy'},
+    {name:'National Interest',tier:'B',note:'Strategic history'},
+    {name:'Military Times',tier:'B',note:'tips@militarytimes.com'},
+    {name:'Task & Purpose',tier:'B'},
+  ]},
+  {id:'libraries',label:'Libraries',icon:'📖',count:'14',sources:[
+    {name:'Naval War College — Eccles Library',tier:'S',note:'library@usnwc.edu — collection policy published'},
+    {name:'NHHC Navy Dept Library',tier:'S',note:'NHHC-NavyLibrary@us.navy.mil — 114k titles'},
+    {name:'Naval Postgraduate School — Dudley Knox',tier:'S',note:'Purchase form live. gmarlatt@nps.edu'},
+    {name:'US Naval Academy — Nimitz Library',tier:'S',note:'Special Collections & Archives'},
+    {name:'West Point — Jefferson Library',tier:'S'},
+    {name:'King\'s College London — War Studies',tier:'S',note:'Postgrads + faculty, naval strategy'},
+    {name:'Caird Library (Greenwich)',tier:'S',note:'World\'s largest maritime library'},
+    {name:'IWM Library & Archives',tier:'A',note:'Military & naval history collections'},
+    {name:'Army War College — AHEC Library',tier:'A'},
+    {name:'Britannia Royal Naval College',tier:'A',note:'RN officer cadets'},
+    {name:'Univ of Portsmouth — Maritime Studies',tier:'A'},
+    {name:'Univ of Exeter — Centre for Maritime Historical Studies',tier:'B'},
+    {name:'Australian War Memorial Research Centre',tier:'B'},
+    {name:'Canadian War Museum / CNRS partners',tier:'B'},
+  ]},
+  {id:'retailers',label:'Retailers',icon:'🏪',count:'16',sources:[
+    {name:'Pen & Sword / Seaforth',tier:'S',note:'~500 titles/yr. Military, naval, maritime'},
+    {name:'Osprey Publishing',tier:'S',note:'Illustrated reference, modeler audience'},
+    {name:'USNI Bookstore / Naval Institute Press',tier:'S',note:'Professional naval audience'},
+    {name:'Mystic Seaport Museum Shop',tier:'S',note:'Maritime history, museum visitors'},
+    {name:'Battleship New Jersey BattleSHOP',tier:'S',note:'Email list via Constant Contact'},
+    {name:'Casemate Publishers',tier:'A',note:'Military history distributor'},
+    {name:'Schiffer Publishing',tier:'A',note:'Military & specialty books'},
+    {name:'Helion & Company',tier:'A',note:'UK military history publisher'},
+    {name:'Folio Society',tier:'A',note:'Premium collector editions'},
+    {name:'Warlord Games',tier:'A',note:'Wargaming retailer, historical accuracy'},
+    {name:'USS Iowa Museum Store',tier:'A',note:'Pacific Battleship Center'},
+    {name:'USS Midway Museum Store',tier:'A',note:'Most-visited naval museum gift shop'},
+    {name:'HMS Belfast / IWM Shop',tier:'A'},
+    {name:'HobbyLink Japan / Hannants (UK)',tier:'A',note:'Scale model retailers'},
+    {name:'Battleship North Carolina shop',tier:'A'},
+    {name:'Battleship Cove shop',tier:'B'},
+    {name:'NavyBooks',tier:'A',note:'🇬🇧 Specialist naval bookseller. Publishes Warship World magazine'},
+    {name:'Naval and Maritime Books (Greenwich)',tier:'B',note:'🇬🇧 Est. 1974, used + antiquarian naval books'},
+    {name:'McLaren Books',tier:'B',note:'🏴 Scotland — Leading maritime/naval book dealer'},
+  ]},
+  {id:'events',label:'Events',icon:'📅',count:'12',sources:[
+    {name:'IPMS Nationals 2026',tier:'S',note:'425 vendor tables. 2026_vendor@ipmsusa.org'},
+    {name:'Scale Model World Telford 2026',tier:'S',note:'IPMS(UK). World\'s largest scale model show'},
+    {name:'USNI Annual Meeting 2026',tier:'S',note:'Naval officers + industry'},
+    {name:'Naval History Symposium',tier:'S',note:'USNA-hosted, naval historians & scholars'},
+    {name:'Historicon 2026',tier:'S',note:'Historical wargaming convention'},
+    {name:'Origins Game Fair 2026',tier:'S',note:'Board games + historical wargaming'},
+    {name:'Society for Military History — Annual Meeting',tier:'A',note:'Academic military historians'},
+    {name:'Fleet Week NYC 2026',tier:'A',note:'Public maritime festival'},
+    {name:'Fleet Week San Francisco 2026',tier:'A',note:'Vendor booth opportunity'},
+    {name:'NASOH Conference 2026/2027',tier:'A',note:'Maritime history professionals'},
+    {name:'Euromilitaire / Salute London',tier:'B',note:'European militaria & modeling'},
+    {name:'WonderFest / regional IPMS shows',tier:'B',note:'US regional modeling events'},
+    {name:'Naval Dockyards Society Conference',tier:'A',note:'🇬🇧 Mar 2026, NMM Greenwich. Suez Crisis theme'},
+    {name:'New Researchers in Maritime History',tier:'A',note:'🇬🇧 Apr 2026, Univ of Southampton. BCMH + SNR'},
+  ]},
+  {id:'altplatforms',label:'Alt Platforms',icon:'🌍',count:'8',sources:[
+    {name:'CovertShores (Mastodon)',tier:'S',note:'H I Sutton — submarine/naval OSINT, high authority'},
+    {name:'NHN_OW_team (Mastodon)',tier:'S',note:'Naval-history.net — transcribed ships\' logs'},
+    {name:'navalhistorynet (Bluesky)',tier:'S',note:'Archival naval history community'},
+    {name:'Windward AI (Bluesky)',tier:'A',note:'Ship-tracking, #ShipOfTheDay content'},
+    {name:'DreadShips (Mastodon)',tier:'B',note:'Naval mishaps, historical deep-dives'},
+    {name:'Typhoon Bearing Substack',tier:'S',note:'75 eps. Naval tech + security interviews. typhoonbearing@gmail.com'},
+    {name:'School of War Reader Substack',tier:'A',note:'Curated military history readings'},
+    {name:'Startups & Sea Power Substack',tier:'A',note:'Naval innovation, maritime tech'},
+    {name:'Naval Gazing blog',tier:'A',note:'In-depth naval history. 24-part Falklands War series'},
+    {name:'Aspects of History Substack',tier:'B',note:'🇬🇧 Reader-supported, Royal Navy content featured'},
+    {name:'Naval Air History blog',tier:'B',note:'Fleet Air Arm / aircraft over water'},
+  ]},
+  {id:'journals',label:'Journals',icon:'🎓',count:'9',sources:[
+    {name:'Journal of Military History',tier:'S',note:'EditorsJMH@vmi.edu — formal book review programme'},
+    {name:'Intl Journal of Maritime History (IJMH)',tier:'S',note:'ijmh@hum.leidenuniv.nl'},
+    {name:'Intl Journal of Naval History (IJNH)',tier:'S',note:'ijnh.seahistory.org/submissions/'},
+    {name:"Mariner's Mirror (SNR / Cambridge)",tier:'S',note:'Nautical & maritime history'},
+    {name:'Naval War College Review',tier:'S',note:'NWC Press — book review submissions'},
+    {name:'Northern Mariner (CNRS)',tier:'A',note:'Canadian & international maritime'},
+    {name:'RUSI Journal',tier:'A',note:'Defence & maritime strategy'},
+    {name:'War in History (SAGE)',tier:'A',note:'Social, political, naval war aspects'},
+    {name:'Intl Journal of Nautical Archaeology',tier:'B',note:'Ship/boat studies'},
+  ]},
+  {id:'press',label:'Press',icon:'📰',count:'10',sources:[
+    {name:'New York Times Book Review',tier:'S',note:'Major national review desk — long lead'},
+    {name:'NY Review of Books',tier:'S',note:'Long-form review essays'},
+    {name:'TLS (Times Literary Supplement)',tier:'S',note:'UK scholarly/literary reviews'},
+    {name:'London Review of Books',tier:'S',note:'Long-form essays, history & politics'},
+    {name:'Washington Post Books',tier:'S'},
+    {name:'LA Review of Books',tier:'S',note:'Open to unsolicited review pitches'},
+    {name:'The New Yorker',tier:'A',note:'Culture section / Briefly Noted'},
+    {name:'The Atlantic',tier:'A',note:'Culture and books'},
+    {name:'Foreign Affairs — Reviews',tier:'A',note:'Strategic/international history'},
+    {name:'The Guardian Books',tier:'A',note:'UK national, weekend features'},
+  ]},
+  {id:'linkedin',label:'LinkedIn',icon:'in',count:'14',sources:[
+    {name:'Sam Cox — Dir. NHHC',tier:'S',note:'Prime institutional gatekeeper for US Navy history'},
+    {name:'Rob Doane — NWC Museum Curator',tier:'S',note:'Direct access to war-college scholars'},
+    {name:'Tracie Logan — USNA Museum Sr. Curator',tier:'S'},
+    {name:'National Museum of the Royal Navy',tier:'S',note:'Company page — major institutional channel'},
+    {name:'Naval History & Heritage Command',tier:'S',note:'Company page'},
+    {name:'National Maritime Historical Society',tier:'S',note:'Sea History magazine audience'},
+    {name:'Naval Historical Foundation',tier:'A',note:'Heritage society with events'},
+    {name:'ASNE (Naval Engineers)',tier:'A',note:'Naval architects & engineers'},
+    {name:'Danelle Eaton — Puget Sound Navy Museum',tier:'A'},
+    {name:'Kevin Cullen — Wisconsin Maritime Museum',tier:'A'},
+    {name:'Laura Lawfer Orr — Hampton Roads Naval Museum',tier:'A'},
+    {name:'Dave Gerr — Naval architect',tier:'A',note:'Technical authority for reconstructions'},
+    {name:'Katie Blaha — Chesapeake Bay Maritime Museum',tier:'A',note:'Advancement/donor networks'},
+    {name:'Ryan Meyer — NWC Museum Director',tier:'A'},
+  ]},
+  {id:'pinterest',label:'Pinterest',icon:'📌',count:'8',sources:[
+    {name:'Victor Welch — Maritime Art board',tier:'S',reach:'963 pins',note:'Naval painting curation'},
+    {name:'The Folio Society (official)',tier:'S',note:'Premium illustrated books'},
+    {name:'Erin Albion — Folio Society Library board',tier:'S',reach:'814 pins',note:'Collector documentation'},
+    {name:'Murdoch1a79 — Warships board',tier:'S',reach:'396 pins',note:'Warship photography'},
+    {name:'Zach Nero — Naval Art board',tier:'S',reach:'308 pins'},
+    {name:'Karel Jespers — Vintage Maritime Posters',tier:'S',reach:'244 pins'},
+    {name:'Kim H — Ship Plans board',tier:'A',reach:'257 pins',note:'Ship plans / modeler refs'},
+    {name:'Robin Ramsay — Naval Artwork / WW2 Naval Art',tier:'A',reach:'191+76 pins'},
+  ]},
+];
+
+// ═══════════════════════════════════════════════
+// Which DB influencers belong in which tab
+// ═══════════════════════════════════════════════
+function dbForTab(tabId) {
+  return DB.filter(d => {
+    const isPodcast = (d.seg||'').includes('Podcast');
+    if (tabId === 'youtube') return d.yt && !isPodcast;
+    if (tabId === 'podcasts') return isPodcast;
+    // For other tabs, show non-YT, non-podcast influencers that aren't already in youtube/podcast
+    if (tabId === 'instagram') return false; // no IG handles in DB
+    if (tabId === 'tiktok') return false;
+    if (tabId === 'telegram') return false;
+    if (tabId === 'discord') return false;
+    if (tabId === 'facebook') return false;
+    if (tabId === 'reddit') return false;
+    if (tabId === 'forums') return false;
+    if (tabId === 'veterans') return false;
+    if (tabId === 'newsletters') return false;
+    if (tabId === 'kickstarter') return false;
+    return false;
+  });
+}
+
+const WORKING = new Set(['DEAL_AGREED','CONTRACT_SIGNED','BRIEFED','DRAFT_REVIEW','CONTENT_LIVE','PAID','COMPLETED']);
+const CONTACTED = new Set(['CONTACTED','FOLLOW_UP_1','FOLLOW_UP_2','FOLLOW_UP_3']);
+
+function isPartnerName(name) {
+  const partnerNames = ['Drachinifel','SeaRaptor','Lord_Zath','Xairen','Andy','Andi','Jazzy','Wookie','Clyde','Zelda','Rykzet','Sebastosfig','Patricia Schlemmer','warship_cam','Invicta','AnchoredPast','Navy Lookout','Navy General Board','navy_history_with_chris','WOW - Team','WW2 - The Last Battalion','livinghistoryuk','history_of_worldwars','ww2dailyhistory','worldwarii_daily','Standoff'];
+  for (const p of partnerNames) {
+    if (name.includes(p) || p.includes(name)) return true;
+  }
+  return false;
+}
+
+function statusBadge(status) {
+  if (WORKING.has(status)) return {cls:'b-partner',text:status.replace(/_/g,' ')};
+  if (status === 'RESPONDED' || status === 'NEGOTIATING') return {cls:'b-responded',text:status};
+  if (CONTACTED.has(status)) return {cls:'b-contacted',text:'CONTACTED'};
+  if (status === 'PRICING_HOLD') return {cls:'b-hold',text:'PRICING HOLD'};
+  if (status === 'DECLINED' || status === 'BLACKLIST') return {cls:'b-dead',text:status};
+  return {cls:'b-new',text:status};
+}
+
+let activeTab = TARGETS[0].id;
+let searchQ = '';
+
+const tabsEl = document.getElementById('tabs');
+const contentEl = document.getElementById('content');
+
+function renderTabs() {
+  tabsEl.innerHTML = TARGETS.map(t => {
+    const dbCount = dbForTab(t.id).length;
+    const total = t.sources.length + dbCount;
+    return `<div class="tab ${t.id===activeTab?'active':''}" data-id="${t.id}">
+      ${t.icon} ${t.label} <span class="cnt">${total}</span>
+    </div>`;
+  }).join('');
+  tabsEl.querySelectorAll('.tab').forEach(t => {
+    t.addEventListener('click', () => { activeTab = t.dataset.id; renderTabs(); renderContent(); });
+  });
+}
+
+function renderContent() {
+  const t = TARGETS.find(d => d.id === activeTab);
+  if (!t) return;
+  const dbEntries = dbForTab(t.id);
+
+  let sources = t.sources;
+  let dbFiltered = dbEntries;
+  if (searchQ) {
+    const q = searchQ.toLowerCase();
+    sources = sources.filter(s => s.name.toLowerCase().includes(q) || (s.note||'').toLowerCase().includes(q));
+    dbFiltered = dbFiltered.filter(d => d.name.toLowerCase().includes(q) || (d.note||'').toLowerCase().includes(q));
+  }
+
+  // Stats
+  const partnerCount = sources.filter(s => isPartnerName(s.name)).length + dbFiltered.filter(d => WORKING.has(d.status)).length;
+  const tiers = {S:0,A:0,B:0,C:0};
+  sources.forEach(s => tiers[s.tier]++);
+
+  let html = `<div class="stats">
+    <div class="stat"><div class="stat-val">${sources.length + dbFiltered.length}</div><div class="stat-label">Total</div></div>
+    <div class="stat"><div class="stat-val" style="color:#00b894">${partnerCount}</div><div class="stat-label">Partners</div></div>
+    <div class="stat"><div class="stat-val" style="color:#fbbf24">${tiers.S}</div><div class="stat-label">Tier S</div></div>
+    <div class="stat"><div class="stat-val" style="color:#a78bfa">${tiers.A}</div><div class="stat-label">Tier A</div></div>
+    <div class="stat"><div class="stat-val" style="color:#60a5fa">${tiers.B}</div><div class="stat-label">Tier B</div></div>
+    ${dbFiltered.length?`<div class="stat"><div class="stat-val" style="color:#a29bfe">${dbFiltered.length}</div><div class="stat-label">In our DB</div></div>`:''}
+  </div>`;
+
+  html += `<div class="search-row">
+    <input class="search-input" type="text" placeholder="Search..." value="${searchQ}" id="si">
+  </div>`;
+
+  // Outreach targets by tier
+  if (sources.length > 0) {
+    ['S','A','B','C'].forEach(tier => {
+      const group = sources.filter(s => s.tier === tier);
+      if (!group.length) return;
+      const dotCls = tier==='S'?'dot-gold':tier==='A'?'dot-purple':tier==='B'?'dot-blue':'dot-gray';
+      html += `<div class="section-head"><span class="dot ${dotCls}"></span>Tier ${tier} — ${group.length} targets</div><div class="cards">`;
+      const sorted = [...group].sort((a,b) => {
+        const ap = isPartnerName(a.name)?1:0, bp = isPartnerName(b.name)?1:0;
+        if (ap !== bp) return bp - ap;
+        const p = s => parseInt((s||'0').replace(/[^0-9]/g,''))||0;
+        return p(b.reach) - p(a.reach);
+      });
+      sorted.forEach(s => {
+        const partner = isPartnerName(s.name);
+        html += `<div class="card ${partner?'partner':''}">
+          <div class="card-top">
+            <div class="card-tier tier-${s.tier}">${s.tier}</div>
+            <div class="card-name">${partner?'✓ ':''}${s.name}</div>
+            ${s.reach?`<div class="card-reach">${s.reach}</div>`:''}
+            ${partner?`<div class="badge b-partner">PARTNER</div>`:`<div class="badge b-tier">Tier ${s.tier}</div>`}
+          </div>
+          ${s.note?`<div class="card-note">${s.note}</div>`:''}
+        </div>`;
+      });
+      html += `</div>`;
+    });
+  }
+
+  // DB influencers section
+  if (dbFiltered.length > 0) {
+    html += `<div class="db-section">
+      <div class="db-title">📋 Our Influencers from Database (${dbFiltered.length})</div>
+      <div class="db-subtitle">Influencers we've contacted or are tracking — green = working with us</div>
+    </div>`;
+
+    // Sort: partners first, then by subs
+    const sorted = [...dbFiltered].sort((a,b) => {
+      const aw = WORKING.has(a.status)?1:0, bw = WORKING.has(b.status)?1:0;
+      if (aw !== bw) return bw - aw;
+      const p = s => parseInt((s||'0').replace(/[^0-9]/g,''))||0;
+      return p(b.subs) - p(a.subs);
+    });
+
+    html += `<div class="cards">`;
+    sorted.forEach(d => {
+      const partner = WORKING.has(d.status);
+      const badge = statusBadge(d.status);
+      html += `<div class="card ${partner?'partner':CONTACTED.has(d.status)?'contacted':''}">
+        <div class="card-top">
+          <div class="card-name">${partner?'✓ ':''}${d.name}</div>
+          ${d.subs?`<div class="card-reach">${d.subs}</div>`:''}
+          <div class="badge ${badge.cls}">${badge.text}</div>
+        </div>
+        ${d.note?`<div class="card-note">${d.note}</div>`:''}
+      </div>`;
+    });
+    html += `</div>`;
+  }
+
+  if (sources.length === 0 && dbFiltered.length === 0) {
+    html += `<div class="empty">No sources match your search</div>`;
+  }
+
+  contentEl.innerHTML = html;
+  document.getElementById('si')?.addEventListener('input', e => { searchQ = e.target.value; renderContent(); });
+  if (searchQ) { const i = document.getElementById('si'); if(i){i.focus();i.selectionStart=i.selectionEnd=searchQ.length;} }
+}
+
+renderTabs();
+renderContent();
+</script>
+</body>
+</html>
