@@ -20,7 +20,7 @@ Chaplain Howell Maurice Forgy was 33 years old, a Presbyterian minister from Phi
 
 Under the rules of war, a chaplain is a noncombatant. Forgy couldn't handle weapons or ammunition. So he walked along the ammunition passing line, where sailors were tying ropes to the metal shell cases, hauling them up the dead hoists by hand, boosting them onto each other's backs, and carrying them up two flights of ladders to the guns.
 
-Somewhere in the interior of the ship, moving along the line of sweating men, Forgy called out: "Praise the Lord and pass the ammunition."
+Lieutenant Edwin F. Woodhead was in the line when he heard a voice behind him: "Praise the Lord and pass the ammunition." He turned and saw Forgy walking toward him, patting men on the back as he went.
 
 The phrase spread through the ship. Then through the fleet. Then through the country.
 
@@ -28,11 +28,15 @@ The phrase spread through the ship. Then through the fleet. Then through the cou
 
 Frank Loesser, who would later write Guys and Dolls, saw a newspaper clipping about the phrase. The clipping attributed it to Captain William Maguire, the senior fleet chaplain for the Pacific Fleet. Maguire was a Catholic chaplain who had been on a dock at Pearl Harbor that day, not aboard New Orleans. Loesser wrote the song and credited Maguire.
 
-Kay Kyser's Orchestra recorded it in 1942. It went to No. 1. It sold over 450,000 copies in two months.
+Loesser himself didn't think it would work. He believed Americans didn't want a real war song. He was wrong.
 
-The problem was that the Navy had kept New Orleans's crew from talking to the press. Maguire, when asked, said he couldn't recall saying it. The crew of New Orleans pushed Forgy to come forward.
+Kay Kyser's Orchestra recorded it in 1942. It went to No. 1. The Merry Macs took their version to No. 8. The Jubalaires hit No. 10 on the R&B chart. The song sold over 450,000 copies in two months and sat on Variety's best-seller list for three. Loesser donated his royalties to the Navy Relief Society.
 
-On October 31, 1942, the Navy identified the actual speaker: Lieutenant Howell Forgy, age 34, chaplain aboard USS New Orleans. His shipmates confirmed it. Maguire didn't contest it.
+The problem was that the Navy had kept New Orleans's crew from talking to the press. Reporters kept attributing the phrase to other chaplains. Maguire, when asked, said he couldn't recall saying it. The crew of New Orleans pushed Forgy to come forward, but Forgy wouldn't bite. He told reporters the phrase "should remain a legend, rather than be associated with any particular person."
+
+His officers disagreed. They arranged a press meeting with the crew. On October 31, 1942, the Navy identified the actual speaker: Lieutenant Howell Forgy, age 34, chaplain aboard USS New Orleans. His shipmates confirmed it. Maguire didn't contest it.
+
+A Pittsburgh Post-Gazette article from January 1943 pointed out that a similar line appears in John Ford's 1939 film *Drums Along the Mohawk.* Whether Forgy had seen the film is not recorded. Whether it matters is debatable. He said it on a burning ship with Japanese planes overhead. That's the version people remember.
 
 Forgy published a memoir in 1944: *...And Pass the Ammunition.* He retired in 1946 as a Commander. He died on January 20, 1972, two days after his 64th birthday.
 
