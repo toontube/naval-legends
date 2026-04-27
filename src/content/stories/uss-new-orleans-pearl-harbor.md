@@ -8,7 +8,7 @@ tags: [wwii, pearl-harbor, uss-new-orleans, chaplain-forgy, tassafaronga]
 readingTime: 5
 ---
 
-At 07:48 on December 7, 1941, USS New Orleans was drawing all her power from the dock at Navy Yard Berth 16. Her boilers were cold. She was in for engine repairs. When the first bombs hit and the yard power failed, every light on the ship went out.
+At 07:48 on December 7, 1941, USS New Orleans was drawing all her power from the dock at Navy Yard Berth 16. Her boilers were cold. She was having a turbine lifted, which meant her own electrical power was off. When the first bombs hit and the yard power failed, every light on the ship went out.
 
 No electricity meant no ammunition hoists. No hoists meant no shells at the guns. The 5-inch/25-caliber anti-aircraft rounds weighed 54 pounds each.
 
@@ -37,6 +37,12 @@ The problem was that the Navy had kept New Orleans's crew from talking to the pr
 His officers disagreed. They arranged a press meeting with the crew. On October 31, 1942, the Navy identified the actual speaker: Lieutenant Howell Forgy, age 34, chaplain aboard USS New Orleans. His shipmates confirmed it. Maguire didn't contest it.
 
 A Pittsburgh Post-Gazette article from January 1943 pointed out that a similar line appears in John Ford's 1939 film *Drums Along the Mohawk.* Whether Forgy had seen the film is not recorded. Whether it matters is debatable. He said it on a burning ship with Japanese planes overhead. That's the version people remember.
+
+Years later, Forgy appeared on the game show *I've Got a Secret* and told the whole thing flat:
+
+> "We were tied up at 1010 dock in Pearl Harbor when we were attacked. We were having a turbine lifted, and all of our electrical power wasn't on, so when we went to lift the ammunition by the hoist, we had to form lines of men, form a bucket brigade, and we began to carry the ammunition up through the quarterdeck into the gurneys. I stood there and directed some of the boys down the port side and some down the starboard side, and as they were getting a little tired, I just happened to say, 'Praise the Lord and pass the ammunition.' That's all there was to it."
+
+That's all there was to it. A tired man said a thing. Frank Loesser made it a hit. The Navy spent ten months arguing about who said it.
 
 Forgy published a memoir in 1944: *...And Pass the Ammunition.* He retired in 1946 as a Commander. He died on January 20, 1972, two days after his 64th birthday.
 
@@ -69,5 +75,6 @@ The bow is still down there. So are the men who were standing near Turret No. 2.
 - [Praise the Lord and Pass the Ammunition — Wikipedia](https://en.wikipedia.org/wiki/Praise_the_Lord_and_Pass_the_Ammunition)
 - [Lost Severed Bow of USS New Orleans Discovered — NHHC](https://www.history.navy.mil/news-and-events/news/2025/Lost-Severed-Bow-USS-New-Orleans-Discovered.html)
 - [CDR Howell Maurice Forgy — Find a Grave](https://www.findagrave.com/memorial/125273692/howell-maurice-forgy)
+- [Praise the Lord and Pass the Ammunition — War History Online](https://www.warhistoryonline.com/world-war-ii/praise-the-lord-and-pass-the-ammunition-bc.html)
 
 <figure><img src="/images/uss-new-orleans-pearl-harbor.jpg" alt="USS New Orleans underway off Hawaii, July 8, 1942" /><figcaption>USS New Orleans during exercises off Hawaii, July 8, 1942. Seven months after Pearl Harbor, five months before Tassafaronga took her bow. US Navy photograph 80-G-10115, public domain.</figcaption></figure>
