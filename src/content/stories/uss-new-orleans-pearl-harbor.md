@@ -66,4 +66,4 @@ The bow is still down there. So are the men who were standing near Turret No. 2.
 - [Lost Severed Bow of USS New Orleans Discovered — NHHC](https://www.history.navy.mil/news-and-events/news/2025/Lost-Severed-Bow-USS-New-Orleans-Discovered.html)
 - [CDR Howell Maurice Forgy — Find a Grave](https://www.findagrave.com/memorial/125273692/howell-maurice-forgy)
 
-<figure><img src="/images/uss-new-orleans-pearl-harbor.jpg" alt="USS New Orleans arriving at Tulagi with her bow blown off, December 1, 1942" /><figcaption>USS New Orleans reaching Tulagi on December 1, 1942, the morning after Tassafaronga. 150 feet of bow gone. She sailed backwards to Sydney. US Navy photograph, public domain.</figcaption></figure>
+<figure><img src="/images/uss-new-orleans-pearl-harbor.jpg" alt="USS New Orleans underway off Hawaii, July 8, 1942" /><figcaption>USS New Orleans during exercises off Hawaii, July 8, 1942. Seven months after Pearl Harbor, five months before Tassafaronga took her bow. US Navy photograph 80-G-10115, public domain.</figcaption></figure>
