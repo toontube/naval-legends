@@ -35,6 +35,7 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-seri
 .card-top{display:flex;align-items:center;gap:8px;margin-bottom:4px}
 .card-name{font-size:14px;font-weight:600;flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .card.partner .card-name{color:#00b894}
+a.card-name:hover{opacity:.8}
 .card-reach{font-size:12px;color:#a29bfe;font-weight:600;white-space:nowrap}
 .card-tier{font-size:10px;font-weight:700;width:22px;height:22px;border-radius:6px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
 .tier-S{background:#fef3c720;color:#fbbf24;border:1px solid #fbbf2440}
@@ -50,6 +51,20 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-seri
 .b-dead{background:#ff767620;color:#ff7676}
 .b-tier{background:#ffffff08;color:#555}
 .card-note{font-size:12px;color:#555;margin-top:4px;line-height:1.3;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+/* Tracking statuses */
+.card.st-contacted{border-color:#fdcb6e50}
+.card.st-deal{border-color:#00b89450;background:linear-gradient(135deg,#00b89408,#111118)}
+.card.st-denied{border-color:#e1705530;opacity:.5}
+.track-btns{display:flex;gap:4px;margin-top:6px}
+.track-btn{font-size:10px;padding:2px 8px;border-radius:6px;border:1px solid #1e1e2e;background:transparent;color:#666;cursor:pointer;transition:all .15s}
+.track-btn:hover{border-color:#555;color:#ccc}
+.track-btn.active-contacted{background:#fdcb6e20;color:#fdcb6e;border-color:#fdcb6e50}
+.track-btn.active-deal{background:#00b89420;color:#00b894;border-color:#00b89450}
+.track-btn.active-denied{background:#e1705520;color:#e17055;border-color:#e1705550}
+.track-info{font-size:10px;color:#444;margin-top:3px}
+.user-bar{display:flex;align-items:center;gap:8px;padding:8px 32px;background:#111118;border-bottom:1px solid #1e1e2e;font-size:12px;color:#555}
+.user-bar .email{color:#a29bfe}
+.user-bar .logout{color:#666;cursor:pointer;text-decoration:underline;margin-left:auto}
 .section-head{font-size:13px;font-weight:600;color:#666;margin:28px 0 10px;padding-bottom:8px;border-bottom:1px solid #1e1e2e;display:flex;align-items:center;gap:8px}
 .section-head:first-of-type{margin-top:0}
 .section-head .dot{width:8px;height:8px;border-radius:50%;flex-shrink:0}
@@ -71,11 +86,67 @@ body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',system-ui,sans-seri
 </head>
 <body>
 <div class="header">
-  <h1>Naval Legends: Cruisers <span>Traffic Sources Map</span></h1>
-  <p>683 targets across 25 channels &bull; 158 in our DB &bull; 525 outreach targets &bull; Green = working with us</p>
+  <h1>Naval Legends: Cruisers <span>Outreach Map</span></h1>
+  <!-- Campaign Stats Banner -->
+  <div style="display:flex;gap:12px;margin:16px 0;flex-wrap:wrap" id="campaign-stats">
+    <a href="https://www.kickstarter.com/projects/mozuma/naval-legends-cruisers" target="_blank" style="text-decoration:none;background:#00b89415;border:1px solid #00b89430;border-radius:10px;padding:14px 20px;min-width:140px;transition:border-color .15s">
+      <div style="font-size:11px;color:#00b894;text-transform:uppercase;letter-spacing:0.5px">KS Followers</div>
+      <div style="font-size:28px;font-weight:700;color:#00b894" id="ks-followers">--</div>
+      <div style="font-size:11px;color:#555">kickstarter.com ↗</div>
+    </a>
+    <a href="https://toontube.co/petition/cruisers" target="_blank" style="text-decoration:none;background:#a29bfe15;border:1px solid #a29bfe30;border-radius:10px;padding:14px 20px;min-width:140px;transition:border-color .15s">
+      <div style="font-size:11px;color:#a29bfe;text-transform:uppercase;letter-spacing:0.5px">Wishlist</div>
+      <div style="font-size:28px;font-weight:700;color:#a29bfe" id="wishlist-count">--</div>
+      <div style="font-size:11px;color:#555">toontube.co ↗</div>
+    </a>
+    <a href="https://toontube.co/petition/vip-cruisers" target="_blank" style="text-decoration:none;background:#fbbf2415;border:1px solid #fbbf2430;border-radius:10px;padding:14px 20px;min-width:140px;transition:border-color .15s">
+      <div style="font-size:11px;color:#fbbf24;text-transform:uppercase;letter-spacing:0.5px">VIP Cruisers</div>
+      <div style="font-size:28px;font-weight:700;color:#fbbf24" id="vip-count">--</div>
+      <div style="font-size:11px;color:#555">toontube.co ↗</div>
+    </a>
+    <div style="background:#e1705515;border:1px solid #e1705530;border-radius:10px;padding:14px 20px;min-width:140px">
+      <div style="font-size:11px;color:#e17055;text-transform:uppercase;letter-spacing:0.5px">FB Ad Spend</div>
+      <div style="font-size:28px;font-weight:700;color:#e17055">$2,928</div>
+      <div style="font-size:11px;color:#555">updated 2026-05-14</div>
+    </div>
+  </div>
+  <div style="font-size:10px;color:#333;margin-bottom:12px" id="stats-updated"></div>
+
   <div class="tabs" id="tabs"></div>
 </div>
 <div class="content" id="content"></div>
+
+<script>
+// Fetch live stats via proxy API (avoids CORS)
+async function loadStats() {
+  try {
+    const res = await fetch('/api/campaign-stats');
+    const data = await res.json();
+    document.getElementById('wishlist-count').textContent = data.wishlist;
+    document.getElementById('vip-count').textContent = data.vip + ' / ' + data.vipLimit;
+    document.getElementById('stats-updated').textContent = 'Live — ' + new Date().toLocaleString();
+  } catch (e) {
+    // Fallback: try direct API (works when opened as local file)
+    try {
+      const [cruisers, vip] = await Promise.all([
+        fetch('https://toontube.ink/api/v1/petition/cruisers').then(r => r.json()),
+        fetch('https://toontube.ink/api/v1/petition/vip-cruisers').then(r => r.json()),
+      ]);
+      document.getElementById('wishlist-count').textContent = (cruisers.supporters||[]).length + (cruisers.subscribersCount||0);
+      const vipTotal = (vip.supporters||[]).length + (vip.left||0);
+      document.getElementById('vip-count').textContent = vipTotal + ' / ' + (vip.limit||500);
+    } catch {
+      document.getElementById('wishlist-count').textContent = '?';
+      document.getElementById('vip-count').textContent = '?';
+    }
+  }
+
+  // KS followers — update manually (KS blocks scraping)
+  const KS_FOLLOWERS = 782; // ← UPDATE from https://www.kickstarter.com/projects/mozuma/naval-legends-cruisers (updated 2026-05-14)
+  document.getElementById('ks-followers').textContent = KS_FOLLOWERS;
+}
+loadStats();
+</script>
 <script>
 // ═══════════════════════════════════════════════
 // DB INFLUENCERS (from Supabase — 317 total)
@@ -273,6 +344,23 @@ const TARGETS = [
     {name:'r/kickstarter',tier:'C',reach:'87k'},{name:'r/gamingkickstarters',tier:'C'},{name:'r/boardgames',tier:'C'},
     {name:'r/navy',tier:'C'},{name:'r/Military',tier:'C'},{name:'r/MilitaryHistoryMemes',tier:'C'},
     {name:'r/KriegsMarine',tier:'C'},{name:'r/ImperialJapaneseNavy',tier:'C'},{name:'r/RegiaMarina',tier:'C'},{name:'r/SovietNavy',tier:'C'},
+    // New — visual/viral
+    {name:'r/HistoryPorn',tier:'A',reach:'3.6M',note:'High-quality historical photos with context'},
+    {name:'r/OldSchoolCool',tier:'A',reach:'19.6M',note:'Vintage photos — crew shots, ship christenings'},
+    {name:'r/ColorizedHistory',tier:'A',reach:'2M+',note:'Colorized WWII photos'},
+    {name:'r/coolguides',tier:'A',reach:'5.6M',note:'Infographic — cruiser classification chart'},
+    {name:'r/history',tier:'A',reach:'17M+',note:'Largest history community'},
+    {name:'r/WWIIpics',tier:'A',reach:'200K+',note:'Dedicated WWII photography'},
+    {name:'r/WorldWarII',tier:'A',reach:'150K+',note:'WWII battles, strategy, technology'},
+    // Books
+    {name:'r/suggestmeabook',tier:'B',reach:'2.5M',note:'Organic book recommendations'},
+    {name:'r/nonfictionbooks',tier:'B',reach:'50K+'},
+    {name:'r/shutupandtakemymoney',tier:'B',reach:'495K',note:'Premium product showcase'},
+    {name:'r/BuyItForLife',tier:'B',reach:'2M+',note:'Premium hardcover = buy once keep forever'},
+    // Crowdfunding
+    {name:'r/crowdfunding',tier:'C',reach:'30K+'},
+    {name:'r/CrowdfundingProjects',tier:'C',reach:'15K+'},
+    {name:'r/maritimehistory',tier:'B',reach:'10K+',note:'Perfectly targeted niche'},
   ]},
   {id:'youtube',label:'YouTube',icon:'▶',count:'58+',sources:[
     {name:'Drachinifel',tier:'S',reach:'550k',note:'Attached — in collab'},{name:'Mark Felton',tier:'S',reach:'2.4M'},
@@ -299,6 +387,26 @@ const TARGETS = [
     {name:'The History Chap',tier:'A',reach:'~200k',note:'🇬🇧 UK — British military & naval history stories'},
     {name:'BFBS Forces News',tier:'A',reach:'~350k',note:'🇬🇧 UK — British Forces Broadcasting Service'},
     {name:'Important Naval History',tier:'B',note:'🇺🇸 US — Dedicated naval history + TikTok'},
+    {name:'Oceanliner Designs',tier:'A',reach:'~100k',note:'🇦🇺 Australia — Ocean liner history animations',url:'https://www.youtube.com/@OceanlinerDesigns'},
+    {name:'Yarnhub',tier:'A',reach:'2.84M',note:'🇺🇸 US — Animated WWII history films',url:'https://www.youtube.com/@Yarnhub'},
+    {name:'Smithsonian Channel',tier:'A',reach:'4.2M',note:'🇺🇸 US — Combat Ships series, Carriers at War',url:'https://www.youtube.com/@SmithsonianChannel'},
+    {name:'Absolute History',tier:'A',reach:'1.78M',note:'🇬🇧 UK — History documentaries incl. Royal Navy',url:'https://www.youtube.com/@AbsoluteHistoryChannel'},
+    {name:'Free Documentary - History',tier:'A',reach:'5.1M',note:'🇩🇪/EN — Full-length history docs incl. naval',url:'https://www.youtube.com/@FreeDocumentary-History'},
+    {name:'Classified Wreckage',tier:'A',note:'🇺🇸 US — Warship/submarine documentary deep-dives',url:'https://www.youtube.com/@ClassifiedWreckage'},
+    {name:'NavyZone',tier:'A',note:'🇺🇸 US — Naval warfare analysis, technology breakdowns',url:'https://www.youtube.com/@NavyZone'},
+    {name:'Ship Happens',tier:'B',reach:'44k',note:'🇬🇧 UK — WW2 D-Day boat restoration (ML 1392)',url:'https://www.youtube.com/@ShipHappens'},
+    {name:'JJ Model Making',tier:'B',note:'🇬🇧 UK — 1/350 warship model builds, fleet collections',url:'https://www.youtube.com/@JJModelMaking'},
+    {name:'Great Ocean Ships & Liners',tier:'B',note:'Ship design and maritime heritage',url:'https://www.youtube.com/@GreatOceanShips'},
+    {name:'Warship Designs',tier:'A',reach:'~80k',note:'🇦🇺 Australia — Warship engineering, animated explainers. Spinoff from Oceanliner Designs',url:'https://www.youtube.com/@WarshipDesigns'},
+    {name:'WW2TV',tier:'A',reach:'59k',note:'🇬🇧 UK — Paul Woodadge. Live lectures with historians. 900 videos',url:'https://www.youtube.com/@WW2TV'},
+    {name:'Memoirs of WWII',tier:'A',reach:'314k',note:'🇺🇸 US — WWII veteran interviews. Premium production',url:'https://www.youtube.com/@MemoirsofWWII'},
+    {name:'Remember WWII (Rishi Sharma)',tier:'A',reach:'~100k',note:'🇺🇸 US — 2,600+ WWII veteran interviews. History Hit deal',url:'https://www.youtube.com/@RememberWWII'},
+    {name:'Fascinating Horror',tier:'A',reach:'1.4M',note:'🏴 Scotland — Real disasters incl. USS Indianapolis sinking',url:'https://www.youtube.com/@FascinatingHorror'},
+    {name:'Our Stories',tier:'A',reach:'874k',note:'🇬🇧 UK — ITV docs. "Warship: Life at Sea", HMS Belfast episodes',url:'https://www.youtube.com/@OurStories'},
+    {name:'War Stories (Little Dot)',tier:'A',reach:'1.27M',note:'🇬🇧 UK — Military docs, WWII Pacific naval battles',url:'https://www.youtube.com/@WarStories'},
+    {name:'Easy WWII Stories',tier:'B',reach:'445k',note:'🇩🇪/EN — Fast-growing, clear WWII storytelling incl. naval',url:'https://www.youtube.com/@stimmen_aus_dem_krieg'},
+    {name:'Seven Scales Model',tier:'B',note:'🇺🇸 US — 1/700 warship models, 3D printing',url:'https://www.youtube.com/@SevenScalesModel'},
+    {name:'The Museum Guide',tier:'B',reach:'~20k',note:'🇬🇧 UK — In-depth museum tours incl. IWM/naval',url:'https://www.youtube.com/@TheMuseumGuide'},
     {name:'10+ museum channels',tier:'C'},
   ]},
   {id:'newsletters',label:'Newsletters',icon:'📰',count:'49',sources:[
@@ -356,6 +464,15 @@ const TARGETS = [
     {name:'Ship Models Group',tier:'B'},{name:'Washington Ship Model Society',tier:'B'},
     {name:'Historic Naval Ships Association',tier:'B'},{name:'WoWS Legends',tier:'B'},{name:'WoWS Blitz',tier:'B'},
     {name:'Battle Warship: Naval Empire',tier:'C',reach:'373k'},{name:'Museum pages',tier:'C'},
+    {name:'Royal Navy Official',tier:'A',reach:'736k likes',note:'🇬🇧 Official RN page'},
+    {name:'Royal Marines Historical Society',tier:'A',reach:'3.5k',note:'🇬🇧 Very active, assists research'},
+    {name:'Save the Royal Navy',tier:'A',note:'🇬🇧 Engaged UK naval advocacy'},
+    {name:'Naval Wargaming',tier:'B',note:'Tabletop miniature naval wargaming'},
+    {name:'Military Books Marketplace',tier:'B',note:'Buying/selling military books — direct sales'},
+    {name:'Military Book Club',tier:'B',reach:'2.2k likes',note:'militarybookclub.com'},
+    {name:'1/600 & 1/700 Plastic Model Ships',tier:'B',note:'Waterline scale warship modelers'},
+    {name:'Warship Art',tier:'B',reach:'2k likes',note:'Warship, battleship & destroyer artwork'},
+    {name:'Museumships',tier:'A',note:'Museum ships community',url:'https://www.facebook.com/share/g/1CLmdGfLfM/'},
   ]},
   {id:'instagram',label:'Instagram',icon:'📷',count:'20',sources:[
     {name:'@usnavy',tier:'S',reach:'3M'},{name:'@royalnavy',tier:'S',reach:'676k'},{name:'@worldofwarships',tier:'S',reach:'113k'},
@@ -367,12 +484,43 @@ const TARGETS = [
     {name:'@sea.museum',tier:'B',reach:'32k'},{name:'@royalnavyphotographers',tier:'B',reach:'10k'},
     {name:'@natmuseumrn',tier:'B',reach:'4.8k'},{name:'@nmusn',tier:'B',reach:'4.6k'},
     {name:'@shipsofthesea',tier:'B',reach:'3.7k'},{name:'@modelship_builder',tier:'B'},
+    // New — museums & warships
+    {name:'@intrepidmuseum',tier:'A',reach:'109k',note:'NYC — Sea, Air & Space Museum'},
+    {name:'@ussmidwaymuseum',tier:'A',reach:'70k',note:'San Diego — most visited naval ship museum'},
+    {name:'@battleshipnj',tier:'A',reach:'67k',note:'USS New Jersey — active community'},
+    {name:'@warship_cam',tier:'A',reach:'60k',note:'Warship photography — 29K posts'},
+    {name:'@navalaviationmuseum',tier:'A',reach:'52k',note:'Pensacola — largest naval aviation museum'},
+    {name:'@usnhistory',tier:'A',reach:'47k',note:'Naval History & Heritage Command'},
+    {name:'@battleshipiowa',tier:'A',reach:'34k',note:'USS Iowa museum, Long Beach'},
+    {name:'@theussalabama',tier:'B',reach:'20k',note:'USS Alabama Memorial Park'},
+    {name:'@usshornetmuseum',tier:'B',reach:'13k',note:'USS Hornet, Alameda CA'},
+    {name:'@patriots_point',tier:'B',reach:'12k',note:'USS Yorktown, Charleston SC'},
+    {name:'@battleshipnc',tier:'B',reach:'11k',note:'USS North Carolina, Wilmington'},
+    // WWII history
+    {name:'@worldwar2historypics',tier:'A',reach:'207k',note:'WWII historical photos — naval content'},
+    {name:'@ww2dailyhistory',tier:'A',reach:'118k',note:'Daily WWII history posts'},
+    {name:'@the_history_of_ww2',tier:'A',reach:'116k',note:'WWII battles, Pacific/Atlantic naval'},
+    {name:'@ww2_day_by_day',tier:'B',reach:'56k',note:'Day-by-day WWII timeline'},
+    // Art
+    {name:'@marine_art_gallery',tier:'B',reach:'10k',note:'British maritime paintings'},
+    {name:'@nwmarineartworks',tier:'B',reach:'13k',note:'Marine artwork — ships, seascapes'},
+    {name:'@rjscaleships',tier:'B',reach:'16k',note:'Scale model ship builds'},
   ]},
   {id:'tiktok',label:'TikTok',icon:'♪',count:'7+',sources:[
     {name:'@worldofwarships',tier:'A',reach:'73.9k'},{name:'@that_warship_guy',tier:'A'},
     {name:'@thecraigmiles',tier:'B',reach:'531.6k',note:'Navy veteran'},
     {name:'@hasardlee',tier:'B',reach:'363.2k'},{name:'@bull52772',tier:'B',reach:'364.8k'},
     {name:'@yushathomas',tier:'B',reach:'187.5k'},{name:'@realshawnwalsh_',tier:'B',reach:'177.9k'},
+    {name:'@theinfographicsshow',tier:'A',reach:'1.7M',note:'Animated explainers incl. naval classifications'},
+    {name:'@sameckholm',tier:'A',reach:'810k',note:'Aerospace & defense content'},
+    {name:'@thefatelectrician',tier:'A',reach:'500k+',note:'Military history storytelling, WWII humor'},
+    {name:'@daddyhop01',tier:'B',reach:'541k',note:'Combat veteran'},
+    {name:'@terry.lashley',tier:'B',reach:'592k',note:'15-year Army vet, mentor'},
+    {name:'@tyler.thomas912',tier:'B',reach:'198k',note:'Active Naval Officer'},
+    {name:'@frontierwargaming',tier:'B',reach:'39.2k',note:'Miniature wargaming, ship models'},
+    {name:'@historyofwarships',tier:'B',note:'WWII warship deep dives — Iowa, Yamato'},
+    {name:'@battleshipnj',tier:'B',note:'Museum ship content, 100K+ likes per post'},
+    {name:'@_jamiesday',tier:'B',note:'Naval history educator #historytok'},
   ]},
   {id:'telegram',label:'Telegram',icon:'✈',count:'22',sources:[
     {name:'@worldofwarships',tier:'S',note:'Via partnership'},{name:'@wows_legends',tier:'S'},
@@ -401,6 +549,14 @@ const TARGETS = [
     {name:'Model Shipwrights',tier:'A'},
     {name:'The Relic Registry',tier:'B'},{name:'MICOLCO',tier:'B'},{name:'World War History',tier:'B'},
     {name:'Scale Modelers',tier:'B'},{name:'Model Building & Projects',tier:'C'},{name:'GMCC',tier:'C'},
+    {name:'WoWS Legends',tier:'A',reach:'47k',note:'Console version community'},
+    {name:'Historical Studies - Military History',tier:'A',reach:'~1k',note:'Academic research & lectures'},
+    {name:'Aircraft Carrier Community',tier:'A',reach:'~500',note:'All-era carrier history, artwork, models'},
+    {name:'Naval Wargaming',tier:'A',reach:'~400',note:'Tabletop naval campaigns 1900-1950'},
+    {name:'War Thunder Naval Enthusiasts',tier:'B',reach:'~1.5k',note:'Naval mode tactics & events'},
+    {name:'Ultimate Admiral: Dreadnoughts',tier:'B',note:'Players design historical warships'},
+    {name:'r/history Discord',tier:'B',reach:'~5k',note:'Reddit history community Discord'},
+    {name:'Book Lovers Club',tier:'B',reach:'82k',note:'Massive book club — pitch for history month'},
   ]},
   {id:'podcasts',label:'Podcasts',icon:'🎙',count:'24',sources:[
     {name:'The Drydock (Drachinifel)',tier:'S',note:'In play'},{name:'Sea Control (CIMSEC)',tier:'S',note:'In play'},
@@ -413,6 +569,14 @@ const TARGETS = [
     {name:'The Art of Wargaming',tier:'B'},{name:'Tides of History',tier:'B'},{name:'Fall of Civilizations',tier:'B'},
     {name:'History Hit',tier:'B'},{name:'History Matters',tier:'B'},
     {name:'ShipWrekt',tier:'A',note:'🇬🇧 UK — RN veteran hosts, naval battle deep-dives (Falklands, Sheffield, Coventry)'},
+    {name:'Preble Hall (USNA Museum)',tier:'A',note:'🇺🇸 Regularly hosts naval book authors'},
+    {name:'Anchored in History (NHHC)',tier:'A',note:'🇺🇸 Official US Navy history podcast'},
+    {name:'Sea Power Podcast (NWC)',tier:'A',note:'🇺🇸 Naval War College — professional audience'},
+    {name:'US Naval History Podcast',tier:'A',note:'🇺🇸 John Paul Jones through Cold War'},
+    {name:'Saltwater Strategists (ANI)',tier:'A',note:'🇦🇺 Australian Naval Institute — Indo-Pacific'},
+    {name:'PME Podcast',tier:'A',note:'Deep book analysis with authors — direct pitch target'},
+    {name:'Shipwrecks and Sea Dogs',tier:'B',note:'Maritime disasters & seafaring legends'},
+    {name:'Echoes of War',tier:'B',note:'Pacific War focused (formerly Pacific War Channel)'},
   ]},
   {id:'museums',label:'Museums',icon:'🏛',count:'25',sources:[
     // Ships featured in the book — direct tie-in
@@ -453,6 +617,8 @@ const TARGETS = [
     {name:'Cutty Sark (Greenwich)',tier:'A',note:'🇬🇧 Last surviving tea clipper. Major tourist attraction'},
     {name:'Fleet Air Arm Museum (Yeovilton)',tier:'A',note:'🇬🇧 Europe\'s largest naval aviation museum. 22K+ FB likes'},
     {name:'Historic Dockyard Chatham',tier:'A',reach:'10K IG',note:'🇬🇧 HMS Cavalier + broader naval heritage'},
+    {name:'Patriots Point Naval Museum',tier:'A',note:'🇺🇸 Charleston SC — USS Yorktown, USS Laffey, Medal of Honor Museum'},
+    {name:'USS Constitution Museum (Boston)',tier:'B',note:'🇺🇸 Oldest commissioned warship. War of 1812 heritage'},
   ]},
   {id:'kickstarter',label:'Kickstarter',icon:'🚀',count:'5',sources:[
     {name:'KS Arts Newsletter',tier:'S',note:'Huge discovery lever'},{name:'KS Reads Newsletter',tier:'S'},
@@ -784,6 +950,38 @@ function renderTabs() {
   });
 }
 
+// Auto-generate URL based on tab type and name
+function autoUrl(tabId, s) {
+  if (s.url) return s.url;
+  const n = s.name || '';
+  const clean = n.replace(/^@/,'').replace(/^r\//,'').trim();
+  switch(tabId) {
+    case 'reddit': if(n.startsWith('r/')) return `https://reddit.com/${n}`; break;
+    case 'instagram': if(n.startsWith('@')) return `https://instagram.com/${clean}`; break;
+    case 'twitter': if(n.startsWith('@')) return `https://x.com/${clean}`; break;
+    case 'tiktok': if(n.startsWith('@')) return `https://tiktok.com/${clean}`; break;
+    case 'telegram': if(n.startsWith('@')) return `https://t.me/${clean}`; break;
+    case 'youtube': return `https://www.youtube.com/results?search_query=${encodeURIComponent(n)}`;
+    case 'wows': return `https://www.youtube.com/results?search_query=${encodeURIComponent(n + ' world of warships')}`;
+    case 'podcasts': return `https://podcasts.apple.com/search?term=${encodeURIComponent(n)}`;
+    case 'bookclubs':
+      if(n.includes('Goodreads')) return 'https://www.goodreads.com/group/show/8115-the-history-book-club';
+      if(n.includes('LibraryThing')) return 'https://www.librarything.com/ngroups/583/Folio-Society-Devotees';
+      break;
+    case 'linkedin': return `https://www.linkedin.com/search/results/all/?keywords=${encodeURIComponent(n)}`;
+    case 'pinterest': return `https://pinterest.com/search/pins/?q=${encodeURIComponent(n)}`;
+    case 'discord': if(n.includes('World of Warships')) return 'https://discord.gg/worldofwarships'; break;
+    case 'facebook': return `https://www.facebook.com/search/groups/?q=${encodeURIComponent(n)}`;
+    case 'kickstarter':
+      if(n.includes('KS Arts')) return 'https://www.kickstarter.com/newsletters';
+      if(n.includes('Kicktraq')) return 'https://www.kicktraq.com/';
+      if(n.includes('BackerKit')) return 'https://www.backerkit.com/blog';
+      break;
+  }
+  // Fallback: Google search
+  return `https://www.google.com/search?q=${encodeURIComponent(n)}`;
+}
+
 function renderContent() {
   const t = TARGETS.find(d => d.id === activeTab);
   if (!t) return;
@@ -830,14 +1028,18 @@ function renderContent() {
       });
       sorted.forEach(s => {
         const partner = isPartnerName(s.name);
-        html += `<div class="card ${partner?'partner':''}">
+        const link = autoUrl(t.id, s);
+        const tst = getTrackStatus(t.id, s.name);
+        const stCls = tst ? ` st-${tst.status}` : '';
+        html += `<div class="card ${partner?'partner':''}${stCls}">
           <div class="card-top">
             <div class="card-tier tier-${s.tier}">${s.tier}</div>
-            <div class="card-name">${partner?'✓ ':''}${s.name}</div>
+            <a href="${link}" target="_blank" style="text-decoration:none;color:inherit;flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" class="card-name">${partner?'✓ ':''}${s.name} <span style="opacity:.3;font-size:11px">↗</span></a>
             ${s.reach?`<div class="card-reach">${s.reach}</div>`:''}
             ${partner?`<div class="badge b-partner">PARTNER</div>`:`<div class="badge b-tier">Tier ${s.tier}</div>`}
           </div>
           ${s.note?`<div class="card-note">${s.note}</div>`:''}
+          ${trackingHtml(t.id, s.name)}
         </div>`;
       });
       html += `</div>`;
@@ -863,13 +1065,17 @@ function renderContent() {
     sorted.forEach(d => {
       const partner = WORKING.has(d.status);
       const badge = statusBadge(d.status);
-      html += `<div class="card ${partner?'partner':CONTACTED.has(d.status)?'contacted':''}">
+      const dbLink = d.yt ? `https://www.youtube.com/@${d.yt}` : `https://www.youtube.com/results?search_query=${encodeURIComponent(d.name)}`;
+      const dbTst = getTrackStatus(t.id, d.name);
+      const dbStCls = dbTst ? ` st-${dbTst.status}` : '';
+      html += `<div class="card ${partner?'partner':CONTACTED.has(d.status)?'contacted':''}${dbStCls}">
         <div class="card-top">
-          <div class="card-name">${partner?'✓ ':''}${d.name}</div>
+          <a href="${dbLink}" target="_blank" style="text-decoration:none;color:inherit;flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap" class="card-name">${partner?'✓ ':''}${d.name} <span style="opacity:.3;font-size:11px">↗</span></a>
           ${d.subs?`<div class="card-reach">${d.subs}</div>`:''}
           <div class="badge ${badge.cls}">${badge.text}</div>
         </div>
         ${d.note?`<div class="card-note">${d.note}</div>`:''}
+        ${trackingHtml(t.id, d.name)}
       </div>`;
     });
     html += `</div>`;
@@ -884,8 +1090,97 @@ function renderContent() {
   if (searchQ) { const i = document.getElementById('si'); if(i){i.focus();i.selectionStart=i.selectionEnd=searchQ.length;} }
 }
 
-renderTabs();
-renderContent();
+// ═══════════════════════════════════════════════
+// TRACKING SYSTEM
+// ═══════════════════════════════════════════════
+let currentUser = null;
+let trackingStatuses = {}; // { "tab_id::target_name": { status, updated_by, updated_at } }
+
+async function initTracking() {
+  // Load statuses (public)
+  try {
+    const res = await fetch('/api/outreach-statuses', { credentials: 'include' });
+    if (res.ok) trackingStatuses = await res.json();
+  } catch(e) { console.warn('Failed to load statuses:', e); }
+
+  // Check if user is logged in
+  try {
+    const res = await fetch('/api/auth/me', { credentials: 'include' });
+    if (res.ok) {
+      const data = await res.json();
+      currentUser = data.user?.email || null;
+      console.log('Logged in as:', currentUser);
+    } else {
+      console.log('Not logged in (status:', res.status, ')');
+    }
+  } catch(e) { console.warn('Auth check failed:', e); }
+
+  // Show user bar
+  const bar = document.createElement('div');
+  bar.className = 'user-bar';
+  if (currentUser) {
+    bar.innerHTML = `Logged in as <span class="email">${currentUser}</span> — click status buttons to track outreach`;
+  } else {
+    bar.innerHTML = `<span style="color:#666">View only — <a href="/login" style="color:#a29bfe">log in</a> to track outreach status</span>`;
+  }
+  document.body.insertBefore(bar, document.body.firstChild);
+
+  renderTabs();
+  renderContent();
+}
+
+async function setTrackingStatus(tabId, targetName, status) {
+  if (!currentUser) return;
+  const key = `${tabId}::${targetName}`;
+  const current = trackingStatuses[key];
+
+  // Toggle off if clicking same status
+  if (current && current.status === status) {
+    try {
+      await fetch('/api/outreach-statuses', {
+        method: 'DELETE',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ target_name: targetName, tab_id: tabId }),
+      });
+      delete trackingStatuses[key];
+    } catch {}
+  } else {
+    try {
+      await fetch('/api/outreach-statuses', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ target_name: targetName, tab_id: tabId, status }),
+      });
+      trackingStatuses[key] = { status, updated_by: currentUser, updated_at: new Date().toISOString() };
+    } catch {}
+  }
+  renderContent();
+}
+
+function getTrackStatus(tabId, name) {
+  return trackingStatuses[`${tabId}::${name}`] || null;
+}
+
+function trackingHtml(tabId, name) {
+  const st = getTrackStatus(tabId, name);
+  const status = st?.status || '';
+
+  if (!currentUser && !st) return '';
+  if (!currentUser && st) {
+    // Read-only badge
+    const cls = st.status === 'deal' ? 'active-deal' : st.status === 'contacted' ? 'active-contacted' : 'active-denied';
+    return `<div class="track-info"><span class="track-btn ${cls}" style="cursor:default">${st.status}</span> by ${st.updated_by.split('@')[0]}</div>`;
+  }
+
+  // Editable buttons
+  return `<div class="track-btns">
+    <button class="track-btn ${status==='contacted'?'active-contacted':''}" onclick="event.stopPropagation();setTrackingStatus('${tabId}','${name.replace(/'/g,"\\'")}','contacted')">contacted</button>
+    <button class="track-btn ${status==='deal'?'active-deal':''}" onclick="event.stopPropagation();setTrackingStatus('${tabId}','${name.replace(/'/g,"\\'")}','deal')">deal</button>
+    <button class="track-btn ${status==='denied'?'active-denied':''}" onclick="event.stopPropagation();setTrackingStatus('${tabId}','${name.replace(/'/g,"\\'")}','denied')">denied</button>
+  </div>${st ? `<div class="track-info">${st.updated_by.split('@')[0]} · ${new Date(st.updated_at).toLocaleDateString()}</div>` : ''}`;
+}
+
+initTracking();
 </script>
 </body>
 </html>
