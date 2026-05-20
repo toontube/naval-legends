@@ -1,12 +1,14 @@
 ---
-title: "The Captain Who Watched His Ship Sink From a Hotel Room"
+title: "SMS Emden: The Raider Who Faked a Funnel and Killed a Ship in Port"
 slug: emden-penang-raid
 date: 2026-04-17
-summary: "A German cruiser faked a British funnel, slipped into Penang harbor, and torpedoed a Russian ship. The captain was at the E&O Hotel with a woman. He watched through the window."
+summary: "SMS Emden rigged a fake fourth funnel, slipped into British-controlled Penang harbor, and torpedoed the Russian cruiser Zhemchug. Her captain was at the E&O Hotel with a woman. He watched through the window."
 image: /images/sms-emden.jpg
-tags: [wwi, sms-emden, commerce-raiders, penang, zhemchug]
+tags: [wwi, sms-emden, commerce-raiders, penang, zhemchug, german-navy, indian-ocean]
 readingTime: 6
 ---
+
+SMS Emden was a German light cruiser that terrorized Allied shipping across the Indian Ocean in 1914. She captured or sank over twenty merchant ships, shelled the oil tanks at Madras, and then pulled off one of the most audacious raids of World War I: sneaking into a British-controlled harbor to torpedo a warship at anchor.
 
 On the morning of October 28, 1914, the Russian cruiser Zhemchug sat at anchor in Penang harbor. Boilers cold. Ammunition hoists dead. Magazine keys ashore. No lookouts posted.
 
@@ -64,7 +66,25 @@ There's a memorial to the Zhemchug's dead at Western Road Cemetery in George Tow
 
 The Eastern & Oriental Hotel is still open. You can book a sea-facing suite and look out at the same water where the Zhemchug went down.
 
-The fake funnel was canvas stretched over a metal frame. It probably took the crew an afternoon to build. It worked once, and that was enough. Von Muller was following a long tradition of commerce raiders who operated alone and lived on audacity — the [CSS Alabama did the same thing](/stories/css-alabama-semmes) half a century earlier, with a captain just as theatrical.
+The fake funnel was canvas stretched over a metal frame. It probably took the crew an afternoon to build. It worked once, and that was enough. Von Muller was following a long tradition of commerce raiders who operated alone and lived on audacity — the [CSS Alabama did the same thing](/stories/css-alabama-semmes) half a century earlier, with a captain just as theatrical. And the waters of the Indian Ocean and Southeast Asia would see plenty more deception before the century was out — the [Battle of the Java Sea](/stories/karel-doorman-java-sea) showed that these straits stayed dangerous well into the next war.
+
+## Frequently Asked Questions
+
+### What happened to SMS Emden?
+
+SMS Emden was destroyed on November 9, 1914, at the Cocos Islands by the Australian cruiser HMAS Sydney. Captain Karl von Muller had brought the Emden to the Cocos Islands to destroy a British cable and wireless station. While 50 of his crew were ashore smashing equipment, HMAS Sydney arrived and outgunned the Emden. Von Muller beached the burning wreck on North Keeling Island. He lost 134 killed and 69 wounded. The survivors became prisoners of war.
+
+### How did SMS Emden's crew escape from the Cocos Islands?
+
+The 50 men stranded ashore at the Cocos Islands under Lieutenant Hellmuth von Mucke commandeered a 97-ton schooner called the Ayesha. They sailed it to the Dutch East Indies, transferred to a steamer bound for Arabia, fought Bedouin raiders, crossed the Arabian desert, and reached the Ottoman railway. All 50 men made it back to Germany — the only German military unit to return home from overseas during the entire war.
+
+### Why was SMS Emden famous?
+
+SMS Emden became the most famous commerce raider of World War I because of Captain Karl von Muller's combination of tactical brilliance and chivalry. In three months, the Emden captured or sank over twenty Allied merchant ships, shelled the oil storage tanks at Madras, and sank a Russian cruiser and a French destroyer at Penang — all while treating prisoners humanely and following the rules of war. Von Muller was admired not only in Germany but also in Britain and the Allied nations for his conduct.
+
+### How did SMS Emden get into Penang harbor?
+
+SMS Emden had three funnels, but Captain von Muller ordered a dummy fourth funnel built from canvas and scrap metal. With four funnels, the Emden resembled the British cruiser HMS Yarmouth. Harbor lookouts saw the silhouette, assumed she was friendly, and waved her through. Von Muller brought the ship within 300 yards of the Russian cruiser Zhemchug before raising the German flag and firing.
 
 ---
 
