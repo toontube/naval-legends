@@ -10,7 +10,7 @@ readingTime: 3
 
 1946. The US Navy gathered 95 captured and surplus warships at Bikini Atoll. They wanted to know what nukes do to a fleet.
 
-Prinz Eugen, a heavy cruiser that fought alongside Bismarck at the Denmark Strait, was anchored right in the blast zone.
+Prinz Eugen, a heavy cruiser that fought alongside Bismarck at the Denmark Strait, was anchored right in the blast zone. Compared to other German cruisers, she was lucky — Germany had far worse luck with [the name Blucher](/stories/blucher-unlucky-name), which seemed cursed across centuries.
 
 Test Able. July 1, 1946. Air-dropped. 23 kilotons. Ships sank. Ships burned. Prinz Eugen? Fine.
 

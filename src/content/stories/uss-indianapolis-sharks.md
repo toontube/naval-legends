@@ -11,7 +11,7 @@ On July 26, 1945, the heavy cruiser USS Indianapolis arrived at Tinian Island in
 
 The crew didn't know what they were carrying. Captain Charles B. McVay III had been told only that the cargo was to be delivered at all costs, and that if the ship went down, the canister was to be placed in its own life raft.
 
-Indianapolis offloaded the uranium and left Tinian on July 28, bound for Leyte Gulf in the Philippines. She sailed without a destroyer escort. Her request for one had been denied. She was a Portland-class heavy cruiser, CA-35, 9,800 tons — considered capable of defending herself.
+Indianapolis offloaded the uranium and left Tinian on July 28, bound for Leyte Gulf in the Philippines. She sailed without a destroyer escort. Her request for one had been denied. She was a Portland-class heavy cruiser, CA-35, 9,800 tons — considered capable of defending herself. Like the [Cleveland-class cruisers](/stories/cleveland-class-top-heavy) flooding out of American shipyards that same year, she was built for a war that was almost over.
 
 ## Two torpedoes, twelve minutes
 
@@ -71,9 +71,29 @@ Hashimoto, still alive in Japan, had written a letter supporting McVay's exonera
 
 For seventy-two years, the wreck of Indianapolis sat undiscovered on the floor of the Philippine Sea. On August 19, 2017, a research team funded by Microsoft co-founder Paul Allen located the wreck using the research vessel R/V Petrel.
 
-The ship rests at a depth of approximately 18,000 feet. The hull is largely intact. Her anchor is still in place. The Navy considers the site a war grave.
+The ship rests at a depth of approximately 18,000 feet. The hull is largely intact. Her anchor is still in place. The Navy considers the site a war grave. Not every warship gets that dignity — some end up as [floating casinos in foreign ports](/stories/varyag-casino-carrier).
 
 Indianapolis delivered the core of the weapon that ended the war in the Pacific. Four days later she was gone, and the Navy didn't notice. The men who survived the sharks and the sea came home to watch their captain take the blame. It took a sixth-grader with a tape recorder to get the record corrected.
+
+## Frequently Asked Questions
+
+### Why was the USS Indianapolis not rescued for 4 days?
+
+Three Navy stations received the ship's SOS signals but none acted — one commander had left orders not to be disturbed, another dismissed it as a Japanese trick, and a third logged it and did nothing. A standing order told port directors not to report overdue combatant ships, so nobody at Leyte flagged Indianapolis as missing. The survivors were found by accident when a patrol bomber spotted an oil slick.
+
+The full story: See the "No one came" section above for the complete breakdown of the Navy's communication failures.
+
+### What happened to the captain of the USS Indianapolis?
+
+Captain Charles B. McVay III was court-martialed for failing to zigzag — the only U.S. Navy captain court-martialed for losing a ship to enemy action in World War II. Even the Japanese submarine commander who sank Indianapolis testified that zigzagging would not have mattered. McVay received hate mail from victims' families for decades and shot himself in 1968. Congress exonerated him in 2000.
+
+The full story: See "The court-martial" and "A twelve-year-old and a resolution" sections above for the full account.
+
+### How many survivors were there from the USS Indianapolis?
+
+Of the roughly 1,196 crew members aboard, about 300 died in the sinking itself and approximately 900 entered the water. After 84 hours exposed to dehydration, hypothermia, delirium, and constant shark attacks, 316 men were rescued. Oceanic whitetip sharks circled the groups continuously, picking off men who drifted away or thrashed at the edges.
+
+The full story: See "84 hours in the water" above for the full account of the survivors' ordeal.
 
 ---
 

@@ -20,7 +20,7 @@ Remove the aircraft catapults. Restrict topside ammunition stowage. Delete 20mm 
 
 It wasn't enough to make anyone comfortable. The follow-on Fargo class was specifically redesigned with a flush deck and a single funnel just to cut topweight. Only two Fargos were completed before the war ended.
 
-None of the 27 Clevelands were sunk in combat. That part of the record is clean. But they served in nearly every major campaign from late 1942 onward.
+None of the 27 Clevelands were sunk in combat. That part of the record is clean — which is more than can be said for other American cruisers, like [USS Indianapolis](/stories/uss-indianapolis-sharks), which delivered the atomic bomb and then vanished. But the Clevelands served in nearly every major campaign from late 1942 onward.
 
 At the Battle of Empress Augusta Bay on November 2, 1943, four Clevelands — Cleveland herself, Columbia, Montpelier, and Denver — under Rear Admiral Merrill defeated a Japanese force trying to intercept the Bougainville landings. It was a textbook night surface action.
 
@@ -34,7 +34,7 @@ USS Independence was commissioned in January 1943, less than a year after conver
 
 Those nine carriers filled the gap until the Essex class arrived in numbers. Without them, the fast carrier task forces of 1943 wouldn't have existed.
 
-After the war, almost all 27 cruisers went into mothballs immediately. They were too new to scrap but too flawed to modernize — any new equipment would only make the stability problem worse. Six were eventually converted to guided-missile cruisers in the late 1950s.
+After the war, almost all 27 cruisers went into mothballs immediately. They were too new to scrap but too flawed to modernize — any new equipment would only make the stability problem worse. The irony is that US cruiser design had been wrestling with weight problems for years. [USS Wichita](/stories/uss-wichita-pig-iron) earned the nickname "Pig Iron" partly because of how the Navy tried to solve the same issue with heavier construction. Six were eventually converted to guided-missile cruisers in the late 1950s.
 
 Only one survives. USS Little Rock sits in Buffalo, New York, at the Buffalo and Erie County Naval & Military Park. She's the last Cleveland-class ship you can walk through.
 

@@ -20,7 +20,7 @@ The ship that killed them was SMS Emden. She had sailed straight into a British-
 
 SMS Emden had three funnels. Most British cruisers in the area had two or four. Captain Karl von Muller solved this by rigging a dummy fourth funnel from canvas and scrap metal. In the dark, from a distance, she looked like HMS Yarmouth.
 
-Harbor lookouts saw four funnels and waved her through.
+Harbor lookouts saw four funnels and waved her through. It wouldn't be the last time these waters saw a warship slip through defenses — three decades later, the [Battle of the Java Sea](/stories/karel-doorman-java-sea) would prove that Southeast Asian straits were still deadly ground.
 
 Von Muller brought the Emden within 300 yards of the Zhemchug before running up the German ensign. By then it was too late.
 
@@ -64,7 +64,7 @@ There's a memorial to the Zhemchug's dead at Western Road Cemetery in George Tow
 
 The Eastern & Oriental Hotel is still open. You can book a sea-facing suite and look out at the same water where the Zhemchug went down.
 
-The fake funnel was canvas stretched over a metal frame. It probably took the crew an afternoon to build. It worked once, and that was enough.
+The fake funnel was canvas stretched over a metal frame. It probably took the crew an afternoon to build. It worked once, and that was enough. Von Muller was following a long tradition of commerce raiders who operated alone and lived on audacity — the [CSS Alabama did the same thing](/stories/css-alabama-semmes) half a century earlier, with a captain just as theatrical.
 
 ---
 

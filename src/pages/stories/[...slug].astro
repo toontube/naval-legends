@@ -65,6 +65,15 @@ const ksStickyUrl = 'https://www.kickstarter.com/projects/mozuma/naval-legends-c
     "publisher": { "@type": "Organization", "name": "Bravo Zulu", "url": "https://brvzulu.com" },
     "mainEntityOfPage": `https://brvzulu.com/stories/${story.data.slug}`,
   })} />
+  <script slot="head" type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://brvzulu.com/" },
+      { "@type": "ListItem", "position": 2, "name": "Stories", "item": "https://brvzulu.com/stories" },
+      { "@type": "ListItem", "position": 3, "name": story.data.title, "item": `https://brvzulu.com/stories/${story.data.slug}` },
+    ],
+  })} />
 
   <Navigation active="stories" showThemeToggle />
 
@@ -73,7 +82,7 @@ const ksStickyUrl = 'https://www.kickstarter.com/projects/mozuma/naval-legends-c
 
     {story.data.image && (
       <figure class="article-hero">
-        <img src={story.data.image} alt={story.data.title} />
+        <img src={story.data.image} alt={`${story.data.title} - ${story.data.tags[0]} naval history`} width="1200" height="630" />
       </figure>
     )}
 

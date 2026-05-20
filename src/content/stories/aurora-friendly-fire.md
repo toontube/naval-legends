@@ -28,7 +28,7 @@ Thirteen years later, on the evening of October 25, 1917 (Old Style calendar), A
 
 That was the signal. Red Guards and soldiers began the assault on the Winter Palace. The Provisional Government fell. Soviet historians turned that one blank shot into the founding myth of the revolution. The reality was less dramatic. The "storming" was more of a gradual walk-in. But the shot became iconic.
 
-Aurora never left Russia again. She's been a museum ship since 1957, permanently moored on the Bolshaya Nevka in St. Petersburg, near the Nakhimov Naval Academy. She underwent a full restoration from 2014 to 2016. She still flies the Russian naval ensign.
+Aurora never left Russia again. She's been a museum ship since 1957, permanently moored on the Bolshaya Nevka in St. Petersburg, near the Nakhimov Naval Academy. Not every Russian warship from that era got such a dignified retirement — the [Varyag ended up as a floating casino](/stories/varyag-casino-carrier) before becoming an aircraft carrier. She underwent a full restoration from 2014 to 2016. She still flies the Russian naval ensign.
 
 One ship. Friendly fire, Tsushima, a revolution, and a permanent address.
 
