@@ -69,6 +69,7 @@ Write the article following the Bravo Zulu voice:
 - Dry humor through facts
 - Name everyone with full rank and title
 - Specific numbers (tonnage, caliber, casualties, dates)
+- **EVERY story MUST have an image.** Find a public domain photo from Wikimedia Commons. Use the Wikipedia API to get the correct upload.wikimedia.org URL. Download it to public/images/{slug}.jpg using curl. Verify it's a valid JPEG (not HTML) with the `file` command. Add `image: /images/{slug}.jpg` to the story frontmatter. No story ships without a hero image.
 - NO: legendary, epic, heroic, dramatic, fateful, ill-fated, doomed, tragic
 - NO AI-isms: no "testament to", no "underscores", no "tapestry"
 - 800-1200 words with sources
