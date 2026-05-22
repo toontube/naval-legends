@@ -21,6 +21,11 @@ git commit -m "Publish daily story: [slug]"
 git push origin master
 ```
 
+After publishing AND after writing any new content (Task 4), send an email notification to max@mozuma.co using the mcp__claude_ai_Gmail__create_draft tool with:
+- to: ["max@mozuma.co"]
+- subject: "New on Bravo Zulu: [story title]"
+- htmlBody: a short HTML email with the story title, one-sentence hook from the summary, and a link to https://brvzulu.com/stories/[slug]/
+
 ## Task 2: Keyword research
 
 Search Google for 3-5 naval history related queries to find new opportunities. Focus on:
