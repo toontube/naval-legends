@@ -3,12 +3,39 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import Navigation from '../components/Navigation.astro';
 import SEOHead from '../components/SEOHead.astro';
 import DailyCard from '../components/DailyCard';
+import StoryCard from '../components/StoryCard.astro';
+import Footer from '../components/Footer.astro';
 import { getCollection } from 'astro:content';
+import { tagLabel } from '../lib/tagLabel';
 
 const dailyCards = await getCollection('daily');
 const sorted = dailyCards
   .map((c) => c.data)
   .sort((a, b) => a.order - b.order);
+
+const stories = (await getCollection('stories'))
+  .map((s) => s.data)
+  .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+const bySlug = new Map(stories.map((s) => [s.slug, s]));
+
+// "Start here": the most retold stories, ranked by Jev's barbecue score
+// (scripts/jev/score-candidates.py, 2026-10-13), top scorers that have a photo.
+// Re-rank when stories change.
+const START_HERE = ['den-helder-cavalry-fleet', 'hms-campbeltown-st-nazaire', 'uss-new-orleans-coconut-bow'];
+const startHere = START_HERE.map((slug) => bySlug.get(slug)).filter((s) => s !== undefined);
+const latest = stories.filter((s) => !START_HERE.includes(s.slug)).slice(0, 6);
+
+// Topics shared by at least 3 stories, most common first
+const tagCounts = new Map<string, number>();
+for (const s of stories) for (const t of s.tags) tagCounts.set(t, (tagCounts.get(t) || 0) + 1);
+const topics = [...tagCounts.entries()].filter(([, n]) => n >= 3).sort((a, b) => b[1] - a[1]).slice(0, 10);
+
+// Ships we have written about, A to Z, each linking to its story
+const ships = [...new Map(
+  sorted
+    .filter((c) => c.ship !== 'Various' && c.linkedStory !== 'placeholder' && bySlug.has(c.linkedStory))
+    .map((c) => [c.ship, c.linkedStory] as const)
+).entries()].sort((a, b) => a[0].localeCompare(b[0]));
 ---
 
 <BaseLayout class="home">
@@ -61,7 +88,61 @@ const sorted = dailyCards
   <main id="main" class="home-main">
     <h1 class="sr-only">Bravo Zulu: one true naval history story every day</h1>
     <DailyCard client:idle cards={sorted} />
+
+    <div class="home-sections">
+      <section class="home-section" aria-labelledby="start-here">
+        <h2 id="start-here" class="home-h2">New here? Start with these</h2>
+        <p class="home-lede">The three stories readers retell most.</p>
+        <div class="home-grid home-grid--3">
+          {startHere.map((s) => (
+            <StoryCard slug={s.slug} title={s.title} summary={s.summary} image={s.image} readingTime={s.readingTime} />
+          ))}
+        </div>
+      </section>
+
+      <section class="home-section" aria-labelledby="latest">
+        <div class="home-head">
+          <h2 id="latest" class="home-h2">Latest stories</h2>
+          <a href="/stories" class="home-more">All {stories.length} stories &rarr;</a>
+        </div>
+        <div class="home-grid home-grid--3">
+          {latest.map((s) => (
+            <StoryCard slug={s.slug} title={s.title} summary={s.summary} image={s.image} readingTime={s.readingTime} />
+          ))}
+        </div>
+      </section>
+
+      <section class="home-section" aria-labelledby="topics">
+        <h2 id="topics" class="home-h2">Pick a war, a navy, a sea</h2>
+        <div class="home-chips">
+          {topics.map(([t, n]) => (
+            <a href={`/stories#${t}`} class="home-chip">{tagLabel(t)} <span class="home-chip-n">{n}</span></a>
+          ))}
+        </div>
+      </section>
+
+      <section class="home-section" aria-labelledby="ships">
+        <h2 id="ships" class="home-h2">Looking for a ship?</h2>
+        <p class="home-lede">Every ship we have written about so far. Did someone in your family serve on one? <a href="/submit">Tell us their story</a>.</p>
+        <ul class="home-ships">
+          {ships.map(([name, slug]) => (
+            <li><a href={`/stories/${slug}`}>{name}</a></li>
+          ))}
+        </ul>
+      </section>
+
+      <section class="home-section home-ks" aria-labelledby="texas">
+        <img src="/images/come-on-texas-book.png" alt="Come On, Texas graphic novel cover" class="home-ks-img" loading="lazy" width="500" height="499" />
+        <div>
+          <span class="home-ks-label">On Kickstarter Oct 27</span>
+          <h2 id="texas" class="home-h2">Come On, Texas</h2>
+          <p class="home-lede">The battleship that fought in both World Wars, from Veracruz to Normandy to Okinawa. A graphic novel about USS Texas and her crew.</p>
+          <a href="https://www.kickstarter.com/projects/mozuma/come-on-texas?ref=bz-home" target="_blank" rel="noopener" class="home-ks-btn">Get notified at launch</a>
+        </div>
+      </section>
+    </div>
   </main>
+  <div id="subscribe"><Footer /></div>
 </BaseLayout>
 
 <style is:global>
@@ -71,7 +152,154 @@ const sorted = dailyCards
 
   .home-main {
     padding-top: calc(var(--nav-height) + var(--banner-offset));
-    min-height: 100dvh;
+  }
+
+  .home-sections {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 1rem 1.25rem 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3.5rem;
+  }
+
+  .home-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .home-h2 {
+    font-size: clamp(1.4rem, 1.2rem + 0.8vw, 1.75rem);
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
+    text-wrap: balance;
+  }
+
+  .home-lede {
+    color: var(--text-secondary);
+    margin-bottom: 1.25rem;
+    max-width: 60ch;
+  }
+
+  .home-lede a,
+  .home-more {
+    color: var(--accent);
+  }
+
+  .home-grid {
+    display: grid;
+    gap: 1.25rem;
+    grid-template-columns: 1fr;
+  }
+
+  @media (min-width: 640px) {
+    .home-grid--3 {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (min-width: 900px) {
+    .home-grid--3 {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  .home-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    margin-top: 0.75rem;
+  }
+
+  .home-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.45rem;
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--border);
+    border-radius: 999px;
+    color: var(--text-primary);
+    font-size: 0.9375rem;
+  }
+
+  .home-chip:hover {
+    border-color: var(--text-secondary);
+  }
+
+  .home-chip-n {
+    color: var(--text-muted);
+    font-size: 0.8125rem;
+    font-variant-numeric: tabular-nums;
+  }
+
+  .home-ships {
+    list-style: none;
+    padding: 0;
+    columns: 2 11rem;
+    column-gap: 2rem;
+  }
+
+  .home-ships li {
+    break-inside: avoid;
+    padding: 0.35rem 0;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .home-ships a {
+    color: var(--text-primary);
+  }
+
+  .home-ships a:hover {
+    color: var(--accent);
+  }
+
+  .home-ks {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    align-items: center;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 1.5rem;
+  }
+
+  @media (min-width: 640px) {
+    .home-ks {
+      grid-template-columns: 200px 1fr;
+    }
+
+    .home-ks-img {
+      max-width: 200px;
+    }
+  }
+
+  .home-ks-img {
+    width: 100%;
+    max-width: 140px;
+    height: auto;
+    border-radius: 6px;
+  }
+
+  .home-ks-label {
+    display: inline-block;
+    font-size: 0.75rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 0.5rem;
+  }
+
+  .home-ks-btn {
+    display: inline-block;
+    padding: 0.7rem 1.25rem;
+    border-radius: 8px;
+    background: var(--accent);
+    color: #fff;
+    font-weight: 500;
   }
 
 

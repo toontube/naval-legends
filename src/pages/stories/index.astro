@@ -86,6 +86,8 @@ const filterTags = [...tagCounts.entries()]
           gtag('event', 'filter_stories', { tag: tag || 'all' });
         });
       });
+      var fromHash = decodeURIComponent(location.hash.slice(1));
+      buttons.forEach(function (b) { if (fromHash && b.dataset.tag === fromHash) b.click(); });
     })();
   </script>
 

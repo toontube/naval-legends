@@ -1,0 +1,103 @@
+---
+interface Props {
+  slug: string;
+  title: string;
+  summary: string;
+  image?: string;
+  readingTime?: number;
+}
+
+const { slug, title, summary, image, readingTime } = Astro.props;
+---
+
+<a href={`/stories/${slug}`} class="sc">
+  {image && <img src={image} alt="" class="sc-img" loading="lazy" decoding="async" />}
+  <div class="sc-body">
+    <h3 class="sc-title">{title}</h3>
+    <p class="sc-summary">{summary}</p>
+    {readingTime && <span class="sc-meta">{readingTime} min read</span>}
+  </div>
+</a>
+
+<style>
+  .sc {
+    display: flex;
+    flex-direction: column;
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: border-color 0.2s, transform 0.2s;
+  }
+
+  .sc:hover {
+    border-color: var(--text-muted);
+    transform: translateY(-2px);
+  }
+
+  .sc-img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    background: var(--bg-surface);
+  }
+
+  .sc-body {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1.1rem 1.25rem 1.25rem;
+    flex: 1;
+  }
+
+  .sc-title {
+    font-size: 1.125rem;
+    line-height: 1.3;
+    color: var(--text-primary);
+  }
+
+  .sc-summary {
+    font-size: 0.9375rem;
+    line-height: 1.5;
+    color: var(--text-secondary);
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  /* Phones: compact row so several stories fit on one screen */
+  @media (max-width: 639px) {
+    .sc:has(.sc-img) {
+      display: grid;
+      grid-template-columns: 6.5rem 1fr;
+    }
+
+    .sc-img {
+      aspect-ratio: auto;
+      height: 100%;
+      min-height: 6.5rem;
+    }
+
+    .sc-body {
+      padding: 0.75rem 0.9rem;
+      gap: 0.3rem;
+    }
+
+    .sc-title {
+      font-size: 1rem;
+    }
+
+    .sc-summary {
+      font-size: 0.875rem;
+      -webkit-line-clamp: 2;
+    }
+  }
+
+  .sc-meta {
+    margin-top: auto;
+    font-size: 0.8125rem;
+    color: var(--text-muted);
+  }
+</style>
