@@ -37,6 +37,8 @@ for slug in "${SLUGS[@]}"; do
   fi
 
   cp "$story_src" "$story_dst"
+  # Staged drafts carry the date they were written; stamp the publish date
+  sed -i '' "s/^date: .*/date: $(date +%Y-%m-%d)/" "$story_dst"
   cp "$daily_src" "$daily_dst"
   echo "Published: $slug"
   published=1
