@@ -1,11 +1,11 @@
 ---
-const ksUrl = 'https://www.kickstarter.com/projects/mozuma/naval-legends-cruisers?ref=bz-banner';
+const ksUrl = 'https://www.kickstarter.com/projects/mozuma/come-on-texas?ref=bz-banner';
 ---
 
 <div class="ks-banner" id="ks-banner">
   <div class="ks-banner-inner">
     <p class="ks-banner-text">
-      <strong>Naval Legends: Cruisers</strong> — the book is coming to Kickstarter.
+      <strong>Come On, Texas</strong>: the USS Texas graphic novel, on Kickstarter Oct 27.
       <a href={ksUrl} target="_blank" rel="noopener" class="ks-banner-link" id="ks-banner-link">
         Get notified &rarr;
       </a>
@@ -17,7 +17,7 @@ const ksUrl = 'https://www.kickstarter.com/projects/mozuma/naval-legends-cruiser
 <script is:inline>
   (function() {
     var banner = document.getElementById('ks-banner');
-    if (localStorage.getItem('bz-ks-dismissed')) {
+    if (localStorage.getItem('bz-ks-texas-dismissed')) {
       banner.style.display = 'none';
     } else {
       document.documentElement.classList.add('ks-banner-visible');
@@ -26,7 +26,7 @@ const ksUrl = 'https://www.kickstarter.com/projects/mozuma/naval-legends-cruiser
     document.getElementById('ks-banner-close').addEventListener('click', function() {
       banner.style.display = 'none';
       document.documentElement.classList.remove('ks-banner-visible');
-      localStorage.setItem('bz-ks-dismissed', '1');
+      localStorage.setItem('bz-ks-texas-dismissed', '1');
       var gtag = window.gtag || function(){};
       gtag('event', 'dismiss_ks_banner');
     });

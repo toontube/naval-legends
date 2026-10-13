@@ -55,6 +55,7 @@ const { class: className } = Astro.props;
   <slot name="head" />
 </head>
 <body class={className}>
+  <a href="#main" class="skip-link">Skip to content</a>
   <KSBanner />
   <slot />
 

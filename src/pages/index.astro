@@ -58,7 +58,8 @@ const sorted = dailyCards
 
   <Navigation active="daily" />
 
-  <main class="home-main">
+  <main id="main" class="home-main">
+    <h1 class="sr-only">Bravo Zulu: one true naval history story every day</h1>
     <DailyCard client:idle cards={sorted} />
   </main>
 </BaseLayout>

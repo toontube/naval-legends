@@ -1,10 +1,10 @@
 ---
 interface Props {
-  active?: 'daily' | 'stories';
+  active?: 'daily' | 'stories' | 'about';
   showThemeToggle?: boolean;
 }
 
-const { active = 'daily', showThemeToggle = false } = Astro.props;
+const { active, showThemeToggle = false } = Astro.props;
 ---
 
 <nav class="nav">
@@ -13,6 +13,7 @@ const { active = 'daily', showThemeToggle = false } = Astro.props;
     <div class="nav-tabs">
       <a href="/" class:list={['nav-tab', { active: active === 'daily' }]}>Daily</a>
       <a href="/stories" class:list={['nav-tab', { active: active === 'stories' }]}>Stories</a>
+      <a href="/about" class:list={['nav-tab', { active: active === 'about' }]}>About</a>
     </div>
     {showThemeToggle && (
       <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
