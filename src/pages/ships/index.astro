@@ -1,0 +1,115 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Navigation from '../../components/Navigation.astro';
+import Footer from '../../components/Footer.astro';
+import SEOHead from '../../components/SEOHead.astro';
+import { ships, serviceYears, commonsImage } from '../../lib/ships';
+
+// Campaign ships first, then every ship we have written about
+const CAMPAIGN = ['Q1500182', 'Q507603']; // USS Texas (BB-35), USS New Jersey (BB-62)
+const featured = [
+  ...CAMPAIGN.map((id) => ships.find((s) => s.id === id)).filter((s) => s !== undefined),
+  ...ships.filter((s) => s.stories?.length && !CAMPAIGN.includes(s.id)),
+];
+const total = ships.length.toLocaleString('en-US');
+---
+
+<BaseLayout>
+  <SEOHead slot="head" title="Ships and their crews | Bravo Zulu" description={`Find any of ${total} warships. Read her story and add someone from your family who served on her.`} />
+  <Navigation active="ships" showThemeToggle />
+
+  <main id="main" class="ships-page">
+    <h1 class="ships-title">Find a ship</h1>
+    <p class="ships-lede">Search {total} warships from every navy. Open her page to see who served on her, and add someone you know.</p>
+
+    <div class="ships-search">
+      <label for="ship-q" class="sr-only">Ship name or hull number</label>
+      <input id="ship-q" type="search" placeholder="Ship name or hull number, e.g. Texas or BB-35" autocomplete="off" />
+      <ul id="ship-results" class="ships-results" aria-live="polite"></ul>
+    </div>
+
+    <section class="ships-featured" aria-labelledby="featured">
+      <h2 id="featured">Ships with stories</h2>
+      <div class="ships-grid">
+        {featured.map((s) => (
+          <a href={`/ships/${s.slug}`} class="ship-tile">
+            {s.image_url ? <img src={commonsImage(s.image_url, 500)} alt="" loading="lazy" decoding="async" data-fallback={s.image_url} onerror="this.onerror=null;this.src=this.dataset.fallback" /> : <span class="ship-tile-blank" />}
+            <span class="ship-tile-name">{s.name}{s.hull_number && ` (${s.hull_number})`}</span>
+            <span class="ship-tile-meta">{[s.navy, serviceYears(s)].filter(Boolean).join(' · ')}</span>
+          </a>
+        ))}
+      </div>
+    </section>
+  </main>
+  <Footer />
+</BaseLayout>
+
+<script>
+  type Row = [string, string, string, string, string, string, string];
+  const input = document.getElementById('ship-q') as HTMLInputElement;
+  const out = document.getElementById('ship-results')!;
+  const norm = (s: string) => s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/[^a-z0-9]+/g, ' ').trim();
+  const esc = (s: string) => s.replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c]!);
+  let index: { row: Row; text: string; hull: string }[] | null = null;
+
+  const load = () =>
+    index
+      ? Promise.resolve(index)
+      : fetch('/ships-index.json').then((r) => r.json()).then((rows: Row[]) =>
+          (index = rows.map((row) => ({ row, text: norm(`${row[2]} ${row[4]}`), hull: norm(row[3]).replace(/ /g, '') }))));
+
+  // Links from emails: /ships/?id=Q1500182 go straight to the ship
+  const id = new URLSearchParams(location.search).get('id');
+  if (id) load().then((all) => { const hit = all.find((x) => x.row[0] === id); if (hit) location.replace(`/ships/${hit.row[1]}`); });
+
+  function search(q: string) {
+    const nq = norm(q);
+    if (nq.length < 2) { out.innerHTML = ''; return; }
+    const words = nq.split(' ');
+    const compact = nq.replace(/ /g, '');
+    load().then((all) => {
+      const hits = all
+        .map((x) => {
+          let score = 0;
+          if (x.hull && x.hull === compact) score = 100;
+          else if (words.every((w) => x.text.includes(w))) score = x.text.startsWith(nq) || x.text.includes(' ' + nq) ? 50 : 20;
+          return { x, score };
+        })
+        .filter((h) => h.score > 0)
+        .sort((a, b) => b.score - a.score || a.x.row[2].localeCompare(b.x.row[2]))
+        .slice(0, 30);
+      out.innerHTML = hits.length
+        ? hits.map(({ x: { row } }) => `<li><a href="/ships/${row[1]}"><span class="r-name">${esc(row[2])}${row[3] ? ` (${esc(row[3])})` : ''}</span><span class="r-meta">${[row[4], row[5] && (row[6] ? `${row[5]} to ${row[6]}` : `from ${row[5]}`)].filter(Boolean).map((v) => esc(String(v))).join(' · ')}</span></a></li>`).join('')
+        : `<li class="r-none">No ship matches "${esc(q)}". Try the hull number or a shorter name.</li>`;
+    });
+  }
+
+  let t: number | undefined;
+  input.addEventListener('input', () => { clearTimeout(t); t = window.setTimeout(() => search(input.value), 120); });
+  input.addEventListener('focus', () => load(), { once: true });
+</script>
+
+<style>
+  .ships-page { max-width: 1000px; margin: 0 auto; padding: calc(var(--nav-height) + var(--banner-offset) + 2rem) 1.25rem 3rem; }
+  .ships-title { font-size: 2rem; margin-bottom: 0.5rem; }
+  .ships-lede { color: var(--text-secondary); max-width: 60ch; margin-bottom: 1.5rem; }
+  .ships-search { position: relative; max-width: 640px; }
+  .ships-search input {
+    width: 100%; font: inherit; font-size: 1.0625rem; color: var(--text-primary); background: var(--bg-surface);
+    border: 1px solid var(--border); border-radius: 10px; padding: 0.85rem 1rem;
+  }
+  .ships-search input:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; }
+  .ships-results { list-style: none; padding: 0; margin-top: 0.5rem; }
+  .ships-results :global(li a) { display: grid; gap: 0.1rem; padding: 0.7rem 0.25rem; border-bottom: 1px solid var(--border); }
+  .ships-results :global(.r-name) { color: var(--text-primary); }
+  .ships-results :global(.r-meta) { color: var(--text-secondary); font-size: 0.875rem; }
+  .ships-results :global(.r-none) { color: var(--text-secondary); padding: 0.7rem 0.25rem; }
+  .ships-featured { margin-top: 3rem; }
+  .ships-featured h2 { font-size: 1.5rem; margin-bottom: 1rem; }
+  .ships-grid { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); }
+  .ship-tile { display: grid; gap: 0.25rem; background: var(--bg-card); border: 1px solid var(--border); border-radius: 8px; overflow: hidden; padding-bottom: 0.9rem; }
+  .ship-tile:hover { border-color: var(--text-muted); }
+  .ship-tile img, .ship-tile-blank { width: 100%; aspect-ratio: 16 / 9; object-fit: cover; background: var(--bg-surface); display: block; margin-bottom: 0.5rem; }
+  .ship-tile-name { padding: 0 0.9rem; color: var(--text-primary); font-family: var(--font-display); font-size: 1.05rem; line-height: 1.25; }
+  .ship-tile-meta { padding: 0 0.9rem; color: var(--text-secondary); font-size: 0.8125rem; }
+</style>

@@ -1,0 +1,283 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Navigation from '../../components/Navigation.astro';
+import Footer from '../../components/Footer.astro';
+import SEOHead from '../../components/SEOHead.astro';
+import StoryCard from '../../components/StoryCard.astro';
+import { getCollection } from 'astro:content';
+import { ships, serviceYears, commonsImage, commonsPage, type Ship } from '../../lib/ships';
+
+export function getStaticPaths() {
+  return ships.map((ship) => ({ params: { slug: ship.slug }, props: { ship } }));
+}
+
+const { ship } = Astro.props as { ship: Ship };
+const years = serviceYears(ship);
+const img = commonsImage(ship.image_url);
+const allStories = await getCollection('stories');
+const stories = allStories.filter((s) => ship.stories?.includes(s.data.slug)).map((s) => s.data);
+const facts = [ship.navy, ship.class, ship.ship_type].filter(Boolean).join(' · ');
+const description = `${ship.name}${ship.hull_number ? ` (${ship.hull_number})` : ''}${facts ? `, ${facts}` : ''}${years ? `, in service ${years}` : ''}. The crew list: add someone who served on her.`;
+---
+
+<BaseLayout>
+  <SEOHead slot="head" title={`${ship.name}${ship.hull_number ? ` ${ship.hull_number}` : ''} crew and stories | Bravo Zulu`} description={description} />
+  <Navigation active="ships" showThemeToggle />
+
+  <main id="main" class="ship-page">
+    <a href="/ships" class="ship-back">&larr; All ships</a>
+
+    <header class="ship-head">
+      <h1 class="ship-name">{ship.name}{ship.hull_number && <span class="ship-hull">{ship.hull_number}</span>}</h1>
+      {facts && <p class="ship-facts">{facts}</p>}
+      {years && <p class="ship-years">In service {years}</p>}
+      {ship.conflicts.length > 0 && (
+        <ul class="ship-conflicts">{ship.conflicts.map((c) => <li>{c}</li>)}</ul>
+      )}
+    </header>
+
+    {img && (
+      <figure class="ship-photo">
+        <img src={img} alt={ship.name} decoding="async" data-fallback={ship.image_url} onerror="this.onerror=null;this.src=this.dataset.fallback" />
+        <figcaption>Photo: <a href={commonsPage(ship.image_url)} target="_blank" rel="noopener">Wikimedia Commons</a></figcaption>
+      </figure>
+    )}
+
+    {stories.length > 0 && (
+      <section class="ship-section">
+        <h2>Our stories about her</h2>
+        <div class="ship-stories">
+          {stories.map((s) => <StoryCard slug={s.slug} title={s.title} summary={s.summary} image={s.image} readingTime={s.readingTime} />)}
+        </div>
+      </section>
+    )}
+
+    <section class="ship-section" aria-labelledby="crew">
+      <h2 id="crew">Crew remembered</h2>
+      <p class="ship-lede">People who served on {ship.name}, added by their families and shipmates.</p>
+      <ul class="crew-list" id="crew-list" data-ship={ship.id}>
+        <li class="crew-empty">Loading the crew list&hellip;</li>
+      </ul>
+    </section>
+
+    <section class="ship-section crew-add" aria-labelledby="add">
+      <h2 id="add">Did someone you know serve on her?</h2>
+      <p class="ship-lede">Add them in a minute. A name and roughly when is enough. We check every entry before it goes up.</p>
+
+      <form id="crew-form" class="crew-form" novalidate
+        data-ship-id={ship.id} data-ship-name={ship.name}
+        data-commissioned={ship.commissioned || ''} data-decommissioned={ship.decommissioned || ''}>
+        <div class="crew-row">
+          <label for="sailor_name">Their name *</label>
+          <input id="sailor_name" name="sailor_name" required maxlength="120" placeholder="Walter J. Wasnieski Jr" autocomplete="off" />
+        </div>
+        <div class="crew-grid">
+          <div class="crew-row">
+            <label for="served">When they served *</label>
+            <input id="served" name="served" required maxlength="80" placeholder="1942-44, or 1943-45?" />
+          </div>
+          <div class="crew-row">
+            <label for="rate">Job or rank</label>
+            <input id="rate" name="rate" maxlength="80" placeholder="Radioman, Cook, QM..." />
+          </div>
+        </div>
+        <div class="crew-row">
+          <label for="relation">They were my *</label>
+          <select id="relation" name="relation" required>
+            <option value="">Choose one</option>
+            <option>Father</option>
+            <option>Grandfather</option>
+            <option>Great-grandfather</option>
+            <option>Uncle</option>
+            <option>Other family</option>
+            <option>Shipmate or friend</option>
+            <option value="Myself">It's me, I served on her</option>
+            <option>I'm researching them</option>
+          </select>
+        </div>
+        <div class="crew-row">
+          <label for="moment">One moment worth remembering</label>
+          <textarea id="moment" name="moment" rows="4" maxlength="1500" placeholder="He was on board the day they flew a plane off the #2 turret."></textarea>
+        </div>
+        <div class="crew-grid">
+          <div class="crew-row">
+            <label for="contributor_name">Your name</label>
+            <input id="contributor_name" name="contributor_name" maxlength="120" autocomplete="name" />
+          </div>
+          <div class="crew-row">
+            <label for="contributor_email">Your email *</label>
+            <input id="contributor_email" name="contributor_email" type="email" required maxlength="200" autocomplete="email" />
+          </div>
+        </div>
+        <p class="crew-note">We email you when it's live. Your email is never shown.</p>
+        <label class="crew-check"><input type="checkbox" id="contact_ok" name="contact_ok" /> Other families from this ship may contact me through Bravo Zulu</label>
+        <label class="crew-check"><input type="checkbox" id="consent" name="consent" required /> I'm happy for this entry to be shown publicly on this page *</label>
+        <div class="crew-hp" aria-hidden="true"><label for="website">Website</label><input id="website" name="website" tabindex="-1" autocomplete="off" /></div>
+        <button type="submit" class="crew-submit" id="crew-submit">Add to the crew list</button>
+        <p class="crew-status" id="crew-status" role="status"></p>
+      </form>
+    </section>
+
+    <p class="ship-source">
+      Ship facts from <a href={`https://www.wikidata.org/wiki/${ship.id}`} target="_blank" rel="noopener">Wikidata</a>.
+      {ship.wikipedia_url && <a href={ship.wikipedia_url} target="_blank" rel="noopener">Read her full history on Wikipedia</a>}
+    </p>
+  </main>
+  <Footer />
+</BaseLayout>
+
+<script>
+  const esc = (s: string) =>
+    String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c]!);
+  const list = document.getElementById('crew-list')!;
+  const form = document.getElementById('crew-form') as HTMLFormElement;
+  const status = document.getElementById('crew-status')!;
+  const button = document.getElementById('crew-submit') as HTMLButtonElement;
+
+  const byline = (e: any) =>
+    e.relation === 'Myself'
+      ? `Added by ${esc(e.contributor_name || 'the sailor')}, who served on her`
+      : `Added by ${esc(e.contributor_name || 'family')} (${esc(String(e.relation).toLowerCase())})`;
+
+  const row = (e: any, pending = false) => `<li class="crew-entry${pending ? ' crew-entry--pending' : ''}">
+      <span class="crew-entry-name">${esc(e.sailor_name)}</span>
+      <span class="crew-entry-meta">${[e.rate, e.served].filter(Boolean).map(esc).join(' · ')}</span>
+      ${e.moment ? `<p class="crew-entry-moment">${esc(e.moment)}</p>` : ''}
+      <span class="crew-entry-by">${pending ? 'Waiting for a check before it goes up' : byline(e)}</span>
+    </li>`;
+
+  const empty = '<li class="crew-empty">No one from her crew is listed yet. Be the first to add someone.</li>';
+
+  fetch(`/api/crew-stories?ship=${list.dataset.ship}`)
+    .then((r) => (r.ok ? r.json() : { entries: [] }))
+    .then(({ entries }) => {
+      list.innerHTML = entries?.length ? entries.map((e: any) => row(e)).join('') : empty;
+    })
+    .catch(() => {
+      list.innerHTML = empty;
+    });
+
+  form.addEventListener('submit', async (ev) => {
+    ev.preventDefault();
+    const body = {
+      ...Object.fromEntries(new FormData(form)),
+      contact_ok: (document.getElementById('contact_ok') as HTMLInputElement).checked,
+      consent: (document.getElementById('consent') as HTMLInputElement).checked,
+      ship_id: form.dataset.shipId,
+      ship_name: form.dataset.shipName,
+      ship_commissioned: form.dataset.commissioned,
+      ship_decommissioned: form.dataset.decommissioned,
+    } as Record<string, any>;
+    button.disabled = true;
+    status.textContent = 'Sending...';
+    try {
+      const r = await fetch('/api/crew-story', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(body),
+      });
+      const out = await r.json().catch(() => ({}));
+      if (!r.ok) throw new Error(out.error || 'Something went wrong. Please try again.');
+      list.querySelector('.crew-empty')?.remove();
+      list.insertAdjacentHTML('beforeend', row(body, true));
+      form.reset();
+      status.textContent = `Thank you. ${body.sailor_name} is in the queue, and we will email you when the entry is live.`;
+      (window as any).gtag?.('event', 'crew_story_submit', { ship: body.ship_id, relation: body.relation });
+      list.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    } catch (err) {
+      status.textContent = (err as Error).message;
+    } finally {
+      button.disabled = false;
+    }
+  });
+</script>
+
+<style>
+  .ship-page {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: calc(var(--nav-height) + var(--banner-offset) + 1.5rem) 1.25rem 3rem;
+  }
+  .ship-back { color: var(--text-secondary); font-size: 0.9rem; }
+  .ship-head { margin: 1rem 0 1.5rem; }
+  .ship-name { font-size: clamp(2rem, 1.6rem + 2vw, 2.75rem); line-height: 1.1; text-wrap: balance; }
+  .ship-hull {
+    margin-left: 0.6rem;
+    font-family: var(--font-ui);
+    font-size: 0.45em;
+    color: var(--text-secondary);
+    vertical-align: middle;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: 0.15em 0.45em;
+  }
+  .ship-facts { color: var(--text-secondary); margin-top: 0.5rem; }
+  .ship-years { color: var(--text-primary); margin-top: 0.25rem; }
+  .ship-conflicts { list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 0.4rem; margin-top: 0.9rem; }
+  .ship-conflicts li {
+    font-size: 0.8125rem;
+    color: var(--text-secondary);
+    background: var(--bg-surface);
+    border-radius: 4px;
+    padding: 0.2rem 0.55rem;
+  }
+  .ship-photo { margin: 0 0 2rem; }
+  .ship-photo img { width: 100%; max-height: 460px; object-fit: cover; border-radius: 8px; background: var(--bg-surface); }
+  .ship-photo figcaption { font-size: 0.875rem; color: var(--text-secondary); margin-top: 0.4rem; }
+  .ship-photo a,
+  .ship-source a { color: var(--accent); }
+  .ship-section { margin-top: 2.75rem; }
+  .ship-section h2 { font-size: 1.5rem; margin-bottom: 0.4rem; }
+  .ship-lede { color: var(--text-secondary); margin-bottom: 1.1rem; }
+  .ship-stories { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); }
+  .crew-list { list-style: none; padding: 0; border-top: 1px solid var(--border); }
+  .crew-list :global(.crew-entry),
+  .crew-list :global(.crew-empty) { padding: 0.9rem 0; border-bottom: 1px solid var(--border); }
+  .crew-list :global(.crew-empty) { color: var(--text-secondary); }
+  .crew-list :global(.crew-entry) { display: grid; gap: 0.2rem; }
+  .crew-list :global(.crew-entry-name) { font-family: var(--font-display); font-size: 1.125rem; color: var(--text-primary); }
+  .crew-list :global(.crew-entry-meta) { color: var(--text-secondary); font-size: 0.9375rem; }
+  .crew-list :global(.crew-entry-moment) { font-family: var(--font-body); color: var(--text-primary); margin: 0.3rem 0; line-height: 1.6; }
+  .crew-list :global(.crew-entry-by) { font-size: 0.8125rem; color: var(--text-muted); }
+  .crew-list :global(.crew-entry--pending) { opacity: 0.75; }
+  .crew-add { background: var(--bg-card); border: 1px solid var(--border); border-radius: 12px; padding: 1.5rem; }
+  .crew-form { display: grid; gap: 1rem; }
+  .crew-grid { display: grid; gap: 1rem; grid-template-columns: 1fr; }
+  @media (min-width: 560px) {
+    .crew-grid { grid-template-columns: 1fr 1fr; }
+  }
+  .crew-row { display: grid; gap: 0.35rem; }
+  .crew-row label { font-size: 0.9rem; color: var(--text-primary); }
+  .crew-form input:not([type='checkbox']),
+  .crew-form select,
+  .crew-form textarea {
+    font: inherit;
+    font-size: 1rem;
+    color: var(--text-primary);
+    background: var(--bg-primary);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    padding: 0.65rem 0.75rem;
+    width: 100%;
+  }
+  .crew-form textarea { resize: vertical; }
+  .crew-form :focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; }
+  .crew-note { font-size: 0.875rem; color: var(--text-secondary); }
+  .crew-check { display: flex; gap: 0.6rem; align-items: flex-start; font-size: 0.9375rem; color: var(--text-primary); }
+  .crew-check input { margin-top: 0.3rem; width: 1.1rem; height: 1.1rem; flex-shrink: 0; }
+  .crew-hp { position: absolute; left: -9999px; }
+  .crew-submit {
+    justify-self: start;
+    font: inherit;
+    font-weight: 500;
+    padding: 0.75rem 1.4rem;
+    border: 0;
+    border-radius: 8px;
+    background: var(--accent);
+    color: #fff;
+    cursor: pointer;
+  }
+  .crew-submit:disabled { opacity: 0.6; cursor: wait; }
+  .crew-status { min-height: 1.5em; color: var(--text-primary); }
+  .ship-source { margin-top: 2.5rem; font-size: 0.875rem; color: var(--text-secondary); }
+</style>

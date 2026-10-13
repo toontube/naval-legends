@@ -1,0 +1,58 @@
+{
+  "_note": "Hand-checked fixes on top of Wikidata. Source per ship in _source. 'stories' links our articles whose daily-card ship name does not match Wikidata.",
+  "Q1500182": {
+    "commissioned": "1914-03-12",
+    "decommissioned": "1948-04-21",
+    "conflicts": [
+      "World War I",
+      "World War II",
+      "Normandy landings",
+      "Operation Torch",
+      "Battle of Iwo Jima",
+      "Battle of Okinawa"
+    ],
+    "_source": "https://en.wikipedia.org/wiki/USS_Texas_(BB-35)"
+  },
+  "Q507603": {
+    "commissioned": "1943-05-23",
+    "decommissioned": "1991-02-08",
+    "ship_type": "battleship",
+    "conflicts": [
+      "World War II",
+      "Korean War",
+      "Vietnam War",
+      "Lebanese Civil War"
+    ],
+    "_source": "https://en.wikipedia.org/wiki/USS_New_Jersey_(BB-62)"
+  },
+  "Q241858": {
+    "stories": [
+      "shinano-maiden-voyage"
+    ]
+  },
+  "Q1850384": {
+    "stories": [
+      "mogami-cardboard-cruiser"
+    ]
+  },
+  "Q155430": {
+    "stories": [
+      "prinz-eugen-bikini"
+    ]
+  },
+  "Q1088018": {
+    "stories": [
+      "uss-phoenix-belgrano"
+    ]
+  },
+  "Q540580": {
+    "stories": [
+      "uss-phoenix-belgrano"
+    ]
+  },
+  "Q129200": {
+    "stories": [
+      "varyag-casino-carrier"
+    ]
+  }
+}
