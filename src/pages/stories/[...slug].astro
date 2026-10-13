@@ -577,11 +577,12 @@ const ksStickyUrl = 'https://www.kickstarter.com/projects/mozuma/come-on-texas?r
   }
 
   .sticky-cta-close {
-    font-size: 1.25rem;
-    color: var(--text-muted);
+    font-size: 1.5rem;
+    color: var(--text-secondary);
     background: none;
     border: none;
-    padding: 0.25rem 0.5rem;
+    min-width: 44px;
+    min-height: 44px;
     line-height: 1;
     flex-shrink: 0;
   }
@@ -592,27 +593,6 @@ const ksStickyUrl = 'https://www.kickstarter.com/projects/mozuma/come-on-texas?r
 </style>
 
 <script>
-  // Scroll reveal — fade in paragraphs as they enter viewport
-  const revealElements = document.querySelectorAll('.prose > p, .prose > h2, .prose > h3, .prose > figure, .prose > blockquote');
-
-  // Reveal first 3 elements immediately (above fold)
-  revealElements.forEach((el, i) => {
-    if (i < 3) el.classList.add('revealed');
-  });
-
-  const revealObserver = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('revealed');
-        revealObserver.unobserve(entry.target);
-      }
-    });
-  }, { rootMargin: '0px 0px -60px 0px', threshold: 0.1 });
-
-  revealElements.forEach((el, i) => {
-    if (i >= 3) revealObserver.observe(el);
-  });
-
   // Pretext CLS prevention
   async function measureArticle() {
     try {
@@ -621,8 +601,10 @@ const ksStickyUrl = 'https://www.kickstarter.com/projects/mozuma/come-on-texas?r
       const el = document.getElementById('article-body');
       if (!el) return;
       const text = el.textContent || '';
-      const prepared = prepare(text, '18px Lora');
-      const { height } = layout(prepared, el.offsetWidth, 31.5);
+      // Body size is fluid (clamp), so measure with the computed values
+      const cs = getComputedStyle(el);
+      const prepared = prepare(text, `${cs.fontSize} Lora`);
+      const { height } = layout(prepared, el.offsetWidth, parseFloat(cs.lineHeight));
       el.style.minHeight = `${height}px`;
     } catch {
       // Pretext is optional
@@ -659,8 +641,8 @@ const ksStickyUrl = 'https://www.kickstarter.com/projects/mozuma/come-on-texas?r
       }
     }
 
-    // Sticky CTA: show after 25%, hide near KS inline or subscribe
-    if (milestones.has(25) && stickyCTA && !stickyDismissed) {
+    // Sticky CTA: show only near the end (75%) so it doesn't cover the story; hide near KS inline or subscribe
+    if (milestones.has(75) && stickyCTA && !stickyDismissed) {
       stickyCTA.classList.add('visible');
     }
   }
@@ -675,7 +657,7 @@ const ksStickyUrl = 'https://www.kickstarter.com/projects/mozuma/come-on-texas?r
       entries.forEach((e) => {
         if (e.isIntersecting) {
           stickyCTA.classList.remove('visible');
-        } else if (milestones.has(25) && !stickyDismissed) {
+        } else if (milestones.has(75) && !stickyDismissed) {
           stickyCTA.classList.add('visible');
         }
       });
