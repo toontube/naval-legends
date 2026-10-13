@@ -52,7 +52,7 @@ body {
 }
 
 /* Banner offset — adds space when KS banner is visible */
-.ks-banner-visible {
+:root.ks-banner-visible {
   --banner-offset: var(--ks-banner-height);
 }
 
