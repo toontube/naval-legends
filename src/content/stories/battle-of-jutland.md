@@ -56,7 +56,7 @@ At Jutland, the eight charges that burned on Lion were the ones in transit. Gran
 
 ## Invincible, 18:30
 
-The lesson came too late for one more ship. At about 18:30, Rear-Admiral Horace Hood's flagship HMS Invincible, leading the 3rd Battlecruiser Squadron into the fight, took a shell on Q turret from Lützow or Derfflinger. The magazine detonated. She broke in two and sank in about 90 seconds. Of 1,032 men, six survived. Hood was not among them.
+The lesson came too late for one more ship. At about 18:30, Rear-Admiral Horace [Hood](/stories/hms-hood-three-survivors/)'s flagship HMS Invincible, leading the 3rd Battlecruiser Squadron into the fight, took a shell on Q turret from Lützow or Derfflinger. The magazine detonated. She broke in two and sank in about 90 seconds. Of 1,032 men, six survived. Hood was not among them.
 
 Three battlecruisers, more than 3,300 dead in three explosions. That is over half of Britain's 6,094 dead for the whole battle.
 

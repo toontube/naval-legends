@@ -9,7 +9,7 @@ tags: [wwii, commandos, hms-campbeltown, st-nazaire, operation-chariot]
 readingTime: 6
 ---
 
-The Normandie Dock at St Nazaire was 350 meters long and 50 meters wide. It was the largest drydock in the world. It was also the only dock on the Atlantic coast big enough to service the German battleship Tirpitz.
+The Normandie Dock at St Nazaire was 350 meters long and 50 meters wide. It was the largest drydock in the world. It was also the only dock on the Atlantic coast big enough to service the German battleship [Tirpitz](/stories/tirpitz-lone-queen/).
 
 If the dock could be destroyed, Tirpitz couldn't risk a breakout into the Atlantic. Any battle damage would mean a return to Germany through waters the Royal Navy controlled. The strategic logic was simple. The execution was not.
 
@@ -17,7 +17,7 @@ If the dock could be destroyed, Tirpitz couldn't risk a breakout into the Atlant
 
 HMS Campbeltown started life as USS Buchanan, a Wickes-class [destroyer](/stories/cruiser-vs-destroyer-vs-battleship/) built at Bath Iron Works in 1918. She clocked 39.7 knots on her trials. By 1940 she was obsolete, one of 50 old destroyers traded to Britain for base leases.
 
-The British cut her third and fourth funnels off and raked the remaining two at an angle. In the dark, from a distance, she looked like a German Type 23 torpedo boat. Her crew was cut from 158 to 75 to minimize casualties.
+The British cut her third and fourth funnels off and raked the remaining two at an angle. In the dark, from a distance, she looked like a German Type 23 torpedo boat. The trick was an old one: [SMS Emden rigged a fake fourth funnel](/stories/emden-penang-raid/) to slip into Penang harbor. Her crew was cut from 158 to 75 to minimize casualties.
 
 In the bow, behind the steel pillar supporting the forward gun mount, shipyard workers cemented 24 Mark VII depth charges containing 4.5 tons of amatol explosive. The charges were connected by Cordtex detonating cord and fitted with eight-hour time pencils.
 

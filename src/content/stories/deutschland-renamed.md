@@ -17,7 +17,7 @@ That August, before war was even declared, Deutschland slipped into the North At
 
 Then came the City of Flint. On October 9, Deutschland captured this American freighter carrying contraband to Britain. A German prize crew tried to sail her home the long way. Norway ordered her out of Tromso, so she went on to the Soviet port of Murmansk, where the prize crew was briefly interned before the ship was handed back to German control. The diplomatic fallout was immediate. The US was still neutral, and seizing American ships was not a good way to keep it that way. On the way south, a Norwegian minelayer stopped her off the coast and ordered her into Haugesund. Norway interned the prize crew and returned the ship to her American captain.
 
-Meanwhile, Deutschland's sister ship Admiral Graf Spee was having a far more dramatic run in the South Atlantic — until three British cruisers cornered her at the River Plate on December 13. Graf Spee was scuttled in Montevideo four days later.
+Meanwhile, Deutschland's sister ship [Admiral Graf Spee](/stories/graf-spee-river-plate/) was having a far more dramatic run in the South Atlantic — until three British cruisers cornered her at the River Plate on December 13. Graf Spee was scuttled in Montevideo four days later.
 
 Hitler looked at the situation and had a thought: what if a ship called "Deutschland" gets sunk? The headline would write itself. "Germany sunk."
 
@@ -27,13 +27,13 @@ Under her new name, Lutzow had one more chance to matter. On New Year's Eve 1942
 
 It should have worked. The convoy's escort was just six British destroyers.
 
-But Lutzow's captain, under standing orders to avoid risk, fired at long range and then withdrew without pressing the attack. The British destroyers, especially [HMS Onslow under Captain Robert Sherbrooke](/stories/barents-sea-new-years-eve), who won the Victoria Cross for that fight, held out until cruisers Sheffield and Jamaica arrived. The convoy got through.
+But Lutzow's captain, under standing orders to avoid risk, fired at long range and then withdrew without pressing the attack. The British destroyers, especially [HMS Onslow under Captain Robert Sherbrooke](/stories/barents-sea-new-years-eve/), who won the Victoria Cross for that fight, held out until cruisers Sheffield and Jamaica arrived. The convoy got through.
 
 Hitler couldn't even get a situation report for hours because of communications failures. When he finally heard what happened, he was incandescent. He declared the entire surface fleet useless and ordered it scrapped.
 
 Grand Admiral Erich Raeder, commander-in-chief of the Kriegsmarine, resigned on January 30, 1943. He was replaced by Admiral Karl Donitz, the U-boat man, who managed to talk Hitler out of the most extreme measures. But the surface fleet was effectively sidelined for the rest of the war.
 
-Lutzow spent her last days being bombed by the RAF at Swinemunde, where the heavy cruiser [Prinz Eugen](/stories/prinz-eugen-bikini) was also a target of the first raid on April 13. On April 16, 1945, a Tallboy near-miss from 617 Squadron, the Dambusters, tore open her hull and she settled in shallow water. Her main deck stayed above the surface, so she was used as a stationary artillery battery, firing at the advancing Soviets until her ammunition ran out. On May 4, 1945, her crew set scuttling charges.
+Lutzow spent her last days being bombed by the RAF at Swinemunde, where the heavy cruiser [Prinz Eugen](/stories/prinz-eugen-bikini/) was also a target of the first raid on April 13. On April 16, 1945, a Tallboy near-miss from 617 Squadron, the Dambusters, tore open her hull and she settled in shallow water. Her main deck stayed above the surface, so she was used as a stationary artillery battery, firing at the advancing Soviets until her ammunition ran out. On May 4, 1945, her crew set scuttling charges.
 
 The Soviets raised the wreck. For decades historians assumed it was scrapped. In the early 2000s, the historian Hans Georg Prager found in Soviet archives that she had been sunk in weapons tests in the Baltic off Swinoujscie on July 22, 1947.
 

@@ -50,7 +50,7 @@ Every source agrees the answer is "more than any other ship." They do not agree 
 
 Rescue boats pulled out roughly 1,200 people. One widely cited figure is 1,252. Other counts are lower: the historian Chris Bellamy gives 996. The National WWII Museum puts the dead at 6,000 to 9,000 and says plainly that we will probably never know how many were aboard. Heinz Schön, a Gustloff survivor who spent decades researching the passenger lists, arrived at 9,343 dead. A 2003 computer reconstruction for the Discovery Channel modeled about 10,600 aboard and 9,600 dead.
 
-The honest range is something like 6,000 to 9,600. Even the low end is four times Titanic and five times [Lusitania](/stories/lusitania-sinking/), which is why she sits at the top of every list of the [worst naval disasters](/stories/worst-naval-disasters/).
+The honest range is something like 6,000 to 9,600. Even the low end is four times Titanic and five times [Lusitania](/stories/lusitania-sinking/), which is why she sits at the top of every list of the [worst naval disasters](/stories/worst-naval-disasters/). That list also includes [USS Indianapolis](/stories/uss-indianapolis-sharks/), torpedoed four days after delivering the Hiroshima uranium.
 
 The other number that matters is roughly 1,000. That is about how many naval personnel, mostly U-boat trainees, were aboard, along with anti-aircraft guns. She was not marked or notified as a hospital ship. That is why most historians conclude she was a legitimate target, and why war-crime charges against Marinesko have never stuck. The National WWII Museum also notes that Marinesko did not know what he was looking at. The sinking fell, by coincidence, twelve years to the day after Hitler became chancellor.
 

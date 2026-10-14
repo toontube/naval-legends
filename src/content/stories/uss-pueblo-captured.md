@@ -77,13 +77,13 @@ Secretary of the Navy John Chafee overruled them. "Mistakes and miscalculations 
 
 His closing statement: "They have suffered enough."
 
-Bucher was not court-martialed. He retired as a Commander. He died on January 28, 2004.
+Bucher was not court-martialed. He retired as a Commander. Other captains fared worse: the captain of [USS Indianapolis](/stories/uss-indianapolis-sharks/) was court-martialed, and the captain of [USS Hobson](/stories/uss-hobson-wasp-collision/) did not survive to explain his ship's last turn. He died on January 28, 2004.
 
 ## Still there
 
 USS Pueblo sits on the Pothonggang Canal in Pyongyang. She is a centerpiece of the Victorious Fatherland Liberation War Museum. North Korean visitors and foreign tourists walk her decks.
 
-She remains officially commissioned in the United States Navy. She is the second-oldest commissioned vessel after USS Constitution. She is the only US Navy ship held by a foreign power.
+She remains officially commissioned in the United States Navy. She is the second-oldest commissioned vessel after [USS Constitution](/stories/uss-constitution-old-ironsides/). She is the only US Navy ship held by a foreign power.
 
 Nobody has proposed a plan to get her back.
 

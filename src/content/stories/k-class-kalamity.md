@@ -15,7 +15,7 @@ The Royal Navy built 18 of them anyway.
 
 ## The problem
 
-By 1915, Britain had a specific tactical need. The Grand Fleet's battleships steamed at 21 knots. Battlecruisers made 24. The newest diesel submarines topped out at 19. That meant submarines couldn't keep up with the fleet, which meant they couldn't ambush the German High Seas Fleet during a retreat.
+By 1915, Britain had a specific tactical need. The Grand Fleet's battleships steamed at 21 knots. Battlecruisers made 24. The newest diesel submarines topped out at 19. That meant submarines couldn't keep up with the fleet, which meant they couldn't ambush the German [High Seas Fleet](/stories/scapa-flow-scuttling/) during a retreat. The battlecruisers they were meant to keep up with had their own reckoning: three of them [exploded at Jutland](/stories/battle-of-jutland/) in 1916.
 
 The solution was obvious: steam turbines. Twin oil-fired Yarrow boilers, 10,500 shaft horsepower, 24 knots on the surface. Fast enough to run alongside the battle fleet.
 

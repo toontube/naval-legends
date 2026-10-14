@@ -63,7 +63,7 @@ Von Reuter was taken prisoner. He was unapologetic. In Germany, a special medal 
 
 Officially, the British were outraged. Vice Admiral Sydney Fremantle, returning with his squadron to find his charges sinking, called it "a treacherous act."
 
-Privately, the Admiralty was relieved. The question of how to divide the German fleet among the Allies had been poisoning negotiations for months. France wanted battleships. Italy wanted battleships. Japan wanted battleships. Nobody wanted the others to have battleships. Von Reuter had solved the problem by putting the whole argument on the seabed.
+Privately, the Admiralty was relieved. The question of how to divide the German fleet among the Allies had been poisoning negotiations for months. France wanted battleships. Italy wanted battleships. Japan wanted battleships. Nobody wanted the others to have battleships. Von Reuter had solved the problem by putting the whole argument on the seabed. More than a century earlier, French cavalry had [captured a Dutch fleet on a frozen harbor](/stories/den-helder-cavalry-fleet/) without firing a shot.
 
 ## Raised from the dead
 

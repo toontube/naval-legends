@@ -23,7 +23,7 @@ The Navy searched for months. They checked German submarine records after the wa
 
 One of her two engines had been disabled before the voyage. Her captain, Lieutenant Commander George Worley, was under investigation for suspected pro-German sympathies (he was born in Germany as Johan Frederick Wichmann). None of these facts explain a 542-foot ship vanishing without a trace.
 
-It remains the largest non-combat loss of life in US Navy history. The [full story of USS Cyclops](/stories/uss-cyclops-vanished) is one of the most baffling in the Navy's records.
+It remains the largest non-combat loss of life in US Navy history. The [full story of USS Cyclops](/stories/uss-cyclops-vanished/) is one of the most baffling in the Navy's records.
 
 Two of Cyclops' sister ships — USS Proteus and USS Nereus — disappeared in the same waters in 1941. Also without a trace. Also carrying heavy metallic ore.
 
@@ -89,7 +89,7 @@ The ocean is 139 million square miles of water averaging 12,100 feet deep. Ships
 
 What these ships share is silence. They left port with people who expected to arrive somewhere, and then the sea closed over them and said nothing.
 
-The [worst naval disasters in history](/stories/worst-naval-disasters) at least left survivors to tell the story. The ships on this list left no one.
+The [worst naval disasters in history](/stories/worst-naval-disasters/) at least left survivors to tell the story. The ships on this list left no one. Even when a loss is no mystery, help can come late: the Navy didn't notice [USS Indianapolis](/stories/uss-indianapolis-sharks/) was missing for four days.
 
 ## Frequently Asked Questions
 

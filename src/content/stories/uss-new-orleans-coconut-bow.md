@@ -59,7 +59,7 @@ She arrived in Sydney on December 24. Christmas Eve. The Australians in the harb
   <figcaption>The temporary steel stub bow being fitted in Sydney, January 1943. This replaced the coconut log plug for the voyage to Puget Sound. Australian War Memorial photograph (305924).</figcaption>
 </figure>
 
-In Sydney, workers installed a temporary steel stub bow — enough to get her across the Pacific to a real shipyard. She sailed to Puget Sound Navy Yard in Bremerton, Washington, where a proper bow was finally built and fitted. New Orleans, which had [survived Pearl Harbor](/stories/uss-new-orleans-pearl-harbor/) a year earlier, returned to service in October 1943 and fought in nearly every major Pacific campaign from the Gilbert Islands to Okinawa.
+In Sydney, workers installed a temporary steel stub bow — enough to get her across the Pacific to a real shipyard. She sailed to Puget Sound Navy Yard in Bremerton, Washington, where a proper bow was finally built and fitted. New Orleans, which had [survived Pearl Harbor](/stories/uss-new-orleans-pearl-harbor/) a year earlier, returned to service in October 1943 and fought in nearly every major Pacific campaign from the Gilbert Islands to [Okinawa](/stories/yamato-last-sortie/).
 
 ## 182 men
 

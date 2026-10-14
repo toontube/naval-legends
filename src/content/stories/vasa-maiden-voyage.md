@@ -53,7 +53,7 @@ When the tribunal asked the shipbuilder Arendt de Groote why the ship had sunk, 
 
 No one was found guilty. No one was punished. The blame, as far as it landed anywhere, landed on Hybertsson, who was in no position to object. Following the evidence any further would have led to the man who approved the drawings and wanted the ship at sea in a hurry. Nobody on that tribunal was going to put the King of Sweden on trial.
 
-Compare her to another first voyage. Japan's [carrier Shinano](/stories/shinano-maiden-voyage/) also went to sea rushed and unfinished, and also lasted less than a day. Different century, same pressure from the top. The US Navy's [Cleveland-class cruisers](/stories/cleveland-class-top-heavy/) fought the same enemy Vasa did, weight stacked too high, but they had naval architects with the arithmetic to see it coming.
+Compare her to another first voyage. Japan's [carrier Shinano](/stories/shinano-maiden-voyage/) also went to sea rushed and unfinished, and also lasted less than a day. Different century, same pressure from the top. Closer to her own era, [Henry VIII's Mary Rose](/stories/mary-rose-solent-1545/) capsized in the Solent in 1545 while the king watched from shore. The US Navy's [Cleveland-class cruisers](/stories/cleveland-class-top-heavy/) fought the same enemy Vasa did, weight stacked too high, but they had naval architects with the arithmetic to see it coming.
 
 ## 333 years in the mud
 

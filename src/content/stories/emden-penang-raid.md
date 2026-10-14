@@ -29,7 +29,7 @@ Von Muller brought the Emden within 300 yards of the Zhemchug before running up 
 
 ## A ship that couldn't fight back
 
-The Zhemchug was a survivor. Nine years earlier she had escaped the Russian defeat at Tsushima and run for Manila with the cruisers Oleg and [Aurora](/stories/aurora-friendly-fire). She had arrived in Penang two days before the raid for boiler repairs. Only one of sixteen boilers worked. She couldn't move. Her ammunition hoists had no steam, so the crew had stacked twelve ready rounds on deck. That was it.
+The Zhemchug was a survivor. Nine years earlier she had escaped the Russian defeat at Tsushima and run for Manila with the cruisers Oleg and [Aurora](/stories/aurora-friendly-fire/). She had arrived in Penang two days before the raid for boiler repairs. Only one of sixteen boilers worked. She couldn't move. Her ammunition hoists had no steam, so the crew had stacked twelve ready rounds on deck. That was it.
 
 Cherkassov had given most of the crew shore leave. The British commander of the China Station, Vice Admiral Jerram, had warned the Russians to keep their ships ready. Cherkassov ignored the warning and went to the E&O Hotel.
 
@@ -67,7 +67,7 @@ There's a memorial to the Zhemchug's dead at Western Road Cemetery in George Tow
 
 The Eastern & Oriental Hotel is still open. You can book a sea-facing suite and look out at the same water where the Zhemchug went down.
 
-The fake funnel was canvas stretched over a metal frame. It probably took the crew an afternoon to build. It worked once, and that was enough. Von Muller was following a long tradition of commerce raiders who operated alone and lived on audacity. The [CSS Alabama did the same thing](/stories/css-alabama-semmes) half a century earlier, with a captain just as theatrical. The same seas stayed dangerous into the next war, when the [Battle of the Java Sea](/stories/karel-doorman-java-sea) destroyed an Allied squadron in 1942.
+The fake funnel was canvas stretched over a metal frame. It probably took the crew an afternoon to build. It worked once, and that was enough. Von Muller was following a long tradition of commerce raiders who operated alone and lived on audacity. The [CSS Alabama did the same thing](/stories/css-alabama-semmes/) half a century earlier, with a captain just as theatrical. The same seas stayed dangerous into the next war, when the [Battle of the Java Sea](/stories/karel-doorman-java-sea/) destroyed an Allied squadron in 1942.
 
 ## Frequently Asked Questions
 

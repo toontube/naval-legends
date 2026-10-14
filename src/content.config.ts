@@ -28,6 +28,7 @@ const stories = defineCollection({
     seoTitle: z.string().optional(),
     slug: z.string(),
     date: z.coerce.date(),
+    updated: z.coerce.date().optional(),
     summary: z.string(),
     image: z.string().optional(),
     tags: z.array(z.string()),

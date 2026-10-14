@@ -8,7 +8,7 @@ tags: [cold-war, uss-hobson, uss-wasp, collision, peacetime-disaster]
 readingTime: 4
 ---
 
-On the night of April 26, 1952, the destroyer-minesweeper USS Hobson turned hard left into the path of the aircraft carrier USS Wasp. The carrier struck her amidships on the starboard side. The Hobson broke in two. Her stern sank immediately. Her bow floated for about four minutes, then went under.
+On the night of April 26, 1952, the [destroyer-minesweeper](/stories/cruiser-vs-destroyer-vs-battleship/) USS Hobson turned hard left into the path of the aircraft carrier USS Wasp. The carrier struck her amidships on the starboard side. The Hobson broke in two. Her stern sank immediately. Her bow floated for about four minutes, then went under.
 
 One hundred and seventy-six men died. Sixty-one survived. The commanding officer, Lieutenant Commander W.J. Tierney, was not among the survivors.
 
@@ -60,7 +60,7 @@ None of these explanations have any evidence behind them. They're reconstruction
 
 The Hobson was the largest peacetime loss of life in the U.S. Navy since the sinking of USS Thresher eleven years later — though Thresher was a submarine that imploded at depth, a different kind of disaster. The Hobson's loss was a surface collision in a routine formation, during a routine operation, in peacetime.
 
-The Navy changed its plane guard procedures after the Hobson. Escorts were repositioned farther astern, with clearer rules about maintaining separation from the carrier during flight operations.
+The Navy changed its plane guard procedures after the Hobson. Escorts were repositioned farther astern, with clearer rules about maintaining separation from the carrier during flight operations. Navies have always lost ships to their own side: the Royal Navy's [K-class submarines](/stories/k-class-kalamity/) sank six boats without enemy help, and [USS William D. Porter](/stories/uss-porter-torpedo-fdr/) once fired a live torpedo at the president's ship during a drill.
 
 The Hobson's wreck has never been located. She lies somewhere on the floor of the North Atlantic in roughly 4,000 meters of water. The 176 men who died with her are still there.
 

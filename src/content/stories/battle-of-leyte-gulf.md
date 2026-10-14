@@ -61,7 +61,7 @@ It was not over for Taffy 3. That morning St. Lo was hit by a Zero in one of the
 
 ## "The world wonders"
 
-Far to the north, Halsey was hearing Kinkaid's calls for help. At Pearl Harbor, Admiral Chester Nimitz wanted to know the same thing Kinkaid did. His assistant chief of staff, Captain Bernard Austin, drafted a short question.
+Far to the north, Halsey was hearing Kinkaid's calls for help. At [Pearl Harbor](/stories/uss-arizona-pearl-harbor/), Admiral Chester Nimitz wanted to know the same thing Kinkaid did. His assistant chief of staff, Captain Bernard Austin, drafted a short question.
 
 Navy messages were padded with nonsense at both ends to make code-breaking harder. An ensign added "Turkey trots to water" at the front and "The world wonders" at the end. Decoders were supposed to strip both.
 

@@ -9,7 +9,7 @@ tags: [wwii, arctic-convoys, barents-sea, royal-navy, kriegsmarine, destroyers]
 readingTime: 5
 ---
 
-December 31, 1942. Convoy JW-51B was about 120 nautical miles north of the coast of Finnmark, bound for Murmansk with war supplies for the Soviet Union. Fourteen merchant ships. The close escort was six destroyers, two corvettes, a minesweeper, and two trawlers. The Arctic run had already cost the Royal Navy dearly that year, including the cruiser [HMS Edinburgh and her cargo of Soviet gold](/stories/hms-edinburgh-gold) in May.
+December 31, 1942. Convoy JW-51B was about 120 nautical miles north of the coast of Finnmark, bound for Murmansk with war supplies for the Soviet Union. Fourteen merchant ships. The close escort was six destroyers, two corvettes, a minesweeper, and two trawlers. The Arctic run had already cost the Royal Navy dearly that year, including the cruiser [HMS Edinburgh and her cargo of Soviet gold](/stories/hms-edinburgh-gold/) in May.
 
 The senior officer was Captain Robert St. Vincent Sherbrooke, 41 years old, aboard HMS Onslow. His job was to get the convoy through. The Germans had other plans.
 
@@ -51,7 +51,7 @@ Then one of the strangest moments of the war. The German destroyer Friedrich Eck
 
 Sheffield opened fire at point-blank range. Friedrich Eckholdt broke in two and sank with her entire crew. No survivors.
 
-Meanwhile, [Lutzow](/stories/deutschland-renamed) -- the entire southern jaw of the German pincer -- had done almost nothing. Her captain, Kapitan zur See Rudolf Stange, had the convoy in sight but refused to close the range in the poor visibility. He fired a few salvos at long range. All missed.
+Meanwhile, [Lutzow](/stories/deutschland-renamed/) -- the entire southern jaw of the German pincer -- had done almost nothing. Her captain, Kapitan zur See Rudolf Stange, had the convoy in sight but refused to close the range in the poor visibility. He fired a few salvos at long range. All missed.
 
 Every merchant ship in JW-51B reached Murmansk.
 
@@ -67,7 +67,7 @@ Late in the afternoon of January 1, 1943, the truth arrived. Hitler learned his 
 
 The rage lasted days.
 
-On January 6, Hitler summoned Raeder and berated him for over two hours straight. The surface fleet was a waste of steel and money. The big ships had never accomplished anything. It was his "irrevocable decision" to scrap every capital ship in the Kriegsmarine and redistribute the men and guns to shore batteries.
+On January 6, Hitler summoned Raeder and berated him for over two hours straight. The surface fleet was a waste of steel and money. The big ships had never accomplished anything. It was his "irrevocable decision" to scrap every capital ship in the Kriegsmarine and redistribute the men and guns to shore batteries. Germany had lost a fleet to its own hand once before, when a German rear admiral [scuttled 52 warships at Scapa Flow](/stories/scapa-flow-scuttling/) in 1919.
 
 Raeder resigned on January 30. His replacement was Admiral Karl Donitz, the U-boat commander. Donitz quietly talked Hitler down from actually scrapping the fleet, but the surface navy never recovered its standing. Resources poured into submarines instead.
 

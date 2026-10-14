@@ -9,7 +9,7 @@ tags: [wwii, pacific, java-sea, de-ruyter, doorman, abda, netherlands]
 readingTime: 5
 ---
 
-On the afternoon of February 27, 1942, Rear Admiral Karel Doorman led five cruisers and nine destroyers out of Surabaya to intercept a Japanese invasion fleet heading for Java. His ships represented four nations. His crews spoke four languages. They had no shared signal code, no common tactical doctrine, and no air cover.
+On the afternoon of February 27, 1942, Rear Admiral Karel Doorman led [five cruisers and nine destroyers](/stories/cruiser-vs-destroyer-vs-battleship/) out of Surabaya to intercept a Japanese invasion fleet heading for Java. His ships represented four nations. His crews spoke four languages. They had no shared signal code, no common tactical doctrine, and no air cover.
 
 He attacked anyway.
 
@@ -73,7 +73,7 @@ Every major Allied warship that fought in the Battle of the Java Sea was at the 
 
 On March 8, the Dutch East Indies surrendered. Japan held the territory until 1945.
 
-Total Allied dead from the Java Sea action and its immediate aftermath: approximately 2,300 sailors from four nations.
+Total Allied dead from the Java Sea action and its immediate aftermath: approximately 2,300 sailors from four nations. Later that year, the strait between Guadalcanal and Savo Island would swallow more than fifty warships and earn the name [Ironbottom Sound](/stories/ironbottom-sound/).
 
 ## Four ships and a signal
 

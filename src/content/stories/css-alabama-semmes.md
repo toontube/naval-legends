@@ -35,7 +35,7 @@ Semmes could have stayed in port. French neutrality would have protected him, bu
 
 Word got out. On the morning of June 19, crowds gathered along the French coast to watch.
 
-The French ironclad Couronne escorted Alabama out to make sure the fight happened outside French waters. Alabama fired first. The two ships steamed in seven circles on opposite courses, each trying to rake the other.
+The French [ironclad](/stories/monitor-vs-virginia-ironclads/) Couronne escorted Alabama out to make sure the fight happened outside French waters. Alabama fired first. The two ships steamed in seven circles on opposite courses, each trying to rake the other.
 
 It lasted about an hour. Alabama fired around 370 rounds, fast and often high. Her powder and fuses had deteriorated after two years at sea. Her best shot, a shell from her forward Blakely rifle, lodged in Kearsarge's sternpost and failed to explode. Had it gone off, it could have wrecked Kearsarge's steering. Kearsarge had another advantage Semmes later said he never knew about: chain cable hung along her sides and hidden behind black-painted boards to protect her engines.
 
@@ -47,7 +47,7 @@ As Alabama went down, a British private yacht called Deerhound, owned by John La
 
 Semmes made his way back to the Confederacy, became a rear admiral in February 1865, and burned his own James River Squadron when Richmond fell. After the war he was arrested and held at the New York Navy Yard, then released after about three months without trial. He was elected probate judge in Mobile, Alabama, in 1866, but federal authorities blocked him from serving. He taught at the Louisiana State Seminary (which became LSU). He edited the Memphis Daily Bulletin. He wrote his memoirs. He practiced law in Mobile until he died in 1877.
 
-The damage outlived him. The United States pursued Britain for the losses caused by Alabama and other British-built raiders. In 1872 an international arbitration tribunal awarded the US $15.5 million, a landmark in international law. In the next century, German raiders took up the same trade, from the [Emden in the Indian Ocean](/stories/emden-penang-raid) to the [pocket battleship Deutschland](/stories/deutschland-renamed) in 1939.
+The damage outlived him. The United States pursued Britain for the losses caused by Alabama and other British-built raiders. In 1872 an international arbitration tribunal awarded the US $15.5 million, a landmark in international law. In the next century, German raiders took up the same trade, from the [Emden in the Indian Ocean](/stories/emden-penang-raid/) to the [pocket battleship Deutschland](/stories/deutschland-renamed/) in 1939.
 
 In November 1984, the French mine hunter Circé found a wreck in nearly 200 feet of water off Cherbourg. It was later confirmed as Alabama.
 

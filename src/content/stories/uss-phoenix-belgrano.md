@@ -9,7 +9,7 @@ tags: [wwii, falklands-war, uss-phoenix, general-belgrano, pearl-harbor]
 readingTime: 5
 ---
 
-On the morning of December 7, 1941, USS Phoenix was moored northeast of Ford Island at Pearl Harbor. Battleship Row was burning. Across the harbor, [USS New Orleans had no power and was hauling shells to her guns by hand](/stories/uss-new-orleans-pearl-harbor/). Arizona was gone. Oklahoma had capsized. West Virginia was sinking.
+On the morning of December 7, 1941, USS Phoenix was moored northeast of Ford Island at Pearl Harbor. Battleship Row was burning. Across the harbor, [USS New Orleans had no power and was hauling shells to her guns by hand](/stories/uss-new-orleans-pearl-harbor/). [Arizona](/stories/uss-arizona-pearl-harbor/) was gone. Oklahoma had capsized. West Virginia was sinking.
 
 Phoenix got underway.
 

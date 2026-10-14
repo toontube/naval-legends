@@ -59,7 +59,7 @@ Victory was launched at Chatham on May 7, 1765. She was already 40 at Trafalgar,
 
 She never left the Navy. Victory is the oldest commissioned warship in the world, about 30 years older than [USS Constitution](/stories/uss-constitution-old-ironsides/), which holds the title for ships still afloat. Since October 2012 she has been the flagship of the First Sea Lord, the professional head of the Royal Navy.
 
-You can visit her at Portsmouth Historic Dockyard, a short walk from the hall that holds what is left of the [Mary Rose](/stories/mary-rose-solent-1545/). The ball, still in its locket with the scrap of gold lace, is in the Royal Collection at Windsor Castle.
+You can visit her at Portsmouth Historic Dockyard, a short walk from the hall that holds what is left of the [Mary Rose](/stories/mary-rose-solent-1545/). The ball, still in its locket with the scrap of gold lace, is in the Royal Collection at Windsor Castle. Victory had better luck than Sweden's [Vasa](/stories/vasa-maiden-voyage/), which sank in Stockholm harbor within minutes of setting sail in 1628.
 
 ---
 

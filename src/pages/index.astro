@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import { ORG } from '../lib/seo';
 import '../styles/home.css';
 import { TOPICS } from '../lib/topics';
 import Navigation from '../components/Navigation.astro';
@@ -47,13 +48,7 @@ const ships = [...new Map(
     "name": "Bravo Zulu",
     "url": "https://brvzulu.com",
     "description": "Daily naval history stories and in-depth articles about the world's warships. Each story starts with a surprising fact.",
-    "publisher": {
-      "@type": "Organization",
-      "@id": "https://brvzulu.com/#org",
-      "name": "Bravo Zulu",
-      "url": "https://brvzulu.com/",
-      "parentOrganization": { "@type": "Organization", "name": "MOZUMA", "url": "https://mozuma.co" }
-    }
+    "publisher": ORG
   })} />
 
   <Navigation active="daily" />

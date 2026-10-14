@@ -15,7 +15,7 @@ Here are the worst naval disasters in history, ranked by the number of people wh
 
 ## 1. MV Wilhelm Gustloff — ~9,343 dead (January 30, 1945)
 
-The Wilhelm Gustloff was a German cruise liner turned military transport. On January 30, 1945, she left Gotenhafen (now Gdynia, Poland) packed with refugees fleeing the Red Army's advance through East Prussia. The ship's manifest listed 6,050 people. The actual number aboard was far higher — estimates range from 9,000 to 10,600. Thousands boarded without being recorded.
+The [Wilhelm Gustloff](/stories/wilhelm-gustloff/) was a German cruise liner turned military transport. On January 30, 1945, she left Gotenhafen (now Gdynia, Poland) packed with refugees fleeing the Red Army's advance through East Prussia. The ship's manifest listed 6,050 people. The actual number aboard was far higher — estimates range from 9,000 to 10,600. Thousands boarded without being recorded.
 
 Soviet submarine S-13, commanded by Captain Alexander Marinesko, spotted the Gustloff that evening. Marinesko fired four torpedoes at around 9:00 p.m. Three hit the port side.
 
@@ -71,7 +71,7 @@ Three men out of 1,418. The rest went down with the ship in three minutes.
 
 ## 6. USS Indianapolis — 879 dead (July 30, 1945)
 
-[We've told this story in full](/stories/uss-indianapolis-sharks). The short version: Indianapolis delivered the uranium core for the Hiroshima bomb to Tinian Island, was torpedoed four days later by the Japanese submarine I-58, and sank in twelve minutes. About 900 men went into the water.
+[We've told this story in full](/stories/uss-indianapolis-sharks/). The short version: Indianapolis delivered the uranium core for the Hiroshima bomb to Tinian Island, was torpedoed four days later by the Japanese submarine I-58, and sank in twelve minutes. About 900 men went into the water.
 
 The Navy didn't notice she was missing. For four days.
 
@@ -79,7 +79,7 @@ Oceanic whitetip sharks circled the survivors for 84 hours. 316 men were pulled 
 
 ## 7. ARA General Belgrano — 323 dead (May 2, 1982)
 
-The General Belgrano started life as [USS Phoenix, a Brooklyn-class light cruiser that escaped Pearl Harbor without a scratch](/stories/uss-phoenix-belgrano). She served the entire Pacific war, was sold to Argentina in 1951, and renamed.
+The General Belgrano started life as [USS Phoenix, a Brooklyn-class light cruiser that escaped Pearl Harbor without a scratch](/stories/uss-phoenix-belgrano/). She served the entire Pacific war, was sold to Argentina in 1951, and renamed.
 
 On May 2, 1982, during the Falklands War, the British nuclear submarine HMS Conqueror hit the Belgrano with two Mark 8 torpedoes — a design from 1927, thirteen years older than the ship they struck. The Belgrano sank in under an hour. 323 Argentine sailors died. 770 survived.
 

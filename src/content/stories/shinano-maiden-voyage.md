@@ -15,7 +15,7 @@ She sank seventeen hours later.
 
 ## The conversion
 
-Shinano was laid down on May 4, 1940, as the third Yamato-class battleship. After the Japanese lost four carriers at Midway in June 1942, the hull, then 45 percent complete, was ordered converted to a carrier.
+Shinano was laid down on May 4, 1940, as the third Yamato-class battleship. After the Japanese lost four carriers at [Midway](/stories/battle-of-midway/) in June 1942, the hull, then 45 percent complete, was ordered converted to a carrier.
 
 She was launched on October 8, 1944. A caisson malfunction during the launch damaged her bow below the waterline. Repaired in eighteen days. Commissioned on November 19.
 

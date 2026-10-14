@@ -27,7 +27,7 @@ The phrase spread through the ship. Then through the fleet. Then through the cou
 
 ## The song
 
-Frank Loesser, who would later write Guys and Dolls, saw a newspaper clipping about the phrase. The clipping attributed it to Captain William Maguire, the senior fleet chaplain for the Pacific Fleet. Maguire was a Catholic chaplain who had been on a dock at Pearl Harbor that day, not aboard New Orleans. Loesser wrote the song and credited Maguire.
+Frank Loesser, who would later write Guys and Dolls, saw a newspaper clipping about the phrase. The clipping attributed it to Captain William Maguire, the senior fleet chaplain for the Pacific Fleet. Maguire was a Catholic chaplain who had been on a dock at [Pearl Harbor](/stories/uss-arizona-pearl-harbor/) that day, not aboard New Orleans. Loesser wrote the song and credited Maguire.
 
 Loesser himself didn't think it would work. He believed Americans didn't want a real war song. He was wrong.
 

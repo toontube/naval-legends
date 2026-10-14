@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import { ORG } from '../../lib/seo';
 import '../../styles/home.css';
 import Navigation from '../../components/Navigation.astro';
 import Footer from '../../components/Footer.astro';
@@ -18,7 +19,7 @@ import { TOPICS } from '../../lib/topics';
     "@type": "CollectionPage",
     "name": "Naval History Topics",
     "url": "https://brvzulu.com/topics/",
-    "publisher": { "@id": "https://brvzulu.com/#org" },
+    "publisher": ORG,
     "hasPart": TOPICS.map((t) => ({ "@type": "CollectionPage", "name": t.title, "url": `https://brvzulu.com/topics/${t.slug}/` })),
   })} />
 

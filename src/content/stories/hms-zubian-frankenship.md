@@ -10,7 +10,7 @@ readingTime: 4
 
 On October 26, 1916, a force of German torpedo boats crossed the English Channel and attacked the Dover Barrage, the line of drifters and mines that blocked the Strait of Dover to German submarines. The Royal Navy scrambled destroyers to intercept.
 
-HMS Nubian, a Tribal-class destroyer of the 6th Flotilla, Dover Patrol, was one of them. During the engagement — known as the Battle of Dover Strait — a torpedo from the German torpedo boat S50 struck Nubian forward. The explosion destroyed her bow completely. The entire section ahead of the bridge was gone.
+HMS Nubian, a [Tribal-class destroyer](/stories/cruiser-vs-destroyer-vs-battleship/) of the 6th Flotilla, Dover Patrol, was one of them. During the engagement — known as the Battle of Dover Strait — a torpedo from the German torpedo boat S50 struck Nubian forward. The explosion destroyed her bow completely. The entire section ahead of the bridge was gone.
 
 Nubian didn't sink. The after bulkheads held, and the crew kept the remaining hull afloat long enough for her to be towed back to port. But as a fighting ship, she was finished. What was left was a destroyer with no front end. (A later cruiser in the same state [sailed home backwards with a bow of coconut logs](/stories/uss-new-orleans-coconut-bow/).)
 
@@ -44,7 +44,7 @@ She wasn't a curiosity kept in reserve. She was sent straight back to the war.
 
 On February 4, 1918, HMS Zubian found the German submarine UC-50 on the surface in the Dover Strait and tried to ram her. UC-50 was a Type UC II minelaying submarine operating out of Flanders. Zubian depth-charged the submarine and was credited with the kill. uboat.net records UC-50 lost with all 29 hands, though it now lists her fate as missing rather than confirmed.
 
-A ship welded together from two wrecks had just killed a submarine.
+A ship welded together from two wrecks had just killed a submarine. She was not the first British warship to get a U-boat the hard way: in 1915 [HMS Dreadnought rammed one](/stories/hms-dreadnought-hoax/).
 
 ## Ostend and after
 

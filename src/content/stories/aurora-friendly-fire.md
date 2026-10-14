@@ -33,9 +33,9 @@ The squadron sailed on. Part of it went through the Suez Canal, and the newer ba
 
 ## Tsushima and Manila
 
-Seven months later, on May 27, 1905, the fleet met Admiral Togo's ships in the Tsushima Strait. It was one of the most one-sided defeats in naval history. Aurora sailed in Rear Admiral Oskar Enkvist's cruiser squadron. She was only lightly damaged, but a shell killed her captain, Evgeny Egoriev, and fourteen of her crew died with him.
+Seven months later, on May 27, 1905, the fleet met Admiral Togo's ships in the [Tsushima](/stories/battle-of-tsushima/) Strait. It was one of the most one-sided defeats in naval history. Aurora sailed in Rear Admiral Oskar Enkvist's cruiser squadron. She was only lightly damaged, but a shell killed her captain, Evgeny Egoriev, and fourteen of her crew died with him.
 
-That night Aurora and Oleg were attacked by Japanese torpedo boats and gave up trying to break north to Vladivostok. With the cruiser Zhemchug, they turned south. Enkvist moved his flag to Aurora and took the three ships to Manila, where the Americans interned them until the war ended. Egoriev was buried at sea on the way. The Zhemchug's luck ran out nine years later, [torpedoed at anchor in Penang by SMS Emden](/stories/emden-penang-raid).
+That night Aurora and Oleg were attacked by Japanese torpedo boats and gave up trying to break north to Vladivostok. With the cruiser Zhemchug, they turned south. Enkvist moved his flag to Aurora and took the three ships to Manila, where the Americans interned them until the war ended. Egoriev was buried at sea on the way. The Zhemchug's luck ran out nine years later, [torpedoed at anchor in Penang by SMS Emden](/stories/emden-penang-raid/).
 
 Aurora went home to the Baltic.
 
@@ -53,7 +53,7 @@ Aurora did not escape the next war. In 1941 her guns were taken off for the land
 
 Aurora opened as a museum ship in 1957. In the 1980s she was rebuilt at the Admiralty Shipyard, and so much of the lower hull had rotted that it was cut away and replaced with a new welded one built to the original drawings. The old bottom was towed out into the Gulf of Finland and left near the shore. Another overhaul followed in Kronstadt from September 2014, and she returned to her berth on July 16, 2016. She is moored on the Bolshaya Nevka near the Nakhimov Naval School and still flies a special version of the Russian naval ensign.
 
-Not every Russian warship from that era got such a quiet retirement. The [Varyag ended up as a floating casino](/stories/varyag-casino-carrier) before becoming an aircraft carrier.
+Not every Russian warship from that era got such a quiet retirement. The [Varyag ended up as a floating casino](/stories/varyag-casino-carrier/) before becoming an aircraft carrier.
 
 One ship. Friendly fire, Tsushima, a revolution, a sinking, and a permanent address.
 

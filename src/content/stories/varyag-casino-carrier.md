@@ -9,7 +9,7 @@ tags: [cold-war, china, varyag, liaoning, aircraft-carrier]
 readingTime: 6
 ---
 
-In 1991, an aircraft carrier sat 68 percent finished in a shipyard in Nikolayev, Ukraine. The Soviet Union had just ceased to exist. The workers had stopped coming. Nobody was paying for anything.
+In 1991, an aircraft carrier sat 68 percent finished in a shipyard in Nikolayev, Ukraine. The same city, now called Mykolaiv, built the cruiser [Moskva](/stories/moskva-sinking-2022/) that Ukraine sank in 2022. The Soviet Union had just ceased to exist. The workers had stopped coming. Nobody was paying for anything.
 
 The ship had been launched in late 1988 under the name Riga. Two years later, still incomplete, she was renamed Varyag. The Soviets classified her as a "heavy aircraft-carrying [cruiser](/stories/cruiser-vs-destroyer-vs-battleship/)," not a carrier. This was deliberate. The Montreux Convention restricts aircraft carriers from transiting the Turkish Straits. Call it a cruiser, and it can pass through. Call it a carrier, and Turkey can block it. Bending a ship's label to fit a treaty was an old habit. Japan [did it with the Mogami class in the 1930s](/stories/mogami-cardboard-cruiser/).
 

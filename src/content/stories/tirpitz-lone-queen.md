@@ -11,7 +11,7 @@ image: /images/tirpitz-lone-queen.jpg
 
 Tirpitz was commissioned on 25 February 1941 at the Kriegsmarinewerft in Wilhelmshaven. She was the sister of [Bismarck](/stories/bismarck-last-battle/), slightly heavier, with the same eight 38 cm guns and a top speed of about 30 knots.
 
-Three months later Bismarck was gone. She had sunk HMS Hood and then been hunted down in the Atlantic in a single week. Tirpitz never made that kind of sortie. She went north to Norway and mostly stayed there, tucked into fjords behind nets and smoke generators. Her crews called her the "Lonely Queen of the North."
+Three months later Bismarck was gone. She had sunk [HMS Hood](/stories/hms-hood-three-survivors/) and then been hunted down in the Atlantic in a single week. Tirpitz never made that kind of sortie. She went north to Norway and mostly stayed there, tucked into fjords behind nets and smoke generators. Her crews called her the "Lonely Queen of the North."
 
 Winston Churchill called her "the beast."
 

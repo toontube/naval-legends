@@ -23,7 +23,7 @@ The Navy retrofitted hull bulges to Mogami and her sister Mikuma, increasing bea
 
 In 1939, Japan dropped the treaty pretense entirely and swapped all the 155mm guns for ten 203mm guns. The turrets they removed went to the Yamato-class battleships.
 
-Then came Midway. June 5, 1942. Admiral Yamamoto ordered Cruiser Division 7 to shell Midway Island at 35 knots. USS Tambor, an American submarine, was spotted. The flagship and Suzuya executed the emergency turn correctly. Mikuma made a 90-degree turn instead of the ordered 45. Mogami, right behind her, turned 45 degrees as commanded.
+Then came [Midway](/stories/battle-of-midway/). June 5, 1942. Admiral Yamamoto ordered Cruiser Division 7 to shell Midway Island at 35 knots. USS Tambor, an American submarine, was spotted. The flagship and Suzuya executed the emergency turn correctly. Mikuma made a 90-degree turn instead of the ordered 45. Mogami, right behind her, turned 45 degrees as commanded.
 
 Mogami rammed Mikuma's port side below the bridge. Her bow caved in. Mikuma's fuel tank ruptured, leaving a trail of oil.
 

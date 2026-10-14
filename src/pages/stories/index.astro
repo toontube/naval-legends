@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import { ORG } from '../../lib/seo';
 import { cardSrcset, CARD_SIZES } from '../../lib/cardImage';
 import Navigation from '../../components/Navigation.astro';
 import Footer from '../../components/Footer.astro';
@@ -27,6 +28,19 @@ const filterTags = [...tagCounts.entries()]
     title="Stories | Bravo Zulu"
     description="In-depth articles on naval history. Commerce raiders, nuclear tests, unknown soldiers, and the warships that shaped the world."
   />
+  <script slot="head" type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "Naval History Stories",
+    "url": "https://brvzulu.com/stories/",
+    "publisher": ORG,
+    "mainEntity": {
+      "@type": "ItemList",
+      "itemListElement": sorted.map((s, i) => ({
+        "@type": "ListItem", "position": i + 1, "name": s.data.title, "url": `https://brvzulu.com/stories/${s.data.slug}/`,
+      })),
+    },
+  })} />
 
   <Navigation active="stories" showThemeToggle />
 
@@ -47,7 +61,7 @@ const filterTags = [...tagCounts.entries()]
       {sorted.map((story) => (
         <a href={`/stories/${story.data.slug}/`} class="story-card" data-tags={story.data.tags.join(' ')}>
           {story.data.image && (
-            <img src={story.data.image} srcset={cardSrcset(story.data.image)} sizes={CARD_SIZES} alt={story.data.title} class="story-card-img" loading="lazy" decoding="async" />
+            <img src={story.data.image} srcset={cardSrcset(story.data.image)} sizes={CARD_SIZES} alt={story.data.title} width="480" height="270" class="story-card-img" loading="lazy" decoding="async" />
           )}
           <div class="story-card-inner">
             <div class="story-meta">
