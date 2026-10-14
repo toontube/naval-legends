@@ -9,7 +9,7 @@ tags: [wwii, arctic-convoys, gold, salvage, royal-navy, cruiser]
 readingTime: 5
 ---
 
-On April 28, 1942, HMS Edinburgh left Murmansk as the flagship escort for Convoy QP 11 — a homebound run from the Soviet Union back to Iceland. Captain Hugh Faulkner had 850 men aboard a Town-class light cruiser displacing 10,550 tons.
+On April 28, 1942, HMS Edinburgh left Murmansk as the flagship escort for Convoy QP 11 — a homebound run from the Soviet Union back to Iceland. Captain Hugh Faulkner had 850 men aboard a Town-class [light cruiser](/stories/cruiser-vs-destroyer-vs-battleship/) displacing 10,550 tons.
 
 He also had 465 gold bars locked in the bomb room.
 
@@ -32,7 +32,7 @@ Faulkner was now commanding a cruiser that could only travel in wide, looping ci
 
 The escort ships rigged towing cables and began dragging the crippled cruiser back toward Murmansk at walking speed. It was 250 miles. In the Barents Sea, the same Arctic convoy waters where [six destroyers later held off a pocket battleship](/stories/barents-sea-new-years-eve/). In late April, which in the Arctic means ice fog, freezing spray, and poor visibility.
 
-For two days they crawled southwest. German torpedo bombers found them but scored no hits.
+For two days they crawled southwest. German torpedo bombers found them but scored no hits. The convoys faced heavier threats too: Bismarck's sister [Tirpitz](/stories/tirpitz-lone-queen/) spent the war hiding in Norwegian fjords and still scattered a convoy.
 
 Then, on May 2, three German destroyers appeared — Z7 Hermann Schoemann, Z24, and Z25. They had been sent specifically to finish the cruiser off.
 

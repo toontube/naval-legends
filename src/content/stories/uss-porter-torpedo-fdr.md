@@ -8,7 +8,7 @@ tags: [wwii, uss-william-d-porter, fdr, friendly-fire, torpedo]
 readingTime: 5
 ---
 
-USS William D. Porter was a Fletcher-class destroyer, hull number DD-579, built at Consolidated Steel in Orange, Texas. She commissioned on July 6, 1943. Nothing in her first four months of service suggested she would become the most embarrassing ship in the United States Navy.
+USS William D. Porter was a [Fletcher-class destroyer](/stories/cruiser-vs-destroyer-vs-battleship/), hull number DD-579, built at Consolidated Steel in Orange, Texas. She commissioned on July 6, 1943. Nothing in her first four months of service suggested she would become the most embarrassing ship in the United States Navy.
 
 That changed on November 12, 1943, when Porter departed Norfolk, Virginia, as part of a task group escorting the battleship USS Iowa (BB-61). Iowa was carrying President Franklin D. Roosevelt, Secretary of State Cordell Hull, and the Joint Chiefs of Staff to the Tehran Conference — the first meeting of Roosevelt, Churchill, and Stalin.
 
@@ -40,7 +40,7 @@ Finally, with the torpedo closing, Commander Walter broke radio silence and tran
 
 ## The turn
 
-Captain John McCrea aboard Iowa ordered hard right rudder and full speed. The battleship heeled into the turn. The torpedo passed astern and detonated in Iowa's wake, roughly 3,000 yards from the ship. No damage. No casualties.
+Captain John McCrea aboard Iowa ordered hard right rudder and full speed. The battleship heeled into the turn. The torpedo passed astern and detonated in Iowa's wake, roughly 3,000 yards from the ship. No damage. No casualties. Accidents at sea were not always so harmless: in 1952 [USS Hobson turned left into the carrier USS Wasp](/stories/uss-hobson-wasp-collision/) and 176 men died in four minutes.
 
 Roosevelt, by multiple accounts, asked the Secret Service to wheel him to the rail so he could watch. Whether he actually saw the torpedo explode is unclear, but the request is consistent with documented accounts of FDR's temperament under pressure — he found it entertaining.
 
@@ -62,7 +62,7 @@ There is no official log entry confirming this ever happened. But it is exactly 
 
 ## Okinawa
 
-Porter served competently in the Aleutians and then moved to the Pacific for the final year of the war. By June 1945, she was on picket duty off Okinawa, screening against kamikaze attacks — one of the most dangerous assignments in the fleet.
+Porter served competently in the Aleutians and then moved to the Pacific for the final year of the war. By June 1945, she was on picket duty off [Okinawa](/stories/yamato-last-sortie/), screening against kamikaze attacks — one of the most dangerous assignments in the fleet.
 
 On the morning of June 10, 1945, a Japanese Val dive bomber came in on Porter. The ship's gunners hit the aircraft, and it crashed into the sea close alongside rather than striking the ship. For a moment, it looked like Porter had survived.
 

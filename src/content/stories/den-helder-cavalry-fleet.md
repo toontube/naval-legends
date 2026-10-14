@@ -53,15 +53,15 @@ The fleet became part of the Batavian Navy, nominally Dutch but operating under 
 
 On October 11, 1797, many of the same ships fought at the Battle of Camperdown under Vice-Admiral de Winter, the same man who had led the French force to Den Helder two years earlier, now commanding the fleet he helped capture. Admiral Adam Duncan's Royal Navy destroyed the Batavian force. Eleven ships taken, over 1,100 men lost.
 
-In August 1799, the remaining Batavian ships, including Admiraal de Ruijter and Gelderland from the Den Helder fleet, surrendered to the Royal Navy in the Vlieter Incident without firing a shot. Most of the ships France had captured by riding horses across the ice ended up in British hands. It was not the last time a fleet changed hands without a fight. In 1919, the interned German High Seas Fleet chose the opposite answer and [scuttled itself at Scapa Flow](/stories/scapa-flow-scuttling) rather than be handed over.
+In August 1799, the remaining Batavian ships, including Admiraal de Ruijter and Gelderland from the Den Helder fleet, surrendered to the Royal Navy in the Vlieter Incident without firing a shot. Most of the ships France had captured by riding horses across the ice ended up in British hands. It was not the last time a fleet changed hands without a fight. In 1919, the interned German High Seas Fleet chose the opposite answer and [scuttled itself at Scapa Flow](/stories/scapa-flow-scuttling/) rather than be handed over.
 
 ## Still there
 
 Charles Louis Mozin painted the scene in 1836: hussars on the ice, ships frozen in the background, flags in the wind. It hangs in the Palace of Versailles. The date on the painting says January 21. The documented date is January 23. Even the painting can't get the facts straight.
 
-Lahure went on to serve through the Napoleonic Wars and died in 1853 at 85. De Winter commanded the Batavian fleet at Camperdown, was captured by the British, and eventually returned to the Netherlands. He died in Paris in 1812.
+Lahure went on to serve through the Napoleonic Wars and died in 1853 at 85. De Winter commanded the Batavian fleet at Camperdown, was captured by the British, and eventually returned to the Netherlands. He died in Paris in 1812. A decade later, Nelson's body came home from [Trafalgar](/stories/hms-victory-trafalgar/) in a cask of brandy.
 
-Den Helder is still the main base of the Royal Netherlands Navy, the service that lost [Karel Doorman and his squadron in the Java Sea](/stories/karel-doorman-java-sea) in 1942. Winters that cold are rare on the Dutch coast now. Nobody is riding horses across the Nieuwediep to board anything.
+Den Helder is still the main base of the Royal Netherlands Navy, the service that lost [Karel Doorman and his squadron in the Java Sea](/stories/karel-doorman-java-sea/) in 1942. Winters that cold are rare on the Dutch coast now. Nobody is riding horses across the Nieuwediep to board anything.
 
 <figure><img src="/images/den-helder-cavalry.jpg" alt="Painting by Charles Louis Mozin showing French hussars capturing Dutch ships frozen in ice at Den Helder, 1795" /><figcaption>Charles Louis Mozin, "The capture of the Dutch fleet in the waters of Texel," 1836. Oil on canvas, 268 x 192 cm. Palace of Versailles. Public domain.</figcaption></figure>
 

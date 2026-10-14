@@ -51,7 +51,7 @@ The Navy refloated her, repaired her and sent her back to war.
 
 She then went to almost every kind of war the US Navy fought. She covered the landings at Attu in May 1943. She was off Utah Beach in Normandy on June 6, 1944, which made her the only US battleship present both at Pearl Harbor and on D-Day. She shelled southern France that August, then crossed back to the Pacific for Iwo Jima and Okinawa.
 
-Off Okinawa, on March 25, 1945, a kamikaze hit her. Eleven men died and 49 were wounded.
+Off [Okinawa](/stories/yamato-last-sortie/), on March 25, 1945, a kamikaze hit her. Eleven men died and 49 were wounded.
 
 By the end of the war she was the oldest battleship the Navy had in service. That made her expendable.
 

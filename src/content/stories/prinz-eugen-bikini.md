@@ -11,7 +11,7 @@ readingTime: 5
 
 1946. The US Navy gathered more than 90 captured and surplus warships in the lagoon at Bikini Atoll. It wanted to know what an atomic bomb does to a fleet.
 
-One of the targets was a German heavy cruiser that had already lived through more than most ships ever see. Prinz Eugen had fought alongside Bismarck, run the English Channel in daylight under the noses of the Royal Navy, lost her stern to a submarine torpedo, and ended the war intact while almost every other big German warship lay on the bottom.
+One of the targets was a German heavy cruiser that had already lived through more than most ships ever see. Prinz Eugen had fought alongside [Bismarck](/stories/bismarck-last-battle/), run the English Channel in daylight under the noses of the Royal Navy, lost her stern to a submarine torpedo, and ended the war intact while almost every other big German warship lay on the bottom.
 
 She survived two atomic bombs. Then she sank from a leak.
 

@@ -17,7 +17,7 @@ Her own navy refused to say so. Inside the Imperial Japanese Navy the guns were 
 
 ## A dry dock with a roof on it
 
-Kure Naval Arsenal laid her down on 4 November 1937. The dock was covered with a canopy so nobody on the surrounding hills could judge her size. She was launched on 8 August 1940 and commissioned on 16 December 1941, nine days after Pearl Harbor.
+Kure Naval Arsenal laid her down on 4 November 1937. The dock was covered with a canopy so nobody on the surrounding hills could judge her size. She was launched on 8 August 1940 and commissioned on 16 December 1941, nine days after [Pearl Harbor](/stories/uss-arizona-pearl-harbor/).
 
 The deception reached Japan's allies too. In July 1943 the German naval attaché, Wenneker, was allowed aboard. According to the Combined Fleet tabular record of movement, officers debated beforehand whether a German professional could tell a 40 cm gun from a 46 cm one by eye. They handed him a data sheet listing the main armament as 40 cm and kept the tour away from the turrets.
 

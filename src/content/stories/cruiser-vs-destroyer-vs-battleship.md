@@ -31,7 +31,7 @@ Size, range, and purpose.
 
 **Cruisers** were built to cruise. The name is literal. They had the range to cross oceans independently, the speed to outrun battleships, and enough firepower to handle anything smaller than themselves. A World War II cruiser displaced 8,000 to 15,000 tons, carried 6-inch or 8-inch main guns, and could sustain 32-33 knots.
 
-They screened the fleet, hunted commerce raiders, escorted convoys, and showed the flag in distant waters. The [Cleveland class](/stories/cleveland-class-top-heavy) — 27 ships, the largest cruiser class ever built — fought in nearly every major Pacific campaign from 1942 onward. [Admiral Hipper](/stories/prinz-eugen-bikini), a German heavy cruiser, raided Allied shipping in the Atlantic and Arctic. [Mogami](/stories/mogami-cardboard-cruiser) cracked her own hull because Japan stuffed too many guns onto a treaty-legal displacement.
+They screened the fleet, hunted commerce raiders, escorted convoys, and showed the flag in distant waters. The [Cleveland class](/stories/cleveland-class-top-heavy/) — 27 ships, the largest cruiser class ever built — fought in nearly every major Pacific campaign from 1942 onward. [Admiral Hipper](/stories/prinz-eugen-bikini/), a German heavy cruiser, raided Allied shipping in the Atlantic and Arctic. [Mogami](/stories/mogami-cardboard-cruiser/) cracked her own hull because Japan stuffed too many guns onto a treaty-legal displacement.
 
 **Destroyers** were built to destroy torpedo boats. The full original name was "torpedo boat destroyer." The Royal Navy coined the term in the 1890s when small, fast torpedo boats threatened to sink capital ships at close range. The solution: build something slightly larger, slightly faster, and give it guns that could kill torpedo boats before they got close.
 
@@ -45,7 +45,7 @@ Aircraft carriers killed them.
 
 The proof came on December 7, 1941, at Pearl Harbor, when Japanese carrier aircraft sank or damaged eight American battleships without a single Japanese surface ship firing a shot. Three days later, Japanese bombers sank HMS Prince of Wales and HMS Repulse off Malaya — two capital ships caught without air cover in open water.
 
-By 1944, the pattern was set. At Leyte Gulf, the [Yamato's sister ship Musashi absorbed 17 bombs and 19 torpedoes](/stories/shinano-maiden-voyage) from carrier aircraft before sinking. Yamato herself was sunk in April 1945 by roughly 400 American aircraft. She never got within gun range of an enemy ship.
+By 1944, the pattern was set. At Leyte Gulf, the [Yamato's sister ship Musashi absorbed 17 bombs and 19 torpedoes](/stories/shinano-maiden-voyage/) from carrier aircraft before sinking. Yamato herself was sunk in April 1945 by roughly 400 American aircraft. She never got within gun range of an enemy ship.
 
 A single aircraft carrier could project striking power over hundreds of miles. A battleship could project it over 25 miles, max. The math was obvious.
 
@@ -57,11 +57,11 @@ Gun caliber. That's it.
 
 The 1930 London Naval Treaty drew the line: cruisers with guns larger than 6.1 inches but not exceeding 8 inches were "heavy cruisers" (Category A). Cruisers with guns of 6.1 inches or smaller were "light cruisers" (Category B).
 
-In practice, heavy cruisers were slightly larger and carried eight to ten 8-inch guns. Light cruisers carried twelve to fifteen 6-inch guns. The [Cleveland class](/stories/cleveland-class-top-heavy) was a light cruiser with twelve 6-inch guns. [USS Wichita](/stories/uss-wichita-pig-iron) was a heavy cruiser with nine 8-inch guns.
+In practice, heavy cruisers were slightly larger and carried eight to ten 8-inch guns. Light cruisers carried twelve to fifteen 6-inch guns. The [Cleveland class](/stories/cleveland-class-top-heavy/) was a light cruiser with twelve 6-inch guns. [USS Wichita](/stories/uss-wichita-pig-iron/) was a heavy cruiser with nine 8-inch guns.
 
 The distinction mattered for treaty accounting — every nation had tonnage limits for each category — and for tactical doctrine. Heavy cruisers hit harder per shell. Light cruisers threw more shells per minute. Both could outrun a battleship and outgun a destroyer.
 
-Japan ignored the treaty limits almost immediately. [Mogami](/stories/mogami-cardboard-cruiser) was declared a light cruiser at 8,500 tons. She actually displaced over 11,000 tons and was designed to swap her 6-inch turrets for 8-inch guns at the first opportunity. Which Japan did.
+Japan ignored the treaty limits almost immediately. [Mogami](/stories/mogami-cardboard-cruiser/) was declared a light cruiser at 8,500 tons. She actually displaced over 11,000 tons and was designed to swap her 6-inch turrets for 8-inch guns at the first opportunity. Which Japan did.
 
 ## Are there still cruisers in service today?
 

@@ -2,6 +2,7 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { cardSrcset, CARD_SIZES } from '../../lib/cardImage';
 import { topicsForStory } from '../../lib/topics';
+import { ORG } from '../../lib/seo';
 import Navigation from '../../components/Navigation.astro';
 import Footer from '../../components/Footer.astro';
 import SEOHead from '../../components/SEOHead.astro';
@@ -63,10 +64,14 @@ const ksStickyUrl = 'https://www.kickstarter.com/projects/mozuma/come-on-texas?r
     "@type": "Article",
     "headline": story.data.title,
     "description": story.data.summary,
-    "image": story.data.image ? `https://brvzulu.com${story.data.image}` : `https://brvzulu.com/og/${story.data.slug}.png`,
-    "datePublished": story.data.date.toISOString(),
-    "author": { "@id": "https://brvzulu.com/#org" },
-    "publisher": { "@id": "https://brvzulu.com/#org" },
+    "image": [
+      ...(story.data.image ? [`https://brvzulu.com${story.data.image}`] : []),
+      { "@type": "ImageObject", "url": `https://brvzulu.com/og/${story.data.slug}.png`, "width": 1200, "height": 630 },
+    ],
+    "datePublished": story.data.date.toISOString().split('T')[0],
+    "dateModified": (story.data.updated ?? story.data.date).toISOString().split('T')[0],
+    "author": ORG,
+    "publisher": ORG,
     "mainEntityOfPage": `https://brvzulu.com/stories/${story.data.slug}/`,
   })} />
   <script slot="head" type="application/ld+json" set:html={JSON.stringify({
@@ -86,7 +91,7 @@ const ksStickyUrl = 'https://www.kickstarter.com/projects/mozuma/come-on-texas?r
 
     {story.data.image && (
       <figure class="article-hero">
-        <img src={story.data.image} alt={`${story.data.title} - ${story.data.tags[0]} naval history`} width="1200" height="630" fetchpriority="high" />
+        <img src={story.data.image} srcset={cardSrcset(story.data.image)} sizes="(max-width: 720px) 100vw, 720px" alt={story.data.title} width="1200" height="630" fetchpriority="high" />
       </figure>
     )}
 
@@ -135,7 +140,7 @@ const ksStickyUrl = 'https://www.kickstarter.com/projects/mozuma/come-on-texas?r
           {otherStories.map((s) => (
             <a href={`/stories/${s.data.slug}/`} class="read-next-card" data-tags={s.tagOverlap}>
               {s.data.image && (
-                <img src={s.data.image} srcset={cardSrcset(s.data.image)} sizes={CARD_SIZES} alt={s.data.title} class="read-next-img" loading="lazy" />
+                <img src={s.data.image} srcset={cardSrcset(s.data.image)} sizes={CARD_SIZES} alt={s.data.title} width="480" height="270" class="read-next-img" loading="lazy" />
               )}
               <div class="read-next-card-body">
                 <h3>{s.data.title}</h3>

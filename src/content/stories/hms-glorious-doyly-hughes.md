@@ -8,7 +8,7 @@ tags: [wwii, royal-navy, hms-glorious, scharnhorst, norway-campaign]
 readingTime: 6
 ---
 
-On the afternoon of 8 June 1940, HMS Glorious, a 22,500-ton fleet carrier, was steaming for Scapa Flow with two destroyers and not a single plane in the air. No fighters on patrol. No scouts ahead. The lookouts were the only thing watching the horizon.
+On the afternoon of 8 June 1940, HMS Glorious, a 22,500-ton fleet carrier, was steaming for [Scapa Flow](/stories/scapa-flow-scuttling/) with two destroyers and not a single plane in the air. No fighters on patrol. No scouts ahead. The lookouts were the only thing watching the horizon.
 
 The men who later pieced the day together believed she was in that state because her captain was in a hurry to get to a court-martial.
 

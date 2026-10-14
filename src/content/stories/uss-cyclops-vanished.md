@@ -34,9 +34,9 @@ No distress signal. No SOS. No wreckage. No bodies. No oil slick. No debris wash
 
 The Navy searched. They searched extensively. They found nothing.
 
-This was not a small vessel lost in some remote corner of the Pacific. Cyclops was a 542-foot ship carrying 306 people on a well-traveled route in the western Atlantic. She vanished completely.
+This was not a small vessel lost in some remote corner of the Pacific. Cyclops was a 542-foot ship carrying 306 people on a well-traveled route in the western Atlantic. She [vanished completely](/stories/ships-that-disappeared/).
 
-It remains the largest non-combat loss of life in United States Navy history.
+It remains the [largest non-combat loss of life](/stories/worst-naval-disasters/) in United States Navy history.
 
 ## What could have happened
 
@@ -70,7 +70,7 @@ That pattern points more toward a design flaw or a shared structural vulnerabili
 
 Modern search technology has not found the Cyclops. Side-scan sonar, deep-sea submersibles, satellite imagery — none of it has turned up the ship or any piece of her.
 
-The western Atlantic between Barbados and the Chesapeake Bay is deep water. The ship went down over a century ago. Whatever is left of her is buried under sediment on a seabed that has been searched but never yielded an answer.
+The western Atlantic between Barbados and the Chesapeake Bay is deep water. The ship went down over a century ago. Whatever is left of her is buried under sediment on a seabed that has been searched but never yielded an answer. The Navy would lose another ship without a clear explanation in 1952, when [USS Hobson turned left into a carrier](/stories/uss-hobson-wasp-collision/) at night and 176 men died.
 
 The Navy's official position has not changed since it was first written:
 

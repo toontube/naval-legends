@@ -29,7 +29,7 @@ USS Astoria absorbed several torpedo hits and burned through the night. Captain 
 
 HMAS Canberra, an Australian heavy cruiser, was hit by at least 24 shells and two torpedoes in the opening minutes. Captain Frank Getting was mortally wounded. 84 of her crew were killed. She was scuttled the next morning because she couldn't be saved.
 
-Four heavy cruisers, gone before breakfast. 1,077 Allied sailors dead in one night. Japan lost 58 men and zero ships.
+Four heavy cruisers, gone before breakfast. 1,077 Allied sailors dead in one night. Japan lost 58 men and zero ships. Earlier in 1942, in the Java Sea, [Rear Admiral Karel Doorman](/stories/karel-doorman-java-sea/) had attacked the Japanese with an Allied fleet that had no air cover and had never trained together.
 
 ## The slot run
 
@@ -41,7 +41,7 @@ Each one added more steel to the bottom.
 
 ## November 13: the five brothers
 
-The First Naval Battle of Guadalcanal, November 12-13, 1942, was fought at ranges so close that ships rammed each other. Rear Admiral Daniel Callaghan led a column of five cruisers and eight destroyers against a Japanese bombardment force that included the battleship Hiei, 36,600 tons.
+The First Naval Battle of Guadalcanal, November 12-13, 1942, was fought at ranges so close that ships rammed each other. Rear Admiral Daniel Callaghan led a column of [five cruisers and eight destroyers](/stories/cruiser-vs-destroyer-vs-battleship/) against a Japanese bombardment force that included the battleship Hiei, 36,600 tons.
 
 Callaghan was killed on the bridge of USS San Francisco. Rear Admiral Norman Scott, the second in command, was killed on the bridge of USS Atlanta. Two admirals dead in the same action.
 

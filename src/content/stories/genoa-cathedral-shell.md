@@ -33,7 +33,7 @@ The 381mm round punched through the roof. It pierced the covering of the left na
 
 It did not explode.
 
-An armor-piercing shell from a Queen Elizabeth-class battleship, designed to penetrate 12 inches of hardened steel at range, simply embedded itself upright in the stone floor and stopped. The Genoese who entered the cathedral after the bombardment found a near-ton piece of ordnance standing in the nave like it had been placed there.
+An armor-piercing shell from a [Queen Elizabeth-class battleship](/stories/hms-warspite-grand-old-lady/), designed to penetrate 12 inches of hardened steel at range, simply embedded itself upright in the stone floor and stopped. The Genoese who entered the cathedral after the bombardment found a near-ton piece of ordnance standing in the nave like it had been placed there.
 
 ## Why It Didn't Explode
 
@@ -43,7 +43,7 @@ The shell passed through the roof and decking material without sufficient resist
 
 ## The Aftermath
 
-The cathedral survived. The structural damage from the shell's entry was repaired. The war moved on. Force H returned to Gibraltar on February 11, having completed its mission -- minus the three battleships that were never there.
+The cathedral survived. The structural damage from the shell's entry was repaired. The war moved on. Force H returned to Gibraltar on February 11, having completed its mission -- minus the three battleships that were never there. Three months later, in May 1941, [Bismarck sank HMS Hood](/stories/bismarck-last-battle/) and the Royal Navy hunted her down.
 
 The Italians were furious. The bombardment of Genoa was one of the few direct British attacks on the Italian mainland this early in the war, and 144 dead civilians ensured it became a propaganda point for Mussolini's government.
 

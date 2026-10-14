@@ -13,7 +13,7 @@ In October 1921, the Navy assigned USS Olympia to bring the remains of an uniden
 
 ## An old ship for an old promise
 
-Olympia was built by Union Iron Works in San Francisco, launched on November 5, 1892, and commissioned on February 5, 1895. She was a protected cruiser from the era when steel hulls were still new and coal was the only fuel that mattered. On May 1, 1898, Commodore George Dewey stood on her bridge at Manila Bay and gave the order "You may fire when you are ready, Gridley." The Spanish squadron was destroyed by lunchtime.
+Olympia was built by Union Iron Works in San Francisco, launched on November 5, 1892, and commissioned on February 5, 1895. That makes her younger than [USS Constitution](/stories/uss-constitution-old-ironsides/), the 1797 frigate that still carries a US Navy crew in Boston. She was a protected cruiser from the era when steel hulls were still new and coal was the only fuel that mattered. On May 1, 1898, Commodore George Dewey stood on her bridge at Manila Bay and gave the order "You may fire when you are ready, Gridley." The Spanish squadron was destroyed by lunchtime.
 
 That made Olympia famous. It did not keep her modern. By the First World War she was a second-line ship. In 1918 she carried an expeditionary force to northern Russia, arriving at Murmansk on June 9 and helping occupy Arkhangelsk. After the armistice she cruised the Mediterranean and the Adriatic. By 1921 she was 26 years old, coal-fired, and short of everything a modern cruiser had.
 

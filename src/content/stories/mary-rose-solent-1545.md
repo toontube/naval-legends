@@ -76,7 +76,7 @@ For years he was assumed to be female, because no penis bone was found. DNA anal
 
 The Mary Rose Trust raised the surviving hull on October 11, 1982, after 437 years on the bottom.
 
-Today the hull stands in the Mary Rose Museum at Portsmouth Historic Dockyard, a few miles from where she sank. Hatch's skeleton is on display there. So are the longbows, the wristguard and the carpenter's tools.
+Today the hull stands in the Mary Rose Museum at Portsmouth Historic Dockyard, a few miles from where she sank. Hatch's skeleton is on display there. So are the longbows, the wristguard and the carpenter's tools. A short walk away is [HMS Victory](/stories/hms-victory-trafalgar/), which carried Nelson's body home from Trafalgar in a cask of brandy.
 
 If you stand on Southsea Castle's walls and look out over the Solent, you are roughly where Henry VIII stood on July 19, 1545. The water still looks calm from there.
 

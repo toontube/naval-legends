@@ -62,7 +62,7 @@ What the lookouts saw next was a large patch of oil, air bubbles and wreckage. T
 
 The accounts don't agree on the clock. Wikipedia's account of U-29 puts the ramming at about 13:40. The Lost in Waters Deep wreck database puts the sighting at 12:28 and the ram at 12:35. They agree on the result: U-29 is the only submarine known to have been sunk by a battleship.
 
-Dreadnought's guns never fired at an enemy ship. She missed [the Battle of Jutland](/stories/battle-of-jutland/) in May 1916, the one battle her whole type was built for. Fisher's other all-big-gun idea, the battlecruiser, traded armour for speed, and at Jutland three of them blew up. The bill for that trade was paid again in 1941 by [HMS Hood](/stories/hms-hood-three-survivors/).
+Dreadnought's guns never fired at an enemy ship. She missed [the Battle of Jutland](/stories/battle-of-jutland/) in May 1916, the one battle her whole type was built for. Fisher's other all-big-gun idea, the battlecruiser, traded armour for speed, and at Jutland three of them blew up. The bill for that trade was paid again in 1941 by [HMS Hood](/stories/hms-hood-three-survivors/). Most of the German battleships she was meant to face ended up [scuttled by their own crews at Scapa Flow](/stories/scapa-flow-scuttling/) in 1919.
 
 ## What's left
 

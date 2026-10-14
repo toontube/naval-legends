@@ -13,7 +13,7 @@ const { slug, title, summary, image, readingTime } = Astro.props;
 ---
 
 <a href={`/stories/${slug}/`} class="sc">
-  {image && <img src={image} srcset={cardSrcset(image)} sizes={CARD_SIZES} alt={title} class="sc-img" loading="lazy" decoding="async" />}
+  {image && <img src={image} srcset={cardSrcset(image)} sizes={CARD_SIZES} alt={title} width="480" height="270" class="sc-img" loading="lazy" decoding="async" />}
   <div class="sc-body">
     <h3 class="sc-title">{title}</h3>
     <p class="sc-summary">{summary}</p>

@@ -70,7 +70,7 @@ The prosecutor general's report blamed the torpedo weld. Nobody senior was charg
 
 The same water had seen [a convoy fight on New Year's Eve 1942](/stories/barents-sea-new-years-eve/) that ended with Hitler trying to scrap his fleet. And Kursk was not the first submarine killed by her own design choices: the Royal Navy's [steam-driven K-class boats](/stories/k-class-kalamity/) lost men the same way, to engineering that worked on paper.
 
-Today Kursk's sail stands in Murmansk, above the Kola Bay, as a memorial to the 118 and to other sailors lost in peacetime.
+Today Kursk's sail stands in Murmansk, above the Kola Bay, as a memorial to the 118 and to other sailors lost in peacetime. In April 2022 the cruiser [Moskva](/stories/moskva-sinking-2022/), flagship of Russia's Black Sea Fleet, sank too, and Moscow admitted only one death.
 
 ---
 

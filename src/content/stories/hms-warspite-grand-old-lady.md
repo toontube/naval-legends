@@ -33,7 +33,7 @@ She lost 14 dead. The wounded figure is 16 in one source and 32 in another. Amon
 
 On 13 April 1940 Warspite took her 15-inch guns up Ofotfjord toward Narvik in Norway, as flagship of Vice-Admiral William Whitworth. The Germans had eight destroyers in and around the harbour. All eight were sunk or scuttled that day.
 
-Before the destroyers were reached, Warspite's own Fairey Swordfish floatplane flew ahead to scout. In Herjangsfjord it found the U-boat U-64 on the surface near the shore and bombed her. U-64 sank.
+Before the destroyers were reached, Warspite's own [Fairey Swordfish](/stories/bismarck-last-battle/) floatplane flew ahead to scout. In Herjangsfjord it found the U-boat U-64 on the surface near the shore and bombed her. U-64 sank.
 
 It was the first U-boat of the war sunk by an aircraft. The aircraft was a biplane on floats, catapulted from a battleship built in 1913.
 
