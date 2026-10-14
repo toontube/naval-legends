@@ -37,10 +37,10 @@ export const TOPICS: Topic[] = [
   {
     slug: 'cold-war-naval-history',
     name: 'Cold War and modern',
-    title: 'Cold War Naval History: Captures, Collisions, Carriers',
+    title: 'Cold War and Modern Naval History',
     intro:
-      'After 1945 the navies changed shape: nuclear tests on captured battleships, a spy ship still held in Pyongyang, a night collision that cut a destroyer in half, a Falklands sinking by a 1920s torpedo, and an unfinished Soviet carrier bought as a casino that became China\'s first aircraft carrier.',
-    stories: ['uss-pueblo-captured', 'uss-hobson-wasp-collision', 'uss-phoenix-belgrano', 'varyag-casino-carrier', 'prinz-eugen-bikini'],
+      'After 1945 the navies changed shape: nuclear tests on captured battleships, a spy ship still held in Pyongyang, a night collision that cut a destroyer in half, a Falklands sinking by a 1920s torpedo, an unfinished Soviet carrier bought as a casino that became China\'s first aircraft carrier, the loss of the submarine Kursk in 2000, and the cruiser Moskva, sunk off Odesa in 2022.',
+    stories: ['uss-pueblo-captured', 'uss-hobson-wasp-collision', 'uss-phoenix-belgrano', 'varyag-casino-carrier', 'prinz-eugen-bikini', 'kursk-submarine-disaster', 'moskva-sinking-2022'],
   },
   {
     slug: 'age-of-sail',
@@ -48,19 +48,18 @@ export const TOPICS: Topic[] = [
     title: 'Age of Sail and Civil War Naval History',
     intro:
       'Before steel and steam took over: French cavalry capturing a Dutch fleet frozen in the ice at Den Helder in 1795, and the Confederate raider CSS Alabama, which took 65 Union ships before sinking off Cherbourg in front of a crowd of spectators.',
-    stories: ['den-helder-cavalry-fleet', 'css-alabama-semmes'],
+    stories: ['den-helder-cavalry-fleet', 'css-alabama-semmes', 'vasa-maiden-voyage', 'uss-constitution-old-ironsides'],
   },
   {
     slug: 'us-navy',
     name: 'US Navy',
     title: 'US Navy History: Ships, Disasters and Survivors',
     intro:
-      'Stories of United States Navy ships from the Spanish-American War to the Cold War: USS Indianapolis and the sharks, USS New Orleans and her coconut-log bow, the collier Cyclops that vanished with 306 men, and USS Pueblo, still held in North Korea.',
+      'Stories of United States Navy ships from the War of 1812 to the Cold War: USS Constitution, USS Indianapolis and the sharks, USS New Orleans and her coconut-log bow, the collier Cyclops that vanished with 306 men, and USS Pueblo, still held in North Korea.',
     stories: [
       'uss-indianapolis-sharks', 'uss-new-orleans-coconut-bow', 'uss-new-orleans-pearl-harbor', 'uss-cyclops-vanished',
       'uss-pueblo-captured', 'uss-hobson-wasp-collision', 'uss-porter-torpedo-fdr', 'uss-olympia-unknown-soldier',
-      'uss-wichita-pig-iron', 'uss-phoenix-belgrano', 'cleveland-class-top-heavy', 'ironbottom-sound',
-    ],
+      'uss-wichita-pig-iron', 'uss-phoenix-belgrano', 'cleveland-class-top-heavy', 'ironbottom-sound', 'uss-constitution-old-ironsides'],
   },
   {
     slug: 'royal-navy',
@@ -90,6 +89,14 @@ export const TOPICS: Topic[] = [
     stories: ['shinano-maiden-voyage', 'mogami-cardboard-cruiser', 'ironbottom-sound', 'karel-doorman-java-sea', 'uss-indianapolis-sharks'],
   },
   {
+    slug: 'russian-soviet-navy',
+    name: 'Russian and Soviet Navy',
+    title: 'Russian and Soviet Navy History: Aurora to Moskva',
+    intro:
+      'From the Tsar\'s fleet to Putin\'s: the cruiser Aurora, shot at by her own squadron and later famous for the revolution, the Zhemchug sunk at anchor in Penang, the unfinished carrier Varyag, the submarine Kursk lost with 118 men, and the cruiser Moskva, sunk by two missiles in 2022.',
+    stories: ['aurora-friendly-fire', 'emden-penang-raid', 'varyag-casino-carrier', 'kursk-submarine-disaster', 'moskva-sinking-2022'],
+  },
+  {
     slug: 'naval-mysteries-and-disasters',
     name: 'Mysteries and disasters',
     title: 'Naval Mysteries and Disasters: Lost Ships and Worst Losses',
@@ -97,8 +104,7 @@ export const TOPICS: Topic[] = [
       'Ships that vanished without a trace, the deadliest sinkings ever recorded, and the accidents navies would rather forget. Start with the ranked list of the worst naval disasters, then the ships that disappeared.',
     stories: [
       'worst-naval-disasters', 'ships-that-disappeared', 'uss-cyclops-vanished', 'uss-hobson-wasp-collision', 'k-class-kalamity',
-      'shinano-maiden-voyage', 'uss-indianapolis-sharks',
-    ],
+      'shinano-maiden-voyage', 'uss-indianapolis-sharks', 'vasa-maiden-voyage', 'kursk-submarine-disaster'],
   },
 ];
 
