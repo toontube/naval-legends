@@ -20,8 +20,7 @@ export const TOPICS: Topic[] = [
       'hms-edinburgh-gold', 'ironbottom-sound', 'karel-doorman-java-sea', 'uss-new-orleans-coconut-bow',
       'uss-new-orleans-pearl-harbor', 'uss-porter-torpedo-fdr', 'mogami-cardboard-cruiser', 'cleveland-class-top-heavy',
       'uss-wichita-pig-iron', 'hms-zubian-frankenship', 'genoa-cathedral-shell', 'deutschland-renamed', 'prinz-eugen-bikini',
-      'uss-phoenix-belgrano',
-    ],
+      'uss-phoenix-belgrano', 'hms-glorious-doyly-hughes', 'bismarck-last-battle', 'yamato-last-sortie', 'battle-of-midway'],
   },
   {
     slug: 'wwi-naval-history',
@@ -47,8 +46,8 @@ export const TOPICS: Topic[] = [
     name: 'Age of Sail and Civil War',
     title: 'Age of Sail and Civil War Naval History',
     intro:
-      'Before steel and steam took over: French cavalry capturing a Dutch fleet frozen in the ice at Den Helder in 1795, and the Confederate raider CSS Alabama, which took 65 Union ships before sinking off Cherbourg in front of a crowd of spectators.',
-    stories: ['den-helder-cavalry-fleet', 'css-alabama-semmes', 'vasa-maiden-voyage', 'uss-constitution-old-ironsides'],
+      'Before steel and steam took over: the Mary Rose sinking in front of Henry VIII, Sweden\'s Vasa capsizing on her maiden voyage, USS Constitution and her "iron" sides, French cavalry capturing a Dutch fleet frozen in the ice at Den Helder in 1795, and the Confederate raider CSS Alabama, which took 65 Union ships before sinking off Cherbourg in front of a crowd of spectators.',
+    stories: ['den-helder-cavalry-fleet', 'css-alabama-semmes', 'vasa-maiden-voyage', 'uss-constitution-old-ironsides', 'mary-rose-solent-1545'],
   },
   {
     slug: 'us-navy',
@@ -59,7 +58,7 @@ export const TOPICS: Topic[] = [
     stories: [
       'uss-indianapolis-sharks', 'uss-new-orleans-coconut-bow', 'uss-new-orleans-pearl-harbor', 'uss-cyclops-vanished',
       'uss-pueblo-captured', 'uss-hobson-wasp-collision', 'uss-porter-torpedo-fdr', 'uss-olympia-unknown-soldier',
-      'uss-wichita-pig-iron', 'uss-phoenix-belgrano', 'cleveland-class-top-heavy', 'ironbottom-sound', 'uss-constitution-old-ironsides'],
+      'uss-wichita-pig-iron', 'uss-phoenix-belgrano', 'cleveland-class-top-heavy', 'ironbottom-sound', 'uss-constitution-old-ironsides', 'battle-of-midway'],
   },
   {
     slug: 'royal-navy',
@@ -69,8 +68,7 @@ export const TOPICS: Topic[] = [
       'The Royal Navy at its most daring and its most unlucky: the St Nazaire raid, the gold of HMS Edinburgh, two broken destroyers welded into one, steam submarines that sank each other, and six destroyers that held off a pocket battleship on New Year\'s Eve.',
     stories: [
       'hms-campbeltown-st-nazaire', 'hms-edinburgh-gold', 'hms-zubian-frankenship', 'k-class-kalamity', 'barents-sea-new-years-eve',
-      'genoa-cathedral-shell', 'scapa-flow-scuttling',
-    ],
+      'genoa-cathedral-shell', 'scapa-flow-scuttling', 'hms-glorious-doyly-hughes', 'bismarck-last-battle', 'mary-rose-solent-1545'],
   },
   {
     slug: 'german-navy',
@@ -78,7 +76,7 @@ export const TOPICS: Topic[] = [
     title: 'German Navy History: Kaiserliche Marine and Kriegsmarine',
     intro:
       'From the Kaiser\'s raiders to Hitler\'s Kriegsmarine: SMS Emden at Penang, the scuttling of the High Seas Fleet, a pocket battleship renamed out of fear of a headline, and Prinz Eugen, which survived two atomic bombs.',
-    stories: ['emden-penang-raid', 'scapa-flow-scuttling', 'deutschland-renamed', 'prinz-eugen-bikini', 'barents-sea-new-years-eve'],
+    stories: ['emden-penang-raid', 'scapa-flow-scuttling', 'deutschland-renamed', 'prinz-eugen-bikini', 'barents-sea-new-years-eve', 'bismarck-last-battle', 'hms-glorious-doyly-hughes'],
   },
   {
     slug: 'imperial-japanese-navy',
@@ -86,7 +84,7 @@ export const TOPICS: Topic[] = [
     title: 'Imperial Japanese Navy History: Shinano, Mogami and More',
     intro:
       'The Imperial Japanese Navy built some of the largest and most aggressive warships of the Second World War. Read about Shinano, the Yamato-class carrier sunk on her maiden voyage, Mogami, the treaty-busting cruiser, and the night battles off Guadalcanal.',
-    stories: ['shinano-maiden-voyage', 'mogami-cardboard-cruiser', 'ironbottom-sound', 'karel-doorman-java-sea', 'uss-indianapolis-sharks'],
+    stories: ['shinano-maiden-voyage', 'mogami-cardboard-cruiser', 'ironbottom-sound', 'karel-doorman-java-sea', 'uss-indianapolis-sharks', 'yamato-last-sortie', 'battle-of-midway'],
   },
   {
     slug: 'russian-soviet-navy',
@@ -104,7 +102,7 @@ export const TOPICS: Topic[] = [
       'Ships that vanished without a trace, the deadliest sinkings ever recorded, and the accidents navies would rather forget. Start with the ranked list of the worst naval disasters, then the ships that disappeared.',
     stories: [
       'worst-naval-disasters', 'ships-that-disappeared', 'uss-cyclops-vanished', 'uss-hobson-wasp-collision', 'k-class-kalamity',
-      'shinano-maiden-voyage', 'uss-indianapolis-sharks', 'vasa-maiden-voyage', 'kursk-submarine-disaster'],
+      'shinano-maiden-voyage', 'uss-indianapolis-sharks', 'vasa-maiden-voyage', 'kursk-submarine-disaster', 'mary-rose-solent-1545'],
   },
 ];
 
