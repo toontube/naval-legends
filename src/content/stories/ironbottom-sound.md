@@ -11,9 +11,7 @@ readingTime: 5
 
 The body of water between Guadalcanal and Savo Island in the Solomon Islands is about 30 miles long and 10 miles wide. In six months of 1942 and 1943, over fifty warships sank there. The bottom ranges from 300 to 1,400 meters deep. It is the densest concentration of warship wrecks on earth.
 
-During the campaign, sailors called the channel "The Slot" because of its shape. Afterward, they called it Ironbottom Sound.
-
-Both names stuck.
+It sits at the southern end of "The Slot," the long channel running down the middle of the Solomons that Japanese ships used to reach Guadalcanal. Sailors named the sound for what ended up on its floor: Ironbottom Sound.
 
 ## August 9: thirty-seven minutes
 
@@ -53,7 +51,7 @@ The light cruiser USS Juneau took a torpedo during the melee and limped away. Th
 
 Only 10 of Juneau's crew survived. They spent eight days in the water before rescue.
 
-The Sullivan brothers' deaths led directly to the U.S. military's Sole Survivor Policy, which prevents all members of a family from serving in the same combat unit. The policy remains in effect today.
+The Sullivan brothers' deaths drew national attention to families losing several sons, and helped lead to the U.S. military's Sole Survivor Policy, adopted in 1948, which can exempt a family's surviving members from the draft and combat duty. The policy remains in effect today.
 
 ## The inventory
 
@@ -71,7 +69,7 @@ The total Allied toll for the entire Guadalcanal campaign: roughly 30 ships sunk
 
 In January 2015, Paul Allen's research vessel Petrel mapped 380 square miles of Ironbottom Sound using a Bluefin autonomous underwater vehicle equipped with side-scan sonar. The team identified 29 wreck sites and six debris fields. Six wrecks were positively identified: Quincy, Vincennes, Astoria, Northampton, Atlanta, and Canberra.
 
-In July 2025, Robert Ballard's Exploration Vessel Nautilus returned with remotely operated vehicles and the University of New Hampshire's uncrewed surface vessel DriX. They mapped over 1,000 square kilometers of seafloor at the highest resolution ever achieved there. Thirteen wreck sites were surveyed. Four ships were documented for the first time, including the bow section of USS New Orleans, which had been blown off by a torpedo at Tassafaronga, and the Japanese destroyer Teruzuki.
+In July 2025, Robert Ballard's Exploration Vessel Nautilus returned with remotely operated vehicles and the University of New Hampshire's uncrewed surface vessel DriX. They mapped over 1,000 square kilometers of seafloor at the highest resolution ever achieved there. Thirteen wreck sites were surveyed. Four ships were documented for the first time, including the bow section of USS New Orleans, which had been blown off by a torpedo at Tassafaronga ([the cruiser then sailed home with a bow of coconut logs](/stories/uss-new-orleans-coconut-bow/)), and the Japanese destroyer Teruzuki.
 
 The expedition streamed 138 hours of live ROV footage. Viewers watched the cameras pass over gun turrets still pointed at targets that sank eighty years ago.
 
@@ -93,13 +91,12 @@ The full story: See "The inventory" above for a detailed breakdown of losses on 
 
 ---
 
-**Sources**
+## Sources
 
-- [Ironbottom Sound - Wikipedia](https://en.wikipedia.org/wiki/Ironbottom_Sound)
-- [Expedition Reveals Thirteen Shipwrecks - Naval History and Heritage Command](https://www.history.navy.mil/news-and-events/news/2025/Expedition-Reveals-Thirteen-Shipwrecks-WII-Battles-off-Guadalcanal.html)
-- [Battle of Savo Island - Naval History and Heritage Command](https://www.history.navy.mil/content/history/museums/nmusn/explore/photography/wwii/wwii-pacific/wwii-pacific-guadalancanal/naval-battles/savo-island.html)
-- [Naval Battle of Guadalcanal - Wikipedia](https://en.wikipedia.org/wiki/Naval_Battle_of_Guadalcanal)
+- [Expedition on E/V Nautilus to Explore Lost Shipwrecks of Iron Bottom Sound - NOAA Ocean Exploration](https://oceanexplorer.noaa.gov/news/25-iron-bottom-sound/)
+- [Exploring the Maritime Archaeology of Guadalcanal and Iron Bottom Sound - Nautilus Live](https://nautiluslive.org/blog/2025/06/30/exploring-maritime-archaeology-guadalcanal-and-iron-bottom-sound)
+- [Expedition Reveals Thirteen Shipwrecks from WWII Battles off Guadalcanal - Seapower Magazine](https://seapowermagazine.org/expedition-reveals-thirteen-shipwrecks-from-wwii-battles-off-guadalcanal/)
 - [A new expedition to Guadalcanal reveals WWII shipwrecks - National Geographic](https://www.nationalgeographic.com/history/article/shipwrecks-wwii-guadalcanal-warships)
-- [Paul Allen's Petrel finds wrecks of USS Astoria and more](https://www.worldnavalships.com/forums/thread.php?threadid=17759)
+- [Ironbottom Sound - Wikipedia](https://en.wikipedia.org/wiki/Ironbottom_Sound)
 
 **Photo credit:** Wrecks in Ironbottom Sound map -- Wikimedia Commons, [File:Wrecks in the Ironbottom Sound.jpg](https://commons.wikimedia.org/wiki/File:Wrecks_in_the_Ironbottom_Sound.jpg), CC-BY-SA-3.0

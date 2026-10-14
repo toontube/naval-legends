@@ -13,7 +13,7 @@ USS Pueblo is still on the US Navy's commissioned roster. She is also a museum e
 
 ## The ship
 
-Pueblo started as a US Army freight vessel, FS-344, launched in 1944 at Kewaunee, Wisconsin. The Navy took her in 1966 and spent $1.5 million installing signals intelligence equipment. She was redesignated AGER-2, a Banner-class "environmental research ship," which was the Navy's way of saying spy ship.
+Pueblo started as a US Army freight vessel, FP-344 (later FS-344), launched in 1944 at Kewaunee, Wisconsin. The Navy took her in 1966 and spent $1.5 million installing signals intelligence equipment. She was redesignated AGER-2, a Banner-class "environmental research ship," which was the Navy's way of saying spy ship.
 
 She displaced 895 tons. Her top speed was 12.7 knots. Her armament consisted of two .50-caliber machine guns mounted in exposed positions on the bow and stern. The guns were covered with canvas tarps. The tarps were frozen solid.
 
@@ -29,7 +29,7 @@ At around noon, two North Korean submarine chasers armed with 57mm cannon approa
 
 The lead subchaser signaled Pueblo to heave to. Bucher refused and made for open water at 12 knots. The submarine chasers could do 28.
 
-The North Koreans opened fire. Shells and machine gun rounds hit the ship. Ten crew were wounded. Fireman Duane D. Hodges, from Creswell, Oregon, was struck by shell fragments and killed. He was 20.
+The North Koreans opened fire. Shells and machine gun rounds hit the ship. Ten crew were wounded. Fireman Duane D. Hodges, from Creswell, Oregon, was struck by shell fragments and killed.
 
 Bucher ordered the crew to destroy classified materials. They had two paper shredders. One broke immediately. The incinerators couldn't keep up. Documents were still piling up when the boarding party came over the rail.
 
@@ -87,14 +87,13 @@ She remains officially commissioned in the United States Navy. She is the second
 
 Nobody has proposed a plan to get her back.
 
----
-
-**Sources**
-
-- [USS Pueblo (AGER-2) — Wikipedia](https://en.wikipedia.org/wiki/USS_Pueblo_(AGER-2))
-- [H-014-1 The Seizure of USS Pueblo — Naval History and Heritage Command](https://www.history.navy.mil/about-us/leadership/director/directors-corner/h-grams/h-gram-014/h-014-1.html)
-- [Lloyd M. Bucher — Wikipedia](https://en.wikipedia.org/wiki/Lloyd_M._Bucher)
-- [How Cold War Captives Resisted With the Middle Finger — Atlas Obscura](https://www.atlasobscura.com/articles/north-korean-officials-had-no-idea-what-their-hostages-were-signaling-in-this-photo)
-- [The Pueblo Scapegoat — Naval History Magazine](https://www.usni.org/magazines/naval-history-magazine/2014/october/pueblo-scapegoat)
 
 <figure><img src="/images/uss-pueblo.jpg" alt="USS Pueblo (AGER-2) at sea before her capture" /><figcaption>USS Pueblo (AGER-2) before her capture. 895 tons, two frozen machine guns, and 83 men against six warships. US Navy photograph, public domain.</figcaption></figure>
+
+---
+
+## Sources
+
+- [Stars and Stripes: Pueblo crew of 82 freed by N. Korea](https://www.stripes.com/news/pueblo-crew-of-82-freed-by-n-korea-1.10625)
+- [KVAL: Oregon sailor killed 50 years ago when North Korea seized USS Pueblo](https://kval.com/veterans/oregon-sailor-lone-fatality-50-years-ago-when-north-korea-seized-uss-pueblo)
+- [Wikipedia: USS Pueblo (AGER-2)](https://en.wikipedia.org/wiki/USS_Pueblo_(AGER-2))

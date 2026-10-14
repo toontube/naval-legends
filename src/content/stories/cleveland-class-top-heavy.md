@@ -15,17 +15,15 @@ They were good ships. Twelve 6-inch guns, twelve 5-inch guns, and, as the war we
 
 That was the problem. Every new piece of equipment went on top. The center of gravity kept climbing.
 
-The Clevelands were designed at around 11,744 tons standard displacement. By 1944, the wartime additions had made them dangerously top-heavy. The Navy responded with a list of modifications that read like a weight-loss program:
+The Clevelands were designed at around 11,744 tons standard displacement. By the last year of the war, the extra antiaircraft guns had made them top-heavy. The fixes read like a weight-loss program. Some ships lost one of their two aircraft catapults. The rangefinder on the No. 1 turret came off. When new fire control radar went in, the 20mm clipping rooms, where gunners loaded rounds into magazines, had to go to pay for it. Every new item had to be weighed against something removed.
 
-Remove the aircraft catapults. Restrict topside ammunition stowage. Delete 20mm gun tubs. Rearrange fuel and water tanks lower in the hull. And add several hundred tons of solid ballast — concrete and lead — into the bottom of the ship.
+It wasn't enough to make anyone comfortable. The follow-on Fargo class was redesigned with a more compact superstructure and a single funnel to cut topweight. Only two Fargos were completed before the war ended.
 
-It wasn't enough to make anyone comfortable. The follow-on Fargo class was specifically redesigned with a flush deck and a single funnel just to cut topweight. Only two Fargos were completed before the war ended.
-
-None of the 27 Clevelands were sunk in combat. That part of the record is clean — which is more than can be said for other American cruisers, like [USS Indianapolis](/stories/uss-indianapolis-sharks), which delivered the atomic bomb and then vanished. But the Clevelands served in nearly every major campaign from late 1942 onward.
+None of the 27 Clevelands were sunk in combat. That part of the record is clean, which is more than can be said for other American cruisers, like [USS Indianapolis](/stories/uss-indianapolis-sharks), which delivered the atomic bomb and then vanished. But the Clevelands served in nearly every major campaign from late 1942 onward.
 
 At the Battle of Empress Augusta Bay on November 2, 1943, four Clevelands — Cleveland herself, Columbia, Montpelier, and Denver — under Rear Admiral Merrill defeated a Japanese force trying to intercept the Bougainville landings. It was a textbook night surface action.
 
-USS Birmingham was alongside the light carrier Princeton on October 24, 1944, trying to help fight fires, when Princeton's bomb magazine exploded. The blast killed 229 of Birmingham's crew and wounded 420. It was one of the worst single-ship casualty events for any cruiser in the Pacific war, and Birmingham wasn't even the ship that blew up.
+USS Birmingham was alongside the light carrier Princeton on October 24, 1944, trying to help fight fires, when Princeton's bomb magazine exploded. The blast killed 233 of Birmingham's crew, seriously wounded 211 and lightly wounded 215 more. Some counts run as high as 241 dead. It was one of the worst single-ship casualty events for any cruiser in the Pacific war, and Birmingham wasn't even the ship that blew up.
 
 But the most extraordinary chapter in the Cleveland story happened before most of them even touched water. In early 1942, the Navy desperately needed aircraft carriers. The Essex class was still years from completion. President Roosevelt pushed for a fast solution.
 
@@ -35,16 +33,17 @@ USS Independence was commissioned in January 1943, less than a year after conver
 
 Those nine carriers filled the gap until the Essex class arrived in numbers. Without them, the fast carrier task forces of 1943 wouldn't have existed.
 
-After the war, almost all 27 cruisers went into mothballs immediately. They were too new to scrap but too flawed to modernize — any new equipment would only make the stability problem worse. The irony is that US cruiser design had been wrestling with weight problems for years. [USS Wichita](/stories/uss-wichita-pig-iron) earned the nickname "Pig Iron" partly because of how the Navy tried to solve the same issue with heavier construction. Six were eventually converted to guided-missile cruisers in the late 1950s.
+After the war, almost all 27 cruisers went into mothballs immediately. None came back for Korea. They needed crews almost as large as the bigger Baltimore-class heavy cruisers, so the Navy reactivated those instead. The irony is that US cruiser design had been wrestling with weight problems for years. [USS Wichita](/stories/uss-wichita-pig-iron) earned the nickname "Pig Iron" partly because of how the Navy tried to solve the same issue with heavier construction. Six were eventually completed as or converted to guided-missile cruisers in the late 1950s. The added topweight made their stability worse, and Little Rock and Oklahoma City needed large amounts of ballast to keep serving into the 1970s.
 
 Only one survives. USS Little Rock sits in Buffalo, New York, at the Buffalo and Erie County Naval & Military Park. She's the last Cleveland-class ship you can walk through.
 
+Weight trouble was not only an American problem. Japan's [Mogami class](/stories/mogami-cardboard-cruiser) was built so light to stay inside treaty limits that the whole class had to be rebuilt in the mid-1930s.
+
 ---
 
-**Sources**
+## Sources
 
-- Friedman, Norman. *U.S. Cruisers: An Illustrated Design History.* Naval Institute Press, 1984.
 - [Wikipedia: Cleveland-class cruiser](https://en.wikipedia.org/wiki/Cleveland-class_cruiser)
-- Morison, Samuel Eliot. *History of United States Naval Operations in World War II.* Vol. 6 (Solomons) and Vol. 12 (Leyte Gulf). Little, Brown and Company, 1950-1962.
-- [NavSource Online: Light Cruiser Photo Archive](http://www.navsource.org/archives/04/04idx.htm)
+- [Wikipedia: Independence-class aircraft carrier](https://en.wikipedia.org/wiki/Independence-class_aircraft_carrier)
+- [History of War: USS Birmingham (CL-62)](https://www.historyofwar.org/articles/weapons_USS_Birmingham_CL62.html)
 - [Buffalo and Erie County Naval & Military Park: USS Little Rock](https://buffalonavalpark.org/explore/uss-little-rock/)

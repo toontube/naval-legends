@@ -1,6 +1,7 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import { cardSrcset, CARD_SIZES } from '../../lib/cardImage';
+import { topicsForStory } from '../../lib/topics';
 import Navigation from '../../components/Navigation.astro';
 import Footer from '../../components/Footer.astro';
 import SEOHead from '../../components/SEOHead.astro';
@@ -16,6 +17,7 @@ export async function getStaticPaths() {
 }
 
 const { story } = Astro.props;
+const storyTopics = topicsForStory(story.data.slug);
 const { Content } = await render(story);
 
 // Tag-based story recommendations
@@ -107,6 +109,9 @@ const ksStickyUrl = 'https://www.kickstarter.com/projects/mozuma/come-on-texas?r
     </div>
 
     <div class="article-tags">
+      {storyTopics.map((t) => (
+        <a href={`/topics/${t.slug}/`} class="article-tag">{t.name}</a>
+      ))}
       {story.data.tags.map((tag: string) => (
         <span class="article-tag">{tagLabel(tag)}</span>
       ))}

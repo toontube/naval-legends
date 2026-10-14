@@ -13,11 +13,11 @@ In 1935, the Royal Navy's Director of Naval Construction was briefed on Japan's 
 
 His response: "They must be building their ships out of cardboard or lying."
 
-They were lying. The actual design weight was 9,500 tons. At trials, Mogami displaced 11,169 tons. And those 155mm gun turrets? The barbettes were designed from the start to be swapped for 203mm heavy cruiser guns whenever Japan felt like dropping the pretense.
+They were lying. The actual design weight was 9,500 tons. At trials, Mogami displaced 11,169 tons. And those 155mm gun turrets? The barbettes were designed from the start to be swapped for 203mm [heavy cruiser](/stories/cruiser-vs-destroyer-vs-battleship/) guns whenever Japan felt like dropping the pretense.
 
 Japan was a signatory to the London Naval Treaty, which limited cruiser displacement and armament. The Mogami class was a treaty violation on a blueprint.
 
-But the cheating came with consequences. The designers had packed too much onto the hull. Mogami was dangerously top-heavy. During sea trials in 1935, the hull cracked. Welding technology was still new, and the welds failed under stress. The fire control directors and turrets became unusable from vibration.
+But the cheating came with consequences. The designers had packed too much onto the hull. Mogami was dangerously top-heavy, a problem the US Navy would later wrestle with in its own [Cleveland-class cruisers](/stories/cleveland-class-top-heavy/). During sea trials in 1935, the hull cracked. Welding technology was still new, and the welds failed under stress. The fire control directors and turrets became unusable from vibration.
 
 The Navy retrofitted hull bulges to Mogami and her sister Mikuma, increasing beam to 20.5 meters and displacement to 11,200 tons. They cut the bridge down by two-thirds. Removed the seaplane hangar. Rebuilt the aft superstructure fifty percent lighter. It cost them two knots of speed.
 
@@ -27,9 +27,9 @@ Then came Midway. June 5, 1942. Admiral Yamamoto ordered Cruiser Division 7 to s
 
 Mogami rammed Mikuma's port side below the bridge. Her bow caved in. Mikuma's fuel tank ruptured, leaving a trail of oil.
 
-American dive bombers followed the oil slick. Mikuma was sunk the next day — 700 dead. Mogami took six bomb hits, lost turret No. 5, and had 81 crew killed. But she survived.
+American dive bombers followed the oil slick. Mikuma was sunk the next day, taking roughly 650 of her crew with her. Mogami took six bomb hits, lost turret No. 5, and had 91 crew killed. But she survived.
 
-The Navy rebuilt her. From August 1942 to April 1943, Sasebo Naval Arsenal removed her two aft turrets and extended the flight deck to carry eleven reconnaissance seaplanes. She came out the other end as a hybrid aviation cruiser — six 203mm guns forward, a flight deck aft.
+The Navy rebuilt her. From September 1942 to April 1943, Sasebo Naval Arsenal removed her two aft turrets and extended the flight deck to carry eleven reconnaissance seaplanes. She came out the other end as a hybrid aviation cruiser — six 203mm guns forward, a flight deck aft.
 
 In this configuration, she fought at the Battle of Surigao Strait on October 25, 1944 — part of the Battle of Leyte Gulf. American battleships, many of them Pearl Harbor survivors, crossed the T on the Japanese force in the last battleship-versus-battleship engagement in history.
 
@@ -41,11 +41,9 @@ Three names. Two collisions. Two rebuilds. One ship.
 
 ---
 
-**Sources**
+## Sources
 
-- [Mogami-class cruiser — Wikipedia](https://en.wikipedia.org/wiki/Mogami-class_cruiser) — includes the British DNC "cardboard" quote sourced from naval intelligence records.
-- [Japanese cruiser Mogami (1934) — Wikipedia](https://en.wikipedia.org/wiki/Japanese_cruiser_Mogami)
-- [Naval Encyclopedia: Mogami-class cruisers](https://naval-encyclopedia.com/ww2/japan/mogami-class-cruisers.php)
+- [Mogami-class cruiser (Wikipedia)](https://en.wikipedia.org/wiki/Mogami-class_cruiser)
+- [IJN Mogami: Tabular Record of Movement (Combinedfleet.com)](http://www.combinedfleet.com/mogami_t.htm)
+- [Mogami class cruisers (Naval Encyclopedia)](https://naval-encyclopedia.com/ww2/japan/mogami-class-cruisers.php)
 - Lacroix, Eric, and Linton Wells II. *Japanese Cruisers of the Pacific War.* Naval Institute Press, 1997.
-- [World War II Database: Heavy Cruiser Mogami](https://ww2db.com/ship_spec.php?ship_id=38)
-- [Wikipedia: Battle of Surigao Strait](https://en.wikipedia.org/wiki/Battle_of_Surigao_Strait)

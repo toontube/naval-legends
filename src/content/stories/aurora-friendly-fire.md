@@ -6,39 +6,62 @@ date: 2026-04-17
 summary: "Russia's 2nd Pacific Squadron mistook British fishermen for Japanese torpedo boats. Aurora took fire from her own battleships. Then she survived Tsushima, fired the shot that started the Bolshevik revolution, and never left."
 image: /images/aurora.jpg
 tags: [russo-japanese-war, wwi, revolution, aurora, russia]
-readingTime: 4
+readingTime: 5
 ---
 
-October 21, 1904. The Russian 2nd Pacific Squadron was sailing through the North Sea on its way to fight Japan. The voyage was 18,000 miles. The officers were exhausted and paranoid. Intelligence reports — almost certainly fabricated — claimed Japanese torpedo boats were operating in European waters.
+October 21, 1904. The Russian 2nd Pacific Squadron was sailing through the North Sea on its way to fight Japan. The voyage ahead was 18,000 miles. The officers were exhausted and jumpy. Russian intelligence had been feeding them stories of Japanese officers with torpedoes around the Baltic and of torpedo boats built for Japan in British yards. None of it was true.
 
-Then lookouts spotted small vessels in the dark off Dogger Bank. The battleships opened fire.
+Late that evening, the supply ship Kamchatka, last in the Russian line, saw a passing Swedish ship and radioed that she was under attack by torpedo boats. A few hours later, just before 1 a.m. on October 22, the battleships switched on their searchlights in the fog off Dogger Bank. Small boats lay in the beams. Admiral Zinovy Rozhestvensky thought he saw a torpedo boat and ordered the squadron to open fire.
 
 The targets were British fishing trawlers from Hull.
 
-Aurora was sailing ahead of the main squadron. The battleships behind her couldn't tell the difference between a Russian cruiser and a Japanese torpedo boat. She took several hits from her own fleet. The ship's chaplain was killed. At least two sailors were wounded.
+## Shot by her own side
 
-The trawler Crane was sunk. Two British fishermen died. Six more were wounded.
+The boats belonged to the Gamecock fleet, about forty trawlers working the Dogger Bank with their nets down. With the gear in the water they could not run. The fishermen at first welcomed the searchlights, thinking the warships were British.
 
-Britain was furious. The Royal Navy mobilized its Channel Fleet and Home Fleet. War between Russia and Britain suddenly seemed possible — over a fishing incident. The crisis went to an international tribunal at The Hague, which ruled Russia was at fault. Russia paid 65,000 pounds in compensation.
+Aurora was sailing apart from the battleships with the cruiser Dmitrii Donskoi. In the confusion, seven battleships in formation took both cruisers for Japanese warships and fired on them. Aurora was hit five times. The ship's chaplain was killed, along with a sailor, and another man was badly wounded. Russian gunnery was so poor that it may have saved lives on both sides. The battleship Oryol reportedly fired more than 500 shells without hitting anything.
 
-The squadron sailed on. Seven months later, Aurora reached the Battle of Tsushima. Captain Yegoryev was killed by a shell fragment during the battle. The cruiser took around ten hits, with roughly eighty wounded. She broke away from the catastrophic Russian defeat and limped to Manila, where the Americans interned her until the war ended.
+The trawler Crane was sunk. Her skipper, George Smith, and his mate were killed. Four other trawlers were damaged and six fishermen wounded, one of whom died a few months later. Five men from the fleet later received the Albert Medal for their rescue work, presented by King Edward VII in May 1905.
 
-Aurora went home.
+## The crisis
 
-Thirteen years later, on the evening of October 25, 1917 (Old Style calendar), Aurora was moored on the Neva River in St. Petersburg. Her crew had sided with the Bolsheviks. At 9:40 PM, she fired a single blank round from her bow gun.
+Britain was furious. Newspapers called the Russian squadron pirates. The Royal Navy ordered 28 battleships of the Home Fleet to raise steam, and British cruisers shadowed the Russians down the coast of Spain and Portugal. Britain was allied to Japan, so a war with Russia was a real possibility, all over a fishing fleet.
 
-That was the signal. Red Guards and soldiers began the assault on the Winter Palace. The Provisional Government fell. Soviet historians turned that one blank shot into the founding myth of the revolution. The reality was less dramatic. The "storming" was more of a gradual walk-in. But the shot became iconic.
+Rozhestvensky was ordered into Vigo, where he left behind the officers held responsible. An international commission of inquiry, set up under the Hague Convention, sat in Paris from January to February 1905. It found the trawlers had been properly lit and fishing lawfully. Russia paid £66,000 in compensation. A memorial to the dead fishermen still stands in Hull.
 
-Aurora never left Russia again. She's been a museum ship since 1957, permanently moored on the Bolshaya Nevka in St. Petersburg, near the Nakhimov Naval Academy. Not every Russian warship from that era got such a dignified retirement — the [Varyag ended up as a floating casino](/stories/varyag-casino-carrier) before becoming an aircraft carrier. She underwent a full restoration from 2014 to 2016. She still flies the Russian naval ensign.
+The squadron sailed on. Part of it went through the Suez Canal, and the newer battleships went the long way around Africa. They met again at Madagascar.
 
-One ship. Friendly fire, Tsushima, a revolution, and a permanent address.
+## Tsushima and Manila
+
+Seven months later, on May 27, 1905, the fleet met Admiral Togo's ships in the Tsushima Strait. It was one of the most one-sided defeats in naval history. Aurora sailed in Rear Admiral Oskar Enkvist's cruiser squadron. She was only lightly damaged, but a shell killed her captain, Evgeny Egoriev, and fourteen of her crew died with him.
+
+That night Aurora and Oleg were attacked by Japanese torpedo boats and gave up trying to break north to Vladivostok. With the cruiser Zhemchug, they turned south. Enkvist moved his flag to Aurora and took the three ships to Manila, where the Americans interned them until the war ended. Egoriev was buried at sea on the way. The Zhemchug's luck ran out nine years later, [torpedoed at anchor in Penang by SMS Emden](/stories/emden-penang-raid).
+
+Aurora went home to the Baltic.
+
+## The shot
+
+During the First World War she patrolled the Baltic and bombarded the shore, and in 1915 she was rearmed with fourteen 6-inch guns. In late 1916 she came to Petrograd for repairs. The city was cold, hungry and close to revolt. When the February Revolution broke out in 1917, her crew mutinied and shot their captain, Mikhail Nikolsky, after he refused to carry a red flag.
+
+On the evening of October 25, 1917 (Old Style calendar), Aurora lay on the Neva. Her crew had sided with the Bolsheviks. Earlier that day she had been sent to clear loyalist cadets from the Nikolayevsky Bridge. At 9:40 p.m. she fired a single blank round from her forecastle gun.
+
+According to Soviet lore, that was the signal for Red Guards and soldiers to begin the assault on the Winter Palace. The Provisional Government fell. Soviet historians turned that one blank shot into the founding image of the revolution. The real taking of the palace was messier and slower than the films later showed. The shot itself became iconic anyway, and in 1927 the ship received the Order of the Red Banner.
+
+## A permanent address
+
+Aurora did not escape the next war. In 1941 her guns were taken off for the land defence of Leningrad, and the ship herself, docked at Oranienbaum, was shelled and bombed. On September 30, 1941, she was damaged and sank in the harbour. She was raised and repaired after the war.
+
+Aurora opened as a museum ship in 1957. In the 1980s she was rebuilt at the Admiralty Shipyard, and so much of the lower hull had rotted that it was cut away and replaced with a new welded one built to the original drawings. The old bottom was towed out into the Gulf of Finland and left near the shore. Another overhaul followed in Kronstadt from September 2014, and she returned to her berth on July 16, 2016. She is moored on the Bolshaya Nevka near the Nakhimov Naval School and still flies a special version of the Russian naval ensign.
+
+Not every Russian warship from that era got such a quiet retirement. The [Varyag ended up as a floating casino](/stories/varyag-casino-carrier) before becoming an aircraft carrier.
+
+One ship. Friendly fire, Tsushima, a revolution, a sinking, and a permanent address.
 
 ---
 
-**Sources**
+## Sources
 
-- Pleshakov, Constantine. *The Tsar's Last Armada: The Epic Journey to the Battle of Tsushima.* Basic Books, 2002.
-- Hough, Richard. *The Fleet That Had to Die.* Birlinn, 2003 (revised edition).
-- [Wikipedia: Russian cruiser Aurora](https://en.wikipedia.org/wiki/Russian_cruiser_Aurora) — operates Aurora as a branch museum.
-- Scott, James Brown. *The Hague Court Reports.* Carnegie Endowment for International Peace, 1916 — documents the Dogger Bank Commission ruling.
-- [Wikipedia: Dogger Bank incident](https://en.wikipedia.org/wiki/Dogger_Bank_incident)
+- [Wikipedia: Russian cruiser Aurora](https://en.wikipedia.org/wiki/Russian_cruiser_Aurora)
+- [British Sea Fishing: The Dogger Bank Incident](https://britishseafishing.co.uk/the-dogger-bank-incident/)
+- [Scarborough Maritime Heritage Centre: The Dogger Bank Incident](https://www.scarboroughsmaritimeheritage.org.uk/article.php?article=79)
+- [War History Online: The Cruiser Aurora Signaled the Start of the Russian Revolution](https://www.warhistoryonline.com/instant-articles/russian-cruiser-aurora.html)

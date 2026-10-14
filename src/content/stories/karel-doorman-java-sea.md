@@ -25,7 +25,7 @@ There was supposed to be air reconnaissance. There wasn't. Doorman sailed blind.
 
 ## The aviator who went to sea
 
-Karel Willem Frederik Marie Doorman was born in Utrecht on April 23, 1889, into a military family. He entered the Royal Netherlands Navy in 1906 as a midshipman. By 1915 he had a civilian pilot's license. By 1916 a naval pilot's license. He spent years building the Netherlands' naval aviation arm and commanded the naval air base at Den Helder.
+Karel Willem Frederik Marie Doorman was born in Utrecht on April 23, 1889, into a military family. He entered the Royal Netherlands Navy in 1906 as a midshipman. By 1915 he had a civilian pilot's license. By 1916 a naval pilot's license. He spent years building the Netherlands' naval aviation arm and commanded the naval air base at Den Helder, the port where [French cavalry once captured a frozen-in Dutch fleet](/stories/den-helder-cavalry-fleet/).
 
 An arm injury ended his flying career. He went back to sea. By 1937 he was commanding cruisers in the Dutch East Indies. On May 16, 1940, six days after Germany invaded the Netherlands, he was promoted to rear admiral.
 
@@ -35,7 +35,7 @@ He raised his flag on HNLMS De Ruyter on June 13, 1940. He would fly it for twen
 
 At 16:00 on February 27, Doorman's lookouts spotted the Japanese covering force: the heavy cruisers Nachi and Haguro under Rear Admiral Takeo Takagi, with two light cruisers and fourteen destroyers. The Japanese were escorting a convoy of forty-one transports carrying the troops that would take Java.
 
-The Japanese opened fire at 16:16 at a range of roughly 28,000 yards. At 17:08, an 8-inch shell from Haguro hit HMS Exeter's boiler room, cutting her speed from 26 knots to 5. The column behind Exeter swerved to avoid collision. Formation dissolved.
+The Japanese opened fire at 16:16 at a range of roughly 28,000 yards. At 17:08, an 8-inch shell from Haguro hit HMS Exeter's boiler room, cutting her speed to 11 knots. The column behind Exeter swerved to avoid collision. Formation dissolved.
 
 At roughly the same time, a Japanese torpedo hit the Dutch destroyer Kortenaer. She broke in half and sank in minutes. 59 of her 153 crew were pulled from the water later.
 
@@ -49,7 +49,7 @@ Doorman kept going.
 
 ## The last signal
 
-Sometime before midnight, with two cruisers and two destroyers already gone, Doorman signaled his remaining ships. The Dutch version is "Ik val aan, volgt mij." The loose English translation entered history: "All ships follow me."
+Later that evening, with Exeter crippled and three destroyers sunk, Doorman signaled his remaining ships. The signal actually sent was "All ships follow me." History remembers it in Dutch as "Ik val aan, volg mij": "I am attacking, follow me."
 
 Whether he used exactly those words is debated. The signal itself is not.
 
@@ -61,7 +61,7 @@ At 23:36, a Long Lance hit HNLMS De Ruyter. The torpedo detonated her fuel tanks
 
 Doorman's last order, transmitted as De Ruyter flooded and burned, told Houston and Perth not to stop for survivors. Proceed to Tanjung Priok. Do not pick us up.
 
-De Ruyter sank at approximately 02:30 on February 28. Rear Admiral Karel Doorman, 52 years old, and Captain Eugene Lacombla went down with her. 345 of the crew died with them. 111 survivors spent hours in the water before being rescued by a Japanese destroyer.
+De Ruyter sank at approximately 02:30 on February 28. Rear Admiral Karel Doorman, 52 years old, and Captain Eugène Lacomblé went down with her. 344 of the crew died with them. Survivors spent hours in the water, and most of those picked up became prisoners of the Japanese.
 
 ## What followed
 
@@ -77,7 +77,7 @@ Total Allied dead from the Java Sea action and its immediate aftermath: approxim
 
 ## Four ships and a signal
 
-Doorman was posthumously made a Knight Third Class in the Military Order of William on June 5, 1942, the Netherlands' highest military decoration. Four ships of the Royal Netherlands Navy have been named Karel Doorman since his death: a light carrier, two frigates, and a joint support ship still in service today.
+Doorman was posthumously made a Knight Third Class in the Military Order of William on June 5, 1942, the Netherlands' highest military decoration. Four ships of the Royal Netherlands Navy have been named Karel Doorman since his death: an escort carrier, a light carrier, a frigate, and a joint support ship still in service today.
 
 In 2002, divers located the wreck of De Ruyter on the floor of the Java Sea. In 2016, a survey found that large sections of the wreck had been illegally salvaged by scrap metal operations. Parts of the ship where 345 men died had been cut up and sold for steel.
 
@@ -85,12 +85,11 @@ The Dutch government filed a formal protest. The salvagers were never identified
 
 ---
 
-**Sources**
+## Sources
 
 - [Battle of the Java Sea - Wikipedia](https://en.wikipedia.org/wiki/Battle_of_the_Java_Sea)
-- [Karel Doorman - Wikipedia](https://en.wikipedia.org/wiki/Karel_Doorman)
-- [Karel Doorman - Britannica](https://www.britannica.com/biography/Karel-Doorman)
-- [HNLMS De Ruyter (1935) - Wikipedia](https://en.wikipedia.org/wiki/HNLMS_De_Ruyter_(1935))
-- [Battle of the Java Sea - Naval History and Heritage Command](https://www.history.navy.mil/content/history/museums/nmusn/explore/photography/wwii/wwii-pacific/us-entry-into-wwii-japanese-offensive/1942-January-15-abda-japanese-octopus/1942-february-27-battle-java-sea.html)
+- [IJN Haguro: Tabular Record of Movement - Combinedfleet.com](https://www.combinedfleet.com/haguro_t.htm)
+- [IJN Nachi: Tabular Record of Movement - Combinedfleet.com](https://www.combinedfleet.com/nachi_t.htm)
+- [Battle of the Java Sea: One Event, Multiple Sites, Values and Views - Journal of Maritime Archaeology](https://link.springer.com/article/10.1007/s11457-020-09287-5)
 
 **Photo credit:** HNLMS De Ruyter underway, circa 1936-1942 -- Wikimedia Commons, [File:HNLMS De Ruyter.jpg](https://commons.wikimedia.org/wiki/File:HNLMS_De_Ruyter.jpg), Public Domain (Royal Netherlands Navy)

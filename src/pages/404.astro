@@ -25,3 +25,57 @@ import SEOHead from '../components/SEOHead.astro';
 
   <Footer />
 </BaseLayout>
+
+<style>
+  .about-page {
+    padding-top: calc(var(--nav-height) + var(--banner-offset) + 3rem);
+    padding-bottom: 3rem;
+    max-width: 600px;
+    margin: 0 auto;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
+  .about-page h1 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .about-page h2 {
+    font-size: 1.375rem;
+    margin: 2.25rem 0 0.75rem;
+  }
+
+  .about-page p {
+    font-family: var(--font-body);
+    font-size: 1.0625rem;
+    line-height: 1.7;
+    color: var(--text-secondary);
+    margin-bottom: 1.25rem;
+  }
+
+  .about-page a {
+    color: var(--accent);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+
+  .about-social {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 2rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--border);
+  }
+
+  .about-social a {
+    font-size: 0.9375rem;
+    text-decoration: none;
+    color: var(--text-muted);
+    transition: color 0.2s;
+  }
+
+  .about-social a:hover {
+    color: var(--text-primary);
+  }
+</style>

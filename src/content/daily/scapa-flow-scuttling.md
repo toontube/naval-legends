@@ -1,6 +1,6 @@
 ---
-hook: "In 1919, a German admiral sent a coded drinking order. Within five hours, 52 warships sank -- in a British harbor, while 160 schoolchildren watched."
-reveal: "Rear Admiral Ludwig von Reuter signaled 'Paragraph Eleven' -- old student slang for 'keep drinking.' It was actually the order to open every seacock. 400,000 tons of warships went down in Scapa Flow. The British shot nine German sailors in lifeboats -- arguably the last casualties of WWI. Seven wrecks are still on the bottom. Divers visit them year-round."
+hook: "In 1919, a German admiral sent a two-word coded signal. Within five hours, 52 warships sank -- in a British harbor, while 160 schoolchildren watched."
+reveal: "Rear Admiral Ludwig von Reuter signaled 'Paragraph Eleven.' It pointed to paragraph 11 of his standing orders: sink the ships. Every seacock opened. 400,000 tons of warships went down in Scapa Flow. The British shot nine German sailors in lifeboats -- arguably the last casualties of WWI. Seven wrecks are still on the bottom. Divers visit them year-round."
 specs:
   type: "High Seas Fleet (74 ships interned)"
   displacement: "~400,000 tons scuttled"

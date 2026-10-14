@@ -8,9 +8,22 @@ import SEOHead from '../components/SEOHead.astro';
 <BaseLayout>
   <SEOHead
     slot="head"
-    title="About | Bravo Zulu"
-    description="Bravo Zulu is a research project dedicated to the history of the world's warships."
+    title="About Bravo Zulu: How We Research Naval History"
+    description="Bravo Zulu publishes sourced naval history stories about the world's warships. How we research and fact-check, how to send corrections, and who is behind the site."
   />
+  <script slot="head" type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    "url": "https://brvzulu.com/about/",
+    "mainEntity": {
+      "@type": "Organization",
+      "@id": "https://brvzulu.com/#org",
+      "name": "Bravo Zulu",
+      "url": "https://brvzulu.com/",
+      "email": "stories@bravozulu.co",
+      "parentOrganization": { "@type": "Organization", "name": "MOZUMA", "url": "https://mozuma.co" }
+    }
+  })} />
 
   <Navigation active="about" showThemeToggle />
 
@@ -30,6 +43,40 @@ import SEOHead from '../components/SEOHead.astro';
       Swipe through them on the <a href="/">Daily feed</a>, then read the full articles
       when one grabs you.
     </p>
+
+    <h2>How we research a story</h2>
+    <p>
+      Every story starts from the record: ship logs, action reports, court-martial and inquiry
+      transcripts, survivor memoirs, and the collections of naval history archives and museums such as
+      the US Naval History and Heritage Command and the Imperial War Museums. We check names, ranks,
+      dates, tonnage and casualty figures against at least two independent sources, and where sources
+      disagree we say so in the text.
+    </p>
+    <p>
+      Every article ends with the sources we used, linked where they are online, so you can check our
+      work and keep reading.
+    </p>
+
+    <h2>Corrections</h2>
+    <p>
+      If you spot an error, email <a href="mailto:stories@bravozulu.co">stories@bravozulu.co</a> with
+      the story and a source. We fix confirmed errors in the article itself.
+    </p>
+
+    <h2>Who is behind Bravo Zulu</h2>
+    <p>
+      Bravo Zulu is published by <a href="https://mozuma.co" rel="noopener">MOZUMA</a>, a Cyprus-based
+      studio that makes naval history graphic novels and collectibles, including
+      <em>Come On, Texas</em>, a graphic novel about the battleship USS Texas. The stories on this site
+      are free to read and always will be.
+    </p>
+
+    <h2>Tell us a story</h2>
+    <p>
+      Did someone in your family serve on a ship we should write about?
+      <a href="/submit/">Send us their story</a>. Or browse the archive
+      <a href="/topics/">by war, navy and theme</a>.
+    </p>
   </main>
 
   <Footer />
@@ -48,6 +95,11 @@ import SEOHead from '../components/SEOHead.astro';
   .about-page h1 {
     font-size: 2rem;
     margin-bottom: 1.5rem;
+  }
+
+  .about-page h2 {
+    font-size: 1.375rem;
+    margin: 2.25rem 0 0.75rem;
   }
 
   .about-page p {

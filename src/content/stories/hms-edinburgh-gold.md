@@ -30,7 +30,7 @@ Faulkner was now commanding a cruiser that could only travel in wide, looping ci
 
 ## The tow
 
-The escort ships rigged towing cables and began dragging the crippled cruiser back toward Murmansk at walking speed. It was 250 miles. In the Barents Sea. In late April, which in the Arctic means ice fog, freezing spray, and poor visibility.
+The escort ships rigged towing cables and began dragging the crippled cruiser back toward Murmansk at walking speed. It was 250 miles. In the Barents Sea, the same Arctic convoy waters where [six destroyers later held off a pocket battleship](/stories/barents-sea-new-years-eve/). In late April, which in the Arctic means ice fog, freezing spray, and poor visibility.
 
 For two days they crawled southwest. German torpedo bombers found them but scored no hits.
 
@@ -85,10 +85,10 @@ The five missing bars have never been accounted for. They are either buried unde
 - Torpedo damage: HMS Edinburgh stern damage, May 1942. Imperial War Museums (MH 23866). Public domain, UK Government work.
 - Salvage crew: Keith Jessop's team with recovered gold bars, 1981. The Times.
 
-**Sources**
+## Sources
 
-- [HMS Edinburgh (16) — Wikipedia](https://en.wikipedia.org/wiki/HMS_Edinburgh_(16))
-- [Salvage of the Century, HMS Edinburgh and Her Cargo of Gold — LBMA Alchemist](https://www.lbma.org.uk/alchemist/issue-74/salvage-of-the-century-hms-edinburgh-and-her-cargo-of-gold)
-- [Light Cruiser Edinburgh (16) — World War II Database](https://ww2db.com/ship_spec.php?ship_id=770)
-- [HMS Edinburgh — uboat.net](https://uboat.net/allies/warships/ship/1237.html)
-- [German destroyer Z7 Hermann Schoemann — Wikipedia](https://en.wikipedia.org/wiki/German_destroyer_Hermann_Schoemann_(Z7))
+- [HMS Edinburgh - uboat.net](https://uboat.net/allies/warships/ship/1237.html)
+- [U-456 - uboat.net](https://uboat.net/boats/u456.htm)
+- [Salvage of the Century, HMS Edinburgh and Her Cargo of Gold - LBMA Alchemist](https://www.lbma.org.uk/alchemist/issue-74/salvage-of-the-century-hms-edinburgh-and-her-cargo-of-gold)
+- [History in focus: The story of HMS Edinburgh's sunken cargo of Russian gold - Forces News](https://www.forcesnews.com/feature/history-focus-story-hms-edinburghs-sunken-cargo-russian-gold)
+- [HMS Edinburgh (16) - Wikipedia](https://en.wikipedia.org/wiki/HMS_Edinburgh_(16))

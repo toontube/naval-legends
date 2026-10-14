@@ -1,6 +1,6 @@
 ---
-hook: "The Unknown Soldier's casket wouldn't fit below deck. They strapped it to the bow. Then a hurricane hit."
-reveal: "USS Olympia was assigned to bring the Unknown Soldier from France in 1921. The casket wouldn't fit through the hatches, so they lashed it to the bow with canvas. They hit a Category 4 hurricane. The ship rolled 39 degrees — ten from capsizing. The casket took the full force of the Atlantic for 10 of 15 days at sea. They made it."
+hook: "The Unknown Soldier's casket wouldn't fit below deck. They strapped it to the open deck. Then a hurricane hit."
+reveal: "USS Olympia was assigned to bring the Unknown Soldier from France in 1921. The casket wouldn't fit through the hatches, so they lashed it to the open main deck. They hit the remnants of a hurricane. The ship rolled 39 degrees — ten from capsizing. The casket took the full force of the Atlantic for 10 of 15 days at sea. They made it."
 specs:
   type: Protected cruiser
   displacement: "5,870 tons"
