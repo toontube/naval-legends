@@ -1,6 +1,6 @@
 ---
 title: "USS Enterprise: Sunk Three Times by Radio, Finished by a Scrap Contract"
-seoTitle: "USS Enterprise CV-6: Sunk 3 Times, Then Scrapped"
+seoTitle: "USS Enterprise CV-6: Reported Sunk, Then Scrapped"
 slug: uss-enterprise-cv6
 date: 2026-10-14
 summary: "Japan announced USS Enterprise sunk three times. The one pilot who actually stopped her was misnamed by the US for almost 50 years, and the most decorated American warship of WWII was sold for scrap in 1958 anyway."
