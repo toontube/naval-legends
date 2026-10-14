@@ -1,5 +1,6 @@
 ---
 title: "The Destroyer That Turned Left and Nobody Knows Why"
+seoTitle: "USS Hobson and Wasp Collision, 1952"
 slug: uss-hobson-wasp-collision
 date: 2026-04-19
 summary: "During night flying ops in 1952, USS Hobson made an unexplained left turn into the carrier USS Wasp. The carrier cut her in half. 176 men died in four minutes. The captain didn't survive to explain."

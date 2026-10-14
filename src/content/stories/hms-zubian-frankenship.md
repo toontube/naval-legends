@@ -1,5 +1,6 @@
 ---
 title: "The Navy Welded Two Broken Destroyers Together and Sent the Result Back to War"
+seoTitle: "HMS Zubian: Two Destroyers Welded Into One"
 slug: hms-zubian-frankenship
 date: 2026-04-19
 summary: "HMS Zulu lost her stern to a mine. HMS Nubian lost her bow to a torpedo. The Royal Navy joined the front of one to the back of the other, named her HMS Zubian, and she sank a U-boat."

@@ -1,5 +1,6 @@
 ---
 title: "The Worst Naval Disasters in History, Ranked by Death Toll"
+seoTitle: "Worst Naval Disasters by Death Toll"
 slug: worst-naval-disasters
 date: 2026-05-20
 summary: "The Wilhelm Gustloff killed more people than the Titanic, Lusitania, and Indianapolis combined. Most people have never heard of it."

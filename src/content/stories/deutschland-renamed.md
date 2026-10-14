@@ -1,5 +1,6 @@
 ---
 title: "Hitler Renamed This Ship Because He Was Afraid of the Headline 'Germany Sunk'"
+seoTitle: "Deutschland Renamed Lützow: Hitler's Fear"
 slug: deutschland-renamed
 date: 2026-04-18
 summary: "The pocket battleship Deutschland captured an American freighter, got renamed to avoid embarrassing headlines, then failed so badly in battle that Hitler tried to scrap his entire surface fleet."

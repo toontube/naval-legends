@@ -83,8 +83,8 @@ export default function SwipeCards({ cards }: SwipeCardsProps) {
             If you know a ship story that belongs here, send it over.
           </p>
           <div className="swipe-end-actions">
-            <a href="/submit" className="swipe-end-btn" onClick={() => track('click_submit_cta', { location: 'end_screen' })}>Submit a story &rarr;</a>
-            <a href="/stories" className="swipe-end-link" onClick={() => track('click_browse_stories', { location: 'end_screen' })}>Browse all stories</a>
+            <a href="/submit/" className="swipe-end-btn" onClick={() => track('click_submit_cta', { location: 'end_screen' })}>Submit a story &rarr;</a>
+            <a href="/stories/" className="swipe-end-link" onClick={() => track('click_browse_stories', { location: 'end_screen' })}>Browse all stories</a>
           </div>
           <button
             className="swipe-end-restart"

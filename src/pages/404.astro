@@ -1,0 +1,27 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Navigation from '../components/Navigation.astro';
+import Footer from '../components/Footer.astro';
+import SEOHead from '../components/SEOHead.astro';
+---
+
+<BaseLayout>
+  <SEOHead
+    slot="head"
+    title="Page Not Found | Bravo Zulu"
+    description="This page sank without a trace. Find the story you were looking for in the Bravo Zulu archive."
+  />
+  <meta slot="head" name="robots" content="noindex" />
+
+  <Navigation showThemeToggle />
+
+  <main id="main" class="about-page">
+    <h1>This page sank without a trace</h1>
+    <p>
+      The link is wrong or the page has moved. Every story we have published is in the
+      <a href="/stories/">story archive</a>, or start with today's card on the <a href="/">Daily feed</a>.
+    </p>
+  </main>
+
+  <Footer />
+</BaseLayout>

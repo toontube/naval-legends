@@ -6,5 +6,6 @@ import sitemap from '@astrojs/sitemap';
 // https://astro.build/config
 export default defineConfig({
   site: 'https://brvzulu.com',
+  trailingSlash: 'always',
   integrations: [react(), sitemap({ filter: (page) => !page.includes('/internal/') })],
 });

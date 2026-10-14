@@ -1,5 +1,6 @@
 ---
 title: "The Destroyer That Fired a Torpedo at the President"
+seoTitle: "USS William D. Porter: Torpedo at FDR"
 slug: uss-porter-torpedo-fdr
 date: 2026-04-19
 summary: "USS William D. Porter accidentally launched a live torpedo at FDR's ship during a drill. Then tried to warn him with the wrong signal. Legend says every ship greeted her with 'Don't shoot — we're Republicans.'"
