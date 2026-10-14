@@ -21,11 +21,11 @@ She never arrived. No distress signal was received. No wreckage was found. No bo
 
 The Navy searched for months. They checked German submarine records after the war. No U-boat had claimed her. They checked for storms. Weather was unreasonable but not catastrophic. They checked the cargo — 11,000 tons was above her recommended limit, and manganese ore shifts unpredictably in a ship's hold.
 
-One of her two engines had been disabled before the voyage. Her captain, Lieutenant Commander George Worley, was under investigation for suspected pro-German sympathies (he was born in Germany as Georg Wichmann). None of these facts explain a 542-foot ship vanishing without a trace.
+One of her two engines had been disabled before the voyage. Her captain, Lieutenant Commander George Worley, was under investigation for suspected pro-German sympathies (he was born in Germany as Johan Frederick Wichmann). None of these facts explain a 542-foot ship vanishing without a trace.
 
 It remains the largest non-combat loss of life in US Navy history. The [full story of USS Cyclops](/stories/uss-cyclops-vanished) is one of the most baffling in the Navy's records.
 
-Two of Cyclops' sister ships — USS Proteus and USS Nereus — disappeared on the same route in 1941. Also without a trace. Also carrying heavy metallic ore.
+Two of Cyclops' sister ships — USS Proteus and USS Nereus — disappeared in the same waters in 1941. Also without a trace. Also carrying heavy metallic ore.
 
 ## SS Waratah (1909) — 211 missing
 
@@ -37,9 +37,9 @@ The Waratah was last seen the following morning by the cargo ship Clan McIntyre.
 
 The search lasted months. The Royal Navy, the South African government, and the Blue Anchor Line all sent ships. Three chartered search vessels covered thousands of square miles. They found nothing — not a lifeboat, not a deck chair, not a body.
 
-A court of inquiry in 1910 concluded the Waratah had capsized in heavy weather, probably due to insufficient stability. But without wreckage, that was a guess.
+A Board of Trade inquiry in 1910 concluded she had been lost in a storm of exceptional violence, without settling the exact cause. Without wreckage, that was a guess.
 
-In 1999, marine explorer Emlyn Brown claimed to have located a wreck off the Eastern Cape coast using sonar. He spent years investigating. The identification was never conclusively confirmed.
+In 1999, marine explorer Emlyn Brown claimed to have located a wreck off the Eastern Cape coast using sonar. When divers reached it in 2001, it turned out to be Nailsea Meadow, a cargo ship sunk by a U-boat in the Second World War. Waratah has never been found.
 
 SS Waratah is sometimes called "Australia's Titanic," though she disappeared three years before the Titanic sailed.
 
@@ -53,7 +53,7 @@ She never arrived.
 
 Five weeks later, on November 10, a merchant vessel found the Joyita drifting 600 miles off course near the Fijian island of Vanua Levu. She was listing heavily to port, her decks awash, partially waterlogged. But she hadn't sunk.
 
-That was the strange part. Joyita's hull was lined with cork. She was, for practical purposes, unsinkable. The captain — an American named Thomas "Dusty" Miller — knew this. So why did everyone abandon a ship that couldn't go down?
+That was the strange part. Joyita's hull was lined with cork. She was, for practical purposes, unsinkable. The captain, a British-born sailor named Thomas "Dusty" Miller, knew this. So why did everyone abandon a ship that couldn't go down?
 
 The investigation found a corroded pipe below the waterline that had been leaking into the engine room. The radio was set to the distress frequency but the antenna wire was broken. The logbook, sextant, and some cargo were missing. A doctor's bag was found with bloody bandages inside.
 
@@ -73,7 +73,7 @@ The Navy's underwater listening network — SOSUS, a chain of hydrophones on the
 
 In October 1968, the research ship Mizar found Scorpion's wreckage on the seabed at 9,800 feet, about 400 miles southwest of the Azores. The hull had collapsed. The crew of 99 — who left behind 64 widows and 99 children — were all dead.
 
-The Navy's official conclusion: probably a torpedo malfunction. A Mark 37 torpedo's battery may have overheated, causing a hot-run inside the tube. Commander Francis Slattery may have ordered an emergency turn to disarm it. It didn't work.
+The 1968 Court of Inquiry found that the certain cause could not be determined. Documents declassified in 1993 pointed to the Mark 37 torpedo as a probable cause. A torpedo's battery may have overheated, causing a hot-run inside the tube. Commander Francis Slattery may have ordered an emergency turn to disarm it. It didn't work.
 
 Others believe a Soviet submarine sank her during the Cold War's most tense period — just weeks after K-129 was lost — and both governments agreed to stay quiet. Declassified documents have not settled the question.
 
@@ -111,16 +111,12 @@ No one knows. When MV Joyita was found drifting five weeks after her disappearan
 
 ---
 
-**Sources**
+## Sources
 
-- [USS Cyclops — Naval History and Heritage Command](https://www.history.navy.mil/research/histories/ship-histories/danfs/c/cyclops.html)
-- [SS Waratah — Wikipedia](https://en.wikipedia.org/wiki/SS_Waratah)
-- [MV Joyita — Wikipedia](https://en.wikipedia.org/wiki/MV_Joyita)
-- [USS Scorpion (SSN-589) — Wikipedia](https://en.wikipedia.org/wiki/USS_Scorpion_(SSN-589))
+- [USS Cyclops (AC-4) (Wikipedia)](https://en.wikipedia.org/wiki/USS_Cyclops_(AC-4))
+- [The Disappearance of the Waratah (Amusing Planet)](https://www.amusingplanet.com/2026/01/the-disappearance-of-waratah.html)
+- [MV Joyita: Ghost Ship of the Pacific (Discovery UK)](https://www.discoveryuk.com/mysteries/the-unsolved-disappearance-of-mv-joyita-ghost-ship-of-the-pacific/)
+- [What Really Happened to the Nuclear Sub USS Scorpion? (HistoryNet)](https://historynet.com/final-secret-uss-scorpion/)
 - Offley, Ed. *Scorpion Down: Sunk by the Soviets, Buried by the Pentagon.* Basic Books, 2007.
-- [The Disappearance of the Waratah — Amusing Planet](https://www.amusingplanet.com/2026/01/the-disappearance-of-waratah.html)
-- [MV Joyita: Ghost Ship of the Pacific — Discovery UK](https://www.discoveryuk.com/mysteries/the-unsolved-disappearance-of-mv-joyita-ghost-ship-of-the-pacific/)
-- [What Really Happened to the Nuclear Sub USS Scorpion? — HistoryNet](https://historynet.com/final-secret-uss-scorpion/)
-- [List of missing ships — Wikipedia](https://en.wikipedia.org/wiki/List_of_missing_ships)
 
 **Photo credit:** "Ships lost at sea" composite — Wikimedia Commons, public domain

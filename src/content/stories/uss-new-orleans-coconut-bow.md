@@ -26,7 +26,7 @@ It held.
 
 ## Tulagi
 
-New Orleans limped across the sound to Tulagi harbor, arriving on December 1. She was drawing 36 feet forward — 10 feet deeper than normal — and listing to port. The crew anchored her in a concealed cove to hide from Japanese aircraft.
+New Orleans limped across [Iron Bottom Sound](/stories/ironbottom-sound/) to Tulagi harbor, arriving on December 1. She was drawing 36 feet forward — 10 feet deeper than normal — and listing to port. The crew anchored her in a concealed cove to hide from Japanese aircraft.
 
 <figure>
   <img src="/images/new-orleans-camouflaged.jpg" alt="USS New Orleans camouflaged with vegetation at Tulagi, December 1942" />
@@ -59,7 +59,7 @@ She arrived in Sydney on December 24. Christmas Eve. The Australians in the harb
   <figcaption>The temporary steel stub bow being fitted in Sydney, January 1943. This replaced the coconut log plug for the voyage to Puget Sound. Australian War Memorial photograph (305924).</figcaption>
 </figure>
 
-In Sydney, workers installed a temporary steel stub bow — enough to get her across the Pacific to a real shipyard. She sailed to Puget Sound Navy Yard in Bremerton, Washington, where a proper bow was finally built and fitted. New Orleans returned to service in October 1943 and fought in every major Pacific campaign from the Gilbert Islands to Okinawa.
+In Sydney, workers installed a temporary steel stub bow — enough to get her across the Pacific to a real shipyard. She sailed to Puget Sound Navy Yard in Bremerton, Washington, where a proper bow was finally built and fitted. New Orleans, which had [survived Pearl Harbor](/stories/uss-new-orleans-pearl-harbor/) a year earlier, returned to service in October 1943 and fought in nearly every major Pacific campaign from the Gilbert Islands to Okinawa.
 
 ## 182 men
 
@@ -79,12 +79,9 @@ The National WWII Museum in New Orleans has a section of coconut log from the te
 
 ---
 
-**Sources**
+## Sources
 
-- [National WWII Museum: USS New Orleans coconut log artifact](https://www.nationalww2museum.org/war/articles/uss-new-orleans-coconut-log-artifact)
-- [National WWII Museum: Severed bow discovery](https://www.nationalww2museum.org/war/articles/severed-bow-uss-new-orleans-lost-1942-battle-discovered-iron-bottom-sound)
-- [CNN: A torpedoed US Navy ship escaped the Pacific in reverse](https://www.cnn.com/2025/07/09/asia/us-navy-warship-coconut-log-bow-world-war-ii-intl-hnk-ml)
-- [Naval History and Heritage Command: Bow discovery](https://www.history.navy.mil/news-and-events/news/2025/Lost-Severed-Bow-USS-New-Orleans-Discovered.html)
-- [NPR: Lost WWII warship USS New Orleans found](https://www.npr.org/2025/07/09/nx-s1-5461005/uss-new-orleans-wwii-ship)
-- [Wikipedia: USS New Orleans (CA-32)](https://en.wikipedia.org/wiki/USS_New_Orleans_(CA-32))
-- [Naval Historical Society of Australia: The Salvage of USS New Orleans](https://navyhistory.au/the-salvage-of-the-uss-new-orleans-1942/)
+- [USS New Orleans coconut log artifact (National WWII Museum)](https://www.nationalww2museum.org/war/articles/uss-new-orleans-coconut-log-artifact)
+- [Severed bow of USS New Orleans discovered in Iron Bottom Sound (National WWII Museum)](https://www.nationalww2museum.org/war/articles/severed-bow-uss-new-orleans-lost-1942-battle-discovered-iron-bottom-sound)
+- [The Salvage of USS New Orleans, 1942 (Naval Historical Society of Australia)](https://navyhistory.au/the-salvage-of-the-uss-new-orleans-1942/)
+- [USS New Orleans (CA-32) (Wikipedia)](https://en.wikipedia.org/wiki/USS_New_Orleans_(CA-32))

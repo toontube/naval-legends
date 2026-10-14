@@ -21,7 +21,7 @@ The winter of 1794-95 was brutal. Rivers across the Netherlands froze solid. So 
 
 The political situation was as frozen as the harbor. General Jean-Charles Pichegru's French army had been rolling through the Dutch Republic for months. Amsterdam fell on January 19. The same day, the Dutch proclaimed the Batavian Republic, a French-aligned government that replaced the old regime. Stadtholder William V had fled to England the day before.
 
-The fleet at Den Helder was a problem. Fourteen warships, including five ships of the line, three frigates, and six corvettes. If Orangist officers loyal to William decided to sail for England, France would lose a navy's worth of firepower. The ice was the only thing keeping the ships in place, and the weather wouldn't hold forever.
+The fleet at Den Helder was a problem. Fourteen warships, by the usual count, carrying around 850 guns. De Jonge counted 15, of which 11 were manned and seaworthy. If Orangist officers loyal to William decided to sail for England, France would lose a navy's worth of firepower. The ice was the only thing keeping the ships in place, and the weather wouldn't hold forever.
 
 Pichegru sent Brigadier General Jan Willem de Winter to secure the fleet. De Winter was a Dutchman, born in Kampen, who had served in the French army since 1787 after the Patriot faction was suppressed. He understood both sides.
 
@@ -41,7 +41,7 @@ The event was real. The drama was mostly invented afterward.
 
 Swiss general Antoine-Henri Jomini wrote the definitive mythological version in 1819, in his History of the Revolutionary Campaigns. In his telling, it was a daring cavalry charge across the ice, horsemen against warships, steel against cannon. It made for a better story than what happened.
 
-Dutch historian Johannes Cornelis de Jonge called the romanticized account "a myth and a slur on the Dutch nation and character perpetuated by invidious foreigners." He pointed out that the Council of State had already ordered all Dutch military forces not to resist the French two days before Lahure arrived. Captain Reintjes was following orders when he let the French aboard. The crews were largely sympathetic to the Patriot cause.
+Dutch historian Johannes Cornelis de Jonge called the romanticized account "a myth and a slur on the Dutch nation and character perpetrated by invidious foreigners." He pointed out that the Council of State had already ordered all Dutch military forces not to resist the French two days before Lahure arrived. Captain Reintjes was following orders when he let the French aboard. The crews were largely sympathetic to the Patriot cause.
 
 The "capture" was less a military operation and more a formality conducted on ice.
 
@@ -49,28 +49,27 @@ That doesn't make it less strange. French cavalry still rode horses across a fro
 
 ## What happened to the ships
 
-The fleet became part of the Batavian Navy, nominally Dutch but operating under French authority. It didn't go well.
+The fleet became part of the Batavian Navy, nominally Dutch but operating under French authority. In February 1795, unpaid for nearly a year, Dutch sailors mutinied in large numbers and left the ships with skeleton crews. It didn't go well from there.
 
 On October 11, 1797, many of the same ships fought at the Battle of Camperdown under Vice-Admiral de Winter, the same man who had led the French force to Den Helder two years earlier, now commanding the fleet he helped capture. Admiral Adam Duncan's Royal Navy destroyed the Batavian force. Eleven ships taken, over 1,100 men lost.
 
-In August 1799, the remaining Batavian ships, including Admiraal de Ruijter and Gelderland from the Den Helder fleet, surrendered to the Royal Navy in the Vlieter Incident without firing a shot. Most of the ships France had captured by riding horses across the ice ended up in British hands.
+In August 1799, the remaining Batavian ships, including Admiraal de Ruijter and Gelderland from the Den Helder fleet, surrendered to the Royal Navy in the Vlieter Incident without firing a shot. Most of the ships France had captured by riding horses across the ice ended up in British hands. It was not the last time a fleet changed hands without a fight. In 1919, the interned German High Seas Fleet chose the opposite answer and [scuttled itself at Scapa Flow](/stories/scapa-flow-scuttling) rather than be handed over.
 
 ## Still there
 
 Charles Louis Mozin painted the scene in 1836: hussars on the ice, ships frozen in the background, flags in the wind. It hangs in the Palace of Versailles. The date on the painting says January 21. The documented date is January 23. Even the painting can't get the facts straight.
 
-Lahure went on to serve through the Napoleonic Wars and died in 1853 at 86. De Winter commanded the Batavian fleet at Camperdown, was captured by the British, and eventually returned to the Netherlands. He died in Paris in 1812.
+Lahure went on to serve through the Napoleonic Wars and died in 1853 at 85. De Winter commanded the Batavian fleet at Camperdown, was captured by the British, and eventually returned to the Netherlands. He died in Paris in 1812.
 
-The Nieuwediep doesn't freeze anymore. Climate change took care of that. The last time the harbor froze solid enough to ride a horse across was a different century entirely.
+Den Helder is still the main base of the Royal Netherlands Navy, the service that lost [Karel Doorman and his squadron in the Java Sea](/stories/karel-doorman-java-sea) in 1942. Winters that cold are rare on the Dutch coast now. Nobody is riding horses across the Nieuwediep to board anything.
+
+<figure><img src="/images/den-helder-cavalry.jpg" alt="Painting by Charles Louis Mozin showing French hussars capturing Dutch ships frozen in ice at Den Helder, 1795" /><figcaption>Charles Louis Mozin, "The capture of the Dutch fleet in the waters of Texel," 1836. Oil on canvas, 268 x 192 cm. Palace of Versailles. Public domain.</figcaption></figure>
 
 ---
 
-**Sources**
+## Sources
 
-- [Capture of the Dutch fleet at Den Helder — Wikipedia](https://en.wikipedia.org/wiki/Capture_of_the_Dutch_fleet_at_Den_Helder)
-- [French Cavalry Defeats Dutch Fleet? — The Napoleon Series (de Jonge translation)](https://www.napoleon-series.org/military-info/battles/1795/c_jonge.html)
-- [The Only Time in History When Men on Horseback Captured a Fleet — Smithsonian Magazine](https://www.smithsonianmag.com/smart-news/only-time-history-when-bunch-men-horseback-captured-naval-fleet-180961824/)
-- [Battle of Camperdown — Wikipedia](https://en.wikipedia.org/wiki/Battle_of_Camperdown)
-- Jomini, Antoine-Henri. *Histoire critique et militaire des campagnes de la Revolution.* 1819.
-
-<figure><img src="/images/den-helder-cavalry.jpg" alt="Painting by Charles Louis Mozin showing French hussars capturing Dutch ships frozen in ice at Den Helder, 1795" /><figcaption>Charles Louis Mozin, "The capture of the Dutch fleet in the waters of Texel," 1836. Oil on canvas, 268 x 192 cm. Palace of Versailles. Public domain.</figcaption></figure>
+- [Wikipedia: Capture of the Dutch fleet at Den Helder](https://en.wikipedia.org/wiki/Capture_of_the_Dutch_fleet_at_Den_Helder)
+- [The Napoleon Series: French Cavalry Defeats Dutch Fleet? (J.C. de Jonge's account)](https://www.napoleon-series.org/military-info/battles/1795/c_jonge.html)
+- [ZME Science: The Only Time in History When Cavalry Captured a Fleet of Warships](https://www.zmescience.com/feature-post/history-and-humanities/history/the-capture-of-the-dutch-fleet-at-den-helder/)
+- [War History Online: French Cavalrymen Captured the Dutch Fleet](https://www.warhistoryonline.com/early-modern/battle-of-texel.html)

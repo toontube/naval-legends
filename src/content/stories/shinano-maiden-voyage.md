@@ -9,7 +9,7 @@ tags: [wwii, pacific, shinano, uss-archerfish, aircraft-carrier]
 readingTime: 5
 ---
 
-IJN Shinano was the largest aircraft carrier ever built. She displaced 72,000 tons fully loaded, 265 meters stem to stern, built on a Yamato-class battleship hull. She sailed on the evening of November 28, 1944.
+IJN Shinano was the largest aircraft carrier ever built up to that time, a record she held until USS Forrestal a decade later. She displaced 72,000 tons fully loaded, 265 meters stem to stern, built on a [Yamato-class battleship](/stories/cruiser-vs-destroyer-vs-battleship/) hull. She sailed on the evening of November 28, 1944.
 
 She sank seventeen hours later.
 
@@ -37,7 +37,7 @@ It was the largest aircraft carrier in the world.
 
 Enright tracked the target from ahead for six hours, maneuvering for position. Shinano was zigzagging. Her course changes kept bringing her closer to the submarine.
 
-At 03:17 on November 29, Enright fired six torpedoes from roughly 1,400 yards. He had set them to run shallow at ten feet, aiming to hole the hull high and increase the chance of capsizing.
+A little after 03:00 on November 29, Enright fired six torpedoes from roughly 1,400 yards. He had set them to run shallow at ten feet, aiming to hole the hull high and increase the chance of capsizing.
 
 Four hit.
 
@@ -59,9 +59,9 @@ At 10:57, Shinano capsized and sank in 4,000 meters of water, roughly 65 miles f
 
 ## Nobody believed him
 
-When Enright reported sinking a carrier of over 28,000 tons, Naval Intelligence didn't believe him. The US had no intelligence that Shinano existed. They credited Archerfish with sinking a smaller carrier.
+When Enright reported sinking a large carrier, Naval Intelligence didn't believe the size. The US had no intelligence that Shinano existed. They credited Archerfish with a 28,000-ton carrier.
 
-After the war, when the full picture emerged, it turned out the target had displaced 72,000 tons. Shinano was the largest warship ever sunk by a submarine. Eighty years later, nothing bigger has gone down to a torpedo.
+After the war, when the full picture emerged, it turned out the target had displaced 72,000 tons. Shinano was the largest warship ever sunk by a submarine. The US Navy's own worst loss to a submarine came eight months later, when I-58 sank [USS Indianapolis](/stories/uss-indianapolis-sharks/). Eighty years later, nothing bigger has gone down to a torpedo.
 
 Japan suppressed the news too. Survivors were confined to Mitsuko-jima island until January 1945 to prevent word from spreading. The loss was not publicly acknowledged until after the surrender.
 
@@ -75,11 +75,11 @@ The Yamato Museum in Kure, where Shinano was headed the night she sank, now hous
 
 ---
 
-**Sources**
+## Sources
 
-- [Japanese aircraft carrier Shinano — Wikipedia](https://en.wikipedia.org/wiki/Japanese_aircraft_carrier_Shinano)
-- [USS Archerfish (SS-311) — Wikipedia](https://en.wikipedia.org/wiki/USS_Archerfish_(SS-311))
-- Enright, Joseph F. and James W. Ryan. *Shinano! The Sinking of Japan's Secret Supership.* St. Martin's Press, 1987.
-- [Joseph F. Enright — Wikipedia](https://en.wikipedia.org/wiki/Joseph_F._Enright)
+- [Japanese aircraft carrier Shinano (Wikipedia)](https://en.wikipedia.org/wiki/Japanese_aircraft_carrier_Shinano)
+- [IJN Shinano: Tabular Record of Movement (Combinedfleet.com)](https://www.combinedfleet.com/Shinano.htm)
+- [IJN Shinano (1944) (Naval Encyclopedia)](https://naval-encyclopedia.com/ww2/japan/shinano.php)
+- Enright, Joseph F., and James W. Ryan. *Shinano! The Sinking of Japan's Secret Supership.* St. Martin's Press, 1987.
 
 <figure><img src="/images/shinano.jpg" alt="IJN Shinano underway during sea trials, November 11, 1944" /><figcaption>Shinano during sea trials, November 11, 1944. Photographed by Hiroshi Arakawa. One of only three known photographs. Yamato Museum, Kure. Public domain.</figcaption></figure>

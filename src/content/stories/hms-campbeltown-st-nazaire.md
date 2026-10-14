@@ -15,7 +15,7 @@ If the dock could be destroyed, Tirpitz couldn't risk a breakout into the Atlant
 
 ## The ship
 
-HMS Campbeltown started life as USS Buchanan, a Wickes-class destroyer built at Bath Iron Works in 1918. She clocked 39.7 knots on her trials. By 1940 she was obsolete, one of 50 old destroyers traded to Britain for base leases.
+HMS Campbeltown started life as USS Buchanan, a Wickes-class [destroyer](/stories/cruiser-vs-destroyer-vs-battleship/) built at Bath Iron Works in 1918. She clocked 39.7 knots on her trials. By 1940 she was obsolete, one of 50 old destroyers traded to Britain for base leases.
 
 The British cut her third and fourth funnels off and raked the remaining two at an angle. In the dark, from a distance, she looked like a German Type 23 torpedo boat. Her crew was cut from 158 to 75 to minimize casualties.
 
@@ -69,12 +69,11 @@ In 2024, workers found a hatch from HMS Campbeltown during maintenance on the do
 
 ---
 
-**Sources**
+## Sources
 
-- [St Nazaire Raid — Wikipedia](https://en.wikipedia.org/wiki/St_Nazaire_Raid)
-- [HMS Campbeltown (I42) — Wikipedia](https://en.wikipedia.org/wiki/HMS_Campbeltown_(I42))
-- [A Bold Strategy: The British Raid on St. Nazaire — National WWII Museum](https://www.nationalww2museum.org/war/articles/bold-strategy-british-raid-st-nazaire)
-- [Workers Find Rare Artifact From WWII's "Greatest Raid" — The Maritime Executive](https://maritime-executive.com/article/workers-find-hatch-from-hms-campbeltown-explosion-wwii-s-greatest-raid)
+- [St Nazaire Raid - Wikipedia](https://en.wikipedia.org/wiki/St_Nazaire_Raid)
+- [A Bold Strategy: The British Raid on St. Nazaire - National WWII Museum](https://www.nationalww2museum.org/war/articles/bold-strategy-british-raid-st-nazaire)
+- [Workers Find Rare Artifact From WWII's "Greatest Raid" - The Maritime Executive](https://maritime-executive.com/article/workers-find-hatch-from-hms-campbeltown-explosion-wwii-s-greatest-raid)
 - Dorrian, James. *Storming St Nazaire.* Leo Cooper, 1998.
 
 <figure><img src="/images/hms-campbeltown-raid.jpg" alt="Aerial reconnaissance photo showing the remains of HMS Campbeltown in the Normandie Dock after the explosion" /><figcaption>Aerial reconnaissance after the explosion. The remains of Campbeltown lie in the center of the drydock. RAF photograph, Imperial War Museums (C 3317A), Crown Copyright / public domain.</figcaption></figure>

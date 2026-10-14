@@ -9,7 +9,7 @@ tags: [wwii, falklands-war, uss-phoenix, general-belgrano, pearl-harbor]
 readingTime: 5
 ---
 
-On the morning of December 7, 1941, USS Phoenix was moored northeast of Ford Island at Pearl Harbor. Battleship Row was burning. Arizona was gone. Oklahoma had capsized. West Virginia was sinking.
+On the morning of December 7, 1941, USS Phoenix was moored northeast of Ford Island at Pearl Harbor. Battleship Row was burning. Across the harbor, [USS New Orleans had no power and was hauling shells to her guns by hand](/stories/uss-new-orleans-pearl-harbor/). Arizona was gone. Oklahoma had capsized. West Virginia was sinking.
 
 Phoenix got underway.
 
@@ -20,7 +20,7 @@ Phoenix got underway.
 
 She cleared the harbor while bombs were still falling, joined cruisers St. Louis and Detroit outside the channel, and spent the next four years fighting across the Pacific. Corregidor. Hollandia. Leyte Gulf. Lingayen. Mindoro. Borneo. Nine battle stars.
 
-At the Battle of Surigao Strait on October 25, 1944, she fired on the Japanese battleship Yamashiro during the last battleship action in history. Phoenix opened with spotting salvoes and then cut loose with all fifteen of her 6-inch guns.
+At the Battle of Surigao Strait on October 25, 1944, she fired on the Japanese battleship Yamashiro during the last battleship action in history. The cruiser Mogami, [already a survivor of her own design problems](/stories/mogami-cardboard-cruiser/), was badly damaged in the same fight. Phoenix opened with spotting salvoes and then cut loose with all fifteen of her 6-inch guns.
 
 She came through the entire war without serious damage.
 
@@ -42,13 +42,13 @@ Commander Chris Wreford-Brown had a choice of torpedoes. Conqueror carried Mark 
 
 Wreford-Brown chose the Mark 8. The Tigerfish had a reputation for unreliable detonators. The Mark 8 had been killing ships for sixty years and had never had that problem.
 
-At 4:01 PM local time, Conqueror fired three torpedoes. Two hit.
+Just before 4:00 PM local time, Conqueror fired three torpedoes. Two hit.
 
 The first struck forward of the armor belt. The second hit the stern near the machine rooms. The ship lost power immediately. No pumps, no firefighting. Water flooded through both holes.
 
 Captain Hector Bonzo ordered abandon ship twenty minutes after the first impact. Belgrano rolled to port and sank.
 
-Three hundred and twenty-three men died. Seven hundred and seventy survived, many of them in life rafts in the South Atlantic. Water temperature was around 4 degrees Celsius. Some were not picked up for over 30 hours.
+Three hundred and twenty-three men died. Roughly 770 survived, many of them in life rafts in the South Atlantic. Water temperature was around 4 degrees Celsius. Some were not picked up for over 30 hours.
 
 It was the first time a nuclear-powered submarine had sunk a surface ship in combat.
 
@@ -89,10 +89,8 @@ There's a monument in Centenario Park, Buenos Aires, erected in 1991. It lists 3
 
 ---
 
-**Sources**
+## Sources
 
-- [Wikipedia: USS Phoenix (CL-46)](https://en.wikipedia.org/wiki/USS_Phoenix_(CL-46))
-- [Wikipedia: ARA General Belgrano](https://en.wikipedia.org/wiki/ARA_General_Belgrano)
+- [DANFS: USS Phoenix (CL-46), via HyperWar](https://www.ibiblio.org/hyperwar/USN/ships/dafs/CL/cl46.html)
+- [H I Sutton, Covert Shores: Sinking of the Belgrano, 1982](https://www.hisutton.com/Belgrano_1982.html)
 - [Wikipedia: Sinking of ARA General Belgrano](https://en.wikipedia.org/wiki/Sinking_of_ARA_General_Belgrano)
-- [Wikipedia: HMS Conqueror (S48)](https://en.wikipedia.org/wiki/HMS_Conqueror_(S48))
-- [Warfare History Network: The Saga of the USS Phoenix](https://warfarehistorynetwork.com/article/the-saga-of-the-uss-phoenix/)

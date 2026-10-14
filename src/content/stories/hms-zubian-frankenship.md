@@ -12,7 +12,7 @@ On October 26, 1916, a force of German torpedo boats crossed the English Channel
 
 HMS Nubian, a Tribal-class destroyer of the 6th Flotilla, Dover Patrol, was one of them. During the engagement — known as the Battle of Dover Strait — a torpedo from the German torpedo boat S50 struck Nubian forward. The explosion destroyed her bow completely. The entire section ahead of the bridge was gone.
 
-Nubian didn't sink. The after bulkheads held, and the crew kept the remaining hull afloat long enough for her to be towed back to port. But as a fighting ship, she was finished. What was left was a destroyer with no front end.
+Nubian didn't sink. The after bulkheads held, and the crew kept the remaining hull afloat long enough for her to be towed back to port. But as a fighting ship, she was finished. What was left was a destroyer with no front end. (A later cruiser in the same state [sailed home backwards with a bow of coconut logs](/stories/uss-new-orleans-coconut-bow/).)
 
 ## Thirteen days later
 
@@ -42,7 +42,7 @@ She wasn't a curiosity kept in reserve. She was sent straight back to the war.
 
 ## She sank a U-boat
 
-On February 17, 1918, HMS Zubian and other Dover Patrol vessels detected and attacked the German submarine UC-50 in the English Channel. UC-50 was a Type UC II minelaying submarine operating out of Flanders. Zubian depth-charged the submarine and was credited with the kill. UC-50 went down with her entire crew of 36.
+On February 4, 1918, HMS Zubian found the German submarine UC-50 on the surface in the Dover Strait and tried to ram her. UC-50 was a Type UC II minelaying submarine operating out of Flanders. Zubian depth-charged the submarine and was credited with the kill. uboat.net records UC-50 lost with all 29 hands, though it now lists her fate as missing rather than confirmed.
 
 A ship welded together from two wrecks had just killed a submarine.
 
@@ -58,15 +58,15 @@ With the war over, the Royal Navy had no use for a hybrid destroyer built from s
 
 No other Royal Navy ship was ever built this way. The idea of joining two damaged vessels into one was a product of wartime necessity and the specific coincidence of two ships from the same class losing opposite ends within two weeks of each other. The conditions never lined up again.
 
-The name Zubian was never reused by the Royal Navy. Both parent names — Zulu and Nubian — went on to serve on later ships. HMS Zulu and HMS Nubian both appeared again as Tribal-class destroyers in World War II, where both were sunk in the Mediterranean.
+The name Zubian was never reused by the Royal Navy. Both parent names — Zulu and Nubian — went on to serve on later ships. HMS Zulu and HMS Nubian both appeared again as Tribal-class destroyers in World War II. Zulu was sunk off Tobruk in 1942. Nubian lost her stern off Crete in 1941, was repaired, survived the war and was scrapped in 1949.
 
-Zubian's hull number was F89. She cost considerably less than a new destroyer and was ready months faster. The 3.5-inch gap in her beam was invisible by the time Chatham was done with her.
+She cost considerably less than a new destroyer and was ready months faster. The 3.5-inch gap in her beam was invisible by the time Chatham was done with her.
 
 ---
 
-**Sources**
+## Sources
 
-- [Wikipedia: HMS Zubian](https://en.wikipedia.org/wiki/HMS_Zubian)
-- [Wikipedia: HMS Zulu (1909)](https://en.wikipedia.org/wiki/HMS_Zulu_(1909))
-- [Western Front Association: HMS Zubian — A Tale of Two Halves](https://www.westernfrontassociation.com/world-war-i-articles/2022/january/hms-zubian-a-tale-of-two-halves/)
-- [The War Zone: Royal Navy Once Created a Franken-Ship From Two Destroyers](https://www.twz.com/royal-navy-once-created-a-franken-ship-from-two-destroyers)
+- [UC 50 - uboat.net](https://uboat.net/wwi/boats/?boat=UC+50)
+- [HMS Zubian: A Tale of Two Halves - Western Front Association](https://www.westernfrontassociation.com/world-war-i-articles/2022/january/hms-zubian-a-tale-of-two-halves/)
+- [The Royal Navy Once Created a Franken-Ship From Two Destroyers - The War Zone](https://www.twz.com/royal-navy-once-created-a-franken-ship-from-two-destroyers)
+- [HMS Zubian - Wikipedia](https://en.wikipedia.org/wiki/HMS_Zubian)

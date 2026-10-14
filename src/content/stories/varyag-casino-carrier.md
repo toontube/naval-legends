@@ -11,7 +11,7 @@ readingTime: 6
 
 In 1991, an aircraft carrier sat 68 percent finished in a shipyard in Nikolayev, Ukraine. The Soviet Union had just ceased to exist. The workers had stopped coming. Nobody was paying for anything.
 
-The ship had been launched on November 25, 1988 under the name Riga. Two years later, still incomplete, she was renamed Varyag. The Soviets classified her as a "heavy aircraft-carrying cruiser," not a carrier. This was deliberate. The Montreux Convention restricts aircraft carriers from transiting the Turkish Straits. Call it a cruiser, and it can pass through. Call it a carrier, and Turkey can block it.
+The ship had been launched in late 1988 under the name Riga. Two years later, still incomplete, she was renamed Varyag. The Soviets classified her as a "heavy aircraft-carrying [cruiser](/stories/cruiser-vs-destroyer-vs-battleship/)," not a carrier. This was deliberate. The Montreux Convention restricts aircraft carriers from transiting the Turkish Straits. Call it a cruiser, and it can pass through. Call it a carrier, and Turkey can block it. Bending a ship's label to fit a treaty was an old habit. Japan [did it with the Mogami class in the 1930s](/stories/mogami-cardboard-cruiser/).
 
 Ukraine inherited the hull but couldn't afford to finish it. Completion would have cost $500 million. Ukraine's entire military budget was a fraction of that. Varyag sat at the pier for seven years.
 
@@ -83,7 +83,7 @@ Sea trials began in August 2011. On September 25, 2012, the ship was commissione
 
 Xu Zengping estimated his total cost at $120 million. The $20 million purchase price was the small part. Towing, port fees, insurance, storage, mooring fees, legal costs, sixteen months of tug bills, and bribes added up.
 
-General Ji, the intelligence chief who had recruited Xu, was arrested in 2001 for running a smuggling ring in Xiamen. He went to prison. The military officers who organized the purchase were gone. Nobody in Beijing would take Xu's calls.
+General Ji, the intelligence chief who had recruited Xu, was removed from his post in 1999 over the Lai Changxing smuggling scandal in Xiamen and sentenced in 2000. He went to prison. The military officers who organized the purchase were gone. Nobody in Beijing would take Xu's calls.
 
 Xu asked the government to reimburse him. Beijing paid the $20 million for the carrier itself. For the remaining $100 million, they said he lacked receipts.
 
@@ -101,11 +101,8 @@ All three trace back to a Macau company with no phone number, a casino license t
 
 ---
 
-**Sources**
+## Sources
 
-- [Wikipedia: Chinese aircraft carrier Liaoning](https://en.wikipedia.org/wiki/Chinese_aircraft_carrier_Liaoning)
-- [South China Morning Post: How Xu Zengping sealed the deal](https://www.scmp.com/news/china/article/1681755/how-xu-zengping-became-middleman-chinas-deal-buy-liaoning)
 - [Foreign Policy: The Long, Strange Trip of China's First Aircraft Carrier](https://foreignpolicy.com/2015/02/03/the-long-strange-trip-of-chinas-first-aircraft-carrier-liaoning/)
 - [Forces News: The Long and Strange Tale of China's First Aircraft Carrier](https://www.forcesnews.com/services/navy/long-and-strange-tale-chinas-first-aircraft-carrier)
-- [Varyag World: Towage](https://www.varyagworld.com/towage.php)
-- [The China Story: How China Acquired Its First Aircraft Carrier](https://www.thechinastory.org/the-emerging-world-class-navy-how-china-acquired-its-first-aircraft-carrier/)
+- [Wikipedia: Chinese aircraft carrier Liaoning](https://en.wikipedia.org/wiki/Chinese_aircraft_carrier_Liaoning)

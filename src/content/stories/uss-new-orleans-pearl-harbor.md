@@ -49,33 +49,32 @@ Forgy published a memoir in 1944: *...And Pass the Ammunition.* He retired in 19
 
 ## What New Orleans did next
 
-The ship survived Pearl Harbor with 16 shrapnel holes and no casualties. She went on to Coral Sea, where she rescued 580 sailors from the sinking USS Lexington. Then Midway. Then Guadalcanal.
+The ship survived Pearl Harbor with 16 shrapnel holes and nobody killed. She went on to Coral Sea, where she rescued 580 sailors from the sinking USS Lexington. Then Midway. Then Guadalcanal.
 
 Then Tassafaronga.
 
 On the night of November 30, 1942, a Japanese Type 93 torpedo hit forward of Turret No. 2 and detonated the forward magazines. The explosion tore off 150 feet of the ship, nearly a third of her length. Over 180 men were killed in the blast.
 
-Three damage control officers stayed at their posts while toxic fumes spread through the ship. Lieutenant Commander Hubert Hayter gave his gas mask to an enlisted sailor who didn't have one, then kept directing operations until he collapsed. Lieutenant Richard Haines and Ensign Andrew Forman died beside him. All three received posthumous Navy Crosses. All three had destroyer escorts named after them: USS Hayter, USS Haines, USS Foreman.
+Three damage control officers stayed at their posts while toxic fumes spread through the ship. Lieutenant Commander Hubert Hayter gave his gas mask to an enlisted sailor who didn't have one, then kept directing operations until he collapsed. Lieutenant Richard Haines and Ensign Andrew Foreman died beside him. All three received posthumous Navy Crosses. All three had destroyer escorts named after them: USS Hayter, USS Haines, USS Foreman.
 
-The ship couldn't sail forward. The crew steered her backwards to Tulagi, then backwards 1,800 miles to Sydney, arriving on Christmas Eve. At Tulagi, they built a temporary bow from coconut logs.
+The ship couldn't sail forward. The crew steered her backwards to Tulagi, then backwards 1,800 miles to Sydney, arriving on Christmas Eve. At Tulagi, they built [a temporary bow from coconut logs](/stories/uss-new-orleans-coconut-bow/).
 
 ## Still there
 
 New Orleans earned 17 battle stars. She was scrapped in 1959.
 
-Her bow sat on the floor of Iron Bottom Sound for 83 years. On July 7, 2025, the Ocean Exploration Trust found it at 675 meters, using a remotely operated vehicle aboard E/V Nautilus. The expedition was led by Robert Ballard. The ROV imaged the anchor, still legible with "Navy Yard" stamped into the metal.
+Her bow sat on the floor of [Iron Bottom Sound](/stories/ironbottom-sound/) for 83 years. On July 7, 2025, the Ocean Exploration Trust found it at 675 meters, using a remotely operated vehicle aboard E/V Nautilus. The expedition was led by Robert Ballard. The ROV imaged the anchor, still legible with "Navy Yard" stamped into the metal.
 
 The bow is still down there. So are the men who were standing near Turret No. 2.
 
----
-
-**Sources**
-
-- [USS New Orleans (CA-32) — Wikipedia](https://en.wikipedia.org/wiki/USS_New_Orleans_(CA-32))
-- [USS New Orleans Action Report — Naval History and Heritage Command](https://www.history.navy.mil/research/archives/digital-exhibits-highlights/action-reports/wwii-pearl-harbor-attack/ships-m-r/uss-new-orleans-ca-32-action-report.html)
-- [Praise the Lord and Pass the Ammunition — Wikipedia](https://en.wikipedia.org/wiki/Praise_the_Lord_and_Pass_the_Ammunition)
-- [Lost Severed Bow of USS New Orleans Discovered — NHHC](https://www.history.navy.mil/news-and-events/news/2025/Lost-Severed-Bow-USS-New-Orleans-Discovered.html)
-- [CDR Howell Maurice Forgy — Find a Grave](https://www.findagrave.com/memorial/125273692/howell-maurice-forgy)
-- [Praise the Lord and Pass the Ammunition — War History Online](https://www.warhistoryonline.com/world-war-ii/praise-the-lord-and-pass-the-ammunition-bc.html)
 
 <figure><img src="/images/uss-new-orleans-pearl-harbor.jpg" alt="USS New Orleans underway off Hawaii, July 8, 1942" /><figcaption>USS New Orleans during exercises off Hawaii, July 8, 1942. Seven months after Pearl Harbor, five months before Tassafaronga took her bow. US Navy photograph 80-G-10115, public domain.</figcaption></figure>
+
+---
+
+## Sources
+
+- [DANFS: USS New Orleans (CA-32), via HyperWar](https://www.ibiblio.org/hyperwar/USN/ships/dafs/CA/ca32.html)
+- [National WWII Museum: The WWII Origin of "Praise the Lord and Pass the Ammunition"](https://www.nationalww2museum.org/war/articles/wwii-origin-praise-lord-and-pass-ammunition)
+- [NavSource: USS Foreman (DE-633) and her namesake](https://www.navsource.net/archives/06/633.htm)
+- [Wikipedia: USS New Orleans (CA-32)](https://en.wikipedia.org/wiki/USS_New_Orleans_(CA-32))

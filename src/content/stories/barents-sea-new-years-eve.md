@@ -9,7 +9,7 @@ tags: [wwii, arctic-convoys, barents-sea, royal-navy, kriegsmarine, destroyers]
 readingTime: 5
 ---
 
-December 31, 1942. Convoy JW-51B was 200 miles north of Norway, bound for Murmansk with war supplies for the Soviet Union. Fourteen merchant ships. The close escort was six destroyers, two corvettes, a minesweeper, and two trawlers.
+December 31, 1942. Convoy JW-51B was about 120 nautical miles north of the coast of Finnmark, bound for Murmansk with war supplies for the Soviet Union. Fourteen merchant ships. The close escort was six destroyers, two corvettes, a minesweeper, and two trawlers. The Arctic run had already cost the Royal Navy dearly that year, including the cruiser [HMS Edinburgh and her cargo of Soviet gold](/stories/hms-edinburgh-gold) in May.
 
 The senior officer was Captain Robert St. Vincent Sherbrooke, 41 years old, aboard HMS Onslow. His job was to get the convoy through. The Germans had other plans.
 
@@ -29,7 +29,7 @@ For the next two hours, Sherbrooke's destroyers played a lethal game. They would
 
 Four times Sherbrooke forced the 18,200-ton cruiser to break off.
 
-At 10:20, Hipper's 8-inch guns found Onslow. Three shells hit. Seventeen crew killed, twenty-three wounded. A shell splinter tore into Sherbrooke's face and destroyed his left eye. The bridge was wrecked.
+At 10:20, Hipper's 8-inch guns found Onslow. Seventeen of her crew were killed. A large steel splinter tore into Sherbrooke's face and cost him the sight of his left eye. The bridge was wrecked.
 
 Sherbrooke refused to leave. He kept commanding from what was left of the bridge, blood running down his face, insisting on receiving all tactical reports until he was satisfied the convoy was safe. Only then did he hand command to Commander Kinloch on HMS Obedient and allow himself to be taken below.
 
@@ -51,7 +51,7 @@ Then one of the strangest moments of the war. The German destroyer Friedrich Eck
 
 Sheffield opened fire at point-blank range. Friedrich Eckholdt broke in two and sank with her entire crew. No survivors.
 
-Meanwhile, Lutzow -- the entire southern jaw of the German pincer -- had done almost nothing. Her captain, Kapitan zur See Rudolf Stange, had the convoy in sight but refused to close the range in the poor visibility. He fired a few salvos at long range. All missed.
+Meanwhile, [Lutzow](/stories/deutschland-renamed) -- the entire southern jaw of the German pincer -- had done almost nothing. Her captain, Kapitan zur See Rudolf Stange, had the convoy in sight but refused to close the range in the poor visibility. He fired a few salvos at long range. All missed.
 
 Every merchant ship in JW-51B reached Murmansk.
 
@@ -59,11 +59,11 @@ Every merchant ship in JW-51B reached Murmansk.
 
 Here is where a skirmish in the Arctic became something much bigger.
 
-Kummetz had imposed radio silence during the battle. The first garbled report that reached Berlin mentioned "red sky" -- a reference to the Aurora Borealis. Grand Admiral Erich Raeder misread it as British ships burning. He told Hitler the Kriegsmarine had won a great victory.
+Kummetz kept radio silence on the way home. The first word Berlin had came from the shadowing U-boat U-354, whose captain signalled at 11:45: "The battle has reached its climax, I see nothing but red." Kummetz's own report later mentioned a red sky, a reference to the polar light. Grand Admiral Erich Raeder took it to mean British ships burning. He told Hitler the Kriegsmarine had won a great victory above the Arctic Circle.
 
-Hitler announced the triumph during his New Year's address.
+Hitler waited through New Year's Eve for the details.
 
-On January 1, 1943, the truth arrived. Hitler learned his heavy cruiser and pocket battleship had been driven off by destroyers. Not a single merchant ship lost.
+Late in the afternoon of January 1, 1943, the truth arrived. Hitler learned his heavy cruiser and pocket battleship had been driven off by destroyers. Not a single merchant ship lost.
 
 The rage lasted days.
 
@@ -73,17 +73,15 @@ Raeder resigned on January 30. His replacement was Admiral Karl Donitz, the U-bo
 
 Six British destroyers, outgunned in every category, had changed the entire strategic direction of the German navy.
 
-Captain Robert Sherbrooke received the Victoria Cross. He lost the eye permanently but returned to service and eventually retired as a Rear Admiral in 1954. He died in 1972 in Oxton, Nottinghamshire.
+Captain Robert Sherbrooke received the Victoria Cross. He never regained the sight of the eye but returned to service and retired as a Rear Admiral in the 1950s. He died in 1972 in Oxton, Nottinghamshire.
 
 ---
 
-**Sources**
+## Sources
 
-- [Battle of the Barents Sea - Wikipedia](https://en.wikipedia.org/wiki/Battle_of_the_Barents_Sea)
-- [Robert Sherbrooke - Wikipedia](https://en.wikipedia.org/wiki/Robert_Sherbrooke)
-- [Resignation and post-war life of Erich Raeder - Wikipedia](https://en.wikipedia.org/wiki/Resignation_and_post_war_life_of_Erich_Raeder)
-- [HMS Achates (H12) - Wikipedia](https://en.wikipedia.org/wiki/HMS_Achates_(H12))
-- [The Battle of the Barents Sea - Defense Media Network](https://www.defensemedianetwork.com/stories/the-battle-of-the-barents-sea/)
-- [The Battle of the Barents Sea - WW2 Today](https://www.ww2today.com/p/the-battle-of-the-barents-sea)
+- [Wikipedia: Battle of the Barents Sea](https://en.wikipedia.org/wiki/Battle_of_the_Barents_Sea)
+- [NavWeaps: Orders of Battle, The Battle of the Barents Sea](https://www.navweaps.com/index_oob/OOB_WWII_Atlantic/OOB_WWII_Barents_Sea.php)
+- [Defense Media Network: The Battle of the Barents Sea](https://www.defensemedianetwork.com/stories/the-battle-of-the-barents-sea/)
+- [WW2 Today: The Battle of the Barents Sea](https://www.ww2today.com/p/the-battle-of-the-barents-sea)
 
 **Photo credit:** German cruiser Admiral Hipper off Norway, 1942 -- Wikimedia Commons / Bundesarchiv, Public Domain

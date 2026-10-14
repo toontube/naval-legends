@@ -47,7 +47,7 @@ The Navy raised K13, repaired her, and recommissioned her as K22. Because appare
 
 On the night of January 31, 1918, the Grand Fleet left Rosyth for a fleet exercise. Two submarine flotillas steamed north in the Firth of Forth, ahead of the battlecruisers. The night was dark, the boats were running without lights, and the formations were tight.
 
-K22's helm jammed. She veered out of line. K14, following behind, couldn't avoid her. K22 struck K14 and tore off her bow. Two men on K14 died instantly.
+K14's helm jammed. She veered out of line. K22, following behind, couldn't avoid her and struck K14, tearing off her bow. Two men on K14 died instantly.
 
 The battlecruiser HMS Inflexible, coming up fast behind the submarines, hit the damaged K22 a glancing blow, bending 30 feet of her bow at a right angle.
 
@@ -57,7 +57,7 @@ The light cruiser HMS Fearless, leading the second flotilla, rammed K17 at close
 
 K6 rammed K4 broadside. K7 then struck the sinking K4. K4 went down with all 55 hands.
 
-The whole thing lasted 75 minutes. 104 men dead. Two submarines sunk, two more crippled, a cruiser missing her bow. No enemy vessel was within a hundred miles.
+The whole thing lasted 75 minutes. 104 men dead. Two submarines sunk, two more crippled, a cruiser missing her bow. No enemy vessel was within a hundred miles. Collisions between friendly ships in the dark [kept happening long after the K-boats were gone](/stories/uss-hobson-wasp-collision/).
 
 The court of inquiry sat for five days. The report was classified. Much of it stayed sealed until 1994.
 
@@ -81,12 +81,12 @@ Fisher died in 1920. He didn't live to see the full tally, but he got the import
 
 ---
 
-**Sources**
+## Sources
 
-- [British K-class submarine — Wikipedia](https://en.wikipedia.org/wiki/British_K-class_submarine)
-- [Battle of May Island — Wikipedia](https://en.wikipedia.org/wiki/Battle_of_May_Island)
-- [HMS K13 — Wikipedia](https://en.wikipedia.org/wiki/HMS_K13)
-- [1915–1926: K Class — Royal Navy Submarines](http://rnsubs.co.uk/boats/subs/k-class.html)
-- South, Andy. *The Suicide Club: A History of the Royal Navy's Steam Powered 'K' Class Submarines.* 2020.
+- [Tragedy at Sea: The "Battle" of May Island - CWGC](https://www.cwgc.org/our-work/blog/tragedy-at-sea-the-battle-of-may-island/)
+- [The "Battle" of May Island - Naval Historical Society of Australia](https://navyhistory.au/the-battle-of-may-island/)
+- [The "Battle" of May Island and K-Class Submarines of the First World War - Western Front Association](https://www.westernfrontassociation.com/world-war-i-articles/2021/january/the-battle-of-may-island-january-1917-and-k-class-submarines-of-the-first-world-war/)
+- [1915-1926: K Class - Royal Navy Submarines](http://rnsubs.co.uk/boats/subs/k-class.html)
+- [British K-class submarine - Wikipedia](https://en.wikipedia.org/wiki/British_K-class_submarine)
 
 <figure><img src="/images/k-class-submarine.jpg" alt="British submarine K-6 at sea in 1923" /><figcaption>K-6 at sea, 1923. She made 22.6 knots off Ireland — the fastest submarine in the world at the time. Wide World Photos / Chicago Tribune, public domain.</figcaption></figure>

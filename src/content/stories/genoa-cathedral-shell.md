@@ -9,7 +9,7 @@ tags: [wwii, royal-navy, mediterranean, bombardment, genoa, hms-malaya]
 readingTime: 4
 ---
 
-February 9, 1941. Force H sailed from Gibraltar under Vice Admiral James Somerville. The formation: the battleship HMS Malaya, the battlecruiser HMS Renown, the aircraft carrier HMS Ark Royal, the light cruiser HMS Sheffield, and ten destroyers. Their target was the Italian naval base at Genoa, where British intelligence believed three Italian battleships were docked.
+February 9, 1941. Force H sailed from Gibraltar under Vice Admiral James Somerville. The formation: the battleship HMS Malaya (see [what separates a battleship from a cruiser](/stories/cruiser-vs-destroyer-vs-battleship/)), the battlecruiser HMS Renown, the aircraft carrier HMS Ark Royal, the light cruiser HMS Sheffield, and ten destroyers. Their target was the Italian naval base at Genoa, where British intelligence believed three Italian battleships were docked.
 
 The operation was codenamed Grog. This is not a joke.
 
@@ -57,12 +57,12 @@ A gunnery error from 13 miles offshore, preserved in stone.
 
 ---
 
-**Sources**
+## Sources
 
 - [Operation Grog - Wikipedia](https://en.wikipedia.org/wiki/Operation_Grog)
-- [HMS Malaya - Wikipedia](https://en.wikipedia.org/wiki/HMS_Malaya)
-- [Genoa Cathedral - Wikipedia](https://en.wikipedia.org/wiki/Genoa_Cathedral)
-- [381mm Shell - Genova - TracesOfWar.com](https://www.tracesofwar.com/sights/8605/381mm-15-inch-Shell.htm)
 - [Cathedral of San Lorenzo - genovabb.it](https://genovabb.it/en/genoa-guide/poi/cattedrale-san-lorenzo/)
+- [The Unexploded Bomb of San Lorenzo Cathedral - Hop On Hop Off Genoa](https://www.hoponhopoffgenoa.it/he/genoa-hoho/history/san-lorenzo-unexploded-bomb)
+- [Operation Grog - Desert War](https://desertwar.net/operation-grog/)
+- [Why Does This Medieval Church Have a Bomb in It? - uCatholic](https://ucatholic.com/blog/why-does-this-medieval-church-have-a-bomb-in-it/)
 
 **Photo credit:** HMS Malaya leaving New York Navy Yard, 1941 -- Wikimedia Commons / Imperial War Museum, Public Domain
