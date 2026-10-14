@@ -1,5 +1,6 @@
 ---
-import { cardSrcset, CARD_SIZES } from '../lib/cardImage';
+import { CARD_SIZES } from '../lib/cardImage';
+import Picture from './Picture.astro';
 
 interface Props {
   slug: string;
@@ -13,7 +14,7 @@ const { slug, title, summary, image, readingTime } = Astro.props;
 ---
 
 <a href={`/stories/${slug}/`} class="sc">
-  {image && <img src={image} srcset={cardSrcset(image)} sizes={CARD_SIZES} alt={title} width="480" height="270" class="sc-img" loading="lazy" decoding="async" />}
+  {image && <Picture src={image} sizes={CARD_SIZES} alt={title} width="480" height="270" class="sc-img" loading="lazy" />}
   <div class="sc-body">
     <h3 class="sc-title">{title}</h3>
     <p class="sc-summary">{summary}</p>
@@ -37,7 +38,7 @@ const { slug, title, summary, image, readingTime } = Astro.props;
     transform: translateY(-2px);
   }
 
-  .sc-img {
+  :global(.sc-img) {
     display: block;
     width: 100%;
     aspect-ratio: 16 / 9;
@@ -71,12 +72,12 @@ const { slug, title, summary, image, readingTime } = Astro.props;
 
   /* Phones: compact row so several stories fit on one screen */
   @media (max-width: 639px) {
-    .sc:has(.sc-img) {
+    .sc:has(:global(.sc-img)) {
       display: grid;
       grid-template-columns: 6.5rem 1fr;
     }
 
-    .sc-img {
+    :global(.sc-img) {
       aspect-ratio: auto;
       height: 100%;
       min-height: 6.5rem;

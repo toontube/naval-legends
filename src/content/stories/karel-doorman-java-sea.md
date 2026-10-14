@@ -3,6 +3,7 @@ title: "The Admiral Who Attacked with Nothing Left"
 seoTitle: "Karel Doorman at the Battle of the Java Sea"
 slug: karel-doorman-java-sea
 date: 2026-05-21
+updated: 2026-10-14
 summary: "Rear Admiral Karel Doorman commanded a fleet that spoke four languages, had no air cover, and had never trained together. He attacked anyway. 2,300 dead."
 image: /images/karel-doorman-java-sea.jpg
 tags: [wwii, pacific, java-sea, de-ruyter, doorman, abda, netherlands]

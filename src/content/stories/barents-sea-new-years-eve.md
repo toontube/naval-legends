@@ -3,6 +3,7 @@ title: "Six Destroyers Held Off a Pocket Battleship on New Year's Eve. Hitler Sc
 seoTitle: "Battle of the Barents Sea, 1942"
 slug: barents-sea-new-years-eve
 date: 2026-05-22
+updated: 2026-10-14
 summary: "A one-eyed destroyer captain, a convoy to Murmansk, and the New Year's Eve battle that made Hitler try to scrap every warship Germany had."
 image: /images/barents-sea-new-years-eve.jpg
 tags: [wwii, arctic-convoys, barents-sea, royal-navy, kriegsmarine, destroyers]

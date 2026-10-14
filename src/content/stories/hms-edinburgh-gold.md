@@ -3,6 +3,7 @@ title: "A Cruiser Sank With 465 Gold Bars. Five of Them Are Still Down There."
 seoTitle: "HMS Edinburgh Gold: 465 Bars on the Seabed"
 slug: hms-edinburgh-gold
 date: 2026-04-22
+updated: 2026-10-14
 summary: "The light cruiser HMS Edinburgh was torpedoed three times in the Arctic while carrying 465 gold bars from the Soviet Union. The cruiser fought back, crippled a German destroyer, and went down with the gold. Thirty-nine years later, divers cut into the wreck and pulled out 431 bars."
 image: /images/hms-edinburgh.jpg
 tags: [wwii, arctic-convoys, gold, salvage, royal-navy, cruiser]

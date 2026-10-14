@@ -3,6 +3,7 @@ title: "The Navy Ship That's Been Held Hostage Since 1968"
 seoTitle: "USS Pueblo: The Navy Ship Held Since 1968"
 slug: uss-pueblo-captured
 date: 2026-04-25
+updated: 2026-10-14
 summary: "USS Pueblo was captured by North Korea in 1968. The crew spent 11 months as prisoners. In propaganda photos, they flipped off the camera and told guards it was a Hawaiian good luck sign. The ship is still in Pyongyang."
 image: /images/uss-pueblo.jpg
 tags: [cold-war, uss-pueblo, north-korea, espionage, pueblo-incident]

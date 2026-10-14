@@ -21,6 +21,10 @@ const stories = topic.stories.map((slug) => {
   return s;
 });
 const url = `https://brvzulu.com/topics/${topic.slug}/`;
+
+// Long-form overview for the hub, if written: src/content/topic-overviews/<slug>.md
+const overviews = import.meta.glob<{ Content: any }>('../../content/topic-overviews/*.md', { eager: true });
+const Overview = overviews[`../../content/topic-overviews/${topic.slug}.md`]?.Content;
 const others = TOPICS.filter((t) => t.slug !== topic.slug);
 ---
 
@@ -56,6 +60,14 @@ const others = TOPICS.filter((t) => t.slug !== topic.slug);
     <a href="/topics/" class="article-back">&larr; All topics</a>
     <h1 class="stories-title">{topic.title}</h1>
     <p class="home-lede">{topic.intro}</p>
+
+    {Overview && (
+      <div class="prose topic-overview">
+        <Overview />
+      </div>
+    )}
+
+    <h2 class="home-h2">All {topic.name} stories</h2>
 
     <div class="home-grid home-grid--3">
       {stories.map((s) => (

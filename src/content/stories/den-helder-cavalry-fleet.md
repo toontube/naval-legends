@@ -3,6 +3,7 @@ title: "The Night French Cavalry Rode Across a Frozen Sea and Captured a Fleet"
 seoTitle: "Den Helder 1795: Cavalry Captures a Fleet"
 slug: den-helder-cavalry-fleet
 date: 2026-04-22
+updated: 2026-10-14
 summary: "In January 1795, French hussars wrapped their horses' hooves in cloth, crossed a frozen harbor, and boarded 14 Dutch warships. No shots fired. The only time in history cavalry captured a fleet."
 image: /images/den-helder-cavalry.jpg
 tags: [french-revolutionary-wars, cavalry, den-helder, dutch-fleet, eighteenth-century]

@@ -3,6 +3,7 @@ title: "The Largest Carrier Ever Built Lasted Seventeen Hours"
 seoTitle: "Shinano: Largest Carrier, Sunk in 17 Hours"
 slug: shinano-maiden-voyage
 date: 2026-04-24
+updated: 2026-10-14
 summary: "IJN Shinano was a converted Yamato-class hull displacing 72,000 tons. She left Yokosuka on the evening of November 28, 1944. A single American submarine sank her before breakfast. 1,435 dead."
 image: /images/shinano.jpg
 tags: [wwii, pacific, shinano, uss-archerfish, aircraft-carrier]

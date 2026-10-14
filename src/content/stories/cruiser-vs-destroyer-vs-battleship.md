@@ -3,6 +3,7 @@ title: "Cruiser vs Destroyer vs Battleship: What's Actually the Difference?"
 seoTitle: "Cruiser vs Destroyer vs Battleship"
 slug: cruiser-vs-destroyer-vs-battleship
 date: 2026-05-20
+updated: 2026-10-14
 summary: "Battleships carried the biggest guns. Cruisers could go anywhere. Destroyers were built to kill submarines and die trying. Here's how they actually differed."
 image: /images/ship-types.jpg
 tags: [explainer, cruiser, destroyer, battleship, naval-warfare]

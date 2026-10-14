@@ -1,13 +1,13 @@
 // Run after adding images: node scripts/optimize-images.mjs
 // Recompresses public/images originals that are still large (max 1600px wide) and writes
-// missing 480px card variants to public/images/sm/. Already-optimized files are left alone,
+// missing 480px card variants to public/images/sm/, plus a .webp copy of every image. Already-optimized files are left alone,
 // so re-running never recompresses an image twice.
 import sharp from 'sharp';
 import { readdir, stat, writeFile, mkdir, access } from 'node:fs/promises';
 import path from 'node:path';
 
 const dir = 'public/images';
-const LIMIT = 250 * 1024;
+const LIMIT = 300 * 1024; // files under this and <=1600px wide are treated as already optimized
 await mkdir(path.join(dir, 'sm'), { recursive: true });
 const exists = (p) => access(p).then(() => true, () => false);
 
@@ -29,5 +29,9 @@ for (const f of await readdir(dir)) {
   if (!(await exists(sm))) {
     await writeFile(sm, await enc(sharp(p).resize({ width: 480, withoutEnlargement: true })).toBuffer());
     console.log('sm/' + f);
+  }
+  for (const src of [p, sm]) {
+    const webp = src.replace(/\.(jpe?g|png)$/i, '.webp');
+    if (!(await exists(webp))) await writeFile(webp, await sharp(src).webp({ quality: 75 }).toBuffer());
   }
 }

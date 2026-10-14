@@ -3,6 +3,7 @@ title: "China Bought a Soviet Aircraft Carrier to Build a Casino. The Casino Nev
 seoTitle: "Varyag: The Casino Carrier Became Liaoning"
 slug: varyag-casino-carrier
 date: 2026-04-21
+updated: 2026-10-14
 summary: "A former PLA basketball player bought an unfinished Soviet carrier for $20 million, told everyone it was for a casino, towed it around Africa when Turkey blocked the shortcut, and delivered China its first aircraft carrier. He spent $120 million. China never paid him back."
 image: /images/varyag-refitting.jpg
 tags: [cold-war, china, varyag, liaoning, aircraft-carrier]

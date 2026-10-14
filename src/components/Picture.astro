@@ -1,0 +1,23 @@
+---
+// <img> wrapped in <picture> with a WebP source when a .webp sibling exists in public/images.
+import { cardSrcset, cardSrcsetWebp } from '../lib/cardImage';
+
+interface Props {
+  src: string;
+  alt: string;
+  sizes: string;
+  class?: string;
+  width?: number | string;
+  height?: number | string;
+  loading?: 'lazy' | 'eager';
+  fetchpriority?: 'high' | 'low' | 'auto';
+}
+
+const { src, alt, sizes, class: className, width, height, loading, fetchpriority } = Astro.props;
+const webp = cardSrcsetWebp(src);
+---
+
+<picture>
+  {webp && <source type="image/webp" srcset={webp} sizes={sizes} />}
+  <img src={src} srcset={cardSrcset(src)} sizes={sizes} alt={alt} class={className} width={width} height={height} loading={loading} decoding="async" fetchpriority={fetchpriority} />
+</picture>

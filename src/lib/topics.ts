@@ -12,25 +12,25 @@ export const TOPICS: Topic[] = [
   {
     slug: 'wwii-naval-history',
     name: 'World War II',
-    title: 'WWII Naval History: Stories and Battles',
+    title: 'WWII Naval History: Battles, Ships and Crews',
     intro:
       'From the Arctic convoys to Ironbottom Sound, the Second World War was the largest naval war ever fought. These are the ships, crews and decisions behind it: cruisers held together with coconut logs, a carrier sunk seventeen hours into her maiden voyage, and a destroyer packed with explosives and rammed into a drydock.',
     stories: [
       'uss-indianapolis-sharks', 'shinano-maiden-voyage', 'hms-campbeltown-st-nazaire', 'barents-sea-new-years-eve',
       'hms-edinburgh-gold', 'ironbottom-sound', 'karel-doorman-java-sea', 'uss-new-orleans-coconut-bow',
       'uss-new-orleans-pearl-harbor', 'uss-porter-torpedo-fdr', 'mogami-cardboard-cruiser', 'cleveland-class-top-heavy',
-      'uss-wichita-pig-iron', 'hms-zubian-frankenship', 'genoa-cathedral-shell', 'deutschland-renamed', 'prinz-eugen-bikini',
+      'uss-wichita-pig-iron', 'genoa-cathedral-shell', 'deutschland-renamed', 'prinz-eugen-bikini',
       'uss-phoenix-belgrano', 'hms-glorious-doyly-hughes', 'bismarck-last-battle', 'yamato-last-sortie', 'battle-of-midway', 'uss-arizona-pearl-harbor', 'graf-spee-river-plate', 'tirpitz-lone-queen', 'hms-hood-three-survivors', 'uss-enterprise-cv6', 'battle-of-leyte-gulf', 'wilhelm-gustloff', 'hms-warspite-grand-old-lady', 'uss-nevada-pearl-harbor'],
   },
   {
     slug: 'wwi-naval-history',
     name: 'World War I',
-    title: 'WWI Naval History: Raiders, Mutinies and Scuttlings',
+    title: 'WWI Naval History: Jutland, Raiders and Scapa Flow',
     intro:
       'The First World War at sea was the age of the dreadnought, the commerce raider and the experimental submarine. Read how SMS Emden faked a funnel to raid Penang, how the Royal Navy lost steam submarines to its own fleet, and how Germany sank its entire interned navy at Scapa Flow.',
     stories: [
       'emden-penang-raid', 'k-class-kalamity', 'scapa-flow-scuttling', 'uss-cyclops-vanished', 'aurora-friendly-fire',
-      'uss-olympia-unknown-soldier', 'battle-of-jutland', 'lusitania-sinking', 'hms-warspite-grand-old-lady', 'hms-dreadnought-hoax'],
+      'uss-olympia-unknown-soldier', 'battle-of-jutland', 'lusitania-sinking', 'hms-warspite-grand-old-lady', 'hms-dreadnought-hoax', 'hms-zubian-frankenship'],
   },
   {
     slug: 'cold-war-naval-history',
@@ -51,7 +51,7 @@ export const TOPICS: Topic[] = [
   {
     slug: 'us-navy',
     name: 'US Navy',
-    title: 'US Navy History: Ships, Disasters and Survivors',
+    title: 'US Navy History: Ships, Battles and Disasters',
     intro:
       'Stories of United States Navy ships from the War of 1812 to the Cold War: USS Constitution, USS Indianapolis and the sharks, USS New Orleans and her coconut-log bow, the collier Cyclops that vanished with 306 men, and USS Pueblo, still held in North Korea.',
     stories: [
@@ -62,7 +62,7 @@ export const TOPICS: Topic[] = [
   {
     slug: 'royal-navy',
     name: 'Royal Navy',
-    title: 'Royal Navy History: Raids, Convoys and Disasters',
+    title: 'Royal Navy History: Trafalgar to the Arctic Convoys',
     intro:
       'The Royal Navy at its most daring and its most unlucky: the St Nazaire raid, the gold of HMS Edinburgh, two broken destroyers welded into one, steam submarines that sank each other, and six destroyers that held off a pocket battleship on New Year\'s Eve.',
     stories: [
@@ -72,7 +72,7 @@ export const TOPICS: Topic[] = [
   {
     slug: 'german-navy',
     name: 'German Navy',
-    title: 'German Navy History: Kaiserliche Marine and Kriegsmarine',
+    title: 'German Navy History: Kaiser\'s Fleet to Kriegsmarine',
     intro:
       'From the Kaiser\'s raiders to Hitler\'s Kriegsmarine: SMS Emden at Penang, the scuttling of the High Seas Fleet, a pocket battleship renamed out of fear of a headline, and Prinz Eugen, which survived two atomic bombs.',
     stories: ['emden-penang-raid', 'scapa-flow-scuttling', 'deutschland-renamed', 'prinz-eugen-bikini', 'barents-sea-new-years-eve', 'bismarck-last-battle', 'hms-glorious-doyly-hughes', 'battle-of-jutland', 'graf-spee-river-plate', 'tirpitz-lone-queen', 'lusitania-sinking', 'wilhelm-gustloff'],
@@ -80,7 +80,7 @@ export const TOPICS: Topic[] = [
   {
     slug: 'imperial-japanese-navy',
     name: 'Imperial Japanese Navy',
-    title: 'Imperial Japanese Navy History: Shinano, Mogami and More',
+    title: 'Imperial Japanese Navy History: Tsushima to Yamato',
     intro:
       'The Imperial Japanese Navy built some of the largest and most aggressive warships of the Second World War. Read about Shinano, the Yamato-class carrier sunk on her maiden voyage, Mogami, the treaty-busting cruiser, and the night battles off Guadalcanal.',
     stories: ['shinano-maiden-voyage', 'mogami-cardboard-cruiser', 'ironbottom-sound', 'karel-doorman-java-sea', 'uss-indianapolis-sharks', 'yamato-last-sortie', 'battle-of-midway', 'battle-of-leyte-gulf', 'battle-of-tsushima'],
@@ -96,7 +96,7 @@ export const TOPICS: Topic[] = [
   {
     slug: 'naval-mysteries-and-disasters',
     name: 'Mysteries and disasters',
-    title: 'Naval Mysteries and Disasters: Lost Ships and Worst Losses',
+    title: 'Naval Disasters and Mysteries: Lost Ships',
     intro:
       'Ships that vanished without a trace, the deadliest sinkings ever recorded, and the accidents navies would rather forget. Start with the ranked list of the worst naval disasters, then the ships that disappeared.',
     stories: [

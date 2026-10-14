@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import Picture from '../../components/Picture.astro';
 import { cardSrcset, CARD_SIZES } from '../../lib/cardImage';
 import { topicsForStory } from '../../lib/topics';
 import { ORG } from '../../lib/seo';
@@ -91,7 +92,7 @@ const ksStickyUrl = 'https://www.kickstarter.com/projects/mozuma/come-on-texas?r
 
     {story.data.image && (
       <figure class="article-hero">
-        <img src={story.data.image} srcset={cardSrcset(story.data.image)} sizes="(max-width: 720px) 100vw, 720px" alt={story.data.title} width="1200" height="630" fetchpriority="high" />
+        <Picture src={story.data.image} sizes="(max-width: 720px) 100vw, 720px" alt={story.data.title} width="1200" height="630" loading="eager" fetchpriority="high" />
       </figure>
     )}
 
@@ -100,6 +101,9 @@ const ksStickyUrl = 'https://www.kickstarter.com/projects/mozuma/come-on-texas?r
       <p class="article-summary">{story.data.summary}</p>
       <div class="article-meta">
         <time datetime={story.data.date.toISOString().split('T')[0]}>{dateStr}</time>
+        {story.data.updated && (
+          <span>Updated <time datetime={story.data.updated.toISOString().split('T')[0]}>{story.data.updated.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</time></span>
+        )}
         <span>{story.data.readingTime} min read</span>
       </div>
     </header>
@@ -140,7 +144,7 @@ const ksStickyUrl = 'https://www.kickstarter.com/projects/mozuma/come-on-texas?r
           {otherStories.map((s) => (
             <a href={`/stories/${s.data.slug}/`} class="read-next-card" data-tags={s.tagOverlap}>
               {s.data.image && (
-                <img src={s.data.image} srcset={cardSrcset(s.data.image)} sizes={CARD_SIZES} alt={s.data.title} width="480" height="270" class="read-next-img" loading="lazy" />
+                <Picture src={s.data.image} sizes={CARD_SIZES} alt={s.data.title} width="480" height="270" class="read-next-img" loading="lazy" />
               )}
               <div class="read-next-card-body">
                 <h3>{s.data.title}</h3>
@@ -226,7 +230,7 @@ const ksStickyUrl = 'https://www.kickstarter.com/projects/mozuma/come-on-texas?r
     }
   }
 
-  .article-hero img {
+  .article-hero :global(img) {
     width: 100%;
     height: 100%;
     max-height: 420px;
@@ -402,7 +406,7 @@ const ksStickyUrl = 'https://www.kickstarter.com/projects/mozuma/come-on-texas?r
     border-color: var(--text-muted);
   }
 
-  .read-next-img {
+  :global(.read-next-img) {
     display: block;
     width: 100%;
     height: 140px;

@@ -267,3 +267,8 @@ h1, h2, h3, h4 {
 .skip-link:focus {
   top: 1rem;
 }
+
+/* <picture> wrappers (components/Picture.astro) should not affect layout. */
+picture {
+  display: contents;
+}

@@ -3,6 +3,7 @@ title: "The German Warship That Survived Two Nuclear Bombs and Sank From a Leak"
 seoTitle: "Prinz Eugen: Survived Two Atomic Bombs"
 slug: prinz-eugen-bikini
 date: 2026-04-14
+updated: 2026-10-14
 summary: "Prinz Eugen fought alongside Bismarck, survived two atomic tests at Bikini Atoll, and sank because nobody could fix a small leak."
 image: /images/prinz-eugen.jpg
 tags: [wwii, nuclear-tests, prinz-eugen, cold-war]
