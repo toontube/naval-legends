@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import { cardSrcset, CARD_SIZES } from '../../lib/cardImage';
 import Navigation from '../../components/Navigation.astro';
 import Footer from '../../components/Footer.astro';
 import SEOHead from '../../components/SEOHead.astro';
@@ -45,7 +46,7 @@ const filterTags = [...tagCounts.entries()]
       {sorted.map((story) => (
         <a href={`/stories/${story.data.slug}/`} class="story-card" data-tags={story.data.tags.join(' ')}>
           {story.data.image && (
-            <img src={story.data.image} alt={story.data.title} class="story-card-img" loading="lazy" decoding="async" />
+            <img src={story.data.image} srcset={cardSrcset(story.data.image)} sizes={CARD_SIZES} alt={story.data.title} class="story-card-img" loading="lazy" decoding="async" />
           )}
           <div class="story-card-inner">
             <div class="story-meta">

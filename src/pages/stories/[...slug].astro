@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import { cardSrcset, CARD_SIZES } from '../../lib/cardImage';
 import Navigation from '../../components/Navigation.astro';
 import Footer from '../../components/Footer.astro';
 import SEOHead from '../../components/SEOHead.astro';
@@ -129,7 +130,7 @@ const ksStickyUrl = 'https://www.kickstarter.com/projects/mozuma/come-on-texas?r
           {otherStories.map((s) => (
             <a href={`/stories/${s.data.slug}/`} class="read-next-card" data-tags={s.tagOverlap}>
               {s.data.image && (
-                <img src={s.data.image} alt={s.data.title} class="read-next-img" loading="lazy" />
+                <img src={s.data.image} srcset={cardSrcset(s.data.image)} sizes={CARD_SIZES} alt={s.data.title} class="read-next-img" loading="lazy" />
               )}
               <div class="read-next-card-body">
                 <h3>{s.data.title}</h3>
