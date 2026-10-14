@@ -25,6 +25,7 @@ const stories = defineCollection({
   loader: glob({ pattern: '**/*.md', base: './src/content/stories' }),
   schema: z.object({
     title: z.string(),
+    seoTitle: z.string().optional(),
     slug: z.string(),
     date: z.coerce.date(),
     summary: z.string(),

@@ -1,5 +1,6 @@
 ---
 title: "The Cruiser That Sailed Backwards Across the Pacific With a Bow Made of Coconut Logs"
+seoTitle: "USS New Orleans: The Coconut Log Bow"
 slug: uss-new-orleans-coconut-bow
 date: 2026-04-19
 summary: "A torpedo blew off a third of USS New Orleans in 1942. The crew built a temporary bow from coconut trees and sailed her backwards 1,800 miles to Australia. Her original bow was found on the seafloor 83 years later."

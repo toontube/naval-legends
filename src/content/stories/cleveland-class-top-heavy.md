@@ -1,5 +1,6 @@
 ---
 title: "The Navy Built 27 of These Cruisers, Then Couldn't Stop Them From Tipping Over"
+seoTitle: "Cleveland-Class Cruisers: Too Top-Heavy"
 slug: cleveland-class-top-heavy
 date: 2026-04-21
 summary: "The Cleveland class was the largest cruiser class ever built. They were also dangerously top-heavy. The Navy pulled off catapults, restricted ammo, and added ballast. Nine more hulls became aircraft carriers instead."

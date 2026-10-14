@@ -1,5 +1,6 @@
 ---
 title: "The US Navy Dumped 200 Tons of Pig Iron Into This Cruiser Just to Stop Her From Tipping Over"
+seoTitle: "USS Wichita: 200 Tons of Pig Iron Ballast"
 slug: uss-wichita-pig-iron
 date: 2026-04-20
 summary: "USS Wichita was a one-of-a-kind prototype — too top-heavy to sail without 200 tons of pig iron in her belly. She fought in two oceans, earned 13 battle stars, and her hull became the basis for the Baltimore class."

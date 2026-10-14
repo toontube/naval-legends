@@ -1,5 +1,6 @@
 ---
 title: "The Confederate Raider Who Captured 65 Ships and Sank in Front of French Tourists"
+seoTitle: "CSS Alabama: Semmes and 65 Captured Ships"
 slug: css-alabama-semmes
 date: 2026-04-16
 summary: "CSS Alabama spent 22 months capturing Union merchant ships. Her final battle off Cherbourg became a spectator event. Manet painted it."

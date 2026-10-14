@@ -1,5 +1,6 @@
 ---
 title: "The Cruiser That Made British Intelligence Say 'They Must Be Building Ships Out of Cardboard'"
+seoTitle: "Mogami: Japan's Treaty-Busting Cruiser"
 slug: mogami-cardboard-cruiser
 date: 2026-04-19
 summary: "Japan cheated on every treaty, built a cruiser that cracked its own hull, rammed its sister ship at Midway, got rebuilt as a half-carrier, and still came back for more."

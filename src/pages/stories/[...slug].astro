@@ -49,7 +49,7 @@ const ksStickyUrl = 'https://www.kickstarter.com/projects/mozuma/come-on-texas?r
 <BaseLayout>
   <SEOHead
     slot="head"
-    title={`${story.data.title} | Bravo Zulu`}
+    title={`${story.data.seoTitle ?? story.data.title} | Bravo Zulu`}
     description={story.data.summary}
     image={`/og/${story.data.slug}.png`}
     type="article"
@@ -60,19 +60,19 @@ const ksStickyUrl = 'https://www.kickstarter.com/projects/mozuma/come-on-texas?r
     "@type": "Article",
     "headline": story.data.title,
     "description": story.data.summary,
-    "image": story.data.image ? `https://brvzulu.com${story.data.image}` : undefined,
+    "image": story.data.image ? `https://brvzulu.com${story.data.image}` : `https://brvzulu.com/og/${story.data.slug}.png`,
     "datePublished": story.data.date.toISOString(),
-    "author": { "@type": "Organization", "name": "Bravo Zulu" },
-    "publisher": { "@type": "Organization", "name": "Bravo Zulu", "url": "https://brvzulu.com" },
-    "mainEntityOfPage": `https://brvzulu.com/stories/${story.data.slug}`,
+    "author": { "@id": "https://brvzulu.com/#org" },
+    "publisher": { "@id": "https://brvzulu.com/#org" },
+    "mainEntityOfPage": `https://brvzulu.com/stories/${story.data.slug}/`,
   })} />
   <script slot="head" type="application/ld+json" set:html={JSON.stringify({
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     "itemListElement": [
       { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://brvzulu.com/" },
-      { "@type": "ListItem", "position": 2, "name": "Stories", "item": "https://brvzulu.com/stories" },
-      { "@type": "ListItem", "position": 3, "name": story.data.title, "item": `https://brvzulu.com/stories/${story.data.slug}` },
+      { "@type": "ListItem", "position": 2, "name": "Stories", "item": "https://brvzulu.com/stories/" },
+      { "@type": "ListItem", "position": 3, "name": story.data.title, "item": `https://brvzulu.com/stories/${story.data.slug}/` },
     ],
   })} />
 
@@ -83,7 +83,7 @@ const ksStickyUrl = 'https://www.kickstarter.com/projects/mozuma/come-on-texas?r
 
     {story.data.image && (
       <figure class="article-hero">
-        <img src={story.data.image} alt={`${story.data.title} - ${story.data.tags[0]} naval history`} width="1200" height="630" />
+        <img src={story.data.image} alt={`${story.data.title} - ${story.data.tags[0]} naval history`} width="1200" height="630" fetchpriority="high" />
       </figure>
     )}
 
@@ -127,7 +127,7 @@ const ksStickyUrl = 'https://www.kickstarter.com/projects/mozuma/come-on-texas?r
         <h2 class="read-next-title">Read next</h2>
         <div class="read-next-grid">
           {otherStories.map((s) => (
-            <a href={`/stories/${s.data.slug}`} class="read-next-card" data-tags={s.tagOverlap}>
+            <a href={`/stories/${s.data.slug}/`} class="read-next-card" data-tags={s.tagOverlap}>
               {s.data.image && (
                 <img src={s.data.image} alt={s.data.title} class="read-next-img" loading="lazy" />
               )}

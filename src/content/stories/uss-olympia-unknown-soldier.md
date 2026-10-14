@@ -1,5 +1,6 @@
 ---
 title: "The Ship That Almost Lost the Unknown Soldier to the Atlantic"
+seoTitle: "USS Olympia and the Unknown Soldier"
 slug: uss-olympia-unknown-soldier
 date: 2026-04-15
 summary: "In 1921, the casket wouldn't fit below deck. They lashed it to the bow. Then a hurricane hit."

@@ -1,5 +1,6 @@
 ---
 title: "A Battleship Accidentally Shelled a Cathedral. The Shell Never Exploded."
+seoTitle: "Genoa Cathedral Shell: HMS Malaya, 1941"
 slug: genoa-cathedral-shell
 date: 2026-05-22
 summary: "A gunnery error sent a 381mm armor-piercing shell from HMS Malaya through the roof of a 12th-century cathedral. It punched through the nave, hit the floor, and just sat there."

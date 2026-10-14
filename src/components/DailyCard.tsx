@@ -99,7 +99,7 @@ export default function DailyCard({ cards }: DailyCardProps) {
   const handleShare = () => {
     const text = `BZ #${dayNum + 1}\n"${todayCard.hook}"\n\n${todayCard.reveal}\n\nbrvzulu.com`;
     const url = todayCard.linkedStory !== 'placeholder'
-      ? `https://brvzulu.com/stories/${todayCard.linkedStory}`
+      ? `https://brvzulu.com/stories/${todayCard.linkedStory}/`
       : 'https://brvzulu.com';
 
     track('daily_share', { card_ship: todayCard.ship, day: dayNum + 1 });
@@ -158,7 +158,7 @@ export default function DailyCard({ cards }: DailyCardProps) {
                   <div className="daily-actions">
                     {hasArticle && (
                       <a
-                        href={`/stories/${todayCard.linkedStory}`}
+                        href={`/stories/${todayCard.linkedStory}/`}
                         className="daily-btn daily-btn--primary"
                         onClick={(e) => {
                           e.stopPropagation();
@@ -208,7 +208,7 @@ export default function DailyCard({ cards }: DailyCardProps) {
                 className="daily-archive-card"
                 onClick={() => {
                   if (card.linkedStory !== 'placeholder') {
-                    window.location.href = `/stories/${card.linkedStory}`;
+                    window.location.href = `/stories/${card.linkedStory}/`;
                   }
                 }}
               >
@@ -218,7 +218,7 @@ export default function DailyCard({ cards }: DailyCardProps) {
               </div>
             ))}
           </div>
-          <a href="/stories" className="daily-browse-all">Browse all stories &rarr;</a>
+          <a href="/stories/" className="daily-browse-all">Browse all stories &rarr;</a>
         </motion.div>
       )}
     </div>

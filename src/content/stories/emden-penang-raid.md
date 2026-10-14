@@ -1,5 +1,6 @@
 ---
 title: "SMS Emden: The Raider Who Faked a Funnel and Killed a Ship in Port"
+seoTitle: "SMS Emden Raid on Penang, 1914"
 slug: emden-penang-raid
 date: 2026-04-17
 summary: "SMS Emden rigged a fake fourth funnel, slipped into British-controlled Penang harbor, and torpedoed the Russian cruiser Zhemchug. Her captain was at the E&O Hotel with a woman. He watched through the window."

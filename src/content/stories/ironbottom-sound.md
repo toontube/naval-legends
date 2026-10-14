@@ -1,5 +1,6 @@
 ---
 title: "The Strait Where Fifty Ships Went to Die"
+seoTitle: "Ironbottom Sound: Where 50 Ships Sank"
 slug: ironbottom-sound
 date: 2026-05-21
 summary: "Between August 1942 and February 1943, the narrow strait between Guadalcanal and Savo Island swallowed more than fifty warships from both sides. The sailors called it Ironbottom Sound."

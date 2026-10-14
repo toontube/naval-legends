@@ -42,7 +42,7 @@ export function Card({ card, style, onReveal }: CardProps) {
   const [revealed, setRevealed] = useState(false);
   const gradient = gradients[(card.order - 1) % gradients.length];
   const hasArticle = card.linkedStory !== 'placeholder';
-  const storyUrl = hasArticle ? `/stories/${card.linkedStory}` : undefined;
+  const storyUrl = hasArticle ? `/stories/${card.linkedStory}/` : undefined;
 
   const handleTap = (e: React.MouseEvent | React.TouchEvent) => {
     if ((e.target as HTMLElement).closest('a, button')) return;
@@ -63,7 +63,7 @@ export function Card({ card, style, onReveal }: CardProps) {
       : '';
     const text = `"${card.hook}"\n\n${card.reveal}${specsLine}`;
     const url = hasArticle
-      ? `https://brvzulu.com/stories/${card.linkedStory}`
+      ? `https://brvzulu.com/stories/${card.linkedStory}/`
       : 'https://brvzulu.com';
 
     (window as any).gtag?.('event', 'card_share', {

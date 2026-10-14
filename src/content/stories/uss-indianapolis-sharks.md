@@ -1,5 +1,6 @@
 ---
 title: "The Ship That Delivered the Bomb and Disappeared"
+seoTitle: "USS Indianapolis: The Sinking and the Sharks"
 slug: uss-indianapolis-sharks
 date: 2026-04-19
 summary: "USS Indianapolis delivered the Hiroshima uranium, got torpedoed four days later, and 900 men went into the water. The Navy didn't notice for four days. Sharks circled for 96 hours. 316 survived. The captain was court-martialed and shot himself."

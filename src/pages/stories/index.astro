@@ -43,9 +43,9 @@ const filterTags = [...tagCounts.entries()]
 
     <div class="stories-grid">
       {sorted.map((story) => (
-        <a href={`/stories/${story.data.slug}`} class="story-card" data-tags={story.data.tags.join(' ')}>
+        <a href={`/stories/${story.data.slug}/`} class="story-card" data-tags={story.data.tags.join(' ')}>
           {story.data.image && (
-            <img src={story.data.image} alt="" class="story-card-img" loading="lazy" decoding="async" />
+            <img src={story.data.image} alt={story.data.title} class="story-card-img" loading="lazy" decoding="async" />
           )}
           <div class="story-card-inner">
             <div class="story-meta">
