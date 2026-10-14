@@ -3,6 +3,7 @@ title: "The Cruiser That Got Shot by Its Own Fleet, Started a Revolution, and Be
 seoTitle: "Cruiser Aurora: Friendly Fire to Revolution"
 slug: aurora-friendly-fire
 date: 2026-04-17
+updated: 2026-10-14
 summary: "Russia's 2nd Pacific Squadron mistook British fishermen for Japanese torpedo boats. Aurora took fire from her own battleships. Then she survived Tsushima, fired the shot that started the Bolshevik revolution, and never left."
 image: /images/aurora.jpg
 tags: [russo-japanese-war, wwi, revolution, aurora, russia]

@@ -3,6 +3,7 @@ title: "Praise the Lord and Pass the Ammunition"
 seoTitle: "USS New Orleans at Pearl Harbor: Pass the Ammo"
 slug: uss-new-orleans-pearl-harbor
 date: 2026-04-26
+updated: 2026-10-14
 summary: "USS New Orleans was dead in the water at Pearl Harbor when the attack started. No power, no hoists, no ammunition at the guns. Her chaplain's shout became one of the war's most famous phrases. Frank Loesser turned it into a No. 1 hit."
 image: /images/uss-new-orleans-pearl-harbor.jpg
 tags: [wwii, pearl-harbor, uss-new-orleans, chaplain-forgy, tassafaronga]

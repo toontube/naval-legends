@@ -3,6 +3,7 @@ title: "The Royal Navy Put Steam Engines in Submarines and Lost More Boats to Th
 seoTitle: "K-Class Submarines: The Royal Navy's Disaster"
 slug: k-class-kalamity
 date: 2026-04-21
+updated: 2026-10-14
 summary: "The British K-class submarines were steam-powered, 339 feet long, and needed five minutes to dive. None were sunk by the enemy. Six sank anyway."
 image: /images/k-class-submarine.jpg
 tags: [wwi, submarines, k-class, royal-navy, engineering-failure]

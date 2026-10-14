@@ -3,6 +3,7 @@ title: "306 Men Sailed Out of Barbados and the Navy Never Found a Single One"
 seoTitle: "USS Cyclops: 306 Men Vanished in 1918"
 slug: uss-cyclops-vanished
 date: 2026-04-19
+updated: 2026-10-14
 summary: "USS Cyclops left Barbados on March 4, 1918 with 306 people and 11,000 tons of manganese ore. No distress signal. No wreckage. No explanation. It's the largest non-combat loss of life in US Navy history and nobody knows what happened."
 tags: [wwi, uss-cyclops, missing-ships, bermuda-triangle, mystery]
 readingTime: 4

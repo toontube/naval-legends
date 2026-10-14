@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import Picture from '../../components/Picture.astro';
 import { ORG } from '../../lib/seo';
 import { cardSrcset, CARD_SIZES } from '../../lib/cardImage';
 import Navigation from '../../components/Navigation.astro';
@@ -46,7 +47,7 @@ const filterTags = [...tagCounts.entries()]
 
   <main id="main" class="stories-page">
     <h1 class="stories-title">Stories</h1>
-    <p class="home-lede">Or browse <a href="/topics/">by war, navy and theme</a>.</p>
+    <p class="stories-lede">Or browse <a href="/topics/">by war, navy and theme</a>.</p>
 
     {filterTags.length > 0 && (
       <div class="story-filters" role="group" aria-label="Filter stories by topic">
@@ -61,7 +62,7 @@ const filterTags = [...tagCounts.entries()]
       {sorted.map((story) => (
         <a href={`/stories/${story.data.slug}/`} class="story-card" data-tags={story.data.tags.join(' ')}>
           {story.data.image && (
-            <img src={story.data.image} srcset={cardSrcset(story.data.image)} sizes={CARD_SIZES} alt={story.data.title} width="480" height="270" class="story-card-img" loading="lazy" decoding="async" />
+            <Picture src={story.data.image} sizes={CARD_SIZES} alt={story.data.title} width="480" height="270" class="story-card-img" loading="lazy" />
           )}
           <div class="story-card-inner">
             <div class="story-meta">
@@ -137,6 +138,21 @@ const filterTags = [...tagCounts.entries()]
     }
   }
 
+  .stories-title:has(+ .stories-lede) {
+    margin-bottom: 0.5rem;
+  }
+
+  .stories-lede {
+    color: var(--text-secondary);
+    margin-bottom: 1.75rem;
+  }
+
+  .stories-lede a {
+    color: var(--accent);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+
   .story-filters {
     display: flex;
     flex-wrap: wrap;
@@ -179,7 +195,7 @@ const filterTags = [...tagCounts.entries()]
     display: none;
   }
 
-  .story-card-img {
+  :global(.story-card-img) {
     display: block;
     width: 100%;
     aspect-ratio: 16 / 9;

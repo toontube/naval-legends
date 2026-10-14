@@ -3,6 +3,7 @@ title: "The Day Germany Sank Its Own Navy in Someone Else's Harbor"
 seoTitle: "Scuttling at Scapa Flow, 1919"
 slug: scapa-flow-scuttling
 date: 2026-10-13
+updated: 2026-10-14
 summary: "On June 21, 1919, a German rear admiral sent a two-word coded signal. Within five hours, 52 warships sank in a British anchorage while 160 schoolchildren watched from an excursion boat."
 image: /images/scapa-flow-scuttling.jpg
 tags: [wwi, scapa-flow, scuttling, high-seas-fleet, germany, orkney]

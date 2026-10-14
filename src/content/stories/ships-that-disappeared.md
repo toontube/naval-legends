@@ -3,6 +3,7 @@ title: "Ships That Disappeared Without a Trace"
 seoTitle: "Ships That Disappeared Without a Trace"
 slug: ships-that-disappeared
 date: 2026-05-21
+updated: 2026-10-14
 summary: "USS Cyclops. SS Waratah. MV Joyita. USS Scorpion. These ships sailed out of port with hundreds of people aboard and were never seen again. Some left no wreckage. Some left no explanation. Here are the ones that still have neither."
 image: /images/ships-that-disappeared.jpg
 tags: [mystery, missing-ships, uss-cyclops, ss-waratah, mv-joyita, uss-scorpion, bermuda-triangle]

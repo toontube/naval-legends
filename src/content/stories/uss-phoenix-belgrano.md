@@ -3,6 +3,7 @@ title: "The Ship That Survived Pearl Harbor and Was Sunk Forty Years Later by a 
 seoTitle: "ARA General Belgrano: Ex-USS Phoenix"
 slug: uss-phoenix-belgrano
 date: 2026-04-20
+updated: 2026-10-14
 summary: "USS Phoenix escaped Pearl Harbor untouched, fought the entire Pacific war, was sold to Argentina, renamed twice, and sunk in 1982 by a British submarine using torpedoes designed thirteen years before the ship was launched. 323 dead. The captain said the British were right."
 image: /images/belgrano-gotcha.jpg
 tags: [wwii, falklands-war, uss-phoenix, general-belgrano, pearl-harbor]

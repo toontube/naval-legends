@@ -3,6 +3,7 @@ title: "They Packed a Destroyer With Five Tons of Explosives and Rammed It Into 
 seoTitle: "HMS Campbeltown: St Nazaire Raid, 1942"
 slug: hms-campbeltown-st-nazaire
 date: 2026-04-23
+updated: 2026-10-14
 summary: "HMS Campbeltown was an old American lend-lease destroyer. The British disguised her as a German torpedo boat, filled her bow with depth charges, and drove her into the Normandie Dock at St Nazaire. The explosives went off ten hours later while German officers were inspecting the wreck."
 image: /images/hms-campbeltown-raid.jpg
 tags: [wwii, commandos, hms-campbeltown, st-nazaire, operation-chariot]
