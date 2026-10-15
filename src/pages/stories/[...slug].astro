@@ -53,6 +53,12 @@ const dateStr = story.data.date.toLocaleDateString('en-US', {
   day: 'numeric',
 });
 
+// "Suggest an edit": opens a pre-filled email to the editors.
+const storyUrl = `https://brvzulu.com/stories/${story.data.slug}/`;
+const editHref = `mailto:stories@bravozulu.co?subject=${encodeURIComponent(`Edit suggestion: ${story.data.title}`)}&body=${encodeURIComponent(
+  `Story: ${storyUrl}\n\nWhat should change (quote the sentence if you can):\n\n\nWhat it should say:\n\n\nSource (link, book, record or document):\n\n\nHow should we credit you? (name, or leave blank to stay anonymous)\n`
+)}`;
+
 const ksUrl = 'https://www.kickstarter.com/projects/mozuma/come-on-texas?ref=bz-article';
 const ksStickyUrl = 'https://www.kickstarter.com/projects/mozuma/come-on-texas?ref=bz-sticky';
 ---
@@ -129,6 +135,12 @@ const ksStickyUrl = 'https://www.kickstarter.com/projects/mozuma/come-on-texas?r
     <article class="prose" id="article-body">
       <Content />
     </article>
+
+    <aside class="suggest-edit" aria-labelledby="suggest-edit-title">
+      <h2 id="suggest-edit-title" class="suggest-edit-title">Know more about this ship?</h2>
+      <p>Spotted an error, have a source we missed, or served on her or had family aboard? Tell us. We check every suggestion against the record and credit accepted corrections on the story.</p>
+      <a class="suggest-edit-btn" href={editHref}>Suggest an edit</a>
+    </aside>
 
     <!-- 50% scroll nudge -->
     <div class="scroll-nudge" id="scroll-nudge">
@@ -287,6 +299,40 @@ const ksStickyUrl = 'https://www.kickstarter.com/projects/mozuma/come-on-texas?r
   }
 
   /* Scroll nudge: hidden until 50% scroll */
+  .suggest-edit {
+    max-width: 66ch;
+    margin: 2.5rem auto 0;
+    padding: 1.25rem 1.5rem;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+  }
+
+  .suggest-edit-title {
+    font-size: 1.125rem;
+    margin: 0 0 0.5rem;
+  }
+
+  .suggest-edit p {
+    color: var(--text-secondary);
+    margin: 0 0 1rem;
+  }
+
+  .suggest-edit-btn {
+    display: inline-block;
+    padding: 0.6rem 1.1rem;
+    border: 1px solid var(--accent);
+    border-radius: 999px;
+    color: var(--accent);
+    font-weight: 500;
+    text-decoration: none;
+  }
+
+  .suggest-edit-btn:hover,
+  .suggest-edit-btn:focus-visible {
+    background: var(--accent);
+    color: var(--bg-primary, #0a0e17);
+  }
+
   .scroll-nudge {
     display: none;
     text-align: center;
