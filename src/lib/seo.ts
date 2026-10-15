@@ -11,7 +11,7 @@ export const ORG = {
   sameAs: ['https://mozuma.co', 'https://www.kickstarter.com/profile/mozuma'],
 };
 
-// Meta descriptions: whole sentences from the summary, up to 160 characters.
+// Meta descriptions: whole sentences from the summary, up to 160 characters; word cut when that is too short.
 export const metaDescription = (text: string, max = 160) => {
   if (text.length <= max) return text;
   let out = '';
@@ -20,5 +20,6 @@ export const metaDescription = (text: string, max = 160) => {
     out += s;
   }
   out = out.trim();
-  return out || text.slice(0, max - 1).replace(/\s+\S*$/, '') + '…';
+  // Too short after whole sentences: cut at a word boundary instead, so the snippet stays useful.
+  return out.length >= 110 ? out : text.slice(0, max - 1).replace(/\s+\S*$/, '').replace(/[,;:]$/, '') + '…';
 };

@@ -36,7 +36,7 @@ To every German crew in the harbor, it meant open everything.
 
 The first ship to go was Friedrich der Grosse, von Reuter's former fleet flagship. She capsized at 12:16. Then they went fast.
 
-By 14:00, all five battleships of the 4th Battle Squadron were gone. The battlecruisers Moltke and Seydlitz followed. Von der Tann rolled over. Derfflinger sank before 15:00. Kaiser, Konig, Kronprinz Wilhelm, Markgraf, Grosser Kurfurst -- one after another, 25,000-ton battleships heeled over and disappeared into the grey water of the Flow.
+By 14:00, all five battleships of the 4th Battle Squadron were gone. The battlecruisers Moltke and Seydlitz followed. Von der Tann rolled over. Derfflinger sank before 15:00. Kaiser, Konig, Kronprinz Wilhelm, Markgraf, Grosser Kurfurst. One after another, 25,000-ton battleships heeled over and disappeared into the grey water of the Flow.
 
 By 17:00, when the battlecruiser Hindenburg finally settled on the bottom, 52 of 74 ships had sunk. Fifteen [capital ships](/stories/cruiser-vs-destroyer-vs-battleship/). Five light cruisers. Thirty-two destroyers. Roughly 400,000 tons of warships, gone. It was the greatest loss of shipping in a single day in history.
 
@@ -48,7 +48,7 @@ There were witnesses nobody expected.
 
 That morning, a party of children from Stromness Public School (usually given as about 160) had boarded the tender Flying Kestrel for a day trip around Scapa Flow to see the German warships. Their teachers had arranged the excursion because what child wouldn't want to see real battleships?
 
-The children got more than they paid for. From the deck of the Flying Kestrel, they watched battleship after battleship roll over and sink. The sea filled with debris -- hammocks, lifebelts, wooden chests, and hundreds of German sailors in the water.
+The children got more than they paid for. From the deck of the Flying Kestrel, they watched battleship after battleship roll over and sink. The sea filled with debris: hammocks, lifebelts, wooden chests, and hundreds of German sailors in the water.
 
 It was the best field trip in the history of Scottish education.
 
@@ -56,7 +56,7 @@ It was the best field trip in the history of Scottish education.
 
 The British guards were furious. The British guard vessels fired warning shots, then opened up with machine guns and small arms on German crews trying to abandon ship in lifeboats. Three German sailors in one boat were killed outright, four wounded.
 
-In total, nine German sailors were shot dead and sixteen wounded. The Armistice had ended the war on November 11, 1918. The Treaty of Versailles would be signed on June 28, 1919 -- seven days after the scuttling. Those nine Germans are arguably the last casualties of the First World War.
+In total, nine German sailors were shot dead and sixteen wounded. The Armistice had ended the war on November 11, 1918. The Treaty of Versailles would be signed on June 28, 1919, seven days after the scuttling. Those nine Germans are arguably the last casualties of the First World War.
 
 Von Reuter was taken prisoner. He was unapologetic. In Germany, a special medal was struck in 1919 to commemorate the scuttling. He was treated as a hero.
 
@@ -74,7 +74,7 @@ Seven remain.
 
 ## Still there
 
-Three battleships -- SMS Konig, SMS Kronprinz Wilhelm, and SMS Markgraf -- and four light cruisers -- SMS Coln, SMS Dresden, SMS Karlsruhe, and SMS Brummer -- still sit on the bottom of Scapa Flow at depths of 35 to 50 meters. They are Scheduled Ancient Monuments, protected by law.
+Three battleships (SMS Konig, SMS Kronprinz Wilhelm, and SMS Markgraf) and four light cruisers (SMS Coln, SMS Dresden, SMS Karlsruhe, and SMS Brummer) still sit on the bottom of Scapa Flow at depths of 35 to 50 meters. They are Scheduled Ancient Monuments, protected by law.
 
 They are also among the most popular dive sites in the world. Every year, thousands of divers descend on Orkney to swim through the corridors of warships that sank not from enemy fire but from the orders of their own admiral. At least twelve liveaboard dive boats operate out of Stromness, the same town the schoolchildren left from that morning in 1919.
 
@@ -90,13 +90,13 @@ The full story: See "Paragraph Eleven" above for how the signal was given and th
 
 ### How many ships were scuttled at Scapa Flow?
 
-Fifty-two of 74 interned German warships sank on June 21, 1919 — fifteen capital ships (battleships and battlecruisers), five light cruisers, and thirty-two destroyers, totaling roughly 400,000 tons. It was the greatest loss of shipping in a single day in history. The British managed to beach 22 vessels in shallow water before they could sink completely.
+Fifty-two of 74 interned German warships sank on June 21, 1919: fifteen capital ships (battleships and battlecruisers), five light cruisers, and thirty-two destroyers, totaling roughly 400,000 tons. It was the greatest loss of shipping in a single day in history. The British managed to beach 22 vessels in shallow water before they could sink completely.
 
 The full story: See "400,000 tons in five hours" above for the full timeline of the sinkings.
 
 ### Can you dive the Scapa Flow wrecks?
 
-Yes. Seven ships remain on the bottom — three battleships (Konig, Kronprinz Wilhelm, and Markgraf) and four light cruisers (Coln, Dresden, Karlsruhe, and Brummer) — at depths of 35 to 50 meters. They are Scheduled Ancient Monuments but open to recreational diving. At least twelve liveaboard dive boats operate out of Stromness, and thousands of divers visit Orkney each year to explore the wrecks.
+Yes. Seven ships remain on the bottom: three battleships (Konig, Kronprinz Wilhelm, and Markgraf) and four light cruisers (Coln, Dresden, Karlsruhe, and Brummer), at depths of 35 to 50 meters. They are Scheduled Ancient Monuments but open to recreational diving. At least twelve liveaboard dive boats operate out of Stromness, and thousands of divers visit Orkney each year to explore the wrecks.
 
 The full story: See "Still there" above for details on the remaining wrecks and their unique radioactive-free steel.
 
@@ -108,4 +108,4 @@ The full story: See "Still there" above for details on the remaining wrecks and 
 - [The Scuttling of the German Fleet: Eyewitness Accounts (Orkney Museums)](https://orkneymuseums.co.uk/scuttling-of-the-german-fleet-eyewitness/)
 - [Scapa 100: Salvaging Our Heritage (Stromness Museum)](https://www.stromnessmuseum.org.uk/whatson/online/scapa-100-salvaging-our-heritage)
 
-**Photo credit:** SMS Hindenburg at Scapa Flow, 1919 -- Wikimedia Commons, public domain
+**Photo credit:** SMS Hindenburg at Scapa Flow, 1919, Wikimedia Commons, public domain

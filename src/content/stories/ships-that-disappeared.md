@@ -14,21 +14,21 @@ Ships sink all the time. What makes these different is that nobody found them. N
 
 The ocean covers 139 million square miles. Some of these ships are down there somewhere. A few have since been located. Most have not.
 
-## USS Cyclops (1918) — 306 missing
+## USS Cyclops (1918): 306 missing
 
 USS Cyclops was a 19,360-ton Navy collier, 542 feet long, built to haul coal and ore for the fleet. On March 4, 1918, she left Barbados carrying 306 people and 11,000 tons of manganese ore bound for Baltimore.
 
 She never arrived. No distress signal was received. No wreckage was found. No bodies washed ashore.
 
-The Navy searched for months. They checked German submarine records after the war. No U-boat had claimed her. They checked for storms. Weather was unreasonable but not catastrophic. They checked the cargo — 11,000 tons was above her recommended limit, and manganese ore shifts unpredictably in a ship's hold.
+The Navy searched for months. They checked German submarine records after the war. No U-boat had claimed her. They checked for storms. Weather was unreasonable but not catastrophic. They checked the cargo: 11,000 tons was above her recommended limit, and manganese ore shifts unpredictably in a ship's hold.
 
 One of her two engines had been disabled before the voyage. Her captain, Lieutenant Commander George Worley, was under investigation for suspected pro-German sympathies (he was born in Germany as Johan Frederick Wichmann). None of these facts explain a 542-foot ship vanishing without a trace.
 
 It remains the largest non-combat loss of life in US Navy history. The [full story of USS Cyclops](/stories/uss-cyclops-vanished/) is one of the most baffling in the Navy's records.
 
-Two of Cyclops' sister ships — USS Proteus and USS Nereus — disappeared in the same waters in 1941. Also without a trace. Also carrying heavy metallic ore.
+Two of Cyclops' sister ships, USS Proteus and USS Nereus, disappeared in the same waters in 1941. Also without a trace. Also carrying heavy metallic ore.
 
-## SS Waratah (1909) — 211 missing
+## SS Waratah (1909): 211 missing
 
 SS Waratah was a passenger and cargo steamer, 465 feet long, built in 1908 for the Blue Anchor Line's route between Britain and Australia. On July 26, 1909, she left Durban, South Africa, bound for Cape Town with 211 passengers and crew.
 
@@ -36,7 +36,7 @@ One passenger, Claude Sawyer, had disembarked at Durban and refused to reboard. 
 
 The Waratah was last seen the following morning by the cargo ship Clan McIntyre. After that, nothing.
 
-The search lasted months. The Royal Navy, the South African government, and the Blue Anchor Line all sent ships. Three chartered search vessels covered thousands of square miles. They found nothing — not a lifeboat, not a deck chair, not a body.
+The search lasted months. The Royal Navy, the South African government, and the Blue Anchor Line all sent ships. Three chartered search vessels covered thousands of square miles. They found nothing: not a lifeboat, not a deck chair, not a body.
 
 A Board of Trade inquiry in 1910 concluded she had been lost in a storm of exceptional violence, without settling the exact cause. Without wreckage, that was a guess.
 
@@ -44,11 +44,11 @@ In 1999, marine explorer Emlyn Brown claimed to have located a wreck off the Eas
 
 SS Waratah is sometimes called "Australia's Titanic," though she disappeared three years before the Titanic sailed.
 
-## MV Joyita (1955) — 25 missing
+## MV Joyita (1955): 25 missing
 
 MV Joyita was different. They found the ship. They never found the people.
 
-She was a 69-foot wooden motor vessel, built in 1931 in Los Angeles. By 1955 she was operating in the South Pacific, registered in Western Samoa. On October 3, 1955, she left Apia, Samoa, bound for the Tokelau Islands, 270 miles away. She carried 25 people — crew, government officials, a doctor, a pharmacist, and two children.
+She was a 69-foot wooden motor vessel, built in 1931 in Los Angeles. By 1955 she was operating in the South Pacific, registered in Western Samoa. On October 3, 1955, she left Apia, Samoa, bound for the Tokelau Islands, 270 miles away. She carried 25 people: crew, government officials, a doctor, a pharmacist, and two children.
 
 She never arrived.
 
@@ -62,21 +62,21 @@ The leading theory: the leak flooded the engine room, killing the engines and th
 
 The South Pacific is full of sharks.
 
-## USS Scorpion (1968) — 99 dead
+## USS Scorpion (1968): 99 dead
 
 USS Scorpion was a Skipjack-class nuclear submarine, 251 feet long, carrying 99 men and two nuclear torpedoes. On May 21, 1968, she sent a routine radio message while returning from patrol in the Mediterranean. She was expected in Norfolk, Virginia, on May 27.
 
 She never arrived.
 
-Scorpion was one of four submarines lost worldwide in 1968 — the others were the Israeli INS Dakar, the French Minerve, and the Soviet K-129. 1968 was the worst single year for submarine losses since World War II.
+Scorpion was one of four submarines lost worldwide in 1968. The others were the Israeli INS Dakar, the French Minerve, and the Soviet K-129. 1968 was the worst single year for submarine losses since World War II.
 
-The Navy's underwater listening network — SOSUS, a chain of hydrophones on the Atlantic floor — had recorded a series of acoustic events on May 22 at coordinates southwest of the Azores. The sounds were consistent with a hull implosion.
+The Navy's underwater listening network (SOSUS, a chain of hydrophones on the Atlantic floor) had recorded a series of acoustic events on May 22 at coordinates southwest of the Azores. The sounds were consistent with a hull implosion.
 
-In October 1968, the research ship Mizar found Scorpion's wreckage on the seabed at 9,800 feet, about 400 miles southwest of the Azores. The hull had collapsed. The crew of 99 — who left behind 64 widows and 99 children — were all dead.
+In October 1968, the research ship Mizar found Scorpion's wreckage on the seabed at 9,800 feet, about 400 miles southwest of the Azores. The hull had collapsed. The crew of 99, who left behind 64 widows and 99 children, were all dead.
 
 The 1968 Court of Inquiry found that the certain cause could not be determined. Documents declassified in 1993 pointed to the Mark 37 torpedo as a probable cause. A torpedo's battery may have overheated, causing a hot-run inside the tube. Commander Francis Slattery may have ordered an emergency turn to disarm it. It didn't work.
 
-Others believe a Soviet submarine sank her during the Cold War's most tense period — just weeks after K-129 was lost — and both governments agreed to stay quiet. Declassified documents have not settled the question.
+Others believe a Soviet submarine sank her during the Cold War's most tense period, just weeks after K-129 was lost, and both governments agreed to stay quiet. Declassified documents have not settled the question.
 
 Scorpion still sits on the Atlantic floor with her nuclear reactor and two nuclear warheads. The Navy monitors the site. The reactor has never leaked.
 
@@ -104,11 +104,11 @@ The exact number is disputed and depends on how broadly you define the Bermuda T
 
 ### Was USS Scorpion sunk by the Russians?
 
-The official US Navy investigation concluded that USS Scorpion was most likely lost due to a torpedo malfunction — specifically, a Mark 37 torpedo battery overheating inside its tube. However, some researchers and former military officials believe a Soviet submarine sank Scorpion in retaliation for or in connection with the loss of Soviet submarine K-129 earlier in 1968. Declassified documents have not definitively resolved the question. The wreck sits at 9,800 feet in the Atlantic with two nuclear warheads still aboard.
+The official US Navy investigation concluded that USS Scorpion was most likely lost due to a torpedo malfunction, specifically a Mark 37 torpedo battery overheating inside its tube. However, some researchers and former military officials believe a Soviet submarine sank Scorpion in retaliation for or in connection with the loss of Soviet submarine K-129 earlier in 1968. Declassified documents have not definitively resolved the question. The wreck sits at 9,800 feet in the Atlantic with two nuclear warheads still aboard.
 
 ### What happened to the passengers of MV Joyita?
 
-No one knows. When MV Joyita was found drifting five weeks after her disappearance in 1955, all 25 people aboard were gone. The ship was waterlogged but afloat — her cork-lined hull made her virtually unsinkable. Bloody bandages were found in a doctor's bag. The life rafts were missing. The leading theory is that the crew and passengers abandoned the ship after flooding disabled the engines, not realizing the ship would stay afloat. The life rafts were never found. None of the 25 people were ever seen again.
+No one knows. When MV Joyita was found drifting five weeks after her disappearance in 1955, all 25 people aboard were gone. The ship was waterlogged but afloat, because her cork-lined hull made her virtually unsinkable. Bloody bandages were found in a doctor's bag. The life rafts were missing. The leading theory is that the crew and passengers abandoned the ship after flooding disabled the engines, not realizing the ship would stay afloat. The life rafts were never found. None of the 25 people were ever seen again.
 
 ---
 
@@ -120,4 +120,4 @@ No one knows. When MV Joyita was found drifting five weeks after her disappearan
 - [What Really Happened to the Nuclear Sub USS Scorpion? (HistoryNet)](https://historynet.com/final-secret-uss-scorpion/)
 - Offley, Ed. *Scorpion Down: Sunk by the Soviets, Buried by the Pentagon.* Basic Books, 2007.
 
-**Photo credit:** "Ships lost at sea" composite — Wikimedia Commons, public domain
+**Photo credit:** "Ships lost at sea" composite, Wikimedia Commons, public domain

@@ -134,7 +134,7 @@ export default function SwipeCards({ cards }: SwipeCardsProps) {
         />
       </AnimatePresence>
 
-      {/* Swipe hint — fades after first interaction */}
+      {/* Swipe hint: fades after first interaction */}
       {!hasInteracted && (
         <motion.div
           className="swipe-hint"

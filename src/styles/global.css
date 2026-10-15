@@ -51,7 +51,7 @@ body {
   line-height: 1.5;
 }
 
-/* Banner offset — adds space when KS banner is visible */
+/* Banner offset : adds space when KS banner is visible */
 :root.ks-banner-visible {
   --banner-offset: var(--ks-banner-height);
 }
@@ -97,7 +97,7 @@ h1, h2, h3, h4 {
   margin: 0 auto;
 }
 
-/* Drop cap — first letter of first paragraph */
+/* Drop cap : first letter of first paragraph */
 .prose > p:first-of-type::first-letter {
   font-family: var(--font-display);
   font-size: 3.5em;
@@ -112,7 +112,7 @@ h1, h2, h3, h4 {
   margin-bottom: 1.5em;
 }
 
-/* Pull quote — use blockquote with a specific class or just style blockquotes bigger */
+/* Pull quote : use blockquote with a specific class or just style blockquotes bigger */
 .prose > blockquote {
   border-left: none;
   border-top: 1px solid var(--border);

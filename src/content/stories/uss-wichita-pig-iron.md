@@ -4,7 +4,7 @@ seoTitle: "USS Wichita: 200 Tons of Pig Iron Ballast"
 slug: uss-wichita-pig-iron
 date: 2026-04-20
 updated: 2026-10-14
-summary: "USS Wichita was a one-of-a-kind prototype — too top-heavy to sail without 200 tons of pig iron in her belly. She fought in two oceans, earned 13 battle stars, and her hull became the basis for the Baltimore class."
+summary: "USS Wichita was a one-of-a-kind prototype, too top-heavy to sail without 200 tons of pig iron in her belly. She fought in two oceans, earned 13 battle stars, and her hull became the basis for the Baltimore class."
 image: /images/uss-wichita.jpg
 tags: [wwii, us-navy, uss-wichita, treaty-cruiser, design-history]
 readingTime: 4

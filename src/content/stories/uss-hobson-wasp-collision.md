@@ -17,7 +17,7 @@ Nobody knows why he turned.
 
 ## The setup
 
-The task group was steaming through the North Atlantic, roughly 900 kilometers southeast of St. John's, Newfoundland — position 42°21'N, 44°15'W. They were en route to Gibraltar. The Wasp (CV-18), an Essex-class carrier, was conducting night flight operations, recovering aircraft. The Hobson (DMS-26), a Gleaves-class destroyer converted to a minesweeper, was serving as plane guard — stationed astern of the carrier to pick up any pilots who ditched on landing.
+The task group was steaming through the North Atlantic, roughly 900 kilometers southeast of St. John's, Newfoundland, at position 42°21'N, 44°15'W. They were en route to Gibraltar. The Wasp (CV-18), an Essex-class carrier, was conducting night flight operations, recovering aircraft. The Hobson (DMS-26), a Gleaves-class destroyer converted to a minesweeper, was serving as plane guard, stationed astern of the carrier to pick up any pilots who ditched on landing.
 
 Two other destroyers were in the formation: USS Rodman (DD-456) and USS Ross (DD-563).
 
@@ -33,7 +33,7 @@ The stern section flooded and sank almost instantly. The bow section stayed aflo
 
 ## The rescue
 
-The Wasp herself was damaged — a 75-foot gash in her hull below the waterline. But she stayed afloat and launched boats. The Rodman closed in and pulled men from the water.
+The Wasp herself was damaged, with a 75-foot gash in her hull below the waterline. But she stayed afloat and launched boats. The Rodman closed in and pulled men from the water.
 
 Of the Hobson's crew of 237, sixty-one were rescued. Some were picked up by the Rodman, others by Wasp's boats. The water was cold. The North Atlantic in April runs around 4°C. Men who weren't pulled out quickly didn't last.
 
@@ -59,7 +59,7 @@ None of these explanations have any evidence behind them. They're reconstruction
 
 ## What stayed
 
-The Hobson was the largest peacetime loss of life in the U.S. Navy since the sinking of USS Thresher eleven years later — though Thresher was a submarine that imploded at depth, a different kind of disaster. The Hobson's loss was a surface collision in a routine formation, during a routine operation, in peacetime.
+The Hobson was the largest peacetime loss of life in the U.S. Navy since the sinking of USS Thresher eleven years later, though Thresher was a submarine that imploded at depth, a different kind of disaster. The Hobson's loss was a surface collision in a routine formation, during a routine operation, in peacetime.
 
 The Navy changed its plane guard procedures after the Hobson. Escorts were repositioned farther astern, with clearer rules about maintaining separation from the carrier during flight operations. Navies have always lost ships to their own side: the Royal Navy's [K-class submarines](/stories/k-class-kalamity/) sank six boats without enemy help, and [USS William D. Porter](/stories/uss-porter-torpedo-fdr/) once fired a live torpedo at the president's ship during a drill.
 

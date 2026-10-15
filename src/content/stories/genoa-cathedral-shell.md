@@ -26,7 +26,7 @@ The Italian battleships that British intelligence had reported? They were not th
 
 ## The Shell
 
-HMS Malaya carried eight 15-inch guns -- 381mm, each shell weighing nearly a ton. From 13 miles out, a gunnery officer's error sent one of those armor-piercing rounds off target. Way off target.
+HMS Malaya carried eight 15-inch guns: 381mm, each shell weighing nearly a ton. From 13 miles out, a gunnery officer's error sent one of those armor-piercing rounds off target. Way off target.
 
 The shell sailed over the harbor, over the waterfront, over the streets, and struck the Cathedral of San Lorenzo. This is Genoa's main cathedral, built starting in the 12th century, consecrated in 1118. It sits in the old city center, well inland from the port.
 
@@ -44,13 +44,13 @@ The shell passed through the roof and decking material without sufficient resist
 
 ## The Aftermath
 
-The cathedral survived. The structural damage from the shell's entry was repaired. The war moved on. Force H returned to Gibraltar on February 11, having completed its mission -- minus the three battleships that were never there. Three months later, in May 1941, [Bismarck sank HMS Hood](/stories/bismarck-last-battle/) and the Royal Navy hunted her down.
+The cathedral survived. The structural damage from the shell's entry was repaired. The war moved on. Force H returned to Gibraltar on February 11, having completed its mission, minus the three battleships that were never there. Three months later, in May 1941, [Bismarck sank HMS Hood](/stories/bismarck-last-battle/) and the Royal Navy hunted her down.
 
 The Italians were furious. The bombardment of Genoa was one of the few direct British attacks on the Italian mainland this early in the war, and 144 dead civilians ensured it became a propaganda point for Mussolini's government.
 
 The cathedral became something else entirely. The locals kept the shell. It was displayed in the right nave, a silent piece of evidence that a British battleship had, through simple human error, nearly destroyed a building that had stood for 800 years.
 
-The original shell was eventually removed and destroyed at sea for safety -- even unexploded ordnance from decades ago does not get more stable with time. But the Genoese had a full-scale replica made. Exact dimensions. Exact weight markings.
+The original shell was eventually removed and destroyed at sea for safety. Even unexploded ordnance from decades ago does not get more stable with time. But the Genoese had a full-scale replica made. Exact dimensions. Exact weight markings.
 
 It is still there today. The Cathedral of San Lorenzo, in the historic center of Genoa, displays a 1:1 replica of a 381mm armor-piercing shell from HMS Malaya in its right nave. A small plaque explains what happened on the morning of February 9, 1941. Tourists photograph it. Locals walk past it on their way to mass.
 
@@ -66,4 +66,4 @@ A gunnery error from 13 miles offshore, preserved in stone.
 - [Operation Grog - Desert War](https://desertwar.net/operation-grog/)
 - [Why Does This Medieval Church Have a Bomb in It? - uCatholic](https://ucatholic.com/blog/why-does-this-medieval-church-have-a-bomb-in-it/)
 
-**Photo credit:** HMS Malaya leaving New York Navy Yard, 1941 -- Wikimedia Commons / Imperial War Museum, Public Domain
+**Photo credit:** HMS Malaya leaving New York Navy Yard, 1941, Wikimedia Commons / Imperial War Museum, Public Domain
