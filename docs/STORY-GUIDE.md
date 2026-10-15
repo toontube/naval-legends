@@ -106,3 +106,7 @@ Verify every URL actually works before including it.
 - Never put personal data (emails, names) in web requests or User-Agent headers.
 - Do not edit `public/llms.txt`: it is generated.
 - Check `npm run build` passes before shipping.
+
+## After publishing
+
+Wait about 3 minutes for Vercel to deploy, then run `node scripts/indexnow.mjs` to tell Bing and other IndexNow engines about the new URLs.

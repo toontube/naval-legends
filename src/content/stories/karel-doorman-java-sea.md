@@ -54,7 +54,7 @@ Later that evening, with Exeter crippled and three destroyers sunk, Doorman sign
 
 Whether he used exactly those words is debated. The signal itself is not.
 
-At 23:22, Doorman's four remaining cruisers -- De Ruyter, Java, Houston, and Perth -- stumbled into Nachi and Haguro again in the dark. The Japanese launched Long Lance torpedoes. These were Type 93 oxygen-propelled torpedoes with a range of 40,000 meters and a 490-kilogram warhead. The Allies didn't know they existed.
+At 23:22, Doorman's four remaining cruisers (De Ruyter, Java, Houston, and Perth) stumbled into Nachi and Haguro again in the dark. The Japanese launched Long Lance torpedoes. These were Type 93 oxygen-propelled torpedoes with a range of 40,000 meters and a 490-kilogram warhead. The Allies didn't know they existed.
 
 At 23:32, a Long Lance hit HNLMS Java. She exploded and sank fast. The crew never had a chance. 512 of her 528 men died.
 
@@ -93,4 +93,4 @@ The Dutch government filed a formal protest. The salvagers were never identified
 - [IJN Nachi: Tabular Record of Movement - Combinedfleet.com](https://www.combinedfleet.com/nachi_t.htm)
 - [Battle of the Java Sea: One Event, Multiple Sites, Values and Views - Journal of Maritime Archaeology](https://link.springer.com/article/10.1007/s11457-020-09287-5)
 
-**Photo credit:** HNLMS De Ruyter underway, circa 1936-1942 -- Wikimedia Commons, [File:HNLMS De Ruyter.jpg](https://commons.wikimedia.org/wiki/File:HNLMS_De_Ruyter.jpg), Public Domain (Royal Netherlands Navy)
+**Photo credit:** HNLMS De Ruyter underway, circa 1936-1942, Wikimedia Commons, [File:HNLMS De Ruyter.jpg](https://commons.wikimedia.org/wiki/File:HNLMS_De_Ruyter.jpg), Public Domain (Royal Netherlands Navy)

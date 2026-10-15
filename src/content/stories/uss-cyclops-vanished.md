@@ -9,7 +9,7 @@ tags: [wwi, uss-cyclops, missing-ships, bermuda-triangle, mystery]
 readingTime: 4
 ---
 
-USS Cyclops was a Proteus-class collier, 542 feet long, displacing 19,360 tons fully loaded. She was built to haul coal for the Navy's fleet. Launched in 1910, she spent the first years of her career doing exactly that — dull, reliable supply runs along the Atlantic coast.
+USS Cyclops was a Proteus-class collier, 542 feet long, displacing 19,360 tons fully loaded. She was built to haul coal for the Navy's fleet. Launched in 1910, she spent the first years of her career doing exactly that: dull, reliable supply runs along the Atlantic coast.
 
 In early 1918, the Navy assigned her to carry manganese ore from Brazil to Baltimore. Manganese was critical for steel production, and steel was critical for the war. She loaded 11,000 tons of it in Bahia, Brazil on February 15.
 
@@ -25,7 +25,7 @@ His German birth raised suspicion during wartime, though it proved nothing. What
 
 Cyclops left Bahia and made an unscheduled stop in Barbados on March 3. One of her two engines had broken down. She could not fix it in Barbados, so she sailed on with one working engine.
 
-On March 4, 1918, she left Barbados with 306 people aboard — crew and passengers — headed for Baltimore.
+On March 4, 1918, she left Barbados with 306 people aboard (crew and passengers), headed for Baltimore.
 
 She never arrived.
 
@@ -43,7 +43,7 @@ It remains the [largest non-combat loss of life](/stories/worst-naval-disasters/
 
 The theories start reasonable and stay there, because none of them can be confirmed.
 
-Structural failure from overloading is the simplest explanation. Cyclops was carrying 11,000 tons of manganese ore, above her recommended capacity. Manganese ore is dense — much denser than coal, which the ship was designed to carry. If the cargo shifted in heavy seas, the ship could have capsized fast enough that no one had time to send a signal.
+Structural failure from overloading is the simplest explanation. Cyclops was carrying 11,000 tons of manganese ore, above her recommended capacity. Manganese ore is dense, much denser than coal, which the ship was designed to carry. If the cargo shifted in heavy seas, the ship could have capsized fast enough that no one had time to send a signal.
 
 One engine was dead. A ship running on a single engine in rough weather, overloaded with dense cargo, has very little margin for error.
 
@@ -59,7 +59,7 @@ Mutiny was proposed. The ship carried some Navy prisoners among her passengers. 
 
 It gets worse.
 
-USS Proteus and USS Nereus were Cyclops' sister ships — same class, same design, same builder. In November and December of 1941, both ships disappeared while carrying metal ore on routes through the same stretch of the western Atlantic.
+USS Proteus and USS Nereus were Cyclops' sister ships: same class, same design, same builder. In November and December of 1941, both ships disappeared while carrying metal ore on routes through the same stretch of the western Atlantic.
 
 Proteus left St. Thomas on November 23, 1941. She vanished. Nereus left St. Thomas on December 10, 1941. She vanished too.
 
@@ -69,7 +69,7 @@ That pattern points more toward a design flaw or a shared structural vulnerabili
 
 ## Still missing
 
-Modern search technology has not found the Cyclops. Side-scan sonar, deep-sea submersibles, satellite imagery — none of it has turned up the ship or any piece of her.
+Modern search technology has not found the Cyclops. Side-scan sonar, deep-sea submersibles, satellite imagery: none of it has turned up the ship or any piece of her.
 
 The western Atlantic between Barbados and the Chesapeake Bay is deep water. The ship went down over a century ago. Whatever is left of her is buried under sediment on a seabed that has been searched but never yielded an answer. The Navy would lose another ship without a clear explanation in 1952, when [USS Hobson turned left into a carrier](/stories/uss-hobson-wasp-collision/) at night and 176 men died.
 
@@ -81,7 +81,7 @@ The Navy's official position has not changed since it was first written:
 
 ## Sources
 
-- [USS Cyclops — Wikipedia](https://en.wikipedia.org/wiki/USS_Cyclops)
-- [USS Cyclops: Deadliest Unsolved Mystery — U.S. Naval Institute](https://www.usni.org/magazines/naval-history-magazine/2021/october/uss-cyclops-deadliest-unsolved-mystery-navy)
-- [Her Loss Remains Unknown — National Archives](https://unwritten-record.blogs.archives.gov/2021/10/28/her-loss-remains-unknown-the-mysterious-disappearance-of-the-uss-cyclops-ac-4/)
-- [Bermuda Triangle USS Cyclops Mystery — HISTORY](https://www.history.com/articles/bermuda-triangle-uss-cyclops-mystery-world-war-i)
+- [USS Cyclops, Wikipedia](https://en.wikipedia.org/wiki/USS_Cyclops)
+- [USS Cyclops: Deadliest Unsolved Mystery, U.S. Naval Institute](https://www.usni.org/magazines/naval-history-magazine/2021/october/uss-cyclops-deadliest-unsolved-mystery-navy)
+- [Her Loss Remains Unknown, National Archives](https://unwritten-record.blogs.archives.gov/2021/10/28/her-loss-remains-unknown-the-mysterious-disappearance-of-the-uss-cyclops-ac-4/)
+- [Bermuda Triangle USS Cyclops Mystery, HISTORY](https://www.history.com/articles/bermuda-triangle-uss-cyclops-mystery-world-war-i)

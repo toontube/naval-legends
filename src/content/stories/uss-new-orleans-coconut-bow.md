@@ -12,7 +12,7 @@ readingTime: 5
 
 At 23:27 on November 30, 1942, a Japanese Type 93 torpedo hit USS New Orleans forward of turret No. 2.
 
-The torpedo detonated the forward magazines. The explosion ripped off 150 feet of hull. That's roughly a third of the ship. Turret No. 1, the forward fire room, crew quarters, storage compartments, the chain locker — gone. One hundred and eighty-two men died in the blast.
+The torpedo detonated the forward magazines. The explosion ripped off 150 feet of hull. That's roughly a third of the ship. Turret No. 1, the forward fire room, crew quarters, storage compartments, the chain locker: all gone. One hundred and eighty-two men died in the blast.
 
 <figure>
   <img src="/images/new-orleans-tulagi.jpg" alt="USS New Orleans arriving at Tulagi with her bow blown off, December 1, 1942" />
@@ -27,7 +27,7 @@ It held.
 
 ## Tulagi
 
-New Orleans limped across [Iron Bottom Sound](/stories/ironbottom-sound/) to Tulagi harbor, arriving on December 1. She was drawing 36 feet forward — 10 feet deeper than normal — and listing to port. The crew anchored her in a concealed cove to hide from Japanese aircraft.
+New Orleans limped across [Iron Bottom Sound](/stories/ironbottom-sound/) to Tulagi harbor, arriving on December 1. She was drawing 36 feet forward (10 feet deeper than normal) and listing to port. The crew anchored her in a concealed cove to hide from Japanese aircraft.
 
 <figure>
   <img src="/images/new-orleans-camouflaged.jpg" alt="USS New Orleans camouflaged with vegetation at Tulagi, December 1942" />
@@ -36,7 +36,7 @@ New Orleans limped across [Iron Bottom Sound](/stories/ironbottom-sound/) to Tul
 
 For 11 days, the crew worked to make the ship seaworthy. They had no drydock. No shipyard. No steel. What they had were coconut trees.
 
-Sailors went ashore with axes and followed locals into the jungle. They felled coconut palms and dragged the logs back to the ship. They used the logs to build a temporary bulkhead across the open bow — a flat wall of coconut timber braced against the steel hull frame. It wasn't a bow. It was a plug.
+Sailors went ashore with axes and followed locals into the jungle. They felled coconut palms and dragged the logs back to the ship. They used the logs to build a temporary bulkhead across the open bow, a flat wall of coconut timber braced against the steel hull frame. It wasn't a bow. It was a plug.
 
 They welded steel plates where they could, shored up the bulkhead with timbers, and sealed everything they could reach. It was ugly. It needed to hold for 1,800 miles.
 
@@ -52,7 +52,7 @@ She arrived in Sydney on December 24. Christmas Eve. The Australians in the harb
 
 <figure>
   <img src="/images/new-orleans-bow-damage.jpg" alt="Close-up of the damage to USS New Orleans showing turret No. 2 and where 150 feet of bow was torn away" />
-  <figcaption>Close-up of the damage. Turret No. 2 is now the forward edge of the ship. Everything before it — 150 feet — is gone. U.S. Navy photograph, National Archives.</figcaption>
+  <figcaption>Close-up of the damage. Turret No. 2 is now the forward edge of the ship. Everything before it, 150 feet of ship, is gone. U.S. Navy photograph, National Archives.</figcaption>
 </figure>
 
 <figure>
@@ -60,7 +60,7 @@ She arrived in Sydney on December 24. Christmas Eve. The Australians in the harb
   <figcaption>The temporary steel stub bow being fitted in Sydney, January 1943. This replaced the coconut log plug for the voyage to Puget Sound. Australian War Memorial photograph (305924).</figcaption>
 </figure>
 
-In Sydney, workers installed a temporary steel stub bow — enough to get her across the Pacific to a real shipyard. She sailed to Puget Sound Navy Yard in Bremerton, Washington, where a proper bow was finally built and fitted. New Orleans, which had [survived Pearl Harbor](/stories/uss-new-orleans-pearl-harbor/) a year earlier, returned to service in October 1943 and fought in nearly every major Pacific campaign from the Gilbert Islands to [Okinawa](/stories/yamato-last-sortie/).
+In Sydney, workers installed a temporary steel stub bow, just enough to get her across the Pacific to a real shipyard. She sailed to Puget Sound Navy Yard in Bremerton, Washington, where a proper bow was finally built and fitted. New Orleans, which had [survived Pearl Harbor](/stories/uss-new-orleans-pearl-harbor/) a year earlier, returned to service in October 1943 and fought in nearly every major Pacific campaign from the Gilbert Islands to [Okinawa](/stories/yamato-last-sortie/).
 
 ## 182 men
 

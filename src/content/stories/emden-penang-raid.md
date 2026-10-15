@@ -82,7 +82,7 @@ The landing party of about 50 men stranded at the Cocos Islands under Lieutenant
 
 ### Why was SMS Emden famous?
 
-SMS Emden became the most famous commerce raider of World War I because of Captain Karl von Muller's combination of tactical brilliance and chivalry. In three months, the Emden captured or sank over twenty Allied merchant ships, shelled the oil storage tanks at Madras, and sank a Russian cruiser and a French destroyer at Penang — all while treating prisoners humanely and following the rules of war. Von Muller was admired not only in Germany but also in Britain and the Allied nations for his conduct.
+SMS Emden became the most famous commerce raider of World War I because of Captain Karl von Muller's combination of tactical brilliance and chivalry. In three months, the Emden captured or sank over twenty Allied merchant ships, shelled the oil storage tanks at Madras, and sank a Russian cruiser and a French destroyer at Penang, all while treating prisoners humanely and following the rules of war. Von Muller was admired not only in Germany but also in Britain and the Allied nations for his conduct.
 
 ### How did SMS Emden get into Penang harbor?
 

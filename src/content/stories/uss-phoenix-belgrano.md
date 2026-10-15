@@ -60,7 +60,7 @@ After Belgrano sank, the Argentine surface fleet returned to port and stayed the
 ## "GOTCHA"
 
 <figure>
-  <img src="/images/uss-phoenix-pearl-harbor.png" alt="The Sun front page, May 4 1982: GOTCHA — Our lads sink gunboat and hole cruiser" />
+  <img src="/images/uss-phoenix-pearl-harbor.png" alt="The Sun front page, May 4 1982: GOTCHA, Our lads sink gunboat and hole cruiser" />
   <figcaption>The Sun, May 4, 1982. First edition. Editor Kelvin MacKenzie pulled the headline after casualty numbers came in.</figcaption>
 </figure>
 

@@ -34,7 +34,7 @@ Four heavy cruisers, gone before breakfast. 1,077 Allied sailors dead in one nig
 
 ## The slot run
 
-After Savo Island, the Japanese used The Slot as a highway. Fast destroyer squadrons -- the "Tokyo Express" -- ran down the channel at night to deliver troops, supplies, and ammunition to Japanese forces on Guadalcanal. They would arrive after dark, unload in hours, and be gone before dawn.
+After Savo Island, the Japanese used The Slot as a highway. Fast destroyer squadrons, the "Tokyo Express," ran down the channel at night to deliver troops, supplies, and ammunition to Japanese forces on Guadalcanal. They would arrive after dark, unload in hours, and be gone before dawn.
 
 The Allies tried to stop them. The result was a series of night battles fought in those same narrow waters between August 1942 and February 1943: Cape Esperance, the two Naval Battles of Guadalcanal, Tassafaronga.
 
@@ -80,7 +80,7 @@ The wrecks sit at depths ranging from 300 meters to over 1,050 meters. At those 
 
 ### Why is it called Ironbottom Sound?
 
-American and Allied sailors gave the strait between Guadalcanal and Savo Island the name "Ironbottom Sound" because of the sheer number of warships sunk there during the six-month Guadalcanal campaign of 1942-1943. Over fifty vessels from both sides — cruisers, destroyers, battleships, submarines, and transports — went to the bottom, making it the densest concentration of warship wrecks on earth.
+American and Allied sailors gave the strait between Guadalcanal and Savo Island the name "Ironbottom Sound" because of the sheer number of warships sunk there during the six-month Guadalcanal campaign of 1942-1943. Over fifty vessels from both sides (cruisers, destroyers, battleships, submarines, and transports) went to the bottom, making it the densest concentration of warship wrecks on earth.
 
 The full story: The name emerged organically during the campaign. See the introduction and "The inventory" section above for the full tally.
 
@@ -100,4 +100,4 @@ The full story: See "The inventory" above for a detailed breakdown of losses on 
 - [A new expedition to Guadalcanal reveals WWII shipwrecks - National Geographic](https://www.nationalgeographic.com/history/article/shipwrecks-wwii-guadalcanal-warships)
 - [Ironbottom Sound - Wikipedia](https://en.wikipedia.org/wiki/Ironbottom_Sound)
 
-**Photo credit:** Wrecks in Ironbottom Sound map -- Wikimedia Commons, [File:Wrecks in the Ironbottom Sound.jpg](https://commons.wikimedia.org/wiki/File:Wrecks_in_the_Ironbottom_Sound.jpg), CC-BY-SA-3.0
+**Photo credit:** Wrecks in Ironbottom Sound map, Wikimedia Commons, [File:Wrecks in the Ironbottom Sound.jpg](https://commons.wikimedia.org/wiki/File:Wrecks_in_the_Ironbottom_Sound.jpg), CC-BY-SA-3.0

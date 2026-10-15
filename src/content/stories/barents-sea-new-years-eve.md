@@ -16,7 +16,7 @@ The senior officer was Captain Robert St. Vincent Sherbrooke, 41 years old, aboa
 
 ## Operation Regenbogen
 
-Vice Admiral Oskar Kummetz had the heavy cruiser Admiral Hipper -- 18,200 tons, eight 8-inch guns -- and the pocket battleship Lutzow -- 14,290 tons, six 11-inch guns. Six destroyers screened them. The plan was a pincer. Hipper would attack from the north to draw off the escorts. Lutzow would come from the south and butcher the undefended merchants.
+Vice Admiral Oskar Kummetz had the heavy cruiser Admiral Hipper (18,200 tons, eight 8-inch guns) and the pocket battleship Lutzow (14,290 tons, six 11-inch guns). Six destroyers screened them. The plan was a pincer. Hipper would attack from the north to draw off the escorts. Lutzow would come from the south and butcher the undefended merchants.
 
 On paper, it was a slaughter waiting to happen. Two capital ships against six destroyers.
 
@@ -36,7 +36,7 @@ Sherbrooke refused to leave. He kept commanding from what was left of the bridge
 
 ## Achates
 
-While Sherbrooke was buying time, HMS Achates was doing the thankless work -- laying smoke between the convoy and Hipper's guns. At 11:15, she pulled clear of her own smokescreen for a moment. Hipper spotted her.
+While Sherbrooke was buying time, HMS Achates was doing the thankless work: laying smoke between the convoy and Hipper's guns. At 11:15, she pulled clear of her own smokescreen for a moment. Hipper spotted her.
 
 The shells killed forty men instantly, including Achates' commanding officer, Lieutenant Commander A.H.T. Johns. The ship was flooding. First Lieutenant Loftus Peyton-Jones took command. He kept Achates making smoke, even as she was sinking under him. She continued screening the convoy until she capsized and went down.
 
@@ -52,7 +52,7 @@ Then one of the strangest moments of the war. The German destroyer Friedrich Eck
 
 Sheffield opened fire at point-blank range. Friedrich Eckholdt broke in two and sank with her entire crew. No survivors.
 
-Meanwhile, [Lutzow](/stories/deutschland-renamed/) -- the entire southern jaw of the German pincer -- had done almost nothing. Her captain, Kapitan zur See Rudolf Stange, had the convoy in sight but refused to close the range in the poor visibility. He fired a few salvos at long range. All missed.
+Meanwhile, [Lutzow](/stories/deutschland-renamed/), the entire southern jaw of the German pincer, had done almost nothing. Her captain, Kapitan zur See Rudolf Stange, had the convoy in sight but refused to close the range in the poor visibility. He fired a few salvos at long range. All missed.
 
 Every merchant ship in JW-51B reached Murmansk.
 
@@ -85,4 +85,4 @@ Captain Robert Sherbrooke received the Victoria Cross. He never regained the sig
 - [Defense Media Network: The Battle of the Barents Sea](https://www.defensemedianetwork.com/stories/the-battle-of-the-barents-sea/)
 - [WW2 Today: The Battle of the Barents Sea](https://www.ww2today.com/p/the-battle-of-the-barents-sea)
 
-**Photo credit:** German cruiser Admiral Hipper off Norway, 1942 -- Wikimedia Commons / Bundesarchiv, Public Domain
+**Photo credit:** German cruiser Admiral Hipper off Norway, 1942, Wikimedia Commons / Bundesarchiv, Public Domain

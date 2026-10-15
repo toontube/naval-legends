@@ -4,14 +4,14 @@ seoTitle: "USS William D. Porter: Torpedo at FDR"
 slug: uss-porter-torpedo-fdr
 date: 2026-04-19
 updated: 2026-10-14
-summary: "USS William D. Porter accidentally launched a live torpedo at FDR's ship during a drill. Then tried to warn him with the wrong signal. Legend says every ship greeted her with 'Don't shoot — we're Republicans.'"
+summary: "USS William D. Porter accidentally launched a live torpedo at FDR's ship during a drill. Then tried to warn him with the wrong signal. Legend says every ship greeted her with 'Don't shoot, we're Republicans.'"
 tags: [wwii, uss-william-d-porter, fdr, friendly-fire, torpedo]
 readingTime: 5
 ---
 
 USS William D. Porter was a [Fletcher-class destroyer](/stories/cruiser-vs-destroyer-vs-battleship/), hull number DD-579, built at Consolidated Steel in Orange, Texas. She commissioned on July 6, 1943. Nothing in her first four months of service suggested she would become the most embarrassing ship in the United States Navy.
 
-That changed on November 12, 1943, when Porter departed Norfolk, Virginia, as part of a task group escorting the battleship USS Iowa (BB-61). Iowa was carrying President Franklin D. Roosevelt, Secretary of State Cordell Hull, and the Joint Chiefs of Staff to the Tehran Conference — the first meeting of Roosevelt, Churchill, and Stalin.
+That changed on November 12, 1943, when Porter departed Norfolk, Virginia, as part of a task group escorting the battleship USS Iowa (BB-61). Iowa was carrying President Franklin D. Roosevelt, Secretary of State Cordell Hull, and the Joint Chiefs of Staff to the Tehran Conference, the first meeting of Roosevelt, Churchill, and Stalin.
 
 The assignment was classified. Radio silence was absolute. And the Porter started making mistakes before she cleared the harbor.
 
@@ -25,7 +25,7 @@ Commander Wilfred Walter, Porter's captain, reported the accident. The task grou
 
 ## The torpedo
 
-At approximately 14:36 on November 14, Iowa's task group conducted an anti-aircraft drill. To make it realistic, Iowa launched weather balloons as targets, and the escorts fired at them. Porter's crew was also ordered to simulate a torpedo attack on Iowa — a standard training exercise to keep torpedo crews sharp.
+At approximately 14:36 on November 14, Iowa's task group conducted an anti-aircraft drill. To make it realistic, Iowa launched weather balloons as targets, and the escorts fired at them. Porter's crew was also ordered to simulate a torpedo attack on Iowa, a standard training exercise to keep torpedo crews sharp.
 
 The drill required going through every step of a torpedo launch except the final one. Load the tubes, track the target, call the bearing, simulate the firing. Under no circumstances was a torpedo actually supposed to leave the ship.
 
@@ -33,9 +33,9 @@ Chief Torpedoman Lawton Dawson had failed to remove the primer from torpedo tube
 
 ## The warning
 
-Porter had to warn Iowa immediately. But the task group was under radio silence — any transmission could reveal the president's position to German U-boats. Commander Walter ordered a signal lamp message instead.
+Porter had to warn Iowa immediately. But the task group was under radio silence, and any transmission could reveal the president's position to German U-boats. Commander Walter ordered a signal lamp message instead.
 
-The first message sent the wrong bearing. The second message was garbled. A third attempt produced the words "we are backing" — a maneuvering signal, not a torpedo warning. None of this told Iowa that a 900-pound warhead was heading toward the ship carrying the president of the United States.
+The first message sent the wrong bearing. The second message was garbled. A third attempt produced the words "we are backing," a maneuvering signal, not a torpedo warning. None of this told Iowa that a 900-pound warhead was heading toward the ship carrying the president of the United States.
 
 Finally, with the torpedo closing, Commander Walter broke radio silence and transmitted in the clear: torpedo in the water, bearing headed for Iowa.
 
@@ -43,27 +43,27 @@ Finally, with the torpedo closing, Commander Walter broke radio silence and tran
 
 Captain John McCrea aboard Iowa ordered hard right rudder and full speed. The battleship heeled into the turn. The torpedo passed astern and detonated in Iowa's wake, roughly 3,000 yards from the ship. No damage. No casualties. Accidents at sea were not always so harmless: in 1952 [USS Hobson turned left into the carrier USS Wasp](/stories/uss-hobson-wasp-collision/) and 176 men died in four minutes.
 
-Roosevelt, by multiple accounts, asked the Secret Service to wheel him to the rail so he could watch. Whether he actually saw the torpedo explode is unclear, but the request is consistent with documented accounts of FDR's temperament under pressure — he found it entertaining.
+Roosevelt, by multiple accounts, asked the Secret Service to wheel him to the rail so he could watch. Whether he actually saw the torpedo explode is unclear, but the request is consistent with documented accounts of FDR's temperament under pressure: he found it entertaining.
 
 ## The aftermath
 
 The Navy was not entertained.
 
-When Porter reached Bermuda, the entire crew was placed under armed guard — the first time in Navy history, according to some accounts, that an entire ship's company was arrested. This detail is widely repeated but not confirmed in official records. It may be embellished.
+When Porter reached Bermuda, the entire crew was placed under armed guard, the first time in Navy history, according to some accounts, that an entire ship's company was arrested. This detail is widely repeated but not confirmed in official records. It may be embellished.
 
 What is confirmed: Chief Torpedoman Dawson was court-martialed and sentenced to fourteen years of hard labor. Roosevelt intervened personally and pardoned him. The reasoning, per the presidential record, was that the incident was an accident and Dawson had an otherwise clean service record.
 
-Commander Walter was transferred. Several other officers were reassigned. Porter herself was sent to the Aleutian Islands — about as far from the president as the Navy could manage.
+Commander Walter was transferred. Several other officers were reassigned. Porter herself was sent to the Aleutian Islands, about as far from the president as the Navy could manage.
 
 ## The legend
 
-The story that followed Porter for the rest of her career is almost certainly apocryphal, but it has been repeated so often it has become part of the ship's identity: other vessels in the fleet supposedly greeted her with the signal "Don't shoot — we're Republicans."
+The story that followed Porter for the rest of her career is almost certainly apocryphal, but it has been repeated so often it has become part of the ship's identity: other vessels in the fleet supposedly greeted her with the signal "Don't shoot, we're Republicans."
 
 There is no official log entry confirming this ever happened. But it is exactly the kind of joke sailors would make, and its persistence says something about how the Navy remembered the Porter.
 
 ## Okinawa
 
-Porter served competently in the Aleutians and then moved to the Pacific for the final year of the war. By June 1945, she was on picket duty off [Okinawa](/stories/yamato-last-sortie/), screening against kamikaze attacks — one of the most dangerous assignments in the fleet.
+Porter served competently in the Aleutians and then moved to the Pacific for the final year of the war. By June 1945, she was on picket duty off [Okinawa](/stories/yamato-last-sortie/), screening against kamikaze attacks, one of the most dangerous assignments in the fleet.
 
 On the morning of June 10, 1945, a Japanese Val dive bomber came in on Porter. The ship's gunners hit the aircraft, and it crashed into the sea close alongside rather than striking the ship. For a moment, it looked like Porter had survived.
 

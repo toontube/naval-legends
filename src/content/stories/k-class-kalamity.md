@@ -90,4 +90,4 @@ Fisher died in 1920. He didn't live to see the full tally, but he got the import
 - [1915-1926: K Class - Royal Navy Submarines](http://rnsubs.co.uk/boats/subs/k-class.html)
 - [British K-class submarine - Wikipedia](https://en.wikipedia.org/wiki/British_K-class_submarine)
 
-<figure><img src="/images/k-class-submarine.jpg" alt="British submarine K-6 at sea in 1923" /><figcaption>K-6 at sea, 1923. She made 22.6 knots off Ireland — the fastest submarine in the world at the time. Wide World Photos / Chicago Tribune, public domain.</figcaption></figure>
+<figure><img src="/images/k-class-submarine.jpg" alt="British submarine K-6 at sea in 1923" /><figcaption>K-6 at sea, 1923. She made 22.6 knots off Ireland, the fastest submarine in the world at the time. Wide World Photos / Chicago Tribune, public domain.</figcaption></figure>

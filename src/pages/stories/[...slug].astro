@@ -20,7 +20,13 @@ export async function getStaticPaths() {
 
 const { story } = Astro.props;
 const storyTopics = topicsForStory(story.data.slug);
-const { Content } = await render(story);
+const { Content, headings } = await render(story);
+
+// Ranked-list stories: their numbered H2 sections become an ItemList for search engines.
+const LIST_STORIES = ['worst-naval-disasters', 'ships-that-disappeared'];
+const listItems = LIST_STORIES.includes(story.data.slug)
+  ? headings.filter((h) => h.depth === 2 && !/^(Sources|The pattern|Frequently Asked Questions)$/i.test(h.text))
+  : [];
 
 // Tag-based story recommendations
 const allStories = await getCollection('stories');
@@ -75,6 +81,18 @@ const ksStickyUrl = 'https://www.kickstarter.com/projects/mozuma/come-on-texas?r
     "publisher": ORG,
     "mainEntityOfPage": `https://brvzulu.com/stories/${story.data.slug}/`,
   })} />
+  {listItems.length > 0 && (
+    <script slot="head" type="application/ld+json" set:html={JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "ItemList",
+      "name": story.data.title,
+      "itemListOrder": "https://schema.org/ItemListOrderAscending",
+      "itemListElement": listItems.map((h, i) => ({
+        "@type": "ListItem", "position": i + 1, "name": h.text.replace(/^\d+\.\s*/, ''),
+        "url": `https://brvzulu.com/stories/${story.data.slug}/#${h.slug}`,
+      })),
+    })} />
+  )}
   <script slot="head" type="application/ld+json" set:html={JSON.stringify({
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -136,7 +154,7 @@ const ksStickyUrl = 'https://www.kickstarter.com/projects/mozuma/come-on-texas?r
       </div>
     </a>
 
-    <!-- Read next — tag-matched stories with images -->
+    <!-- Read next: tag-matched stories with images -->
     {otherStories.length > 0 && (
       <section class="read-next">
         <h2 class="read-next-title">Read next</h2>
@@ -268,7 +286,7 @@ const ksStickyUrl = 'https://www.kickstarter.com/projects/mozuma/come-on-texas?r
     margin-right: 1rem;
   }
 
-  /* Scroll nudge — hidden until 50% scroll */
+  /* Scroll nudge: hidden until 50% scroll */
   .scroll-nudge {
     display: none;
     text-align: center;

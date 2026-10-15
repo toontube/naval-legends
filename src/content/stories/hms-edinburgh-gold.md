@@ -10,15 +10,15 @@ tags: [wwii, arctic-convoys, gold, salvage, royal-navy, cruiser]
 readingTime: 5
 ---
 
-On April 28, 1942, HMS Edinburgh left Murmansk as the flagship escort for Convoy QP 11 — a homebound run from the Soviet Union back to Iceland. Captain Hugh Faulkner had 850 men aboard a Town-class [light cruiser](/stories/cruiser-vs-destroyer-vs-battleship/) displacing 10,550 tons.
+On April 28, 1942, HMS Edinburgh left Murmansk as the flagship escort for Convoy QP 11, a homebound run from the Soviet Union back to Iceland. Captain Hugh Faulkner had 850 men aboard a Town-class [light cruiser](/stories/cruiser-vs-destroyer-vs-battleship/) displacing 10,550 tons.
 
 He also had 465 gold bars locked in the bomb room.
 
-The gold — roughly 4.5 tons of it — was Stalin's payment to the United States for Lend-Lease war materiel. Tanks, trucks, aircraft parts. The Soviets paid in bullion because nobody trusted Soviet currency, and a cruiser escorting an Arctic convoy was the safest way to move it. The gold was worth £1.5 million in 1942 money.
+The gold, roughly 4.5 tons of it, was Stalin's payment to the United States for Lend-Lease war materiel. Tanks, trucks, aircraft parts. The Soviets paid in bullion because nobody trusted Soviet currency, and a cruiser escorting an Arctic convoy was the safest way to move it. The gold was worth £1.5 million in 1942 money.
 
 ## Two torpedoes from U-456
 
-Two days out of Murmansk, on April 30, Kapitänleutnant Max-Martin Teichert in U-456 found the cruiser. His first torpedo struck the starboard side forward — just ahead of the compartment where the gold was stored. The blast opened a hole below the waterline and knocked out the forward boiler room. The crew slammed the watertight doors shut and kept the ship afloat.
+Two days out of Murmansk, on April 30, Kapitänleutnant Max-Martin Teichert in U-456 found the cruiser. His first torpedo struck the starboard side forward, just ahead of the compartment where the gold was stored. The blast opened a hole below the waterline and knocked out the forward boiler room. The crew slammed the watertight doors shut and kept the ship afloat.
 
 The second torpedo hit the stern. It destroyed the rudder and two of the four propellers. Edinburgh could still make way, but she could not steer.
 
@@ -35,7 +35,7 @@ The escort ships rigged towing cables and began dragging the crippled cruiser ba
 
 For two days they crawled southwest. German torpedo bombers found them but scored no hits. The convoys faced heavier threats too: Bismarck's sister [Tirpitz](/stories/tirpitz-lone-queen/) spent the war hiding in Norwegian fjords and still scattered a convoy.
 
-Then, on May 2, three German destroyers appeared — Z7 Hermann Schoemann, Z24, and Z25. They had been sent specifically to finish the cruiser off.
+Then, on May 2, three German destroyers appeared: Z7 Hermann Schoemann, Z24, and Z25. They had been sent specifically to finish the cruiser off.
 
 ## A crippled ship fights back
 
@@ -57,7 +57,7 @@ The gold went with her.
 
 For 39 years, the wreck sat undisturbed on the Barents Sea floor. The British government designated it a war grave. The Soviets still wanted their gold. The insurers wanted their money. Nobody could agree on who owned what, and nobody had the technology to work at 800 feet in Arctic conditions anyway.
 
-Then Keith Jessop, a Yorkshire salvage diver with more ambition than funding, convinced the British and Soviet governments to let him try. His company, Jessop Marine, partnered with Wharton Williams Ltd and the German shipping company OSA. The contract gave the salvage team 45%, with the remaining 55% split between the UK and Soviet governments — two-thirds to the Soviets, one-third to Britain. The Americans got nothing. Their insurers had already paid out decades earlier.
+Then Keith Jessop, a Yorkshire salvage diver with more ambition than funding, convinced the British and Soviet governments to let him try. His company, Jessop Marine, partnered with Wharton Williams Ltd and the German shipping company OSA. The contract gave the salvage team 45%, with the remaining 55% split between the UK and Soviet governments: two-thirds to the Soviets, one-third to Britain. The Americans got nothing. Their insurers had already paid out decades earlier.
 
 In September 1981, Jessop's divers descended to the wreck. They cut through the cruiser's hull with underwater torches, working in near-zero visibility at extreme depth. The bomb room was partially collapsed. The divers worked by feel.
 
@@ -68,7 +68,7 @@ They found the first gold bar on September 15. Over the following weeks, they pu
 <figcaption>Jessop's crew with some of the 431 gold bars pulled from Edinburgh's wreck, 800 feet down in the Barents Sea. Photo: The Times.</figcaption>
 </figure>
 
-A second expedition in 1986 recovered 29 more bars. That left five bars still inside the wreck — roughly £5 million at today's prices. They remain there, 800 feet down, inside a designated war grave that is now illegal to dive on without government permission.
+A second expedition in 1986 recovered 29 more bars. That left five bars still inside the wreck, roughly £5 million at today's prices. They remain there, 800 feet down, inside a designated war grave that is now illegal to dive on without government permission.
 
 ## What's still down there
 
