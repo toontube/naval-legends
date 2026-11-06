@@ -8,7 +8,15 @@ export const ORG = {
   logo: { '@type': 'ImageObject', url: 'https://brvzulu.com/logo-512.png', width: 512, height: 512 },
   email: 'stories@bravozulu.co',
   parentOrganization: { '@type': 'Organization', name: 'MOZUMA', url: 'https://mozuma.co' },
-  sameAs: ['https://mozuma.co', 'https://www.kickstarter.com/profile/mozuma'],
+  sameAs: [
+    'https://mozuma.co',
+    'https://www.kickstarter.com/profile/mozuma',
+    'https://discord.gg/cDzcW48dms',
+    'https://www.facebook.com/brvzulu',
+    'https://www.facebook.com/groups/bravozuluwardroom',
+    'https://instagram.com/mozumaa',
+    'https://linkedin.com/company/mozuman',
+  ],
 };
 
 // Meta descriptions: whole sentences from the summary, up to 160 characters; word cut when that is too short.
